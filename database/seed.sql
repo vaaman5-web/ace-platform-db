@@ -1,0 +1,22 @@
+INSERT INTO companies (name, type, ctc_band, difficulty_pct, difficulty_cat, rounds_desc, key_skills, display_rank, is_verified)
+VALUES
+('TCS', 'Service', '₹7-9 LPA', 15, 'EASY', '2-3 Rounds (Written + Tech + HR)', 'Core Java, SQL, C++, Basic DSA, Aptitude', 1, TRUE),
+('Infosys', 'Service', '₹9-11 LPA', 18, 'EASY', '2-3 Rounds (Aptitude + Tech + HR)', 'Python, Java, Data Science, Basic DSA', 2, TRUE),
+('Wipro', 'Service', '₹6-8 LPA', 12, 'EASY', '2 Rounds (Written + Tech/HR)', '.NET, Java, Testing, Aptitude', 3, TRUE),
+('HCL Technologies', 'Service', '₹6.5-8 LPA', 20, 'EASY', '2-3 Rounds (Tech + HR)', 'C++, Java, Cloud, SQL', 4, TRUE),
+('Tech Mahindra', 'Service', '₹6.5-8 LPA', 22, 'EASY', '2-3 Rounds (Tech + HR)', 'Python, IoT, AI, Basic Logic', 5, TRUE),
+('Cognizant', 'Service', '₹6.8-8 LPA', 25, 'EASY', '2-3 Rounds (GenC Tech + HR)', 'Java, Agile, Cloud, Communication', 6, TRUE),
+('Capgemini', 'Service', '₹6-7.5 LPA', 28, 'EASY', '3 Rounds (Pseudo-code + Tech + HR)', '.NET, Java, SAP, Problem Solving', 7, TRUE),
+('IBM India', 'Service', '₹15-17 LPA', 35, 'MEDIUM', '3-4 Rounds (Coding + Cognitive + Tech)', 'Cloud, AI, Data Systems, OOP', 8, TRUE),
+('Accenture', 'Service', '₹6.5-8 LPA', 28, 'EASY', '3 Rounds (Cognitive + Tech + HR)', 'Consulting, Cloud, Communication', 9, TRUE),
+('Deloitte Consulting', 'Service', '₹10-12 LPA', 32, 'MEDIUM', '3-4 Rounds (Case Study + Tech + HR)', 'Consulting, SAP, Analytics, SQL', 10, TRUE),
+('Google', 'Product', '₹50-55 LPA', 80, 'HARD', '4-6 Rounds (OA + Tech + System Design)', 'Advanced DSA, System Design, OS, Dynamic Programming', 1, TRUE),
+('Microsoft', 'Product', '₹46-50 LPA', 78, 'HARD', '4-5 Rounds (OA + DSA + OOD)', 'DSA, System Architecture, Code Quality', 2, TRUE),
+('Amazon', 'Product', '₹45-50 LPA', 75, 'HARD', '4-5 Rounds (OA + Bar Raiser)', 'DSA, Leadership Principles, Scalability', 3, TRUE),
+('Meta (Facebook)', 'Product', '₹55-65 LPA', 82, 'HARD', '4-5 Rounds (OA + Coding + System Design)', 'Advanced DSA, System Design, ML Basics', 4, TRUE),
+('Apple', 'Product', '₹48-55 LPA', 79, 'HARD', '4-5 Rounds (Phone + Onsite)', 'DSA, System Design, OS Internals', 5, TRUE),
+('Goldman Sachs', 'Product', '₹30-38 LPA', 65, 'HARD', '4 Rounds (OA + Tech + HireVue)', 'DSA, DBMS, OOP, Probability', 6, TRUE),
+('Adobe', 'Product', '₹28-35 LPA', 62, 'HARD', '3-4 Rounds (OA + Tech + Manager)', 'DSA, OOP, Machine Coding', 7, TRUE),
+('Flipkart', 'Product', '₹32-40 LPA', 68, 'HARD', '3-4 Rounds (OA + DSA + System Design)', 'DSA, LLD, HLD, Distributed Systems', 8, TRUE),
+('Uber', 'Product', '₹35-42 LPA', 72, 'HARD', '4-5 Rounds (OA + Algo + Design)', 'Graphs, DP, System Design, Concurrency', 9, TRUE),
+('Atlassian', 'Product', '₹40-50 LPA', 70, 'HARD', '3-4 Rounds (Values + Coding + Design)', 'Values Fit, DSA, Clean Code, System Design', 10, TRUE);

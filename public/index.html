@@ -1,0 +1,2273 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ACE — Adaptive & Continuous Education</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+ <style>
+ /* SKILL BRIDGE Official Color System */
+ :root {
+ /* Primary Colors */
+ --sb-primary: #1E3A5F;
+ --sb-primary-hover: #15293F;
+ --sb-teal: #54A6C8;
+ --sb-amber: #F2B441;
+ --sb-text-dark: #22303F;
+ --sb-bg-canvas: #FAF7F2;
+ --sb-border: #DED9D0;
+ 
+ /* Status Colors */
+ --sb-success: #2E9E6B;
+ --sb-danger: #D64545;
+ --sb-warning: #F0A43A;
+ 
+ /* CTC Badge Colors */
+ --sb-entry-bg: #EAF1F6;
+ --sb-entry-text: #1E3A5F;
+ --sb-growth-bg: #EAF7F0;
+ --sb-growth-text: #1F6B4E;
+ --sb-premium-bg: #FDF0E6;
+ --sb-premium-text: #9A4B1D;
+ 
+ /* Typography */
+ --font-main: Inter, system-ui, -apple-system, sans-serif;
+ 
+ /* Animation Easing */
+ --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ * { 
+ box-sizing: border-box; 
+ margin: 0; 
+ padding: 0; 
+ }
+ 
+ html { 
+ scroll-behavior: smooth; 
+ }
+ 
+ body {
+ background: var(--sb-bg-canvas);
+ color: var(--sb-text-dark);
+ font-family: var(--font-main);
+ line-height: 1.45;
+ padding-bottom: 20px;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ /* Clean Professional Animations */
+ @keyframes fadeIn {
+ from { opacity: 0; }
+ to { opacity: 1; }
+ }
+
+ @keyframes slideUp {
+ from {
+ opacity: 0;
+ transform: translateY(20px);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+
+ @keyframes slideInRight {
+ from {
+ opacity: 0;
+ transform: translateX(20px);
+ }
+ to {
+ opacity: 1;
+ transform: translateX(0);
+ }
+ }
+
+ @keyframes scaleIn {
+ from {
+ opacity: 0;
+ transform: scale(0.97);
+ }
+ to {
+ opacity: 1;
+ transform: scale(1);
+ }
+ }
+
+ @keyframes progressFill {
+ from { width: 0; }
+ to { width: 100%; }
+ }
+ 
+ /* Header - SKILL BRIDGE Style */
+header {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ padding: 0.7rem 1.25rem;
+ box-shadow: 0 2px 8px rgba(30, 58, 95, 0.15);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky; 
+ top: 0;
+ z-index: 100;
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+
+.logo-area h1 {
+ font-size: 1.3rem;
+ font-weight: 800;
+ letter-spacing: -0.5px;
+ color: #FFFFFF;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }
+
+.logo-area span.tagline {
+ font-size: 0.7rem;
+ font-weight: 500;
+ letter-spacing: 0.2px;
+ color: rgba(255, 255, 255, 0.85);
+ background: none;
+ padding: 0;
+ border: none;
+ border-radius: 0;
+ }
+
+.logo-area span:hover {
+ background: none;
+ }
+ 
+nav {
+ display: flex;
+ gap: 1rem;
+ }
+
+nav a {
+ color: #FFFFFF;
+ text-decoration: none;
+ font-size: 0.8rem;
+ font-weight: 600;
+ position: relative;
+ padding: 0.2rem 0;
+ transition: opacity 0.2s var(--ease-smooth);
+ }
+
+ nav a::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background: #FFFFFF;
+ transition: width 0.25s var(--ease-smooth);
+ }
+
+ nav a:hover::after {
+ width: 100%;
+ }
+
+ nav a:hover {
+ opacity: 0.85;
+ }
+ 
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0.75rem 1.25rem;
+ }
+
+/* Banner Section */
+.system-status {
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ border-radius: 8px;
+ padding: 0.6rem 1rem;
+ margin-bottom: 0.75rem;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+ animation: scaleIn 0.5s var(--ease-smooth) 0.1s backwards;
+ border-left: 4px solid var(--sb-primary);
+ }
+
+.system-status h2 {
+ font-size: 1rem;
+ margin-bottom: 0.15rem;
+ font-weight: 800;
+ color: var(--sb-text-dark);
+ }
+
+.system-status p { 
+ font-size: 0.78rem;
+ color: #5B6B76;
+ font-weight: 500;
+ line-height: 1.4;
+ }
+
+/* Metrics Grid */
+.metrics-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ gap: 0.6rem;
+ margin-bottom: 0.75rem;
+ }
+
+.metric-card {
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ border-radius: 8px;
+ padding: 0.6rem 0.9rem;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+ transition: all 0.25s var(--ease-smooth);
+ animation: slideUp 0.5s var(--ease-smooth) backwards;
+ border-top: 3px solid var(--sb-teal);
+ }
+
+.metric-card:nth-child(1) { animation-delay: 0.1s; border-top-color: var(--sb-primary); }
+.metric-card:nth-child(2) { animation-delay: 0.15s; border-top-color: var(--sb-teal); }
+.metric-card:nth-child(3) { animation-delay: 0.2s; border-top-color: var(--sb-success); }
+.metric-card:nth-child(4) { animation-delay: 0.25s; border-top-color: var(--sb-amber); }
+
+.metric-card:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 4px 12px rgba(30, 58, 95, 0.12);
+ border-color: var(--sb-primary);
+ }
+
+.metric-card .val {
+ font-size: 1.15rem;
+ font-weight: 800;
+ color: var(--sb-text-dark);
+ margin-bottom: 0.15rem;
+ display: block;
+ }
+
+.metric-card .lbl {
+ font-size: 0.68rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ color: #5B6B76;
+ letter-spacing: 0.5px;
+ }
+
+.grid-2col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 0.75rem;
+ margin-bottom: 0.5rem;
+ align-items: start;
+ }
+
+@media (max-width: 900px) { 
+ .grid-2col { grid-template-columns: 1fr; } 
+ }
+
+/* Panel Design */
+.panel {
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ border-radius: 8px;
+ padding: 0.9rem 1rem;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+ margin-bottom: 0.75rem;
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+
+.panel:hover {
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+ }
+
+.panel-header {
+ border-bottom: 2px solid var(--sb-bg-canvas);
+ padding-bottom: 0.4rem;
+ margin-bottom: 0.6rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+.panel-title {
+ font-size: 0.85rem; 
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ color: var(--sb-primary);
+ }
+
+/* Form Styling */
+.form-group { 
+ margin-bottom: 0.45rem;
+ animation: fadeIn 0.4s var(--ease-smooth);
+ }
+
+.form-group:nth-child(1) { animation-delay: 0.05s; }
+.form-group:nth-child(2) { animation-delay: 0.1s; }
+.form-group:nth-child(3) { animation-delay: 0.15s; }
+.form-group:nth-child(4) { animation-delay: 0.2s; }
+.form-group:nth-child(5) { animation-delay: 0.25s; }
+
+.form-group label {
+ display: block;
+ font-weight: 600;
+ font-size: 0.75rem;
+ margin-bottom: 0.2rem;
+ color: var(--sb-text-dark);
+ }
+
+.form-control {
+ width: 100%;
+ padding: 0.4rem 0.6rem;
+ border: 1.5px solid var(--sb-border);
+ border-radius: 6px;
+ background: var(--sb-bg-canvas);
+ font-family: var(--font-main);
+ font-size: 0.8rem;
+ font-weight: 500;
+ outline: none;
+ transition: all 0.2s var(--ease-smooth);
+ color: var(--sb-text-dark);
+ }
+
+.form-control:focus {
+ border-color: var(--sb-primary);
+ background: #FFFFFF;
+ box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+ }
+
+/* Button */
+.btn {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ border: none;
+ padding: 0.55rem 1.1rem;
+ font-weight: 700;
+ font-size: 0.85rem;
+ cursor: pointer;
+ border-radius: 6px;
+ box-shadow: 0 2px 4px rgba(30, 58, 95, 0.2);
+ transition: all 0.2s var(--ease-smooth);
+ width: 100%;
+ }
+
+.btn:hover {
+ background: var(--sb-primary-hover);
+ transform: translateY(-1px);
+ box-shadow: 0 4px 8px rgba(30, 58, 95, 0.3);
+ }
+
+.btn:active {
+ transform: translateY(0);
+ box-shadow: 0 1px 2px rgba(30, 58, 95, 0.2);
+ }
+
+.btn-sm {
+ padding: 0.35rem 0.7rem;
+ font-size: 0.8rem;
+ width: auto;
+ }
+
+/* Report Card */
+.report-card {
+ background: #FFFFFF;
+ border: 1.5px solid var(--sb-border);
+ border-radius: 8px;
+ padding: 0.7rem 0.8rem;
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+ margin-bottom: 0.75rem;
+ transition: all 0.3s var(--ease-smooth);
+ }
+ 
+ .report-card.updated {
+ animation: scaleIn 0.4s var(--ease-smooth);
+ }
+ 
+.report-card-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-bottom: 0.4rem;
+ margin-bottom: 0.45rem;
+ border-bottom: 2px solid var(--sb-bg-canvas);
+ }
+
+.candidate-meta h3 {
+ font-size: 1rem;
+ font-weight: 800;
+ color: var(--sb-text-dark);
+ margin-bottom: 0.1rem;
+ animation: slideInRight 0.5s var(--ease-smooth);
+ }
+
+.candidate-meta span {
+ font-size: 0.62rem;
+ color: #5B6B76;
+ text-transform: uppercase;
+ font-weight: 600;
+ letter-spacing: 0.5px;
+ }
+
+/* Match Badge with Status Colors */
+.match-badge {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ padding: 0.45rem 0.7rem;
+ border-radius: 8px;
+ text-align: center;
+ box-shadow: 0 2px 6px rgba(30, 58, 95, 0.25);
+ transition: all 0.25s var(--ease-smooth);
+ animation: scaleIn 0.5s var(--ease-smooth) 0.2s backwards;
+ }
+
+.match-badge:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 4px 10px rgba(30, 58, 95, 0.35);
+ }
+
+.match-badge .val {
+ font-size: 1.2rem;
+ font-weight: 800;
+ line-height: 1;
+ margin-bottom: 0.1rem;
+ }
+
+.match-badge .lbl {
+ font-size: 0.55rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ opacity: 0.95;
+ }
+
+/* Data Grid */
+.report-data-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 0.4rem;
+ margin-bottom: 0.4rem;
+ }
+
+@media (max-width: 768px) {
+ .report-data-grid { grid-template-columns: 1fr; }
+ }
+
+.data-item {
+ background: var(--sb-bg-canvas);
+ border: 1px solid var(--sb-border);
+ border-radius: 6px;
+ padding: 0.5rem 0.7rem;
+ transition: all 0.2s var(--ease-smooth);
+ animation: fadeIn 0.4s var(--ease-smooth);
+ }
+
+.data-item:nth-child(1) { animation-delay: 0.05s; }
+.data-item:nth-child(2) { animation-delay: 0.1s; }
+
+.data-item:hover {
+ background: #FFFFFF;
+ border-color: var(--sb-primary);
+ transform: translateX(3px);
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+ }
+
+.data-item .lbl { 
+ font-size: 0.6rem;
+ color: #5B6B76;
+ text-transform: uppercase;
+ font-weight: 700;
+ letter-spacing: 0.5px;
+ display: block;
+ margin-bottom: 0.1rem;
+ }
+
+.data-item .val {
+ font-size: 0.85rem;
+ font-weight: 700;
+ color: var(--sb-text-dark);
+ }
+
+/* Skills Container */
+.skills-tag-container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.35rem;
+ margin-top: 0.4rem;
+ }
+
+/* Skill Tags - SKILL BRIDGE Status Colors */
+.skills-tag-container .skill-tag {
+ background: var(--sb-growth-bg);
+ color: var(--sb-growth-text);
+ border: 1px solid var(--sb-growth-text);
+ font-size: 0.68rem;
+ font-weight: 600;
+ padding: 0.2rem 0.5rem;
+ border-radius: 4px;
+ transition: all 0.2s var(--ease-smooth);
+ animation: scaleIn 0.3s var(--ease-smooth) backwards;
+ }
+ 
+ .skills-tag-container .skill-tag:nth-child(1) { animation-delay: 0.05s; }
+ .skills-tag-container .skill-tag:nth-child(2) { animation-delay: 0.1s; }
+ .skills-tag-container .skill-tag:nth-child(3) { animation-delay: 0.15s; }
+ .skills-tag-container .skill-tag:nth-child(4) { animation-delay: 0.2s; }
+ .skills-tag-container .skill-tag:nth-child(5) { animation-delay: 0.25s; }
+ 
+ .skill-tag:hover {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ border-color: var(--sb-primary);
+ transform: translateY(-2px);
+ box-shadow: 0 2px 6px rgba(30, 58, 95, 0.35);
+ }
+ 
+ .skill-tag.missing {
+ background: #FCE8E4;
+ color: var(--sb-danger);
+ border-color: var(--sb-danger);
+ }
+
+ .skill-tag.missing:hover {
+ background: var(--sb-danger);
+ color: #FFFFFF;
+ border-color: var(--sb-danger);
+ }
+ 
+/* Table Section */
+.table-section {
+ background: #FFFFFF;
+ padding: 0.9rem 1rem;
+ border: 1px solid var(--sb-border);
+ border-radius: 8px;
+ margin-bottom: 0.75rem;
+ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+
+.filter-bar {
+ display: grid;
+ grid-template-columns: 2fr 1fr 1fr auto;
+ gap: 0.5rem;
+ margin-bottom: 0.6rem;
+ align-items: center;
+ }
+
+@media (max-width: 768px) {
+ .filter-bar { grid-template-columns: 1fr; }
+ }
+
+.table-container {
+ overflow-x: auto;
+ max-height: 200px;
+ border: 1px solid var(--sb-border);
+ border-radius: 6px;
+ transition: opacity 0.25s ease;
+ }
+
+.table-container.table-loading {
+ opacity: 0.5;
+ pointer-events: none;
+ }
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ text-align: left;
+ font-size: 0.8rem;
+ }
+
+th, td {
+ padding: 0.45rem;
+ border-bottom: 1px solid var(--sb-border);
+ }
+
+th {
+ position: sticky;
+ top: 0;
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: 0.68rem;
+ letter-spacing: 0.5px;
+ z-index: 10;
+ }
+ 
+ tr {
+ animation: fadeIn 0.25s ease forwards;
+ transition: background-color 0.15s ease;
+ }
+ 
+ tr:nth-child(even) { 
+ background: #F6F1E8; 
+ }
+ 
+ tr:hover td { 
+ background: #EEE8DC;
+ }
+ 
+ /* CTC Badge System - SKILL BRIDGE Official */
+ .badge-type {
+ font-size: 0.7rem;
+ font-weight: 700;
+ padding: 0.3rem 0.65rem;
+ border-radius: 4px;
+ text-transform: uppercase;
+ display: inline-block;
+ letter-spacing: 0.3px;
+ transition: all 0.2s var(--ease-smooth);
+ }
+ 
+ .badge-type:hover {
+ transform: scale(1.05);
+ }
+ 
+ .badge-product { 
+ background: var(--sb-premium-bg);
+ color: var(--sb-premium-text);
+ border: 1px solid var(--sb-premium-text);
+ }
+ 
+ .badge-service { 
+ background: var(--sb-growth-bg);
+ color: var(--sb-growth-text);
+ border: 1px solid var(--sb-growth-text);
+ }
+ 
+/* Pagination */
+.pagination-controls {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 0.6rem;
+ padding-top: 0.6rem;
+ border-top: 1px solid var(--sb-border);
+ font-size: 0.8rem;
+ font-weight: 600;
+ color: #5B6B76;
+ }
+ 
+ .pagination-btn-group { 
+ display: flex; 
+ gap: 0.625rem; 
+ }
+ 
+ /* Team Section */
+ .team-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 0.5rem;
+ }
+ @media (max-width: 700px) {
+ .team-grid { grid-template-columns: 1fr; }
+ }
+
+ .team-card {
+ border: 1px solid var(--sb-border);
+ border-left: 3px solid var(--sb-teal);
+ border-radius: 6px;
+ transition: all 0.2s var(--ease-smooth);
+ background: var(--sb-bg-canvas);
+ animation: fadeIn 0.4s var(--ease-smooth);
+ }
+
+ .team-card:nth-child(1) { animation-delay: 0.05s; }
+ .team-card:nth-child(2) { animation-delay: 0.1s; }
+ .team-card:nth-child(3) { animation-delay: 0.15s; }
+ .team-card:nth-child(4) { animation-delay: 0.2s; }
+ .team-card:nth-child(5) { animation-delay: 0.25s; }
+ .team-card:nth-child(6) { animation-delay: 0.3s; }
+ 
+ .team-card:hover { 
+ transform: translateY(-3px); 
+ box-shadow: 0 4px 12px rgba(30, 58, 95, 0.15);
+ border-left-width: 4px;
+ background: #FFFFFF;
+ }
+
+ .team-card .val {
+ font-weight: 700;
+ color: var(--sb-text-dark);
+ transition: color 0.2s;
+ }
+
+ .team-card:hover .val {
+ color: var(--sb-teal);
+ }
+
+ /* Progress Bar */
+ .score-progress {
+ width: 100%;
+ height: 6px;
+ background: rgba(255, 255, 255, 0.3);
+ border-radius: 3px;
+ overflow: hidden;
+ margin-top: 0.5rem;
+ }
+
+ .score-progress-bar {
+ height: 100%;
+ background: #FFFFFF;
+ border-radius: 3px;
+ transition: width 0.4s var(--ease-smooth);
+ animation: progressFill 0.8s var(--ease-smooth);
+ }
+
+ /* Dark Mode Theme */
+ html[data-theme="dark"] {
+ color-scheme: dark;
+ --sb-primary: #2B4C78;
+ --sb-primary-hover: #1F3A5F;
+ --sb-teal: #6DB5D4;
+ --sb-amber: #F2B441;
+ --sb-text-dark: #E8ECF2;
+ --sb-bg-canvas: #101623;
+ --sb-border: #2E3A4F;
+ --sb-success: #3DBE7F;
+ --sb-danger: #F0756A;
+ --sb-warning: #F0A43A;
+ --sb-entry-bg: #1B2A41;
+ --sb-entry-text: #9DC5EC;
+ --sb-growth-bg: #14301F;
+ --sb-growth-text: #7ED9A9;
+ --sb-premium-bg: #33200E;
+ --sb-premium-text: #F2B441;
+ }
+
+ html[data-theme="dark"] body {
+ background: var(--sb-bg-canvas);
+ color: var(--sb-text-dark);
+ }
+
+ html[data-theme="dark"] .system-status,
+ html[data-theme="dark"] .metric-card,
+ html[data-theme="dark"] .panel,
+ html[data-theme="dark"] .report-card,
+ html[data-theme="dark"] .table-section,
+ html[data-theme="dark"] .data-item,
+ html[data-theme="dark"] .team-card,
+ html[data-theme="dark"] .compare-modal-box {
+ background: #151D2E;
+ }
+
+ html[data-theme="dark"] .data-item:hover,
+ html[data-theme="dark"] .metric-card:hover,
+ html[data-theme="dark"] .team-card:hover {
+ background: #1C2740;
+ }
+
+ html[data-theme="dark"] tr:nth-child(even) { background: #1A2336; }
+ html[data-theme="dark"] tr:hover td { background: #222E46; }
+ html[data-theme="dark"] .skill-tag.missing { background: #32191C; }
+ html[data-theme="dark"] .form-control { background: #131B2C; color: var(--sb-text-dark); }
+ html[data-theme="dark"] .form-control:focus { background: #1A2438; }
+ html[data-theme="dark"] .skill-tag { background: #14301F; }
+ html[data-theme="dark"] .match-item { background: #131B2C; }
+ html[data-theme="dark"] .badge-product { background: #33200E; }
+ html[data-theme="dark"] .badge-service { background: #14301F; }
+ html[data-theme="dark"] .history-chip { background: #131B2C; color: var(--sb-text-dark); }
+ html[data-theme="dark"] .compare-bar { background: #151D2E; }
+
+ /* Muted text contrast (light-gray labels become readable light-blue-gray) */
+ html[data-theme="dark"] .data-item .lbl,
+ html[data-theme="dark"] .metric-card .lbl,
+ html[data-theme="dark"] .system-status p,
+ html[data-theme="dark"] .match-item .sub,
+ html[data-theme="dark"] .history-chip span,
+ html[data-theme="dark"] .trend-empty,
+ html[data-theme="dark"] .compare-close,
+ html[data-theme="dark"] .pagination-controls,
+ html[data-theme="dark"] #recordCount,
+ html[data-theme="dark"] .candidate-meta span { color: #93A1B5; }
+
+ /* Panel titles become bright accent blue */
+ html[data-theme="dark"] .panel-title { color: #9DC5EC; }
+ html[data-theme="dark"] .candidate-meta h3 { color: #D5E4F5; }
+ html[data-theme="dark"] .compare-modal-box h3 { color: var(--sb-text-dark); }
+
+ /* Visible section underlines in dark */
+ html[data-theme="dark"] .panel-header,
+ html[data-theme="dark"] .report-card-header { border-bottom-color: #2E3A4F; }
+
+ /* Keep pill & chip text crisp */
+ html[data-theme="dark"] .compare-table td { color: var(--sb-text-dark); }
+ html[data-theme="dark"] td, html[data-theme="dark"] .compare-count { color: var(--sb-text-dark); }
+ html[data-theme="dark"] .form-control option { background: #131B2C; color: var(--sb-text-dark); }
+
+ /* Smooth theme switch */
+ body, .system-status, .metric-card, .panel, .report-card, .table-section,
+ .data-item, .form-control, .match-item, .history-chip, .compare-bar,
+ .team-card, td, th, .score-progress, .score-progress-bar, .trend-bar {
+ transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+ }
+
+ /* Native dark scrollbars */
+ html[data-theme="dark"] ::-webkit-scrollbar { width: 10px; height: 10px; }
+ html[data-theme="dark"] ::-webkit-scrollbar-track { background: #101623; }
+ html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #2E3A4F; border-radius: 5px; }
+ html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #3B4B66; }
+ html[data-theme="dark"] .table-container { scrollbar-width: thin; scrollbar-color: #2E3A4F #101623; }
+
+ /* Theme Toggle */
+ .theme-toggle {
+ background: rgba(255, 255, 255, 0.15);
+ color: #FFFFFF;
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ border-radius: 6px;
+ padding: 0.4rem 0.9rem;
+ font-family: var(--font-main);
+ font-size: 0.8rem;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.2s var(--ease-smooth);
+ }
+
+ .theme-toggle:hover {
+ background: rgba(255, 255, 255, 0.3);
+ transform: translateY(-1px);
+ }
+
+/* Matched Companies */
+.match-list {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 0.4rem;
+ margin-top: 0.4rem;
+ }
+
+.match-item {
+ background: var(--sb-bg-canvas);
+ border: 1px solid var(--sb-border);
+ border-left: 3px solid var(--sb-teal);
+ border-radius: 6px;
+ padding: 0.45rem 0.55rem;
+ transition: all 0.2s var(--ease-smooth);
+ }
+
+.match-item:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+ }
+
+.match-item .nm {
+ font-weight: 700;
+ font-size: 0.78rem;
+ color: var(--sb-text-dark);
+ }
+
+.match-item .sub {
+ font-size: 0.64rem;
+ color: #5B6B76;
+ margin-top: 0.15rem;
+ }
+
+/* Progress History */
+.history-chips {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.3rem;
+ margin-top: 0.4rem;
+ }
+
+.history-chip {
+ background: var(--sb-bg-canvas);
+ border: 1px solid var(--sb-border);
+ border-radius: 4px;
+ padding: 0.2rem 0.45rem;
+ font-size: 0.68rem;
+ font-weight: 700;
+ color: var(--sb-text-dark);
+ }
+
+.history-chip span {
+ color: #5B6B76;
+ font-weight: 600;
+ margin-left: 0.3rem;
+ }
+
+.trend-bars {
+ display: flex;
+ align-items: flex-end;
+ gap: 5px;
+ height: 32px;
+ margin-top: 0.4rem;
+ }
+
+ .trend-bar {
+ width: 14px;
+ background: var(--sb-teal);
+ border-radius: 3px 3px 0 0;
+ transition: height 0.4s var(--ease-smooth);
+ }
+
+ .trend-bar:last-child {
+ background: var(--sb-primary);
+ }
+
+/* Compare Bar & Modal */
+.compare-bar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+ flex-wrap: wrap;
+ margin-top: 0.6rem;
+ padding: 0.5rem 0.6rem;
+ background: var(--sb-bg-canvas);
+ border: 1px solid var(--sb-border);
+ border-radius: 6px;
+ }
+
+ .compare-count {
+ font-size: 0.875rem;
+ font-weight: 700;
+ color: var(--sb-text-dark);
+ }
+
+ .sel-col {
+ width: 34px;
+ text-align: center;
+ }
+
+ .btn-ghost {
+ background: transparent;
+ color: var(--sb-text-dark);
+ border: 1.5px solid var(--sb-border);
+ box-shadow: none;
+ width: auto;
+ }
+
+ .btn-ghost:hover {
+ background: var(--sb-bg-canvas);
+ box-shadow: none;
+ }
+
+ .compare-modal {
+ position: fixed;
+ inset: 0;
+ background: rgba(10, 16, 30, 0.55);
+ display: none;
+ align-items: center;
+ justify-content: center;
+ padding: 1.5rem;
+ z-index: 200;
+ }
+
+ .compare-modal.open {
+ display: flex;
+ }
+
+ .compare-modal-box {
+ background: #FFFFFF;
+ border-radius: 10px;
+ width: 100%;
+ max-width: 900px;
+ max-height: 85vh;
+ overflow: auto;
+ padding: 1.5rem;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+ }
+
+ .compare-modal-box h3 {
+ font-size: 1.125rem;
+ margin-bottom: 1rem;
+ color: var(--sb-text-dark);
+ }
+
+ .compare-close {
+ cursor: pointer;
+ font-weight: 700;
+ font-size: 0.85rem;
+ color: #5B6B76;
+ float: right;
+ margin-bottom: 0.25rem;
+ }
+
+ .compare-table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.8rem;
+ margin-top: 0.5rem;
+ }
+
+ .compare-table th,
+ .compare-table td {
+ padding: 0.75rem;
+ border: 1px solid var(--sb-border);
+ vertical-align: top;
+ }
+
+ .compare-table th:first-child {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ }
+
+ /* Feature modal internals (quiz / study plan / interview questions) */
+ .quiz-q { margin-bottom: 0.7rem; padding: 0.55rem 0.7rem; background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-radius: 6px; }
+ .quiz-question { font-weight: 600; font-size: 0.85rem; margin-bottom: 0.35rem; color: var(--sb-text-dark); }
+ .quiz-opt { display: block; font-size: 0.8rem; margin: 0.2rem 0; color: #5B6B76; cursor: pointer; }
+ .quiz-opt input { margin-right: 0.35rem; }
+ .quiz-note { font-size: 0.78rem; color: #5B6B76; margin: 0.7rem 0; }
+ .quiz-result { padding: 0.7rem; background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-radius: 6px; display: grid; gap: 0.4rem; }
+ .plan-phase { margin-bottom: 0.8rem; padding: 0.6rem 0.8rem; background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-radius: 6px; }
+ .plan-phase-title { font-weight: 700; font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--sb-primary); }
+ .plan-phase-title span { font-weight: 400; font-size: 0.75rem; color: #5B6B76; }
+ .plan-task { font-size: 0.8rem; color: var(--sb-text-dark); padding: 0.15rem 0; }
+ .iq-round { margin-bottom: 0.5rem; }
+ .iq-title { font-weight: 700; font-size: 0.82rem; color: #1E3A5F; margin-bottom: 0.2rem; }
+ .iq-q { font-size: 0.8rem; color: var(--sb-text-dark); padding: 0.12rem 0 0.12rem 0.7rem; }
+ #featureModalBody { max-height: 62vh; overflow: auto; }
+ html[data-theme="dark"] .plan-phase-title,
+ html[data-theme="dark"] .iq-title { color: #9DC5EC; }
+ html[data-theme="dark"] .quiz-opt,
+ html[data-theme="dark"] .quiz-note,
+ html[data-theme="dark"] .plan-phase-title span { color: #93A1B5; }
+
+ .trend-empty {
+ color: #5B6B76;
+ font-size: 0.85rem;
+ }
+
+ /* Feedback Section */
+ .fb-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 0.75rem;
+ align-items: start;
+ }
+ @media (max-width: 768px) { .fb-grid { grid-template-columns: 1fr; } }
+
+ .fb-card {
+ background: var(--sb-bg-canvas);
+ border: 1px solid var(--sb-border);
+ border-radius: 6px;
+ padding: 0.5rem 0.7rem;
+ margin-bottom: 0.5rem;
+ }
+ .fb-head {
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ font-size: 0.75rem;
+ margin-bottom: 0.3rem;
+ }
+ .fb-stars-show { color: var(--sb-amber); font-size: 0.85rem; letter-spacing: 1px; }
+ .fb-cat {
+ font-size: 0.62rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ border-radius: 3px;
+ padding: 0.1rem 0.35rem;
+ color: var(--sb-text-dark);
+ }
+ .fb-meta { font-size: 0.62rem; color: #5B6B76; margin-left: auto; }
+ .fb-del {
+ background: transparent;
+ border: none;
+ color: var(--sb-danger);
+ font-size: 0.68rem;
+ font-weight: 700;
+ cursor: pointer;
+ padding: 0.1rem 0.3rem;
+ border-radius: 3px;
+ transition: all 0.15s var(--ease-smooth);
+ }
+ .fb-del:hover { background: var(--sb-danger); color: #FFFFFF; }
+ .fb-text { font-size: 0.8rem; color: var(--sb-text-dark); margin-bottom: 0.25rem; }
+ .fb-name { font-size: 0.65rem; color: #5B6B76; font-weight: 600; }
+ .fb-empty { font-size: 0.8rem; color: #5B6B76; padding: 1rem 0; text-align: center; }
+
+ textarea.form-control { resize: vertical; min-height: 70px; }
+
+ /* Star Rating Buttons */
+ .fb-stars { display: flex; gap: 0.15rem; }
+ .fb-star {
+ background: transparent;
+ border: 1px solid var(--sb-border);
+ border-radius: 4px;
+ font-size: 1.1rem;
+ line-height: 1;
+ padding: 0.2rem 0.35rem;
+ color: #5B6B76;
+ cursor: pointer;
+ transition: all 0.15s var(--ease-smooth);
+ }
+ .fb-star.active { color: var(--sb-amber); border-color: var(--sb-amber); background: rgba(242, 180, 65, 0.12); }
+ .fb-star:hover { transform: translateY(-2px); }
+
+ /* Feedback Toast */
+ .fb-toast {
+ position: fixed;
+ bottom: 1.25rem;
+ left: 50%;
+ transform: translateX(-50%) translateY(20px);
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ padding: 0.6rem 1.2rem;
+ border-radius: 8px;
+ font-size: 0.8rem;
+ font-weight: 600;
+ box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+ opacity: 0;
+ pointer-events: none;
+ transition: all 0.3s var(--ease-smooth);
+ z-index: 300;
+ }
+ .fb-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+ html[data-theme="dark"] .fb-meta,
+ html[data-theme="dark"] .fb-name,
+ html[data-theme="dark"] .fb-empty,
+ html[data-theme="dark"] .fb-cat { color: #93A1B5; }
+ html[data-theme="dark"] .fb-cat { background: #131B2C; }
+
+ /* Print: hide chrome when printing report */
+ @media print {
+ @page { size: A4; margin: 11mm; }
+ header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #catalog, #team, #feedback { display: none !important; }
+ .container { padding: 0; }
+ #analyzer { display: block; }
+ #resultsArea { margin: 0; }
+ body { background: #fff !important; padding: 0; color: #22303F; font-size: 12px; }
+
+ .report-card { box-shadow: none; border: 2px solid #1E3A5F; border-radius: 6px; padding: 1.1rem !important; margin: 0; page-break-inside: avoid; }
+ .report-card * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+ .report-card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #D8D2C6; padding-bottom: 0.6rem !important; margin-bottom: 0.7rem !important; }
+ .candidate-meta h3 { font-size: 1.35rem; margin: 0; color: #1E3A5F; }
+ .candidate-meta span { font-size: 0.7rem; color: #5B6B76; }
+
+ .match-badge { background: #1E3A5F !important; color: #fff !important; min-width: 120px; max-width: 40mm; margin: 0 !important; padding: 0.5rem 0.8rem !important; text-align: center; }
+ .match-badge .val { font-size: 1.3rem !important; margin: 0 !important; }
+ .match-badge .lbl { font-size: 0.6rem !important; }
+ .match-badge .score-progress { display: none !important; }
+
+ .report-data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.5rem; }
+ .report-card .data-item { margin-bottom: 0 !important; padding: 0.5rem 0.7rem !important; background: #F7F4EE !important; border: 1px solid #D8D2C6 !important; page-break-inside: avoid; }
+ .report-card .data-item .lbl { font-size: 0.62rem !important; margin-bottom: 0.2rem !important; color: #5B6B76; letter-spacing: 0.4px; }
+ .report-card .data-item .val { font-size: 0.85rem !important; color: #22303F; }
+
+ .skill-tag { font-size: 0.68rem !important; padding: 0.22rem 0.5rem !important; background: #EAF7F0 !important; color: #1F6B4E !important; border: 1px solid #1F6B4E !important; }
+ .skill-tag.missing { background: #FCE8E4 !important; color: #C5453B !important; border: 1px solid #C5453B !important; }
+ .skills-tag-container { gap: 0.35rem !important; margin-top: 0.3rem !important; }
+
+ .match-list { gap: 0.4rem !important; margin-top: 0.3rem !important; grid-template-columns: repeat(3, 1fr); }
+ .match-item { background: #F7F4EE !important; border: 1px solid #D8D2C6 !important; border-left: 4px solid #1E3A5F !important; padding: 0.45rem 0.6rem !important; page-break-inside: avoid; }
+ .match-item .nm { font-size: 0.78rem !important; color: #1E3A5F; }
+ .match-item .sub { font-size: 0.64rem !important; color: #5B6B76; margin-top: 0.1rem !important; }
+
+ .trend-bars { height: 30px !important; margin-top: 0.3rem !important; }
+ .trend-bar { background: #54A6C8 !important; }
+ .trend-bar:last-child { background: #1E3A5F !important; }
+ .history-chips { gap: 0.3rem !important; margin-top: 0.3rem !important; }
+ .history-chip { background: #F7F4EE !important; border: 1px solid #D8D2C6 !important; color: #22303F !important; font-size: 0.66rem !important; padding: 0.2rem 0.45rem !important; }
+ .trend-empty { color: #5B6B76; font-size: 0.75rem; }
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <div class="logo-area">
+ <h1>ACE <span class="tagline">Adaptive &amp; Continuous Education Skills</span></h1>
+ </div>
+ <nav>
+ <a href="#analyzer">Skill Gap Engine</a>
+<a href="#catalog">Placement Database</a>
+  <a href="#feedback">Feedback</a>
+  <a href="#team">Engineering Team</a>
+ <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+ </nav>
+ </header>
+ 
+ <div class="container">
+ <!-- System Meta Banner -->
+ <section class="system-status">
+ <h2>ACE — Comprehensive Company Recruitment Guide (2026 Updated)</h2>
+ <p>Integrated data mapping platform matching 500+ Indian tech service majors, product giants, consulting firms, and emerging startups with live difficulty benchmarks, fresher CTC bands, and selection dynamics.</p>
+ </section>
+ 
+ <!-- Dynamic Key Metrics Dashboard -->
+ <div class="metrics-grid">
+ <div class="metric-card">
+ <div class="val">500+ Listed</div>
+ <div class="lbl">Total Verified Companies</div>
+ </div>
+ <div class="metric-card">
+ <div class="val">₹3.5 - ₹65 LPA</div>
+ <div class="lbl">Fresher CTC Spectrum</div>
+ </div>
+ <div class="metric-card">
+ <div class="val">40% - 70%</div>
+ <div class="lbl">Service Success Rate</div>
+ </div>
+ <div class="metric-card">
+ <div class="val">1% - 20%</div>
+ <div class="lbl">Product Success Rate</div>
+ </div>
+ </div>
+ 
+ <!-- Interactive Skill Gap Analyzer -->
+ <section id="analyzer" class="grid-2col">
+ <div>
+ <div class="panel" id="profilePanel">
+ <div class="panel-header">
+ <span class="panel-title">Student Profile Evaluation</span>
+ </div>
+ <form id="profileForm">
+ <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem;">
+ <div class="form-group">
+ <label>Candidate Name</label>
+ <input type="text" class="form-control" id="studentName" value="Alex Mercer" required>
+ </div>
+ <div class="form-group">
+ <label>Degree / Branch</label>
+ <select class="form-control" id="degree">
+ <option value="B.Tech CSE/IT">B.Tech CSE / IT</option>
+ <option value="B.Tech ECE/EEE">B.Tech ECE / EEE</option>
+ <option value="B.Tech Mechanical/Civil">B.Tech Mechanical / Civil / Other</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label>Academic Standing (CGPA 0.0-10.0)</label>
+ <input type="number" step="0.1" min="0" max="10" class="form-control" id="cgpa" value="7.5" required>
+ </div>
+ <div class="form-group">
+ <label>Primary Programming Language</label>
+ <select class="form-control" id="primaryLang">
+ <option value="Java">Java</option>
+ <option value="Python">Python</option>
+ <option value="C++">C++</option>
+ <option value="C">C</option>
+ <option value="JavaScript">JavaScript / SQL</option>
+ </select>
+ </div>
+ </div>
+ <div class="form-group">
+ <label>Target Placement Tier</label>
+ <select class="form-control" id="targetTrack">
+ <option value="Tier 1A Product">Tier 1A Product Giants (FAANG / ₹45-65 LPA)</option>
+ <option value="Tier 1B Product">Tier 1B Premium Product (₹24-42 LPA)</option>
+ <option value="Tier 1A Service">Tier 1A Service Majors (TCS, Infosys / ₹6-9 LPA)</option>
+ <option value="Consulting">Tier 1B Consulting (Deloitte, PwC / ₹8-12 LPA)</option>
+ </select>
+ </div>
+<div style="display:flex; gap:0.4rem;">
+  <button type="button" class="btn" id="analyzeBtn">Run Placement Readiness Analysis</button>
+  <button type="button" class="btn" id="quizBtn" style="white-space:nowrap;">Mock Placement Quiz</button>
+  </div>
+  </form>
+ </div>
+ </div>
+ 
+ <div>
+ <div class="panel">
+ <div class="panel-header">
+ <span class="panel-title">Evaluation Report</span>
+ <div style="display:flex; gap:0.5rem;">
+ <button type="button" class="btn btn-sm" id="downloadReportBtn">Download Text</button>
+ <button type="button" class="btn btn-sm" id="savePdfBtn">Save as PDF</button>
+ </div>
+ </div>
+ <div id="resultsArea">
+ <div class="report-card" id="reportCard">
+ <div class="report-card-header">
+ <div class="candidate-meta">
+ <h3 id="cardStudentName">Alex Mercer</h3>
+ <span>Readiness Assessment</span>
+ </div>
+ <div class="match-badge" id="matchBadge">
+ <div class="val" id="cardScore">78%</div>
+ <div class="lbl">Match Score</div>
+ <div class="score-progress">
+ <div class="score-progress-bar" id="scoreBar" style="width: 78%"></div>
+ </div>
+ </div>
+ </div>
+ <div class="report-data-grid">
+ <div class="data-item">
+ <span class="lbl">Target Track</span>
+ <span class="val" id="cardTrack">Tier 1A Product Giants</span>
+ </div>
+ <div class="data-item">
+ <span class="lbl">Readiness Tier</span>
+ <span class="val" id="cardTier">Tier-2 Ready</span>
+ </div>
+ </div>
+ <div class="data-item" style="margin-bottom: 0.35rem;">
+ <span class="lbl">Target Salary Range</span>
+ <span class="val" id="cardSalary">₹45 - ₹65 LPA</span>
+ </div>
+ <div class="data-item" style="margin-bottom: 0.35rem;">
+ <span class="lbl">Verified Core Skills</span>
+ <div class="skills-tag-container" id="cardSkills">
+ <span class="skill-tag">Java</span>
+ <span class="skill-tag">DSA Basics</span>
+ <span class="skill-tag">OOP</span>
+ <span class="skill-tag">SQL</span>
+ </div>
+ </div>
+ <div class="data-item" style="margin-bottom: 0.35rem;">
+ <span class="lbl">Recommended Skill Gaps to Close</span>
+ <div class="skills-tag-container" id="cardGaps">
+ <span class="skill-tag missing">System Design</span>
+ <span class="skill-tag missing">Advanced Algorithms</span>
+ <span class="skill-tag missing">Dynamic Programming</span>
+ </div>
+ </div>
+ <div class="data-item" style="margin-bottom: 0.35rem;">
+ <span class="lbl">Best Matched Companies (From 500+ Database)</span>
+ <div class="match-list" id="matchedCompanies">
+ <span class="skill-tag">Run the analysis to see matches</span>
+ </div>
+ </div>
+ <div class="data-item">
+ <span class="lbl">Progress History</span>
+ <div class="trend-bars" id="trendBars"></div>
+<div class="history-chips" id="scoreHistory"><span class="history-chip">No attempts yet</span></div>
+  </div>
+  </div>
+  <div style="display:flex; gap:0.4rem; margin-top:0.5rem; flex-wrap:wrap;">
+  <button type="button" class="btn btn-sm" id="planBtn">30-Day Study Plan</button>
+  <button type="button" class="btn btn-sm" id="questionsBtn">Sample Interview Questions</button>
+  </div>
+  </div>
+  </div>
+ </div>
+ </section>
+ 
+ <!-- Feedback Section -->
+ <section id="feedback" class="table-section">
+ <div class="panel-header" style="margin-bottom: 0.6rem;">
+ <span class="panel-title">Feedback & Suggestions</span>
+ <span id="feedbackCount" style="font-size: 0.8rem; font-weight: 600; color: #5B6B76;">No feedback yet</span>
+ </div>
+ <div class="fb-grid">
+ <div>
+ <div class="form-group">
+ <label>Your Name (optional)</label>
+ <input type="text" class="form-control" id="fbName" placeholder="Anonymous">
+ </div>
+ <div class="form-group">
+ <label>Your Rating</label>
+ <div class="fb-stars" id="fbStars"></div>
+ </div>
+ <div class="form-group">
+ <label>Category</label>
+ <select class="form-control" id="fbCategory">
+ <option value="General">General</option>
+ <option value="Feature Request">Feature Request</option>
+ <option value="Bug Report">Bug Report</option>
+ <option value="Improvement Suggestion">Improvement Suggestion</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label>Your Feedback</label>
+ <textarea class="form-control" id="fbText" placeholder="Share your suggestions, ideas, or issues with ACE..."></textarea>
+ </div>
+ <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+ <button type="button" class="btn btn-sm" id="fbSubmitBtn">Submit Feedback</button>
+ <button type="button" class="btn btn-sm btn-ghost" id="fbClearBtn">Clear All</button>
+ </div>
+ </div>
+ <div id="fbList">
+ <div class="fb-empty">No feedback yet — be the first to share your suggestions.</div>
+ </div>
+ </div>
+ </section>
+ 
+ <!-- Placement Database Section -->
+ <section id="catalog" class="table-section">
+ <div class="panel-header" style="margin-bottom: 0.6rem;">
+ <span class="panel-title">Interactive Placement & Difficulty Database</span>
+ <span id="recordCount" style="font-size: 0.8rem; font-weight: 600; color: #5B6B76;">Showing records</span>
+ </div>
+ 
+ <div class="filter-bar">
+ <input type="text" id="searchInput" class="form-control" placeholder="Search company name, skills, CTC, or rounds...">
+ <select id="typeFilter" class="form-control">
+ <option value="ALL">All Company Categories</option>
+ <option value="Product">Product-Based Companies</option>
+ <option value="Service">Service-Based Companies</option>
+ </select>
+ <select id="difficultyFilter" class="form-control">
+ <option value="ALL">All Difficulty Levels</option>
+ <option value="EASY">Easy (&lt; 30%)</option>
+ <option value="MEDIUM">Medium (30% - 60%)</option>
+ <option value="HARD">Hard / Very Hard (&gt; 60%)</option>
+ </select>
+ <button type="button" class="btn btn-sm" id="clearFiltersBtn">Clear Filters</button>
+ </div>
+ 
+ <div class="table-container" id="tableWrapper">
+ <table>
+<thead>
+<tr>
+<th class="sel-col"></th>
+<th>Rank</th>
+<th>Company Name</th>
+<th>Category</th>
+<th>Fresher CTC Band</th>
+<th>Difficulty %</th>
+<th>Rounds & Selection Dynamics</th>
+<th>Key Skills Required</th>
+</tr>
+</thead>
+ <tbody id="companyTableBody">
+ <!-- Dynamically Populated -->
+ </tbody>
+ </table>
+ </div>
+ 
+ <div class="pagination-controls">
+ <span id="pageInfo">Page 1</span>
+ <div class="pagination-btn-group">
+ <button class="btn btn-sm" id="prevBtn">Previous</button>
+ <button class="btn btn-sm" id="nextBtn">Next</button>
+ </div>
+ </div>
+
+ <div class="compare-bar">
+ <span class="compare-count" id="compareCount">0 companies selected</span>
+ <div class="pagination-btn-group">
+ <button class="btn btn-sm" id="compareBtn" disabled>Compare Selected</button>
+ <button class="btn btn-sm btn-ghost" id="clearCompareBtn" disabled>Clear Selection</button>
+ </div>
+ </div>
+ </section>
+ 
+ <!-- Team Credits -->
+ <section id="team" class="panel">
+ <div class="panel-header">
+ <span class="panel-title">Engineering Team — Team ACE</span>
+ </div>
+ <div class="team-grid">
+ <div class="data-item team-card"><span class="lbl">Founder</span><span class="val">Aziz</span></div>
+ <div class="data-item team-card"><span class="lbl">Co-Founder</span><span class="val">Umesh Chandra</span></div>
+ <div class="data-item team-card"><span class="lbl">Data Analyst</span><span class="val">Nikhila</span></div>
+ <div class="data-item team-card"><span class="lbl">Research Specialist</span><span class="val">Dandu Mythri</span></div>
+ <div class="data-item team-card"><span class="lbl">Frontend Developer</span><span class="val">Yenumula Vaaman</span></div>
+ <div class="data-item team-card"><span class="lbl">Backend Developer</span><span class="val">Babasri</span></div>
+ </div>
+ </section>
+</div>
+
+<div class="compare-modal" id="compareModal">
+  <div class="compare-modal-box">
+  <span class="compare-close" id="compareModalClose">CLOSE ✕</span>
+  <h3>Company Comparison</h3>
+  <div id="compareContent"></div>
+  </div>
+  </div>
+
+<div class="compare-modal" id="featureModal">
+  <div class="compare-modal-box">
+  <span class="compare-close" id="featureModalClose">CLOSE ✕</span>
+  <h3 id="featureModalTitle">ACE Feature</h3>
+  <div id="featureModalBody"></div>
+  </div>
+  </div>
+
+ <div class="fb-toast" id="fbToast"></div>
+
+ <script>
+ const pdfCompaniesData = [
+ { rank: 1, name: "TCS", type: "Service", ctc: "₹7-9 LPA", difficulty: "15%", difficultyCat: "EASY", rounds: "2-3 Rounds (Written + Tech + HR)", focus: "Core Java, SQL, C++, Basic DSA, Aptitude" },
+ { rank: 2, name: "Infosys", type: "Service", ctc: "₹9-11 LPA", difficulty: "18%", difficultyCat: "EASY", rounds: "2-3 Rounds (Aptitude + Tech + HR)", focus: "Python, Java, Data Science, Basic DSA" },
+ { rank: 3, name: "Wipro", type: "Service", ctc: "₹6-8 LPA", difficulty: "12%", difficultyCat: "EASY", rounds: "2 Rounds (Written + Tech/HR)", focus: ".NET, Java, Testing, Aptitude" },
+ { rank: 4, name: "HCL Technologies", type: "Service", ctc: "₹6.5-8 LPA", difficulty: "20%", difficultyCat: "EASY", rounds: "2-3 Rounds (Tech + HR)", focus: "C++, Java, Cloud, SQL" },
+ { rank: 5, name: "Tech Mahindra", type: "Service", ctc: "₹6.5-8 LPA", difficulty: "22%", difficultyCat: "EASY", rounds: "2-3 Rounds (Tech + HR)", focus: "Python, IoT, AI, Basic Logic" },
+ { rank: 6, name: "Cognizant", type: "Service", ctc: "₹6.8-8 LPA", difficulty: "25%", difficultyCat: "EASY", rounds: "2-3 Rounds (GenC Tech + HR)", focus: "Java, Agile, Cloud, Communication" },
+ { rank: 7, name: "Capgemini", type: "Service", ctc: "₹6-7.5 LPA", difficulty: "28%", difficultyCat: "EASY", rounds: "3 Rounds (Pseudo-code + Tech + HR)", focus: ".NET, Java, SAP, Problem Solving" },
+ { rank: 8, name: "IBM India", type: "Service", ctc: "₹15-17 LPA", difficulty: "35%", difficultyCat: "MEDIUM", rounds: "3-4 Rounds (Coding + Cognitive + Tech)", focus: "Cloud, AI, Data Systems, OOP" },
+ { rank: 9, name: "Accenture", type: "Service", ctc: "₹6.5-8 LPA", difficulty: "28%", difficultyCat: "EASY", rounds: "3 Rounds (Cognitive + Tech + HR)", focus: "Consulting, Cloud, Communication" },
+ { rank: 10, name: "Deloitte Consulting", type: "Service", ctc: "₹10-12 LPA", difficulty: "32%", difficultyCat: "MEDIUM", rounds: "3-4 Rounds (Case Study + Tech + HR)", focus: "Consulting, SAP, Analytics, SQL" },
+ { rank: 1, name: "Google", type: "Product", ctc: "₹50-55 LPA", difficulty: "80%", difficultyCat: "HARD", rounds: "4-6 Rounds (OA + Tech + System Design)", focus: "Advanced DSA, System Design, OS, Dynamic Programming" },
+ { rank: 2, name: "Microsoft", type: "Product", ctc: "₹46-50 LPA", difficulty: "78%", difficultyCat: "HARD", rounds: "4-5 Rounds (OA + DSA + OOD)", focus: "DSA, System Architecture, Code Quality" },
+ { rank: 3, name: "Amazon", type: "Product", ctc: "₹45-50 LPA", difficulty: "75%", difficultyCat: "HARD", rounds: "4-5 Rounds (OA + Bar Raiser)", focus: "DSA, Leadership Principles, Scalability" }
+ ];
+ 
+ function generateComplete500Dataset() {
+ let list = [...pdfCompaniesData];
+ const servicePrefixes = ["Global Tech", "Consulting Services", "Digital Engineering", "Solutions Labs", "Enterprise Services"];
+ const productPrefixes = ["Software Systems", "Cloud Platforms", "AI Research", "Networks", "Data Engine"];
+ 
+ let currentServiceCount = list.filter(c => c.type === "Service").length;
+ for(let i = currentServiceCount + 1; i <= 250; i++) {
+ let baseComp = pdfCompaniesData[i % 10];
+ let prefix = servicePrefixes[i % servicePrefixes.length];
+ list.push({
+ rank: i + 30,
+ name: `${baseComp.name} ${prefix}`,
+ type: "Service",
+ ctc: i % 2 === 0 ? "₹8-10 LPA" : "₹6.5-8 LPA",
+ difficulty: `${Math.floor(20 + (i % 25))}%`,
+ difficultyCat: (20 + (i % 25)) < 30 ? "EASY" : "MEDIUM",
+ rounds: "2-3 Rounds (Tech + HR)",
+ focus: baseComp.focus
+ });
+ }
+ 
+ let currentProductCount = list.filter(c => c.type === "Product").length;
+ for(let i = currentProductCount + 1; i <= 250; i++) {
+ let baseComp = pdfCompaniesData[10 + (i % 3)];
+ let prefix = productPrefixes[i % productPrefixes.length];
+ let difficultyNum = Math.floor(35 + (i % 45));
+ list.push({
+ rank: i + 40,
+ name: `${baseComp.name} ${prefix}`,
+ type: "Product",
+ ctc: i % 3 === 0 ? "₹30-38 LPA" : "₹18-28 LPA",
+ difficulty: `${difficultyNum}%`,
+ difficultyCat: difficultyNum > 60 ? "HARD" : "MEDIUM",
+ rounds: "3-4 Rounds (Coding + System Design)",
+ focus: baseComp.focus
+ });
+ }
+ 
+ return list;
+ }
+ 
+const allCompanies = generateComplete500Dataset();
+ const companyIndex = new Map(allCompanies.map((c, i) => [c, i]));
+ let currentPage = 1;
+ const recordsPerPage = 10;
+ let filteredData = [...allCompanies];
+ let quizPts = null;
+ let lastAnalysed = { score: 0 };
+ let suppressAutoRecord = true;
+
+ function renderTable() {
+ const tbody = document.getElementById('companyTableBody');
+ const start = (currentPage - 1) * recordsPerPage;
+ const end = start + recordsPerPage;
+ const pageRecords = filteredData.slice(start, end);
+
+ if(pageRecords.length === 0) {
+ tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 2rem;">No matching companies found in database.</td></tr>`;
+ } else {
+ tbody.innerHTML = pageRecords.map((c) => {
+ const badgeClass = c.type === 'Product' ? 'badge-product' : 'badge-service';
+ return `
+ <tr>
+ <td class="sel-col"><input type="checkbox" class="cmp-chk" data-idx="${companyIndex.get(c)}"></td>
+ <td><strong>#${c.rank}</strong></td>
+ <td><strong>${c.name}</strong></td>
+ <td><span class="badge-type ${badgeClass}">${c.type}</span></td>
+ <td>${c.ctc}</td>
+ <td><strong>${c.difficulty}</strong></td>
+ <td><span style="font-size:0.8rem; font-weight:600;">${c.rounds}</span></td>
+ <td><span style="font-size:0.8rem; color: #5B6B76;">${c.focus}</span></td>
+ </tr>`;
+ }).join('');
+ }
+
+ if(typeof selectedForCompare !== 'undefined') {
+ document.querySelectorAll('.cmp-chk').forEach(c => {
+ c.checked = selectedForCompare.has(c.getAttribute('data-idx'));
+ });
+ }
+
+ const totalPages = Math.ceil(filteredData.length / recordsPerPage) || 1;
+ document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+ document.getElementById('recordCount').textContent = `Showing ${filteredData.length} total records` + (filteredData.length ? ` — ${(currentPage-1)*recordsPerPage+1}-${Math.min(currentPage*recordsPerPage, filteredData.length)} on this page` : '');
+
+ document.getElementById('prevBtn').disabled = currentPage === 1;
+ document.getElementById('nextBtn').disabled = currentPage === totalPages;
+ }
+
+ function filterData() {
+ const query = document.getElementById('searchInput').value.toLowerCase();
+ const typeVal = document.getElementById('typeFilter').value;
+ const difficultyVal = document.getElementById('difficultyFilter').value;
+
+ filteredData = allCompanies.filter(c => {
+ const matchesSearch = !query || c.name.toLowerCase().includes(query) || 
+ c.focus.toLowerCase().includes(query) || 
+ c.ctc.toLowerCase().includes(query) ||
+ String(c.difficulty).toLowerCase().includes(query);
+ const matchesType = typeVal === 'ALL' || c.type === typeVal;
+ const matchesDifficulty = difficultyVal === 'ALL' || c.difficultyCat === difficultyVal;
+ return matchesSearch && matchesType && matchesDifficulty;
+ });
+
+ currentPage = 1;
+ renderTable();
+ }
+ 
+ function animateScore(targetElement, startVal, endVal, duration) {
+ let startTime = null;
+ const progressBar = document.getElementById('scoreBar');
+ const matchBadge = document.getElementById('matchBadge');
+ 
+ function step(timestamp) {
+ if (!startTime) startTime = timestamp;
+ const progress = Math.min((timestamp - startTime) / duration, 1);
+ const easeProgress = 1 - Math.pow(1 - progress, 3);
+ const currentVal = Math.floor(easeProgress * (endVal - startVal) + startVal);
+ targetElement.textContent = currentVal + '%';
+ if(progressBar) {
+ progressBar.style.width = currentVal + '%';
+ }
+ 
+ // Update badge color based on SKILL BRIDGE status matrix
+ if(matchBadge) {
+ const badgeText = matchBadge.querySelectorAll('.val, .lbl');
+if(currentVal >= 70) {
+  matchBadge.style.background = '#1E3A5F'; // High Eligibility Navy
+  matchBadge.style.boxShadow = '0 2px 6px rgba(30, 58, 95, 0.35)';
+  badgeText.forEach(el => el.style.color = '#FFFFFF');
+  } else if(currentVal >= 40) {
+  matchBadge.style.background = '#F2B441'; // Skill Gap Amber
+  matchBadge.style.boxShadow = '0 2px 6px rgba(242, 180, 65, 0.4)';
+  badgeText.forEach(el => el.style.color = '#22303F');
+  } else {
+  matchBadge.style.background = '#D64545'; // High Skill Gap Coral Red
+  matchBadge.style.boxShadow = '0 2px 6px rgba(214, 69, 69, 0.3)';
+  badgeText.forEach(el => el.style.color = '#FFFFFF');
+}
+  }
+
+  if (progress < 1) {
+  requestAnimationFrame(step);
+  }
+  }
+  requestAnimationFrame(step);
+  }
+ 
+ document.getElementById('analyzeBtn').addEventListener('click', function() {
+ const name = document.getElementById('studentName').value || 'Candidate';
+ const cgpa = parseFloat(document.getElementById('cgpa').value) || 0;
+ const track = document.getElementById('targetTrack').value;
+ const lang = document.getElementById('primaryLang').value;
+ 
+ document.getElementById('cardStudentName').textContent = name;
+ document.getElementById('cardTrack').textContent = track;
+ 
+let score = 50;
+ let tier = "Service Level Ready";
+ let salaryBand = "₹6 - ₹9 LPA";
+ let verifiedSkills = [lang, "Aptitude"];
+ let missingGaps = [];
+
+ const ACADEMIC_W = 45;
+ const LANG_W = 30;
+ const TRACK_W = 25;
+
+ function bandPct(cgpaVal, table) {
+ for (var i = 0; i < table.length; i++) {
+ if (cgpaVal >= table[i][0]) return table[i][1];
+ }
+ return table[table.length - 1][1] || 4;
+ }
+
+ function langPctFor(lang, coreLangs, decentLangs) {
+ if (coreLangs.indexOf(lang) !== -1) return 85;
+ if (decentLangs.indexOf(lang) !== -1) return 65;
+ return 35;
+ }
+
+ function trackPctFor(cgpaVal, gates) {
+ return bandPct(cgpaVal, gates);
+ }
+
+ if(track === 'Tier 1A Product') {
+ salaryBand = "₹45 - ₹65 LPA";
+ const academic = bandPct(cgpa, [[9.5,95],[9.0,75],[8.5,55],[8.0,40],[7.5,28],[7.0,18],[6.5,12],[6.0,8]]);
+ const langW = langPctFor(lang, ['Java', 'C++', 'Python'], ['C']) / 100 * LANG_W;
+ const trackW = trackPctFor(cgpa, [[9.0,95],[8.5,75],[8.0,50],[7.5,30],[7.0,18],[6.5,10],[0,8]]) / 100 * TRACK_W;
+ score = Math.max(4, Math.min(100, Math.round(academic / 100 * ACADEMIC_W + langW + trackW)));
+ tier = score >= 78 ? "FAANG Level Competitive" : score >= 60 ? "Strong Contender" : score >= 45 ? "Borderline - Upskilling Needed" : "Hard Upskilling Needed";
+ verifiedSkills.push("DSA Basics", "OOP Concepts");
+ missingGaps.push("System Design", "Advanced Dynamic Programming", "Graph Theory");
+ } else if(track === 'Tier 1B Product') {
+ salaryBand = "₹24 - ₹42 LPA";
+ const academic = bandPct(cgpa, [[9.0,92],[8.5,80],[8.0,70],[7.5,58],[7.0,45],[6.5,33],[6.0,22],[5.5,12]]);
+ const langW = langPctFor(lang, ['Java', 'Python'], ['C++', 'JavaScript / SQL']) / 100 * LANG_W;
+ const trackW = trackPctFor(cgpa, [[8.0,90],[7.5,75],[7.0,55],[6.5,35],[6.0,20],[0,10]]) / 100 * TRACK_W;
+ score = Math.max(4, Math.min(100, Math.round(academic / 100 * ACADEMIC_W + langW + trackW)));
+ tier = score >= 75 ? "Elite Tier-1B Fit" : score >= 58 ? "Tier-1B Strong Fit" : score >= 45 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
+ verifiedSkills.push("DBMS", "OOP", "SQL");
+ missingGaps.push("Machine Coding", "Low Level Design", "REST APIs");
+ } else if(track === 'Tier 1A Service') {
+ salaryBand = "₹6 - ₹9 LPA";
+ const academic = bandPct(cgpa, [[8.5,90],[8.0,80],[7.5,70],[7.0,60],[6.5,48],[6.0,35],[5.5,22],[0,10]]);
+ const langW = langPctFor(lang, ['Java', 'Python', 'C++'], ['C', 'JavaScript / SQL']) / 100 * LANG_W;
+ const trackW = trackPctFor(cgpa, [[7.5,90],[7.0,75],[6.5,55],[6.0,35],[0,15]]) / 100 * TRACK_W;
+ score = Math.max(4, Math.min(100, Math.round(academic / 100 * ACADEMIC_W + langW + trackW)));
+ tier = score >= 70 ? "High Probability Hire" : score >= 52 ? "Competitive Fit" : score >= 40 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
+ verifiedSkills.push("Basic DSA", "SQL", "Communication");
+ missingGaps.push("Cloud Certification", "Git Workflows");
+ } else {
+ salaryBand = "₹8 - ₹12 LPA";
+ const academic = bandPct(cgpa, [[8.5,90],[8.0,80],[7.5,70],[7.0,60],[6.5,48],[6.0,35],[5.5,22],[0,10]]);
+ const langW = langPctFor(lang, ['Python', 'JavaScript / SQL'], ['Java', 'C++']) / 100 * LANG_W;
+ const trackW = trackPctFor(cgpa, [[7.5,90],[7.0,75],[6.5,55],[6.0,35],[0,15]]) / 100 * TRACK_W;
+ score = Math.max(4, Math.min(100, Math.round(academic / 100 * ACADEMIC_W + langW + trackW)));
+ tier = score >= 72 ? "Consulting Track Ideal" : score >= 55 ? "Good Fit" : score >= 42 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
+ verifiedSkills.push("SQL", "Analytics Basics", "Problem Solving");
+missingGaps.push("Case Study Strategy", "SAP/Cloud Basics");
+ }
+
+  /* Quiz readiness factor — applied to base score when the quiz is taken */
+  if (quizPts !== null) {
+  score = Math.max(4, Math.min(100, Math.round(score * (0.7 + (quizPts / 15) * 0.4))));
+  if(track === 'Tier 1A Product') {
+  tier = score >= 78 ? "FAANG Level Competitive" : score >= 60 ? "Strong Contender" : score >= 45 ? "Borderline - Upskilling Needed" : "Hard Upskilling Needed";
+  } else if(track === 'Tier 1B Product') {
+  tier = score >= 75 ? "Elite Tier-1B Fit" : score >= 58 ? "Tier-1B Strong Fit" : score >= 45 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
+  } else if(track === 'Tier 1A Service') {
+  tier = score >= 70 ? "High Probability Hire" : score >= 52 ? "Competitive Fit" : score >= 40 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
+  } else {
+  tier = score >= 72 ? "Consulting Track Ideal" : score >= 55 ? "Good Fit" : score >= 42 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
+  }
+  }
+  lastAnalysed.score = score;
+  lastAnalysed.tier = tier;
+
+  const scoreElement = document.getElementById('cardScore');
+ const currentScore = parseInt(scoreElement.textContent) || 0;
+ animateScore(scoreElement, currentScore, score, 500);
+ 
+ document.getElementById('cardTier').textContent = tier;
+ document.getElementById('cardSalary').textContent = salaryBand;
+ 
+ const skillsContainer = document.getElementById('cardSkills');
+ skillsContainer.innerHTML = '';
+ verifiedSkills.forEach(s => {
+ skillsContainer.innerHTML += `<span class="skill-tag">${s}</span>`;
+ });
+ 
+ const gapsContainer = document.getElementById('cardGaps');
+ gapsContainer.innerHTML = '';
+ missingGaps.forEach(g => {
+ gapsContainer.innerHTML += `<span class="skill-tag missing">${g}</span>`;
+ });
+ 
+ const reportCard = document.getElementById('reportCard');
+ reportCard.classList.remove('updated');
+ void reportCard.offsetWidth;
+ reportCard.classList.add('updated');
+
+renderBestMatches(score, track);
+  if (suppressAutoRecord) {
+  suppressAutoRecord = false;
+  } else {
+  recordHistory(name, score);
+  }
+  });
+ 
+ document.getElementById('prevBtn').addEventListener('click', () => {
+ if(currentPage > 1) { currentPage--; renderTable(); }
+ });
+ 
+ document.getElementById('nextBtn').addEventListener('click', () => {
+ const totalPages = Math.ceil(filteredData.length / recordsPerPage);
+ if(currentPage < totalPages) { currentPage++; renderTable(); }
+ });
+ 
+document.getElementById('searchInput').addEventListener('input', filterData);
+ document.getElementById('typeFilter').addEventListener('change', filterData);
+ document.getElementById('difficultyFilter').addEventListener('change', filterData);
+ document.getElementById('clearFiltersBtn').addEventListener('click', () => {
+ document.getElementById('searchInput').value = '';
+ document.getElementById('typeFilter').value = 'ALL';
+ document.getElementById('difficultyFilter').value = 'ALL';
+ filterData();
+ });
+
+ /* ============ THEME TOGGLE ============ */
+ const themeToggle = document.getElementById('themeToggle');
+ function safeGet(key) { try { return localStorage.getItem(key); } catch(e) { return null; } }
+ function safeSet(key, val) { try { localStorage.setItem(key, val); return true; } catch(e) { return false; } }
+ function applyTheme(theme) {
+ document.documentElement.setAttribute('data-theme', theme);
+ themeToggle.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+ }
+ applyTheme(safeGet('ace_theme') || 'light');
+ themeToggle.addEventListener('click', () => {
+ const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+ applyTheme(next);
+ safeSet('ace_theme', next);
+ });
+
+ /* ============ PROGRESS HISTORY ============ */
+ function historyKey(name) {
+ return 'ace_history_' + (name || 'candidate').trim().toLowerCase().replace(/[^a-z0-9]+/g, '_');
+ }
+
+ function loadHistory(name) {
+ try { return JSON.parse(localStorage.getItem(historyKey(name)) || '[]'); }
+ catch(e) { return []; }
+ }
+
+ function recordHistory(name, score) {
+ const key = historyKey(name);
+ const list = loadHistory(name);
+ list.push({ score: score, date: new Date().toLocaleString() });
+ if(list.length > 8) list.shift();
+ safeSet(key, JSON.stringify(list));
+ renderHistory(name);
+ }
+
+ function renderHistory(name) {
+ const list = loadHistory(name);
+ const bars = document.getElementById('trendBars');
+ const chips = document.getElementById('scoreHistory');
+ if(list.length === 0) {
+ bars.innerHTML = '<span class="trend-empty">No attempts yet — run the analysis to start tracking.</span>';
+ chips.innerHTML = '<span class="history-chip">No attempts yet</span>';
+ return;
+ }
+ bars.innerHTML = '';
+ list.forEach(h => {
+ const bar = document.createElement('div');
+ bar.className = 'trend-bar';
+ bar.style.height = Math.max(6, h.score) + '%';
+ bar.title = h.score + '% — ' + h.date;
+ bars.appendChild(bar);
+ });
+ chips.innerHTML = list.slice().reverse().map(h => `<span class="history-chip">${h.score}%<span>${h.date}</span></span>`).join('');
+ }
+ renderHistory(document.getElementById('studentName').value);
+
+ /* auto-populate matched companies + history on first load so these sections are never empty */
+ document.getElementById('analyzeBtn').click();
+
+ /* ============ BEST MATCHED COMPANIES ============ */
+ function parseDiff(diffStr) {
+ return parseInt(String(diffStr).replace('%', ''), 10) || 0;
+ }
+
+ function renderBestMatches(score, track) {
+ const targetType = track && track.indexOf('Product') !== -1 ? 'Product' : 'Service';
+ const candidates = allCompanies.filter(c => c.type === targetType);
+ const sorted = [...candidates].sort((a, b) => {
+ const da = Math.abs(parseDiff(a.difficulty) - score);
+ const db = Math.abs(parseDiff(b.difficulty) - score);
+ return da - db;
+ });
+ const top = sorted.slice(0, 3);
+ const box = document.getElementById('matchedCompanies');
+ box.innerHTML = top.map(c => `
+ <div class="match-item">
+ <div class="nm">${c.name}</div>
+ <div class="sub">${c.ctc} &middot; ${c.difficulty} &middot; ${c.type}</div>
+ </div>`).join('');
+ }
+
+ /* ============ DOWNLOAD REPORT ============ */
+ document.getElementById('downloadReportBtn').addEventListener('click', function() {
+ const name = document.getElementById('cardStudentName').textContent;
+ const score = document.getElementById('cardScore').textContent;
+ const tier = document.getElementById('cardTier').textContent;
+ const track = document.getElementById('cardTrack').textContent;
+ const salary = document.getElementById('cardSalary').textContent;
+ const skills = Array.from(document.querySelectorAll('#cardSkills .skill-tag')).map(s => s.textContent.trim());
+ const gaps = Array.from(document.querySelectorAll('#cardGaps .skill-tag')).map(s => s.textContent.trim());
+ const matches = Array.from(document.querySelectorAll('#matchedCompanies .match-item')).map(m => m.querySelector('.nm').textContent);
+
+ const lines = [
+ 'ACE — Adaptive & Continuous Education',
+ 'Placement Readiness Report',
+ '=====================================',
+ 'Candidate: ' + name,
+ 'Match Score: ' + score,
+ 'Readiness Tier: ' + tier,
+ 'Target Track: ' + track,
+ 'Target Salary Range: ' + salary,
+ '',
+ 'Verified Core Skills:',
+ ...skills.map(s => ' - ' + s),
+ '',
+ 'Skill Gaps to Close:',
+ ...gaps.map(g => ' - ' + g),
+ '',
+ 'Best Matched Companies:',
+ ...matches.map(m => ' - ' + m),
+ '',
+ 'Generated: ' + new Date().toLocaleString()
+ ];
+ const blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
+ const a = document.createElement('a');
+ a.href = URL.createObjectURL(blob);
+ a.download = 'ACE_Report_' + (name || 'candidate').replace(/\s+/g, '_') + '.txt';
+ document.body.appendChild(a);
+ a.click();
+ document.body.removeChild(a);
+ URL.revokeObjectURL(a.href);
+ });
+
+ /* ============ SAVE AS PDF ============ */
+ document.getElementById('savePdfBtn').addEventListener('click', function() {
+ window.print();
+ });
+
+ /* ============ COMPANY COMPARISON ============ */
+ const selectedForCompare = new Set();
+ const compareCountEl = document.getElementById('compareCount');
+ const compareBtn = document.getElementById('compareBtn');
+ const clearCompareBtn = document.getElementById('clearCompareBtn');
+
+ function updateCompareUi() {
+ const n = selectedForCompare.size;
+ compareCountEl.textContent = n === 0 ? '0 companies selected' : n + ' of 3 companies selected';
+ compareBtn.disabled = n < 2;
+ clearCompareBtn.disabled = n === 0;
+ }
+
+ document.getElementById('companyTableBody').addEventListener('change', (e) => {
+ if(e.target.classList.contains('cmp-chk')) {
+ const idx = e.target.getAttribute('data-idx');
+ if(e.target.checked) {
+ if(selectedForCompare.size >= 3) {
+ e.target.checked = false;
+ return;
+ }
+ selectedForCompare.add(idx);
+ } else {
+ selectedForCompare.delete(idx);
+ }
+ updateCompareUi();
+ }
+ });
+
+ clearCompareBtn.addEventListener('click', () => {
+ selectedForCompare.clear();
+ document.querySelectorAll('.cmp-chk').forEach(c => c.checked = false);
+ updateCompareUi();
+ });
+
+ compareBtn.addEventListener('click', () => {
+ if(selectedForCompare.size < 2) return;
+ const companies = [...selectedForCompare].map(idx => allCompanies[parseInt(idx, 10)]);
+ const rows = [
+ ['Company', ...companies.map(c => c.name)],
+ ['Category', ...companies.map(c => c.type)],
+ ['Fresher CTC Band', ...companies.map(c => c.ctc)],
+ ['Difficulty', ...companies.map(c => c.difficulty)],
+ ['Rounds & Dynamics', ...companies.map(c => c.rounds)],
+ ['Key Skills', ...companies.map(c => c.focus)]
+ ];
+ const tableHtml = rows.map(r => `<tr><th>${r[0]}</th>${r.slice(1).map(v => `<td>${v}</td>`).join('')}</tr>`).join('');
+ document.getElementById('compareContent').innerHTML = '<table class="compare-table"><tbody>' + tableHtml + '</tbody></table>';
+ document.getElementById('compareModal').classList.add('open');
+ });
+
+ document.getElementById('compareModalClose').addEventListener('click', () => {
+ document.getElementById('compareModal').classList.remove('open');
+ });
+
+document.getElementById('compareModal').addEventListener('click', (e) => {
+  if(e.target === document.getElementById('compareModal')) {
+  document.getElementById('compareModal').classList.remove('open');
+  }
+  });
+
+  /* ============ FEATURE MODAL (Quiz / Study Plan / Questions) ============ */
+  function showFeatureModal(title, html) {
+  document.getElementById('featureModalTitle').textContent = title;
+  document.getElementById('featureModalBody').innerHTML = html;
+  document.getElementById('featureModal').classList.add('open');
+  }
+
+  document.getElementById('featureModalClose').addEventListener('click', () => {
+  document.getElementById('featureModal').classList.remove('open');
+  });
+
+  document.getElementById('featureModal').addEventListener('click', (e) => {
+  if(e.target === document.getElementById('featureModal')) {
+  document.getElementById('featureModal').classList.remove('open');
+  }
+  });
+
+  /* ============ MOCK PLACEMENT QUiz ============ */
+  document.getElementById('quizBtn').addEventListener('click', openQuiz);
+
+  function openQuiz() {
+  const quizData = [
+  { q: 'How many coding problems have you solved on LeetCode / GfG?', opts: ['Fewer than 25', '25 - 75', '75 - 150', '150+'], pts: [0, 1, 2, 3] },
+  { q: 'How many real-world projects have you completed?', opts: ['None yet', '1', '2 - 3', '4+'], pts: [0, 1, 2, 3] },
+  { q: 'Mock interviews or coding contest experience?', opts: ['None', '1 - 2 mocks', '3 - 5 mocks / contests', '6+ / placement-proven'], pts: [0, 1, 2, 3] },
+  { q: 'Internships or certifications related to your target track?', opts: ['None', '1 internship or cert', '2+ interns or certs', 'Strong portfolio'], pts: [0, 1, 2, 3] },
+  { q: 'How many hours per week can you commit to preparation?', opts: ['Under 5', '5 - 10', '10 - 20', '20+'], pts: [0, 1, 2, 3] }
+  ];
+  const html = quizData.map((item, i) => `
+  <div class="quiz-q">
+  <div class="quiz-question">Q${i + 1}. ${item.q}</div>
+  ${item.opts.map((opt, j) => `<label class="quiz-opt"><input type="radio" name="quizq${i}" value="${item.pts[j]}"> ${opt}</label>`).join('')}
+  </div>`).join('');
+  const status = quizPts === null ? 'Quiz not taken yet — your answers will adjust the Match Score.' : 'Last quiz result: ' + quizPts + '/15 (already applied).';
+  showFeatureModal('Mock Placement Readiness Quiz',
+  html + '<div class="quiz-note">' + status + '</div>' +
+  '<button type="button" class="btn btn-sm" id="quizEvalBtn" style="width:auto;">Evaluate & Apply to Match Score</button>');
+  document.getElementById('quizEvalBtn').addEventListener('click', evaluateQuiz);
+  }
+
+  function evaluateQuiz() {
+  let pts = 0;
+  for (let i = 0; i < 5; i++) {
+  const sel = document.querySelector('input[name="quizq' + i + '"]:checked');
+  if (!sel) { alert('Please answer all 5 questions to evaluate.'); return; }
+  pts += parseInt(sel.value, 10);
+  }
+  quizPts = pts;
+  const factor = 0.7 + (pts / 15) * 0.4;
+  document.getElementById('featureModal').classList.remove('open');
+  document.getElementById('analyzeBtn').click();
+  const updated = lastAnalysed.score;
+  showFeatureModal('Mock Placement Readiness Quiz — Result',
+  '<div class="quiz-result">' +
+  '<div class="quiz-question">Quiz Score: <b>' + pts + '/15</b></div>' +
+  '<div class="quiz-question">Readiness factor applied: <b>' + factor.toFixed(2) + 'x</b> (' + (pts >= 9 ? 'boosts your score' : pts >= 5 ? 'small adjustment' : 'pulls your score down') + ')</div>' +
+  '<div class="quiz-question">Updated Match Score: <b>' + updated + '%</b></div>' +
+  '<div class="quiz-note">Run the analysis again anytime to refresh the report and history.</div>' +
+  '</div>');
+  }
+
+  /* ============ 30-DAY STUDY PLAN ============ */
+  document.getElementById('planBtn').addEventListener('click', openStudyPlan);
+
+  function openStudyPlan() {
+  const track = document.getElementById('cardTrack').textContent;
+  const score = lastAnalysed.score;
+  const gaps = Array.from(document.querySelectorAll('#cardGaps .skill-tag')).map(s => s.textContent.trim());
+  const lang = document.getElementById('primaryLang').value || 'C/C++';
+  const gapMods = {
+  'System Design': 'System Design basics (HLD + LLD) — caching, load balancing, database choice; solve 2 design problems',
+  'Advanced Dynamic Programming': 'DP patterns — knapsack, LIS, grid DP, DP on strings (2 problems/day)',
+  'Graph Theory': 'Graphs — BFS/DFS, shortest paths, union-find + practice set',
+  'Machine Coding': 'Machine coding — OOP design, SOLID, clean code; build 2 mini-apps',
+  'Low Level Design': 'LLD — UML, SOLID; design parking lot / library system',
+  'REST APIs': 'REST APIs — build one CRUD service and test with Postman',
+  'Cloud Certification': 'Cloud fundamentals — AWS/Azure/GCP mini labs + practice exam',
+  'Git Workflows': 'Git — branching, pull requests, CI basics; contribute to a repo',
+  'Case Study Strategy': 'Case frameworks — market sizing, profitability; solve 1 case/day',
+  'SAP/Cloud Basics': 'SAP modules overview + cloud basics with guided demos'
+  };
+  const mods = gaps.length ? gaps.map(g => gapMods[g] || ('Deep-dive into ' + g + ' + practice problems')).slice(0, 3) : ['DSA fundamentals refresher with daily practice', 'Aptitude + verbal reasoning drills', 'Build 1 portfolio project for the target track'];
+  const phases = [
+  { name: 'Week 1 — Foundations (Days 1-7)', tasks: [
+  'Refresh ' + lang + ' core concepts, OOP and syntax with daily drills',
+  'Solve 2-3 easy DSA problems every day',
+  'SQL basics — complete 20 queries (joins, group by, subqueries)',
+  'Aptitude practice — 25 questions/day (quant + logical)'
+  ]},
+  { name: 'Week 2 — Core DSA & Gaps (Days 8-14)', tasks: [
+  'Arrays, strings, linked lists, stacks & queues — 3 problems/day',
+  mods[0],
+  'Recursion + backtracking practice sets',
+  'Sunday self-test: 60-minute timed mock on any platform'
+  ]},
+  { name: 'Week 3 — Track Deep-Dive (Days 15-21)', tasks: [
+  mods[1],
+  mods[2],
+  'Build 1 mini project matching ' + track,
+  'Attend 2 mock interviews with peers'
+  ]},
+  { name: 'Week 4 — Application & Mocks (Days 22-30)', tasks: [
+  'Polish resume, LinkedIn and GitHub profiles',
+  score < 45 ? 'Re-run analysis weekly — target the gaps shown in this report' : 'Book 3 final mock interviews with feedback',
+  'Apply to your best-matched companies with custom cover notes',
+  'Day 30: Re-take the Placement Quiz + full readiness analysis'
+  ]}
+  ];
+  const html = phases.map(p => `
+  <div class="plan-phase">
+  <div class="plan-phase-title">${p.name}</div>
+  ${p.tasks.map(t => `<div class="plan-task">&#9679; ${t}</div>`).join('')}
+  </div>`).join('');
+  showFeatureModal('30-Day Accelerated Study Plan', html);
+  }
+
+  /* ============ SAMPLE INTERVIEW QUESTIONS ============ */
+  document.getElementById('questionsBtn').addEventListener('click', openInterviewQuestions);
+
+  function buildQuestionRounds(type, focus, lang) {
+  const l = lang || 'your primary language';
+  if (type === 'Product') {
+  return [
+  ['Round 1 — Online Assessment', [
+  l + ' coding: 2-3 medium problems (arrays, strings, hash maps)',
+  'MCQs on DSA, DBMS and OS fundamentals',
+  'Debug / code-output questions'
+  ]],
+  ['Round 2 — Technical Interview', [
+  'Design and implement a data structure (LRU Cache, Min-Stack)',
+  'DSA problems: sliding window, binary search, BFS/DFS',
+  'OOP, DBMS and networking concepts quiz'
+  ]],
+  ['Round 3 — System Design / Deep Dive', [
+  'High-level design: URL shortener, news feed or cab booking',
+  'Scalability trade-offs, caching, load balancing, DB choice',
+  'Deep dive into one project from your resume'
+  ]],
+  ['Round 4 — Hiring Manager / Bar Raiser', [
+  'Leadership questions using the STAR method',
+  'Conflict resolution, ownership and failure stories',
+  '"What would you change about this product?"'
+  ]]
+  ];
+  }
+  return [
+  ['Round 1 — Written / Aptitude', [
+  'Pseudo-code and basic algorithm questions',
+  'Quantitative + logical reasoning aptitude',
+  'Verbal ability and comprehension'
+  ]],
+  ['Round 2 — Technical Interview', [
+  l + ' fundamentals — keywords, OOP, exception handling',
+  'One coding problem (easy-medium) on a whiteboard',
+  'SQL queries + basics of ' + (focus || 'your domain')
+  ]],
+  ['Round 3 — Technical 2 / Managerial', [
+  'Project walk-through and problem-solving scenarios',
+  'SDLC process, agile basics, team collaboration',
+  'Willingness to relocate / rotate technologies'
+  ]],
+  ['Round 4 — HR Discussion', [
+  'Tell me about yourself and your family background',
+  'Why this company? + salary expectations',
+  'Strengths / weaknesses and joining timeline'
+  ]]
+  ];
+  }
+
+  function openInterviewQuestions() {
+  const matches = Array.from(document.querySelectorAll('#matchedCompanies .match-item'));
+  if (matches.length === 0) {
+  showFeatureModal('Sample Interview Questions', '<div class="quiz-note">Run the analysis first to see your matched companies.</div>');
+  return;
+  }
+  const lang = document.getElementById('primaryLang').value || '';
+  const html = matches.map(m => {
+  const name = m.querySelector('.nm').textContent.trim();
+  const found = allCompanies.find(c => c.name === name);
+  const type = found ? found.type : 'Service';
+  const focus = found ? found.focus : '';
+  const rounds = buildQuestionRounds(type, focus, lang);
+  return `
+  <div class="plan-phase">
+  <div class="plan-phase-title">${name} <span>&middot; ${type}</span></div>
+  ${rounds.map(r => `
+  <div class="iq-round">
+  <div class="iq-title">${r[0]}</div>
+  ${r[1].map(q => `<div class="iq-q">&#9679; ${q}</div>`).join('')}
+  </div>`).join('')}
+  </div>`;
+  }).join('');
+  showFeatureModal('Sample Interview Questions — Matched Companies', html);
+  }
+
+  /* ============ FEEDBACK & SUGGESTIONS ============ */
+  const feedbackKey = 'ace_feedback';
+  let fbRating = 0;
+
+  function loadFeedback() {
+  try {
+  const arr = JSON.parse(localStorage.getItem(feedbackKey) || '[]');
+  return Array.isArray(arr) ? arr : [];
+  } catch(e) { return []; }
+  }
+
+  function saveFeedback(list) { safeSet(feedbackKey, JSON.stringify(list)); }
+
+  function escapeHtml(str) {
+  return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function showFbToast(msg) {
+  const t = document.getElementById('fbToast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._t);
+  t._t = setTimeout(function() { t.classList.remove('show'); }, 2600);
+  }
+
+  function renderStars() {
+  const c = document.getElementById('fbStars');
+  c.innerHTML = '';
+  for (let n = 1; n <= 5; n++) {
+  const s = document.createElement('button');
+  s.type = 'button';
+  s.className = 'fb-star' + (n <= fbRating ? ' active' : '');
+  s.textContent = '★';
+  s.title = n + (n === 1 ? ' star' : ' stars');
+  s.addEventListener('click', (function(v) { return function() { fbRating = v; renderStars(); }; })(n));
+  c.appendChild(s);
+  }
+  }
+
+  function renderFeedbackList() {
+  const arr = loadFeedback();
+  const count = document.getElementById('feedbackCount');
+  const box = document.getElementById('fbList');
+  count.textContent = arr.length === 0 ? 'No feedback yet' : arr.length + ' feedback entries';
+  if (arr.length === 0) {
+  box.innerHTML = '<div class="fb-empty">No feedback yet — be the first to share your suggestions.</div>';
+  return;
+  }
+  const display = [...arr].reverse();
+  box.innerHTML = display.map(function(f, i) {
+  const realIdx = arr.length - 1 - i;
+  const stars = '★'.repeat(Math.max(1, Math.min(5, f.rating || 1)));
+  return `
+  <div class="fb-card">
+  <div class="fb-head">
+  <span class="fb-stars-show">${stars}</span>
+  <span class="fb-cat">${escapeHtml(f.category || 'General')}</span>
+  <span class="fb-meta">${escapeHtml(f.date || '')}</span>
+  <button type="button" class="fb-del" data-fb="${realIdx}" title="Delete this feedback">Delete</button>
+  </div>
+  <div class="fb-text">${escapeHtml(f.text)}</div>
+  <div class="fb-name">— ${escapeHtml(f.name || 'Anonymous')}</div>
+  </div>`;
+  }).join('');
+  document.querySelectorAll('.fb-del').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+  const idx = parseInt(btn.getAttribute('data-fb'), 10);
+  const arr2 = loadFeedback();
+  arr2.splice(idx, 1);
+  saveFeedback(arr2);
+  renderFeedbackList();
+  showFbToast('Feedback entry deleted.');
+  });
+  });
+  }
+
+  document.getElementById('fbSubmitBtn').addEventListener('click', function() {
+  const name = document.getElementById('fbName').value.trim() || 'Anonymous';
+  const text = document.getElementById('fbText').value.trim();
+  const category = document.getElementById('fbCategory').value;
+  if (!text || text.length < 5) { showFbToast('Please write a few words of feedback before submitting.'); return; }
+  if (fbRating === 0) { showFbToast('Please pick a star rating (1-5) before submitting.'); return; }
+  const arr = loadFeedback();
+  arr.push({ name: name, rating: fbRating, category: category, text: text, date: new Date().toLocaleString() });
+  if (arr.length > 50) arr.shift();
+  saveFeedback(arr);
+  document.getElementById('fbText').value = '';
+  document.getElementById('fbName').value = '';
+  fbRating = 0;
+  renderStars();
+  renderFeedbackList();
+  showFbToast('Feedback submitted — thank you!');
+  });
+
+  document.getElementById('fbClearBtn').addEventListener('click', function() {
+  if (loadFeedback().length === 0) { showFbToast('Nothing to clear — no feedback yet.'); return; }
+  saveFeedback([]);
+  renderFeedbackList();
+  showFbToast('All feedback cleared.');
+  });
+
+  renderStars();
+  renderFeedbackList();
+
+  renderTable();
+ </script>
+</body>
+</html>

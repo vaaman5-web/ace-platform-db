@@ -1080,6 +1080,32 @@ th {
  .elig-rule.no { background: rgba(192, 57, 43, 0.08); border-color: #C0392B; color: #C0392B; }
  .elig-section-title { font-weight: 700; font-size: 0.85rem; color: var(--sb-primary); margin: 0.5rem 0 0.35rem; }
  .elig-more { cursor: pointer; font-size: 0.78rem; color: var(--sb-primary); text-decoration: underline; }
+
+ /* Market Analytics dashboard */
+ .analytics-body { display: grid; gap: 0.7rem; }
+ .a-kpis { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+ .a-kpi { background: var(--sb-primary); color: #FFFFFF; border-radius: 6px; padding: 0.45rem 0.7rem; font-size: 0.78rem; font-weight: 700; }
+ .a-kpi small { font-weight: 500; opacity: 0.85; }
+ .a-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0.7rem; }
+ .a-card { background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-radius: 8px; padding: 0.8rem 0.9rem; }
+ .a-card h4 { margin: 0 0 0.55rem; font-size: 0.85rem; color: var(--sb-primary); }
+ .a-row { display: grid; grid-template-columns: 165px 1fr 64px; gap: 0.45rem; align-items: center; margin: 0.3rem 0; font-size: 0.78rem; color: var(--sb-text-dark); }
+ .a-bar { height: 10px; background: #E3E8EE; border-radius: 4px; overflow: hidden; }
+ .a-bar > div { height: 100%; background: var(--sb-primary); border-radius: 4px; }
+ .a-bar > div.green { background: var(--sb-success, #2E8B57); }
+ .a-bar > div.gold { background: #B8860B; }
+ .a-bar > div.red { background: #C0392B; }
+ .a-n { text-align: right; font-weight: 700; }
+ .a-donut-row { display: grid; grid-template-columns: auto 1fr; gap: 0.9rem; align-items: center; }
+ .a-donut { position: relative; width: 126px; height: 126px; border-radius: 50%; flex-shrink: 0; }
+ .a-donut-inner { position: absolute; inset: 24px; border-radius: 50%; background: var(--sb-bg-canvas, #F7F9FC); display: flex; align-items: center; justify-content: center; font-size: 0.72rem; color: #5B6B76; text-align: center; font-weight: 700; }
+ .a-legend { display: grid; gap: 0.28rem; font-size: 0.78rem; color: var(--sb-text-dark); }
+ .a-legend div { display: grid; grid-template-columns: 10px 1fr auto; gap: 0.4rem; align-items: center; }
+ .a-legend .sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+ .a-tips { display: grid; gap: 0.35rem; }
+ .a-tip { font-size: 0.8rem; background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-left: 3px solid var(--sb-teal, #2AA889); border-radius: 5px; padding: 0.45rem 0.6rem; color: var(--sb-text-dark); }
+ .a-tip b { color: var(--sb-primary); }
+ html[data-theme="dark"] .a-kpi { color: #FFFFFF; }
  .ai-spinner {
   width: 34px; height: 34px; margin: 0.8rem auto;
   border: 3px solid var(--sb-border);
@@ -1236,7 +1262,7 @@ th {
  /* Print: hide chrome when printing report */
  @media print {
  @page { size: A4; margin: 11mm; }
- header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #catalog, #team, #feedback { display: none !important; }
+ header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #catalog, #team, #feedback, #analytics { display: none !important; }
  .container { padding: 0; }
  #analyzer { display: block; }
  #resultsArea { margin: 0; }
@@ -1285,6 +1311,7 @@ th {
  <nav>
  <a href="#analyzer">Skill Gap Engine</a>
 <a href="#catalog">Placement Database</a>
+<a href="#analytics">Market Analytics</a>
   <a href="#feedback">Feedback</a>
   <a href="#team">Engineering Team</a>
  <button class="theme-toggle" id="themeToggle">Dark Mode</button>
@@ -1560,11 +1587,19 @@ th {
  <button class="btn btn-sm" id="compareBtn" disabled>Compare Selected</button>
  <button class="btn btn-sm btn-ghost" id="clearCompareBtn" disabled>Clear Selection</button>
  </div>
- </div>
- </section>
- 
- <!-- Team Credits -->
- <section id="team" class="panel">
+</div>
+  </section>
+  
+  <!-- Market Analytics -->
+  <section id="analytics" class="panel">
+  <div class="panel-header">
+  <span class="panel-title">Market Analytics — 1000 Companies</span>
+  </div>
+  <div id="analyticsBody" class="analytics-body">Computing market insights…</div>
+  </section>
+
+  <!-- Team Credits -->
+  <section id="team" class="panel">
  <div class="panel-header">
  <span class="panel-title">Engineering Team — Team ACE</span>
  </div>
@@ -2276,6 +2311,86 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   if (document.getElementById('eligBtn')) document.getElementById('eligBtn').addEventListener('click', () => { buildEligForm(); document.getElementById('eligModal').classList.add('open'); });
   document.getElementById('eligModalClose').addEventListener('click', () => { document.getElementById('eligModal').classList.remove('open'); });
   document.getElementById('eligModal').addEventListener('click', (e) => { if (e.target === document.getElementById('eligModal')) document.getElementById('eligModal').classList.remove('open'); });
+
+  /* ============ MARKET ANALYTICS DASHBOARD ============ */
+  function analCtc(c) { const m = /(\d+(?:\.\d+)?)/.exec(c.ctc || ''); return m ? parseFloat(m[1]) : 0; }
+  function aBar(label, val, max, display, cls) {
+    const w = max > 0 ? Math.max(2, Math.round((val / max) * 100)) : 0;
+    return '<div class="a-row"><span>' + escText(label) + '</span><div class="a-bar"><div class="' + (cls || '') + '" style="width:' + w + '%"></div></div><span class="a-n">' + escText(display) + '</span></div>';
+  }
+  function aDonut(segs, inner) {
+    const colors = ['#1E3A5F', '#2E8B57', '#C0392B', '#B8860B', '#7c3aed'];
+    const total = segs.reduce((s, x) => s + x.value, 0) || 1;
+    let stops = '', acc = 0;
+    segs.forEach((x, i) => {
+      const p = Math.max(0.6, (x.value / total) * 100);
+      stops += (x.color || colors[i % colors.length]) + ' ' + acc + '% ' + (acc + p) + '%, ';
+      acc += p;
+    });
+    stops = stops.replace(/,\s*$/, '');
+    const legend = segs.map((x, i) =>
+      '<div><span class="sw" style="background:' + (x.color || colors[i % colors.length]) + '"></span><span>' + escText(x.label) + '</span><b>' + x.value + '</b></div>').join('');
+    return '<div class="a-donut-row"><div class="a-donut" style="background:conic-gradient(' + stops + ')"><div class="a-donut-inner">' + inner + '</div></div><div class="a-legend">' + legend + '</div></div>';
+  }
+  function renderAnalytics() {
+    const db = allCompanies || [];
+    const el = document.getElementById('analyticsBody');
+    if (!db.length) { el.innerHTML = '<div class="a-tip">No company data loaded yet.</div>'; return; }
+    const byType = {}, region = { India: { n: 0, pay: 0 }, Global: { n: 0, pay: 0 } }, diff = { EASY: 0, MEDIUM: 0, HARD: 0 }, sector = {};
+    db.forEach(c => {
+      const t = c.type;
+      byType[t] = byType[t] || { n: 0, pay: 0, hard: 0 };
+      byType[t].n++; byType[t].pay += analCtc(c);
+      if (c.difficultyCat === 'HARD') byType[t].hard++;
+      const r = c.region === 'Global' ? 'Global' : 'India';
+      region[r].n++; region[r].pay += analCtc(c);
+      diff[c.difficultyCat || 'MEDIUM'] = (diff[c.difficultyCat || 'MEDIUM'] || 0) + 1;
+      sector[c.sector] = (sector[c.sector] || 0) + 1;
+    });
+    const typeArr = Object.keys(byType).map(t => ({ t, n: byType[t].n, avg: +(byType[t].pay / byType[t].n).toFixed(1), hard: byType[t].hard })).sort((a, b) => b.n - a.n);
+    const payArr = [...typeArr].sort((a, b) => b.avg - a.avg);
+    const highest = payArr[0], lowest = payArr[payArr.length - 1];
+    const hardShare = typeArr.map(x => ({ t: x.t, r: x.n ? x.hard / x.n : 0 })).filter(x => byType[x.t].n >= 5).sort((a, b) => b.r - a.r).slice(0, 2);
+    const hardTopNames = hardShare.map(x => x.t).join(' and ');
+    const indAvg = +(region.India.pay / region.India.n).toFixed(1);
+    const gAvg = region.Global.n ? +(region.Global.pay / region.Global.n).toFixed(1) : 0;
+    const premium = indAvg > 0 ? Math.round(((gAvg - indAvg) / indAvg) * 100) : 0;
+    const sectorArr = Object.keys(sector).map(s => ({ s, n: sector[s] })).sort((a, b) => b.n - a.n).slice(0, 8);
+    const maxSec = sectorArr[0].n;
+    const total = db.length;
+    const hardPct = Math.round((diff.HARD / total) * 100);
+    const maxN = typeArr[0].n;
+    let html = '<div class="a-kpis">' +
+      '<span class="a-kpi">' + total + ' companies <small>· tracked</small></span>' +
+      '<span class="a-kpi">' + escText(payArr[0].t) + ' avg ₹' + payArr[0].avg + ' LPA</span>' +
+      '<span class="a-kpi">' + hardPct + '% <small>HARD roles</small></span>' +
+      '<span class="a-kpi">Global ₹' + gAvg + ' vs India ₹' + indAvg + ' LPA <small>(' + (premium >= 0 ? '+' : '') + premium + '%)</small></span>' +
+      '<span class="a-kpi">' + sectorArr.length + '+ sectors</span>' +
+      '</div>';
+    html += '<div class="a-grid">';
+    html += '<div class="a-card"><h4>Companies by Category</h4>' + typeArr.map(x => aBar(x.t, x.n, maxN, x.n)).join('') + '</div>';
+    html += '<div class="a-card"><h4>Average Fresher CTC by Category</h4>' + payArr.map(x => aBar(x.t, x.avg, payArr[0].avg, '₹' + x.avg + ' LPA', x.t === highest.t ? 'gold' : '')).join('') + '</div>';
+    html += '<div class="a-card"><h4>Difficulty Split</h4>' + aDonut([
+      { label: 'EASY', value: diff.EASY, color: '#2E8B57' },
+      { label: 'MEDIUM', value: diff.MEDIUM, color: '#1E3A5F' },
+      { label: 'HARD', value: diff.HARD, color: '#C0392B' }
+    ], hardPct + '%<br>hard') + '</div>';
+    html += '<div class="a-card"><h4>Global vs India</h4>' + aDonut([
+      { label: 'India', value: region.India.n, color: '#B8860B' },
+      { label: 'Global', value: region.Global.n, color: '#2B6CB0' }
+    ], region.Global.n + '<br>global') + '</div>';
+    html += '<div class="a-card"><h4>Top Sectors by Company Count</h4>' + sectorArr.map(x => aBar(x.s, x.n, maxSec, x.n)).join('') + '</div>';
+    html += '</div>';
+    html += '<div class="a-card"><h4>Automated Market Insights</h4><div class="a-tips">' +
+      '<div class="a-tip"><b>' + escText(highest.t) + '</b> firms lead pay at ~₹' + highest.avg + ' LPA average — ' + (lowest.avg > 0 ? (highest.avg / lowest.avg).toFixed(1) + 'x the ' : 'vs ') + escText(lowest.t) + ' average (₹' + lowest.avg + ' LPA).</div>' +
+      '<div class="a-tip">HARD roles are ' + hardPct + '% of the market, most concentrated in <b>' + escText(hardTopNames || 'competitive categories') + '</b>.</div>' +
+      '<div class="a-tip">Global employers pay ₹' + gAvg + ' LPA average vs ₹' + indAvg + ' in India — a <b>' + (premium >= 0 ? '+' : '') + premium + '% premium</b>.</div>' +
+      '<div class="a-tip">Volume leaders: <b>' + escText(typeArr[0].t) + '</b> (' + typeArr[0].n + ' firms) — with <b>' + escText(sectorArr[0].s) + '</b> the most tracked sector (' + sectorArr[0].n + ' companies).</div>' +
+      '<div class="a-tip">Run the <b>Eligibility Checker</b> to turn this market view into a personal shortlist.</div>' +
+      '</div></div>';
+    el.innerHTML = html;
+  }
+  renderAnalytics();
 
   /* ============ 30-DAY STUDY PLAN ============ */
   document.getElementById('planBtn').addEventListener('click', openStudyPlan);

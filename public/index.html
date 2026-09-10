@@ -1697,10 +1697,12 @@ let filteredData = [...allCompanies];
  const difficultyVal = document.getElementById('difficultyFilter').value;
 
  filteredData = allCompanies.filter(c => {
- const matchesSearch = !query || c.name.toLowerCase().includes(query) || 
- c.focus.toLowerCase().includes(query) || 
- c.ctc.toLowerCase().includes(query) ||
- String(c.difficulty).toLowerCase().includes(query);
+const matchesSearch = !query || c.name.toLowerCase().includes(query) || 
+  c.focus.toLowerCase().includes(query) || 
+  c.ctc.toLowerCase().includes(query) ||
+  String(c.difficulty).toLowerCase().includes(query) ||
+  (c.criteria || '').toLowerCase().includes(query) ||
+  (c.region || '').toLowerCase().includes(query);
  const matchesType = typeVal === 'ALL' || c.type === typeVal;
  const matchesDifficulty = difficultyVal === 'ALL' || c.difficultyCat === difficultyVal;
  return matchesSearch && matchesType && matchesDifficulty;

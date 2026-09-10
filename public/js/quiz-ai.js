@@ -33,11 +33,13 @@
   }
 
   function persistResult(result) {
-    const prev = readProgress() || { completedDays: {}, scores: [], streak: 0, lastActive: null };
-    prev.scores = prev.scores || []; prev.scores = prev.scores.concat([result]).slice(-12);
-    prev.lastActive = new Date().toISOString();
-    saveProgress(prev);
-    localStorage.setItem(QUIZ_RESULT_KEY, JSON.stringify(result));
+    try {
+      const prev = readProgress() || { completedDays: {}, scores: [], streak: 0, lastActive: null };
+      prev.scores = prev.scores || []; prev.scores = prev.scores.concat([result]).slice(-12);
+      prev.lastActive = new Date().toISOString();
+      saveProgress(prev);
+      localStorage.setItem(QUIZ_RESULT_KEY, JSON.stringify(result));
+    } catch (e) { /* storage unavailable — continue without persisting */ }
   }
 
   function todayStr() {
@@ -177,7 +179,7 @@
         const m = /^aiq(\d+)$/.exec(e.target.name || '');
         if (m) {
           quizAnswers[parseInt(m[1], 10)] = parseInt(e.target.value, 10);
-          renderQuizPage();
+          updateAnsweredCount();
         }
       }
     });
@@ -214,7 +216,7 @@
         '<button type="button" class="btn btn-sm btn-ghost" id="aiQuizPrev"' + (currentPage === 0 ? ' disabled' : '') + '>&#8249; Prev</button>' +
         '<span style="font-size:0.76rem; text-align:center;">Questions <b>' + first + '&ndash;' + last + '</b> of ' + currentQuestions.length +
         ' &middot; Page ' + (currentPage + 1) + '/' + pages +
-        ' &middot; <span style="color:' + answeredColour + '; font-weight:600;">' + answered + '/' + slice.length + ' answered</span></span>' +
+        ' &middot; <span id="aiQuizAnswered" style="color:' + answeredColour + '; font-weight:600;">' + answered + '/' + slice.length + ' answered</span></span>' +
         '<button type="button" class="btn btn-sm" id="aiQuizNext"' + (currentPage === pages - 1 ? ' disabled' : '') + '>Next &#8250;</button>' +
         '</div>';
       const prev = document.getElementById('aiQuizPrev');
@@ -222,6 +224,16 @@
       if (prev) prev.addEventListener('click', () => { if (currentPage > 0) { currentPage--; renderQuizPage(); } });
       if (next) next.addEventListener('click', () => { if (currentPage < pages - 1) { currentPage++; renderQuizPage(); } });
     }
+  }
+
+  function updateAnsweredCount() {
+    const el = document.getElementById('aiQuizAnswered');
+    if (!el) return;
+    const start = currentPage * PAGE_SIZE;
+    const slice = currentQuestions.slice(start, start + PAGE_SIZE);
+    const answered = slice.filter((_, k) => quizAnswers[start + k] !== undefined).length;
+    el.textContent = answered + '/' + slice.length + ' answered';
+    el.style.color = answered === slice.length ? 'var(--sb-success)' : 'var(--sb-warning)';
   }
 
   function submitQuiz() {
@@ -331,7 +343,11 @@
     };
 
     postJson('plan', payload)
-      .then(pl => renderPlan(pl.plan, result))
+      .then(pl => {
+        const plan = pl && pl.plan;
+        if (plan && Array.isArray(plan.roadmap) && plan.roadmap.length) renderPlan(plan, result);
+        else renderPlanFallback(result);
+      })
       .catch(() => renderPlanFallback(result));
   }
 

@@ -1120,6 +1120,41 @@ th {
  }
  .fb-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
+ /* Feedback Form Helpers */
+ .tb-counter { font-size: 0.65rem; color: #5B6B76; font-weight: 600; margin-top: 0.2rem; display: block; text-align: right; }
+ .form-error { border-color: var(--sb-danger) !important; box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.15) !important; }
+ .avg-stars { color: var(--sb-amber); letter-spacing: 1px; }
+ html[data-theme="dark"] .tb-counter { color: #93A1B5; }
+
+ /* Site Footer with Student Progress Stars */
+ .site-footer {
+ width: 100%;
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ margin-top: 0.75rem;
+ padding: 0.85rem 1.25rem;
+ }
+ .footer-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+ flex-wrap: wrap;
+ }
+ .footer-brand { font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; }
+ .footer-brand span { font-weight: 500; font-size: 0.68rem; opacity: 0.85; }
+ .footer-progress { text-align: center; }
+ .footer-progress .lbl { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.6px; opacity: 0.9; font-weight: 700; margin-bottom: 0.2rem; display: block; }
+ .footer-stars { display: flex; gap: 0.25rem; justify-content: center; }
+ .fstar { font-size: 1.4rem; line-height: 1; color: rgba(255, 255, 255, 0.25); transition: all 0.3s var(--ease-smooth); }
+ .fstar.on { color: var(--sb-amber); transform: scale(1.08); }
+ .footer-stars-label { font-size: 0.68rem; font-weight: 600; opacity: 0.92; margin-top: 0.25rem; }
+ .footer-meta { font-size: 0.68rem; opacity: 0.8; text-align: right; }
+
+ html[data-theme="dark"] .fstar:not(.on) { color: #2E3A4F; }
+
  html[data-theme="dark"] .fb-meta,
  html[data-theme="dark"] .fb-name,
  html[data-theme="dark"] .fb-empty,
@@ -1367,7 +1402,8 @@ th {
  </div>
  <div class="form-group">
  <label>Your Feedback</label>
- <textarea class="form-control" id="fbText" placeholder="Share your suggestions, ideas, or issues with ACE..."></textarea>
+ <textarea class="form-control" id="fbText" maxlength="500" placeholder="Share your suggestions, ideas, or issues with ACE..."></textarea>
+  <span class="tb-counter" id="fbCounter">0/500</span>
  </div>
  <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
  <button type="button" class="btn btn-sm" id="fbSubmitBtn">Submit Feedback</button>
@@ -1451,10 +1487,22 @@ th {
  <div class="data-item team-card"><span class="lbl">Data Analyst</span><span class="val">Nikhila</span></div>
  <div class="data-item team-card"><span class="lbl">Research Specialist</span><span class="val">Dandu Mythri</span></div>
  <div class="data-item team-card"><span class="lbl">Frontend Developer</span><span class="val">Yenumula Vaaman</span></div>
- <div class="data-item team-card"><span class="lbl">Backend Developer</span><span class="val">Babasri</span></div>
- </div>
- </section>
+<div class="data-item team-card"><span class="lbl">Backend Developer</span><span class="val">Babasri</span></div>
+  </div>
+  </section>
 </div>
+
+ <footer class="site-footer">
+ <div class="footer-inner">
+ <div class="footer-brand">ACE <span>Adaptive &amp; Continuous Education Skills</span></div>
+ <div class="footer-progress">
+ <span class="lbl">Student Progress</span>
+ <div class="footer-stars" id="progressStars"></div>
+ <div class="footer-stars-label" id="progressStarLabel">Awaiting analysis...</div>
+ </div>
+ <div class="footer-meta">Placement Readiness Tracker<br>&copy; 2026 Team ACE</div>
+ </div>
+ </footer>
 
 <div class="compare-modal" id="compareModal">
   <div class="compare-modal-box">
@@ -1728,6 +1776,7 @@ missingGaps.push("Case Study Strategy", "SAP/Cloud Basics");
   }
   lastAnalysed.score = score;
   lastAnalysed.tier = tier;
+  renderProgressStars();
 
   const scoreElement = document.getElementById('cardScore');
  const currentScore = parseInt(scoreElement.textContent) || 0;
@@ -2163,6 +2212,29 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   showFeatureModal('Sample Interview Questions — Matched Companies', html);
   }
 
+  /* ============ STUDENT PROGRESS STARS (FOOTER) ============ */
+  function renderProgressStars() {
+  const score = lastAnalysed.score || 0;
+  let stars = 1;
+  let label = 'Beginner — Start the Study Plan';
+  if (score >= 75) { stars = 5; label = 'Elite — FAANG Level Competitive'; }
+  else if (score >= 60) { stars = 4; label = 'Advanced — Strong Contender'; }
+  else if (score >= 45) { stars = 3; label = 'Competent — Keep Building'; }
+  else if (score >= 30) { stars = 2; label = 'Developing — Focus on Gaps'; }
+  const el = document.getElementById('progressStars');
+  if (!el) return;
+  el.innerHTML = '';
+  for (let i = 1; i <= 5; i++) {
+  const s = document.createElement('span');
+  s.className = 'fstar' + (i <= stars ? ' on' : '');
+  s.textContent = '★';
+  s.title = i + ' / 5';
+  el.appendChild(s);
+  }
+  const lbl = document.getElementById('progressStarLabel');
+  if (lbl) lbl.textContent = stars + '/5 Star — ' + label + ' (Score ' + score + '%)';
+  }
+
   /* ============ FEEDBACK & SUGGESTIONS ============ */
   const feedbackKey = 'ace_feedback';
   let fbRating = 0;
@@ -2191,6 +2263,7 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   function renderStars() {
   const c = document.getElementById('fbStars');
   c.innerHTML = '';
+  c.classList.remove('form-error');
   for (let n = 1; n <= 5; n++) {
   const s = document.createElement('button');
   s.type = 'button';
@@ -2206,11 +2279,14 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   const arr = loadFeedback();
   const count = document.getElementById('feedbackCount');
   const box = document.getElementById('fbList');
-  count.textContent = arr.length === 0 ? 'No feedback yet' : arr.length + ' feedback entries';
+  count.textContent = arr.length === 0 ? 'No feedback yet' : '';
   if (arr.length === 0) {
   box.innerHTML = '<div class="fb-empty">No feedback yet — be the first to share your suggestions.</div>';
   return;
   }
+  const avg = arr.reduce(function(s, f) { return s + (f.rating || 0); }, 0) / arr.length;
+  const filled = Math.round(avg);
+  count.innerHTML = arr.length + ' feedback entries &middot; Avg <span class="avg-stars">' + '★'.repeat(filled) + '</span><span style="opacity:0.4;">' + '★'.repeat(Math.max(0, 5 - filled)) + '</span> ' + avg.toFixed(1) + '/5';
   const display = [...arr].reverse();
   box.innerHTML = display.map(function(f, i) {
   const realIdx = arr.length - 1 - i;
@@ -2218,7 +2294,7 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   return `
   <div class="fb-card">
   <div class="fb-head">
-  <span class="fb-stars-show">${stars}</span>
+  <span class="fb-stars-show" title="${Math.max(1, Math.min(5, f.rating || 1))} / 5">${stars}</span>
   <span class="fb-cat">${escapeHtml(f.category || 'General')}</span>
   <span class="fb-meta">${escapeHtml(f.date || '')}</span>
   <button type="button" class="fb-del" data-fb="${realIdx}" title="Delete this feedback">Delete</button>
@@ -2243,18 +2319,24 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   const name = document.getElementById('fbName').value.trim() || 'Anonymous';
   const text = document.getElementById('fbText').value.trim();
   const category = document.getElementById('fbCategory').value;
-  if (!text || text.length < 5) { showFbToast('Please write a few words of feedback before submitting.'); return; }
-  if (fbRating === 0) { showFbToast('Please pick a star rating (1-5) before submitting.'); return; }
+  if (!text || text.length < 5) { document.getElementById('fbText').classList.add('form-error'); showFbToast('Please write a few words (5+ characters) of feedback before submitting.'); return; }
+  if (fbRating === 0) { document.getElementById('fbStars').classList.add('form-error'); showFbToast('Please pick a star rating (1-5) before submitting.'); return; }
   const arr = loadFeedback();
   arr.push({ name: name, rating: fbRating, category: category, text: text, date: new Date().toLocaleString() });
   if (arr.length > 50) arr.shift();
   saveFeedback(arr);
   document.getElementById('fbText').value = '';
   document.getElementById('fbName').value = '';
+  document.getElementById('fbCounter').textContent = '0/500';
   fbRating = 0;
   renderStars();
   renderFeedbackList();
   showFbToast('Feedback submitted — thank you!');
+  });
+
+  document.getElementById('fbText').addEventListener('input', function() {
+  this.classList.remove('form-error');
+  document.getElementById('fbCounter').textContent = this.value.length + '/500';
   });
 
   document.getElementById('fbClearBtn').addEventListener('click', function() {

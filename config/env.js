@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 const path = require('path');
-dotenv.config({ path: path.resolve(__dirname, '..', '.env') });
+dotenv.config({ path: path.resolve(__dirname, '..', '.env'), override: true });
 
 module.exports = {
   node_env: process.env.NODE_ENV || 'development',
@@ -30,6 +30,13 @@ module.exports = {
     authMax: 20
   },
   cors: { origin: process.env.CORS_ORIGIN || '*' },
+  ai: {
+    provider: process.env.AI_PROVIDER || 'gemini',
+    openaiApiKey: process.env.OPENAI_API_KEY,
+    openaiModel: process.env.OPENAI_MODEL || 'gpt-4o-mini',
+    geminiApiKey: process.env.GEMINI_API_KEY,
+    geminiModel: process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
+  },
   log: { level: 'info', file: 'logs/ace-platform.log' },
   pdf: { tempDir: './tmp/pdfs', cleanupInterval: 3600000 },
   isDev() { return this.node_env === 'development'; },

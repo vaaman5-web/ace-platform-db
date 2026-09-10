@@ -19,6 +19,7 @@ const analysisRoutes = require('./routes/analysis');
 const quizRoutes = require('./routes/quiz');
 const reportRoutes = require('./routes/reports');
 const adminRoutes = require('./routes/admin');
+const aiRoutes = require('./routes/ai');
 
 const app = express();
 
@@ -44,6 +45,7 @@ app.use('/api/analysis', analysisRoutes);
 app.use('/api/quiz', quizRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/ai', aiRoutes);
 
 app.get('/api/health', async (_req, res) => {
   const dbHealth = await db.healthCheck();

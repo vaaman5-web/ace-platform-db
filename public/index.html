@@ -1055,6 +1055,31 @@ th {
  .iq-title { font-weight: 700; font-size: 0.82rem; color: #1E3A5F; margin-bottom: 0.2rem; }
  .iq-q { font-size: 0.8rem; color: var(--sb-text-dark); padding: 0.12rem 0 0.12rem 0.7rem; }
  #featureModalBody { max-height: 62vh; overflow: auto; }
+
+ .elig-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; margin-bottom: 0.6rem; }
+ .elig-form label { display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.72rem; color: #5B6B76; }
+ .elig-form input { padding: 0.42rem 0.5rem; border: 1px solid var(--sb-border); border-radius: 5px; font-size: 0.82rem; background: #FFFFFF; color: var(--sb-text-dark); box-sizing: border-box; }
+ .elig-form input[type="checkbox"] { width: 17px; height: 17px; margin-top: 0.15rem; }
+ .elig-note { font-size: 0.72rem; color: #5B6B76; margin: 0 0 0.6rem; }
+ .elig-summary { display: grid; grid-template-columns: auto 1fr; gap: 0.8rem; align-items: center; background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-radius: 6px; padding: 0.7rem 0.8rem; margin: 0.6rem 0; }
+ .elig-big { font-size: 1.5rem; font-weight: 800; color: var(--sb-primary); white-space: nowrap; }
+ .elig-big small { font-size: 0.78rem; font-weight: 600; color: #5B6B76; }
+ .elig-bar { height: 8px; background: #E3E8EE; border-radius: 4px; overflow: hidden; }
+ .elig-bar > div { height: 100%; background: var(--sb-success, #2E8B57); }
+ .elig-type-bars { display: grid; gap: 0.28rem; font-size: 0.78rem; color: var(--sb-text-dark); margin: 0.2rem 0 0.7rem; }
+ .elig-type-row { display: grid; grid-template-columns: 170px 1fr 46px; gap: 0.45rem; align-items: center; }
+ .elig-type-row .elig-bar > div { background: var(--sb-primary); }
+ .elig-filter { width: 100%; padding: 0.42rem 0.5rem; border: 1px solid var(--sb-border); border-radius: 5px; font-size: 0.82rem; margin-bottom: 0.6rem; box-sizing: border-box; background: #FFFFFF; color: var(--sb-text-dark); }
+ .elig-company { border: 1px solid var(--sb-border); border-left: 3px solid var(--sb-success, #2E8B57); border-radius: 5px; padding: 0.5rem 0.6rem; margin-bottom: 0.4rem; display: grid; gap: 0.3rem; }
+ .elig-company.blocked { border-left-color: #C0392B; }
+ .elig-name { font-weight: 700; font-size: 0.85rem; color: var(--sb-text-dark); }
+ .elig-meta { font-size: 0.75rem; color: #5B6B76; }
+ .elig-rules { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+ .elig-rule { font-size: 0.68rem; padding: 0.16rem 0.5rem; border-radius: 11px; border: 1px solid var(--sb-border); color: #5B6B76; background: #FFFFFF; }
+ .elig-rule.ok { background: rgba(46, 139, 87, 0.08); border-color: var(--sb-success, #2E8B57); color: var(--sb-success, #2E8B57); }
+ .elig-rule.no { background: rgba(192, 57, 43, 0.08); border-color: #C0392B; color: #C0392B; }
+ .elig-section-title { font-weight: 700; font-size: 0.85rem; color: var(--sb-primary); margin: 0.5rem 0 0.35rem; }
+ .elig-more { cursor: pointer; font-size: 0.78rem; color: var(--sb-primary); text-decoration: underline; }
  .ai-spinner {
   width: 34px; height: 34px; margin: 0.8rem auto;
   border: 3px solid var(--sb-border);
@@ -1341,6 +1366,7 @@ th {
 <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
   <button type="button" class="btn" id="analyzeBtn">Run Placement Readiness Analysis</button>
   <button type="button" class="btn" id="aiQuizBtn" style="white-space:nowrap; background:var(--sb-teal); border-color:var(--sb-teal);">Mock Quiz</button>
+  <button type="button" class="btn" id="eligBtn" style="white-space:nowrap; background:var(--sb-success); border-color:var(--sb-success);">Eligibility Checker</button>
   </div>
   </form>
  </div>
@@ -1578,6 +1604,14 @@ th {
   <span class="compare-close" id="featureModalClose">CLOSE ✕</span>
   <h3 id="featureModalTitle">ACE Feature</h3>
   <div id="featureModalBody"></div>
+  </div>
+  </div>
+
+<div class="compare-modal" id="eligModal">
+  <div class="compare-modal-box">
+  <span class="compare-close" id="eligModalClose">CLOSE ✕</span>
+  <h3>Eligibility Checker — 1000 Companies</h3>
+  <div id="eligBody"></div>
   </div>
   </div>
 
@@ -2096,6 +2130,152 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   document.getElementById('featureModal').classList.remove('open');
   }
   });
+
+  /* ============ ELIGIBILITY CHECKER — 1000 Companies ============ */
+  const eligState = { inited: false, filter: '', limit: 15, lastIn: [], lastOut: [] };
+  const escText = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const eligNum = (id) => { const el = document.getElementById(id); if (!el) return null; const v = (el.value || '').trim(); if (v === '') return null; const n = Number(v); return isNaN(n) ? null : n; };
+  const ctcNum = (c) => { const m = /(\d+(?:\.\d+)?)/.exec(c.ctc || ''); return m ? parseFloat(m[1]) : 0; };
+  function deriveEligFallback(c) {
+    const t = (c.criteria || '') + ' ' + (c.focus || '');
+    const e = {};
+    const cg = /(\d(?:\.\d+)?)\s*(?:\+|then|[+ ]*)?\s*cgpa/i.exec(t);
+    if (cg) e.minCgpa = parseFloat(cg[1]);
+    if (/60\s*(?:%|per cent)|60\s*or 6/i.test(t)) e.minPctGrad = 60;
+    if (/no active backlogs/i.test(t)) { e.noBacklogs = true; e.maxBacklogs = 0; }
+    else { const bm = /(\d) or 0 active backlogs/i.exec(t); if (bm) e.maxBacklogs = parseInt(bm[1], 10); }
+    const gap = /gap[^\d]{0,10}(\d{1,2})\s*(months?|years?|yrs)/i.exec(t);
+    if (gap) { const g = parseInt(gap[1], 10); e.maxGapMonths = /^(year|yrs)/i.test(gap[2]) ? g * 12 : g; }
+    const ag = /age[^\d]{0,10}(\d{1,2})/i.exec(t);
+    if (ag) e.ageMax = parseInt(ag[1], 10);
+    if (/gate/i.test(t)) e.gate = true;
+    const b = /(\d{4})\s*[-–]\s*(\d{2,4})\s*batch/i.exec(t);
+    if (b) { e.batchFrom = parseInt(b[1], 10); e.batchTo = parseInt(b[2], 10) < 1000 ? 2000 + parseInt(b[2], 10) : parseInt(b[2], 10); }
+    return e;
+  }
+  function evaluateOne(c, p) {
+    const e = (c.elig && typeof c.elig === 'object' && Object.keys(c.elig).length) ? c.elig : deriveEligFallback(c);
+    const reasons = [];
+    const push = (ok, text) => reasons.push({ ok: !!ok, text });
+    if (e.gate) push(p.gate, 'GATE score ' + (p.gate ? 'provided ✓' : 'required — missing ✗'));
+    const pctX = p.pctX != null ? p.pctX : (p.cgpa != null ? Math.round(p.cgpa * 10) : null);
+    const pctXII = p.pctXII != null ? p.pctXII : (p.cgpa != null ? Math.round(p.cgpa * 10) : null);
+    if (e.minPctX != null) { const v = pctX; push(v != null && v >= e.minPctX, v == null ? 'X (10th): needs ≥ ' + e.minPctX + '% — not entered' : 'X (10th): ' + v + '% ≥ ' + e.minPctX + '%'); }
+    if (e.minPctXII != null) { const v = pctXII; push(v != null && v >= e.minPctXII, v == null ? 'XII (12th): needs ≥ ' + e.minPctXII + '% — not entered' : 'XII (12th): ' + v + '% ≥ ' + e.minPctXII + '%'); }
+    if (e.minPctGrad != null) { const v = p.pctGrad != null ? p.pctGrad : (p.cgpa != null ? Math.round(p.cgpa * 10) : null); push(v != null && v >= e.minPctGrad, v == null ? 'Grad %: needs ≥ ' + e.minPctGrad + '% — not entered' : 'Grad: ' + v + '% ≥ ' + e.minPctGrad + '%'); }
+    if (e.minCgpa != null) { const v = p.cgpa != null ? p.cgpa : (p.pctGrad != null ? p.pctGrad / 10 : null); push(v != null && v >= e.minCgpa, v == null ? 'CGPA: needs ≥ ' + e.minCgpa + ' — not entered' : 'CGPA: ' + v + ' ≥ ' + e.minCgpa); }
+    if (e.noBacklogs) push(p.backlogs === 0, 'Backlogs: none allowed — you have ' + p.backlogs);
+    else if (e.maxBacklogs != null) push(p.backlogs <= e.maxBacklogs, 'Backlogs: ≤ ' + e.maxBacklogs + ' allowed — you have ' + p.backlogs);
+    if (e.maxGapMonths != null) push(p.gapMonths <= e.maxGapMonths, 'Gap: ' + p.gapMonths + ' / ' + e.maxGapMonths + ' months');
+    if (e.batchFrom != null || e.batchTo != null) {
+      const lo = e.batchFrom != null ? e.batchFrom : p.gradYear;
+      const hi = e.batchTo != null ? e.batchTo : p.gradYear;
+      push(p.gradYear != null && p.gradYear >= lo && p.gradYear <= hi, p.gradYear == null ? 'Batch: needs ' + lo + '–' + hi + ' — year not entered' : 'Batch: ' + p.gradYear + ' (allowed ' + lo + '–' + hi + ')');
+    }
+    if (e.ageMax != null) push(p.age != null && p.age <= e.ageMax, p.age == null ? 'Age: needs ≤ ' + e.ageMax + ' — not entered' : 'Age: ' + p.age + ' ≤ ' + e.ageMax);
+    return { eligible: reasons.every(r => r.ok), reasons, hasRules: reasons.length > 0 };
+  }
+  function eligChips(reasons, noRulesLabel) {
+    if (!reasons.length) return '<span class="elig-rule ok">' + noRulesLabel + '</span>';
+    return reasons.map(r => '<span class="elig-rule ' + (r.ok ? 'ok' : 'no') + '">' + escText(r.text) + '</span>').join('');
+  }
+  function renderEligSummary(p, eligible, blocked) {
+    const total = eligible.length + blocked.length;
+    const pct = total ? Math.round((eligible.length / total) * 100) : 0;
+    const byType = {};
+    eligible.forEach(x => { byType[x.c.type] = (byType[x.c.type] || 0) + 1; });
+    const topTypes = Object.entries(byType).sort((a, b) => b[1] - a[1]).slice(0, 5);
+    const maxType = topTypes.length ? topTypes[0][1] : 1;
+    const bars = topTypes.map(([t, n]) =>
+      '<div class="elig-type-row"><span>' + escText(t) + '</span>' +
+      '<div class="elig-bar"><div style="width:' + Math.round((n / maxType) * 100) + '%"></div></div>' +
+      '<span>' + n + '</span></div>').join('');
+    document.getElementById('eligSummary').innerHTML =
+      '<div class="elig-summary">' +
+      '<div class="elig-big">' + eligible.length + '<small> / ' + total + ' companies</small></div>' +
+      '<div><div class="elig-bar"><div style="width:' + pct + '%"></div></div>' +
+      '<span style="font-size:0.75rem; color:#5B6B76;">You currently meet criteria at ' + pct + '% of tracked companies (sorted by CTC below).</span></div>' +
+      '</div>' +
+      (bars ? '<div class="elig-type-bars">' + bars + '</div>' : '');
+  }
+  function renderEligResults(p, eligible, blocked) {
+    renderEligSummary(p, eligible, blocked);
+    const q = eligState.filter.toLowerCase();
+    const shown = eligible.filter(x => (x.c.name + ' ' + x.c.type + ' ' + x.c.ctc + ' ' + (x.c.region || '')).toLowerCase().indexOf(q) >= 0);
+    const visible = eligState.limit >= shown.length ? shown : shown.slice(0, eligState.limit);
+    let html = '<input type="text" class="elig-filter" id="eligFilter" placeholder="Filter eligible companies (name, type, CTC, region)…">';
+    html += '<div class="elig-section-title">You can apply at ' + shown.length + ' companies' + (eligState.limit < shown.length ? ' — showing top ' + visible.length + ' by CTC' : '') + '</div>';
+    html += visible.map(x =>
+      '<div class="elig-company">' +
+      '<span class="elig-name">' + escText(x.c.name) + '</span>' +
+      '<span class="elig-meta">' + escText(x.c.type) + ' · ' + escText(x.c.ctc) + ' · ' + escText(x.c.region || 'India') + '</span>' +
+      '<span class="elig-rules">' + eligChips(x.r.reasons, 'Open criteria — no filters') + '</span>' +
+      '</div>').join('');
+    if (eligState.limit < shown.length) html += '<span class="elig-more" id="eligMore">Show all ' + shown.length + ' →</span>';
+    const misses = blocked.slice(0, 5);
+    html += '<div class="elig-section-title">Why the rest are blocked — sample of ' + misses.length + ' companies</div>';
+    html += misses.map(x =>
+      '<div class="elig-company blocked">' +
+      '<span class="elig-name">' + escText(x.c.name) + '</span>' +
+      '<span class="elig-meta">' + escText(x.c.type) + ' · ' + escText(x.c.ctc) + '</span>' +
+      '<span class="elig-rules">' + eligChips(x.r.reasons.filter(r => !r.ok), 'Passes listed criteria') + '</span>' +
+      '</div>').join('');
+    if (blocked.length > 5) html += '<div class="elig-note">… and ' + (blocked.length - 5) + ' more companies have criteria your profile does not meet yet.</div>';
+    html += '<div class="elig-note" style="margin-top:0.5rem;">Eligibility is computed from researched 2025–26 norms — indicative, not official. Tests/interviews in the hiring pipeline still decide outcomes.</div>';
+    document.getElementById('eligOut').innerHTML = html;
+    const filterEl = document.getElementById('eligFilter');
+    if (filterEl) filterEl.addEventListener('input', (e2) => { eligState.filter = e2.target.value || ''; renderEligResults(p, eligState.lastIn, eligState.lastOut); });
+    const moreEl = document.getElementById('eligMore');
+    if (moreEl) moreEl.addEventListener('click', () => { eligState.limit = Infinity; renderEligResults(p, eligState.lastIn, eligState.lastOut); });
+  }
+  function runEligCheck() {
+    const p = {
+      cgpa: eligNum('eligCgpa'),
+      pctX: eligNum('eligPctX'),
+      pctXII: eligNum('eligPctXII'),
+      pctGrad: eligNum('eligPctGrad'),
+      gradYear: eligNum('eligGradYear'),
+      backlogs: eligNum('eligBacklogs') || 0,
+      gapMonths: eligNum('eligGap') || 0,
+      age: eligNum('eligAge'),
+      gate: (document.getElementById('eligGate') || {}).checked === true
+    };
+    const year = p.gradYear, age = p.age;
+    if (year != null && (year < 2015 || year > 2035)) { document.getElementById('eligOut').innerHTML = '<span class="elig-note">Please enter a graduation year between 2015 and 2035.</span>'; return; }
+    if (age != null && (age < 16 || age > 50)) { document.getElementById('eligOut').innerHTML = '<span class="elig-note">Please enter an age between 16 and 50.</span>'; return; }
+    const results = allCompanies.map(c => ({ c, r: evaluateOne(c, p) }));
+    const eligible = results.filter(x => x.r.eligible).sort((a, b) => ctcNum(b.c) - ctcNum(a.c));
+    const blocked = results.filter(x => !x.r.eligible);
+    eligState.lastIn = eligible; eligState.lastOut = blocked; eligState.filter = ''; eligState.limit = 15;
+    renderEligResults(p, eligible, blocked);
+  }
+  function buildEligForm() {
+    if (eligState.inited) return;
+    eligState.inited = true;
+    document.getElementById('eligBody').innerHTML =
+      '<div class="elig-form">' +
+      '<label>CGPA (0–10)<input type="number" id="eligCgpa" min="0" max="10" step="0.1" placeholder="e.g. 7.2"></label>' +
+      '<label>X (10th) %<input type="number" id="eligPctX" min="0" max="100" step="0.1" placeholder="optional"></label>' +
+      '<label>XII (12th) %<input type="number" id="eligPctXII" min="0" max="100" step="0.1" placeholder="optional"></label>' +
+      '<label>Graduation %<input type="number" id="eligPctGrad" min="0" max="100" step="0.1" placeholder="optional"></label>' +
+      '<label>Graduation Year<input type="number" id="eligGradYear" min="2015" max="2035" placeholder="e.g. 2025"></label>' +
+      '<label>Active Backlogs<input type="number" id="eligBacklogs" min="0" max="9" value="0"></label>' +
+      '<label>Education Gap (months)<input type="number" id="eligGap" min="0" max="120" value="0"></label>' +
+      '<label>Age<input type="number" id="eligAge" min="16" max="50" placeholder="e.g. 22"></label>' +
+      '<label><span>GATE Qualified?</span><input type="checkbox" id="eligGate"></label>' +
+      '</div>' +
+      '<div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap; margin-bottom:0.4rem;">' +
+      '<button type="button" class="btn btn-sm" id="eligGo">Check My Eligibility</button>' +
+      '</div>' +
+      '<div class="elig-note">Based on researched 2025–26 eligibility norms — indicative, not official. Leave % fields blank to derive them from CGPA.</div>' +
+      '<div id="eligSummary"></div>' +
+      '<div id="eligOut"></div>';
+    document.getElementById('eligGo').addEventListener('click', runEligCheck);
+    document.getElementById('eligBody').addEventListener('keydown', (e) => { if (e.key === 'Enter') runEligCheck(); });
+  }
+  if (document.getElementById('eligBtn')) document.getElementById('eligBtn').addEventListener('click', () => { buildEligForm(); document.getElementById('eligModal').classList.add('open'); });
+  document.getElementById('eligModalClose').addEventListener('click', () => { document.getElementById('eligModal').classList.remove('open'); });
+  document.getElementById('eligModal').addEventListener('click', (e) => { if (e.target === document.getElementById('eligModal')) document.getElementById('eligModal').classList.remove('open'); });
 
   /* ============ 30-DAY STUDY PLAN ============ */
   document.getElementById('planBtn').addEventListener('click', openStudyPlan);

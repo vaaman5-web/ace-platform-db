@@ -87,6 +87,10 @@
     const modal = document.getElementById('featureModal');
     if (modal) modal.classList.remove('open');
   }
+  function isQuizModalOpen() {
+    const modal = document.getElementById('featureModal');
+    return !!modal && modal.classList.contains('open');
+  }
 
   /* ---------------- quiz flow ---------------- */
   function startAiQuiz() {
@@ -106,15 +110,13 @@
 
     postJson('quiz', currentProfile)
       .then(payload => {
-        const modal = document.getElementById('featureModal');
-        if (modal && !modal.classList.contains('open')) return;
+        if (!isQuizModalOpen()) return;
         currentQuestions = payload.questions || [];
         currentQuizId = (currentQuestions[0] && currentQuestions[0].id) ? null : null;
         renderQuiz();
       })
       .catch(err => {
-        const modal = document.getElementById('featureModal');
-        if (modal && !modal.classList.contains('open')) return;
+        if (!isQuizModalOpen()) return;
         openModal(
           '<div class="quiz-result">' +
           '<div class="quiz-question" style="color: var(--sb-danger);">Could not generate quiz</div>' +
@@ -375,6 +377,7 @@
   }
 
   function renderPlan(plan, result) {
+    if (!isQuizModalOpen()) return;
     const progress = readProgress();
     const existingDays = (progress && progress.completedDays) || {};
     const totalDays = plan.roadmap.reduce((s, w) => s + (w.days || []).length, 0);

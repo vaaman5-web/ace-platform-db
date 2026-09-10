@@ -4,7 +4,7 @@
    2025-26 industry estimates researched from public placement/salary reports.
    Fields: rank, name, type, ctc, difficulty, difficultyCat, rounds, focus,
    criteria, region, sector
-   Generated: 2026-09-10T15:51:30.983Z
+   Generated: 2026-09-10T15:59:45.869Z
    ========================================================================== */
 if (typeof window === 'undefined') { var window = {}; }
 window.COMPANIES_DB = [
@@ -17,7 +17,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -30,7 +30,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -43,7 +43,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -56,7 +56,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -69,7 +69,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -82,7 +82,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -95,7 +95,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -108,7 +108,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -121,7 +121,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -134,7 +134,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -147,7 +147,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -160,7 +160,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -173,7 +173,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -186,7 +186,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -199,7 +199,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -212,7 +212,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -225,7 +225,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -238,7 +238,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -251,7 +251,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -264,7 +264,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -277,7 +277,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -290,7 +290,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -303,7 +303,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -316,7 +316,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -329,7 +329,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -342,7 +342,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -355,7 +355,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -368,7 +368,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -381,7 +381,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -394,7 +394,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -407,7 +407,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -420,7 +420,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -433,7 +433,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -446,7 +446,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -459,7 +459,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -472,7 +472,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -485,7 +485,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -498,7 +498,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -511,7 +511,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -524,7 +524,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -537,7 +537,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -550,7 +550,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -563,7 +563,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -576,7 +576,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -589,7 +589,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -602,7 +602,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -615,7 +615,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -628,7 +628,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -641,7 +641,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -654,7 +654,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -667,7 +667,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -680,7 +680,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -693,7 +693,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -706,7 +706,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -719,7 +719,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -732,7 +732,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -745,7 +745,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -758,7 +758,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -771,7 +771,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -784,7 +784,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -797,7 +797,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -810,7 +810,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -823,7 +823,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -836,7 +836,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -849,7 +849,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -862,7 +862,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -875,7 +875,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Strong problem-solving + real projects (GitHub/portfolio); online coding round + 3-tech + founder/HR; CGPA less weighted than demonstrable skill",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -888,7 +888,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -901,7 +901,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -914,7 +914,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "Engineering degree; quick-tempo hiring: OA + live coding + project walkthrough + culture fit; no strict cutoff, competitive offers for strong coders",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -927,7 +927,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment + Live Coding + Project Discussion + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -940,7 +940,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding OA + 3 Tech Rounds + Cultural Fit / HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Deployable projects, DSA + ownership mindset; 3-4 rounds, often same-day offers",
+  "criteria": "B.E./B.Tech (often any branch); DSA + deployable projects/internship; 3-4 rounds often same-day; 1 or 0 active backlogs; 60%+ preferred but project & problem-solving bar drives selection",
   "region": "India",
   "sector": "Fintech / New-age"
  },
@@ -953,7 +953,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -966,7 +966,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -979,7 +979,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -992,7 +992,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1005,7 +1005,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1018,7 +1018,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1031,7 +1031,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1044,7 +1044,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1057,7 +1057,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1070,7 +1070,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1083,7 +1083,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1096,7 +1096,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1109,7 +1109,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1122,7 +1122,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1135,7 +1135,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1148,7 +1148,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1161,7 +1161,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1174,7 +1174,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1187,7 +1187,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1200,7 +1200,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1213,7 +1213,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1226,7 +1226,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1239,7 +1239,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1252,7 +1252,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1265,7 +1265,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1278,7 +1278,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1291,7 +1291,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1304,7 +1304,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1317,7 +1317,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1330,7 +1330,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1343,7 +1343,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1356,7 +1356,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1369,7 +1369,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1382,7 +1382,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1395,7 +1395,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1408,7 +1408,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1421,7 +1421,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Target-college shortlist; 6.5-7+ CGPA typical; online HackerRank (DSA + math) + superday 3-4 rounds + HR; strong quant + communication",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1434,7 +1434,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1447,7 +1447,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1460,7 +1460,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1473,7 +1473,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1486,7 +1486,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1499,7 +1499,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1512,7 +1512,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1525,7 +1525,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1538,7 +1538,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1551,7 +1551,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1564,7 +1564,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1577,7 +1577,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1590,7 +1590,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1603,7 +1603,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1616,7 +1616,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1629,7 +1629,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1642,7 +1642,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1655,7 +1655,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1668,7 +1668,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1681,7 +1681,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1694,7 +1694,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1707,7 +1707,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1720,7 +1720,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1733,7 +1733,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1746,7 +1746,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1759,7 +1759,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1772,7 +1772,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1785,7 +1785,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1798,7 +1798,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1811,7 +1811,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1824,7 +1824,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1837,7 +1837,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1850,7 +1850,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1863,7 +1863,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1876,7 +1876,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1889,7 +1889,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1902,7 +1902,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1915,7 +1915,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1928,7 +1928,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1941,7 +1941,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1954,7 +1954,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1967,7 +1967,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1980,7 +1980,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -1993,7 +1993,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2006,7 +2006,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2019,7 +2019,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2032,7 +2032,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2045,7 +2045,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2058,7 +2058,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2071,7 +2071,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2084,7 +2084,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2097,7 +2097,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2110,7 +2110,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2123,7 +2123,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2136,7 +2136,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2149,7 +2149,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2162,7 +2162,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2175,7 +2175,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2188,7 +2188,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2201,7 +2201,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2214,7 +2214,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2227,7 +2227,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2240,7 +2240,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2253,7 +2253,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2266,7 +2266,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2279,7 +2279,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2292,7 +2292,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2305,7 +2305,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2318,7 +2318,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2331,7 +2331,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2344,7 +2344,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2357,7 +2357,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2370,7 +2370,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2383,7 +2383,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2396,7 +2396,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2409,7 +2409,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2422,7 +2422,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2435,7 +2435,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (60-70%+/6.5+ CGPA); online assessment + superday (tech + fit); premier campuses; finance fundamentals valued",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2448,7 +2448,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2461,7 +2461,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2474,7 +2474,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2487,7 +2487,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding + Technical + Managerial Round",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2500,7 +2500,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2513,7 +2513,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2526,7 +2526,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "Strong academics (7+ CGPA preferred), exceptional DSA + probability/math; online assessment + 4-6 rounds across technology, strategy and culture fit",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2539,7 +2539,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + DSA + Communication + HR",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "6.5+ CGPA typically shortlisted from target colleges; strong quantitative aptitude; online test (HackerRank style) + superday of 3-4 rounds (technical + fit + HR); no active backlogs preferred",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2552,7 +2552,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Superday (3-4 Rounds) + HR",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Aptitude + DSA + communication; finance/quant awareness; superday 3-4 rounds",
+  "criteria": "60-70% or 6.5+ CGPA; banking/quant fundamentals; online aptitude + DSA test + 3-5 interview rounds incl manager; willingness to work global shifts",
   "region": "Global",
   "sector": "Banking / Finance"
  },
@@ -2565,7 +2565,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2578,7 +2578,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2591,7 +2591,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2604,7 +2604,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2617,7 +2617,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2630,7 +2630,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ academics; strong analytical + aptitude; online test + case + interview; data/product consulting profile",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2643,7 +2643,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2656,7 +2656,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2669,7 +2669,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2682,7 +2682,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "7+ CGPA, premium-institute shortlist; problem-solving test (PST) + case interviews + fit; structured thinking & communication",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2695,7 +2695,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2708,7 +2708,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2721,7 +2721,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2734,7 +2734,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2747,7 +2747,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2760,7 +2760,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2773,7 +2773,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2786,7 +2786,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2799,7 +2799,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2812,7 +2812,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2825,7 +2825,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2838,7 +2838,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2851,7 +2851,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ or 6 CGPA (some roles 50% X/XII); no active backlogs; aptitude + Group Discussion + technical + case + HR; USI profiles have 1-yr correction period",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2864,7 +2864,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2877,7 +2877,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2890,7 +2890,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2903,7 +2903,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2916,7 +2916,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2929,7 +2929,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2942,7 +2942,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2955,7 +2955,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "60%+ in graduation with strong analytical profile; aptitude test + 2 case rounds + behavioural/partner interview; Excel/modelling skills valued",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2968,7 +2968,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "65%+ or 7+ CGPA typically sought; case-interview readiness and strong communication; online analytical test + case interview + group discussion + fit round",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2981,7 +2981,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Analytical Test + 2 Case Rounds + Partner Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -2994,7 +2994,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Case Interview + Group Discussion + HR",
   "focus": "Quantitative Reasoning, Frameworks, Stakeholder Mgmt",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -3007,7 +3007,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Case Study + Fit/HR Round",
   "focus": "Case Solving, Analytics, Excel Modelling, Communication",
-  "criteria": "Case-interview readiness, analytical + communication skills; 3-4 rounds incl case + fit",
+  "criteria": "Premium institutes shortlist; case-solving ability, quant speed, structured communication; 3-4 rounds: test, case, fit and partner",
   "region": "Global",
   "sector": "Consulting"
  },
@@ -3020,7 +3020,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Premier-institute shortlist (IIT/NIT/BITS); 8-9+ CGPA typical; exceptional DSA + probability/statistics + trading games; 5-6 rounds incl superday; speed & accuracy under pressure",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3033,7 +3033,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Top-tier college shortlist; advanced math/probability + algorithm design; intensive online assessment + multiple panel interviews; no formal CGPA floor but top decile expected",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3046,7 +3046,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Top-tier college shortlist; advanced math/probability + algorithm design; intensive online assessment + multiple panel interviews; no formal CGPA floor but top decile expected",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3059,7 +3059,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Intensive OA (DSA + Probability) + 4-6 Rounds + Superday",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Premier-institute shortlist (IIT/NIT/BITS); 8-9+ CGPA typical; exceptional DSA + probability/statistics + trading games; 5-6 rounds incl superday; speed & accuracy under pressure",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3072,7 +3072,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Premier-institute shortlist (IIT/NIT/BITS); 8-9+ CGPA typical; exceptional DSA + probability/statistics + trading games; 5-6 rounds incl superday; speed & accuracy under pressure",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3085,7 +3085,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "DSA, SQL, Financial Modelling, Aptitude",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Top-tier college shortlist; advanced math/probability + algorithm design; intensive online assessment + multiple panel interviews; no formal CGPA floor but top decile expected",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3098,7 +3098,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Top-tier college shortlist; advanced math/probability + algorithm design; intensive online assessment + multiple panel interviews; no formal CGPA floor but top decile expected",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3111,7 +3111,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Intensive OA (DSA + Probability) + 4-6 Rounds + Superday",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Premier-institute shortlist (IIT/NIT/BITS); 8-9+ CGPA typical; exceptional DSA + probability/statistics + trading games; 5-6 rounds incl superday; speed & accuracy under pressure",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3124,7 +3124,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Intensive OA (DSA + Probability) + 4-6 Rounds + Superday",
   "focus": "DSA, Probability, Excel, Risk Modelling",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Top-tier college shortlist; advanced math/probability + algorithm design; intensive online assessment + multiple panel interviews; no formal CGPA floor but top decile expected",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3137,7 +3137,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Intensive OA (DSA + Probability) + 4-6 Rounds + Superday",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Premier-institute shortlist (IIT/NIT/BITS); 8-9+ CGPA typical; exceptional DSA + probability/statistics + trading games; 5-6 rounds incl superday; speed & accuracy under pressure",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3150,7 +3150,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Math/Probability Test + Algorithm Rounds + HireVue + Final Panel",
   "focus": "C++/Java, Databases, Derivatives, Numerics",
-  "criteria": "Exceptional DSA + probability/math; usually premier-institute shortlist; 5-6 round superday",
+  "criteria": "Premier-institute shortlist (IIT/NIT/BITS); 8-9+ CGPA typical; exceptional DSA + probability/statistics + trading games; 5-6 rounds incl superday; speed & accuracy under pressure",
   "region": "Global",
   "sector": "Quantitative Trading"
  },
@@ -3163,7 +3163,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3176,7 +3176,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3189,7 +3189,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3202,7 +3202,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3215,7 +3215,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3228,7 +3228,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3241,7 +3241,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3254,7 +3254,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3267,7 +3267,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3280,7 +3280,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3293,7 +3293,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3306,7 +3306,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3319,7 +3319,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3332,7 +3332,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3345,7 +3345,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3358,7 +3358,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3371,7 +3371,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3384,7 +3384,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3397,7 +3397,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3410,7 +3410,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3423,7 +3423,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3436,7 +3436,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3449,7 +3449,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3462,7 +3462,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3475,7 +3475,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3488,7 +3488,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3501,7 +3501,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3514,7 +3514,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3527,7 +3527,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3540,7 +3540,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3553,7 +3553,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3566,7 +3566,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3579,7 +3579,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3592,7 +3592,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3605,7 +3605,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3618,7 +3618,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3631,7 +3631,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3644,7 +3644,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3657,7 +3657,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3670,7 +3670,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3683,7 +3683,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3696,7 +3696,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3709,7 +3709,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3722,7 +3722,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3735,7 +3735,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3748,7 +3748,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3761,7 +3761,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3774,7 +3774,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3787,7 +3787,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3800,7 +3800,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3813,7 +3813,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3826,7 +3826,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3839,7 +3839,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3852,7 +3852,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3865,7 +3865,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3878,7 +3878,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3891,7 +3891,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3904,7 +3904,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3917,7 +3917,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3930,7 +3930,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3943,7 +3943,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3956,7 +3956,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3969,7 +3969,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3982,7 +3982,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -3995,7 +3995,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4008,7 +4008,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4021,7 +4021,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4034,7 +4034,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4047,7 +4047,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4060,7 +4060,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4073,7 +4073,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4086,7 +4086,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4099,7 +4099,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4112,7 +4112,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4125,7 +4125,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4138,7 +4138,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4151,7 +4151,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4164,7 +4164,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4177,7 +4177,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4190,7 +4190,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4203,7 +4203,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4216,7 +4216,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4229,7 +4229,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4242,7 +4242,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4255,7 +4255,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4268,7 +4268,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4281,7 +4281,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4294,7 +4294,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4307,7 +4307,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4320,7 +4320,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4333,7 +4333,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4346,7 +4346,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4359,7 +4359,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4372,7 +4372,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4385,7 +4385,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4398,7 +4398,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4411,7 +4411,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4424,7 +4424,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4437,7 +4437,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4450,7 +4450,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4463,7 +4463,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4476,7 +4476,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4489,7 +4489,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4502,7 +4502,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4515,7 +4515,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4528,7 +4528,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4541,7 +4541,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4554,7 +4554,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4567,7 +4567,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4580,7 +4580,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "No published % cutoff; rigorous CodeSignal/HackerRank OA (2-3 hard DSA) + 4-6 technical, system-design and behavioural rounds; 7+ CGPA and shipped projects/internships strongly preferred",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4593,7 +4593,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4606,7 +4606,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4619,7 +4619,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree, any branch with strong programming; CodeSignal-style assessment + deep technical interviews; no active backlogs typical; projects/top-coder profiles matter",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4632,7 +4632,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4645,7 +4645,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4658,7 +4658,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech (CSE/IT/ECE preferred); strong DSA & CS fundamentals; online assessment + 3-5 rounds (coding, design, hiring-manager); bar-raiser interviews for senior bar",
   "region": "Global",
   "sector": "Product / Cloud / SaaS"
  },
@@ -4671,7 +4671,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4684,7 +4684,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4697,7 +4697,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4710,7 +4710,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4723,7 +4723,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4736,7 +4736,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4749,7 +4749,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4762,7 +4762,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4775,7 +4775,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4788,7 +4788,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4801,7 +4801,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4814,7 +4814,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4827,7 +4827,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4840,7 +4840,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4853,7 +4853,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4866,7 +4866,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4879,7 +4879,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4892,7 +4892,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4905,7 +4905,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4918,7 +4918,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4931,7 +4931,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4944,7 +4944,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4957,7 +4957,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4970,7 +4970,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4983,7 +4983,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -4996,7 +4996,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5009,7 +5009,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5022,7 +5022,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5035,7 +5035,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5048,7 +5048,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5061,7 +5061,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5074,7 +5074,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5087,7 +5087,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5100,7 +5100,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5113,7 +5113,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5126,7 +5126,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5139,7 +5139,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5152,7 +5152,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5165,7 +5165,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5178,7 +5178,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5191,7 +5191,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5204,7 +5204,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5217,7 +5217,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5230,7 +5230,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5243,7 +5243,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5256,7 +5256,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5269,7 +5269,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5282,7 +5282,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5295,7 +5295,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5308,7 +5308,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5321,7 +5321,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5334,7 +5334,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5347,7 +5347,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5360,7 +5360,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5373,7 +5373,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5386,7 +5386,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5399,7 +5399,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5412,7 +5412,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5425,7 +5425,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5438,7 +5438,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5451,7 +5451,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5464,7 +5464,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5477,7 +5477,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5490,7 +5490,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5503,7 +5503,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5516,7 +5516,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5529,7 +5529,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5542,7 +5542,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5555,7 +5555,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5568,7 +5568,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5581,7 +5581,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5594,7 +5594,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5607,7 +5607,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5620,7 +5620,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5633,7 +5633,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5646,7 +5646,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5659,7 +5659,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5672,7 +5672,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5685,7 +5685,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5698,7 +5698,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5711,7 +5711,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5724,7 +5724,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5737,7 +5737,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5750,7 +5750,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5763,7 +5763,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5776,7 +5776,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5789,7 +5789,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5802,7 +5802,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5815,7 +5815,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5828,7 +5828,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5841,7 +5841,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5854,7 +5854,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5867,7 +5867,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5880,7 +5880,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5893,7 +5893,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5906,7 +5906,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5919,7 +5919,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5932,7 +5932,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5945,7 +5945,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5958,7 +5958,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5971,7 +5971,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5984,7 +5984,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -5997,7 +5997,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6010,7 +6010,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6023,7 +6023,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6036,7 +6036,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6049,7 +6049,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6062,7 +6062,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6075,7 +6075,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6088,7 +6088,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6101,7 +6101,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6114,7 +6114,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6127,7 +6127,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6140,7 +6140,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6153,7 +6153,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6166,7 +6166,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6179,7 +6179,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6192,7 +6192,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6205,7 +6205,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6218,7 +6218,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6231,7 +6231,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6244,7 +6244,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6257,7 +6257,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6270,7 +6270,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6283,7 +6283,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6296,7 +6296,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6309,7 +6309,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6322,7 +6322,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6335,7 +6335,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6348,7 +6348,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6361,7 +6361,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6374,7 +6374,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6387,7 +6387,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "HackerRank OA + 3-4 Tech Rounds + Hiring Manager",
   "focus": "Advanced DSA, System Design, OOP, Project Depth",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6400,7 +6400,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (2-3 DSA) + 3 Tech Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6413,7 +6413,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "Engineering degree; typical screening bar 60%+ or 6 CGPA; HackerRank/Codility OA + 3-4 DSA/system-design/project rounds + HR; internship validation common",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6426,7 +6426,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6439,7 +6439,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + DSA/Project Rounds + HR",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6452,7 +6452,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, Low-Level/Systems Design, Scalability, Product Sense",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "B.E./B.Tech; 60%+ screening bar; online coding assessment + technical + product sense rounds; hiring often same-week with rapid offers",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6465,7 +6465,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "OA + Coding Interview + System Design + Behavioral",
   "focus": "DSA, CS Fundamentals, Agile, Ownership Mindset",
-  "criteria": "Strong DSA + projects/internship; CGPA 7+ preferred; OA + 3-4 technical rounds + HR",
+  "criteria": "6+ CGPA typically required; strong DSA from OA; 3-4 technical rounds + culture-fit; 1 or 0 active backlogs; startup fast-track decisioning",
   "region": "India",
   "sector": "Indian Product / Fintech"
  },
@@ -6478,7 +6478,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6491,7 +6491,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6504,7 +6504,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6517,7 +6517,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6530,7 +6530,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6543,7 +6543,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6556,7 +6556,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6569,7 +6569,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6582,7 +6582,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6595,7 +6595,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6608,7 +6608,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6621,7 +6621,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6634,7 +6634,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6647,7 +6647,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6660,7 +6660,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6673,7 +6673,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6686,7 +6686,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6699,7 +6699,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6712,7 +6712,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6725,7 +6725,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6738,7 +6738,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6751,7 +6751,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6764,7 +6764,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6777,7 +6777,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6790,7 +6790,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6803,7 +6803,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6816,7 +6816,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6829,7 +6829,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6842,7 +6842,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6855,7 +6855,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6868,7 +6868,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6881,7 +6881,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6894,7 +6894,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6907,7 +6907,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6920,7 +6920,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6933,7 +6933,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6946,7 +6946,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6959,7 +6959,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6972,7 +6972,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6985,7 +6985,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -6998,7 +6998,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7011,7 +7011,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7024,7 +7024,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7037,7 +7037,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7050,7 +7050,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7063,7 +7063,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7076,7 +7076,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7089,7 +7089,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7102,7 +7102,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7115,7 +7115,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7128,7 +7128,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7141,7 +7141,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7154,7 +7154,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7167,7 +7167,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7180,7 +7180,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7193,7 +7193,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7206,7 +7206,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7219,7 +7219,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7232,7 +7232,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7245,7 +7245,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7258,7 +7258,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7271,7 +7271,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7284,7 +7284,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7297,7 +7297,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7310,7 +7310,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7323,7 +7323,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7336,7 +7336,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7349,7 +7349,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7362,7 +7362,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7375,7 +7375,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7388,7 +7388,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7401,7 +7401,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7414,7 +7414,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7427,7 +7427,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7440,7 +7440,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7453,7 +7453,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7466,7 +7466,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7479,7 +7479,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7492,7 +7492,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7505,7 +7505,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7518,7 +7518,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7531,7 +7531,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7544,7 +7544,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7557,7 +7557,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7570,7 +7570,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7583,7 +7583,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7596,7 +7596,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7609,7 +7609,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7622,7 +7622,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7635,7 +7635,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7648,7 +7648,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7661,7 +7661,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7674,7 +7674,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7687,7 +7687,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7700,7 +7700,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7713,7 +7713,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7726,7 +7726,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7739,7 +7739,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7752,7 +7752,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7765,7 +7765,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7778,7 +7778,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7791,7 +7791,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7804,7 +7804,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7817,7 +7817,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7830,7 +7830,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7843,7 +7843,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7856,7 +7856,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7869,7 +7869,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7882,7 +7882,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7895,7 +7895,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7908,7 +7908,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7921,7 +7921,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7934,7 +7934,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7947,7 +7947,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7960,7 +7960,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7973,7 +7973,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7986,7 +7986,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -7999,7 +7999,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8012,7 +8012,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8025,7 +8025,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8038,7 +8038,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8051,7 +8051,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8064,7 +8064,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8077,7 +8077,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8090,7 +8090,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8103,7 +8103,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8116,7 +8116,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8129,7 +8129,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8142,7 +8142,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8155,7 +8155,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8168,7 +8168,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8181,7 +8181,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8194,7 +8194,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8207,7 +8207,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8220,7 +8220,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8233,7 +8233,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8246,7 +8246,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8259,7 +8259,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8272,7 +8272,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8285,7 +8285,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8298,7 +8298,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8311,7 +8311,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8324,7 +8324,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8337,7 +8337,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8350,7 +8350,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8363,7 +8363,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8376,7 +8376,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8389,7 +8389,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8402,7 +8402,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8415,7 +8415,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8428,7 +8428,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8441,7 +8441,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Coding Assessment + R&D Interview Rounds + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8454,7 +8454,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8467,7 +8467,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "65%+ or 6.5-7 CGPA typical shortlist; strong core engineering + CS fundamentals; aptitude + coding test + 2-3 technical panel interviews; internship preferred; branch often limited to CSE/IT/ECE/EEE",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8480,7 +8480,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Digital Design, Verilog, VLSI, FPGAs",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8493,7 +8493,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8506,7 +8506,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8519,7 +8519,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "C++, C#, .NET, Automotive Protocols, Simulation",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "60-70% aggregate with excellent core subjects; online aptitude + technical assessment + telephonic + face-to-face panels; embedded/C++ depth valued for R&D roles",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8532,7 +8532,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "MATLAB, Signal Processing, Optics, Firmware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8545,7 +8545,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Test + Telephonic + Technical Panel + HR",
   "focus": "Embedded C, Python, Linux Kernel, Device Drivers",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8558,7 +8558,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "HARD",
   "rounds": "Aptitude + Coding Test + 2-3 Tech Interviews + HR",
   "focus": "Embedded Systems, C/C++, RTOS, Hardware",
-  "criteria": "Solid CS fundamentals, CGPA 6.5+; aptitude + coding test + 2-3 technical panel interviews",
+  "criteria": "B.E./B.Tech with solid fundamentals; 7+ CGPA competitive; coding assessment + domain technical interviews (firmware/software); no active backlogs",
   "region": "India",
   "sector": "Engineering R&D / GCC"
  },
@@ -8571,7 +8571,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8584,7 +8584,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8597,7 +8597,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "Wipro NLTH/Elite: 60%+ in X, XII & UG; 1 backlog allowed at assessment (clear before joining); max 3-year education gap; age up to 25; online assessment (aptitude + logical + verbal + written comm) + technical + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8610,7 +8610,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8623,7 +8623,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8636,7 +8636,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8649,7 +8649,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8662,7 +8662,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8675,7 +8675,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8688,7 +8688,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8701,7 +8701,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8714,7 +8714,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8727,7 +8727,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8740,7 +8740,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8753,7 +8753,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8766,7 +8766,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8779,7 +8779,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8792,7 +8792,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8805,7 +8805,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8818,7 +8818,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8831,7 +8831,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8844,7 +8844,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8857,7 +8857,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8870,7 +8870,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8883,7 +8883,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8896,7 +8896,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8909,7 +8909,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8922,7 +8922,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8935,7 +8935,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8948,7 +8948,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & degree (each stage, no rounding-off); max 1 active backlog (all cleared before joining); education gap not over 24 months; age 18-28; 2024-26 batch; work experience up to 2 yrs; TCS NQT (aptitude + advanced coding) + HR; Prime/Digital tracks need elite NQT scores",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8961,7 +8961,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8974,7 +8974,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -8987,7 +8987,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9000,7 +9000,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9013,7 +9013,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% in X (or 6.5 CGPA), 60% in XII, 65% or 6.5 CGPA in graduation; NO active backlogs; max 1-year gap (X to graduation only, none inside graduation); full-time BE/BTech/MCA/MSc; cognitive + technical + communication + coding + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9026,7 +9026,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9039,7 +9039,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9052,7 +9052,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9065,7 +9065,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9078,7 +9078,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9091,7 +9091,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9104,7 +9104,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9117,7 +9117,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9130,7 +9130,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9143,7 +9143,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9156,7 +9156,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ in 10th, 12th & degree; no active backlogs; online aptitude + pseudo-coding + tech + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9169,7 +9169,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9182,7 +9182,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9195,7 +9195,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9208,7 +9208,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9221,7 +9221,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9234,7 +9234,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9247,7 +9247,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9260,7 +9260,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9273,7 +9273,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "TCS Digital/Prime: 60% per-stage floor + top NQT advanced-coding score; strong DSA; technical + HR; packages up to ~12 LPA",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9286,7 +9286,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9299,7 +9299,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9312,7 +9312,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9325,7 +9325,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9338,7 +9338,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9351,7 +9351,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9364,7 +9364,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9377,7 +9377,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9390,7 +9390,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9403,7 +9403,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9416,7 +9416,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9429,7 +9429,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9442,7 +9442,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9455,7 +9455,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9468,7 +9468,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% in X/XII/UG; no active backlogs; max gap typically 1-2 yrs; online assessment + technical + HR; digital roles need stronger coding",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9481,7 +9481,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9494,7 +9494,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9507,7 +9507,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9520,7 +9520,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9533,7 +9533,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9546,7 +9546,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9559,7 +9559,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9572,7 +9572,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9585,7 +9585,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9598,7 +9598,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9611,7 +9611,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9624,7 +9624,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9637,7 +9637,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in X/XII/degree; no active backlogs; online coding assessment (DSA) + 2-3 technical rounds + HR; product-depth focus",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9650,7 +9650,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9663,7 +9663,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9676,7 +9676,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9689,7 +9689,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9702,7 +9702,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9715,7 +9715,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9728,7 +9728,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9741,7 +9741,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9754,7 +9754,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9767,7 +9767,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9780,7 +9780,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9793,7 +9793,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9806,7 +9806,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9819,7 +9819,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9832,7 +9832,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% throughout academics; no active backlogs; online test (aptitude + technical) + 2-3 interviews; standard vs elite AI track based on specialized assessment",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9845,7 +9845,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9858,7 +9858,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "GenC: 60%+ in graduation; 50%+ in X/XII typical; no active backlogs; aptitude + communication + technical + HR; GenC Elevate/Pro tracks need stronger coding + project review",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9871,7 +9871,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9884,7 +9884,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9897,7 +9897,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9910,7 +9910,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9923,7 +9923,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9936,7 +9936,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9949,7 +9949,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9962,7 +9962,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9975,7 +9975,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -9988,7 +9988,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10001,7 +10001,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10014,7 +10014,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10027,7 +10027,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10040,7 +10040,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10053,7 +10053,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10066,7 +10066,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10079,7 +10079,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10092,7 +10092,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10105,7 +10105,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10118,7 +10118,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10131,7 +10131,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10144,7 +10144,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10157,7 +10157,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10170,7 +10170,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10183,7 +10183,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10196,7 +10196,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10209,7 +10209,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10222,7 +10222,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10235,7 +10235,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10248,7 +10248,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10261,7 +10261,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10274,7 +10274,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10287,7 +10287,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10300,7 +10300,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10313,7 +10313,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10326,7 +10326,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10339,7 +10339,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10352,7 +10352,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10365,7 +10365,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10378,7 +10378,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10391,7 +10391,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10404,7 +10404,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10417,7 +10417,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10430,7 +10430,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ in X, XII & graduation (simple average incl all subjects); NO active backlogs; relocate-anywhere + technology-flexible commitment; Infosys test/coding + technical + HR (Specialist/Power Programmer tracks need 7.5+ CGPA & strong coding)",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10443,7 +10443,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10456,7 +10456,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10469,7 +10469,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10482,7 +10482,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10495,7 +10495,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10508,7 +10508,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10521,7 +10521,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10534,7 +10534,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10547,7 +10547,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10560,7 +10560,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10573,7 +10573,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10586,7 +10586,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10599,7 +10599,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10612,7 +10612,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10625,7 +10625,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10638,7 +10638,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10651,7 +10651,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10664,7 +10664,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10677,7 +10677,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10690,7 +10690,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10703,7 +10703,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10716,7 +10716,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% in X, XII & graduation (or 6.0 CGPA); no active backlogs at drive; online aptitude + essay/GD + technical + HR; Analyst vs Senior Analyst track decided by assessment score",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10729,7 +10729,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10742,7 +10742,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10755,7 +10755,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10768,7 +10768,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10781,7 +10781,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10794,7 +10794,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10807,7 +10807,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10820,7 +10820,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10833,7 +10833,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10846,7 +10846,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10859,7 +10859,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10872,7 +10872,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10885,7 +10885,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10898,7 +10898,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10911,7 +10911,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10924,7 +10924,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10937,7 +10937,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10950,7 +10950,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10963,7 +10963,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10976,7 +10976,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -10989,7 +10989,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11002,7 +11002,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11015,7 +11015,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11028,7 +11028,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11041,7 +11041,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11054,7 +11054,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11067,7 +11067,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11080,7 +11080,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11093,7 +11093,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11106,7 +11106,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11119,7 +11119,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11132,7 +11132,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11145,7 +11145,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11158,7 +11158,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11171,7 +11171,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11184,7 +11184,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11197,7 +11197,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11210,7 +11210,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11223,7 +11223,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11236,7 +11236,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11249,7 +11249,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11262,7 +11262,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11275,7 +11275,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11288,7 +11288,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11301,7 +11301,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11314,7 +11314,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11327,7 +11327,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11340,7 +11340,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11353,7 +11353,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11366,7 +11366,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11379,7 +11379,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11392,7 +11392,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11405,7 +11405,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11418,7 +11418,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "MCQ Test + Technical Interview + HR",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11431,7 +11431,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "Full-Stack, Microservices, DevOps, Cloud",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11444,7 +11444,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "DSA, Cloud, Distributed Systems, Problem Solving",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11457,7 +11457,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Aptitude + Pseudo-code Test + Tech + HR",
   "focus": "OOP, Data Structures, Database, Algorithms",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11470,7 +11470,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11483,7 +11483,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60%+ across 10th, 12th and graduation; one backlog allowed at assessment (must clear before joining); full-time degree only; aptitude/technical assessment + interview",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11496,7 +11496,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Written Aptitude + Technical Test + HR Round",
   "focus": "DSA, System Design, Core CS Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% or 6.0 CGPA in X, XII & graduation (each stage, no rounding); 1 or 0 active backlogs; max 24-month education gap; age 18-28; full-time BE/BTech/MTech/MCA/MSc from AICTE/UGC institute; online aptitude + coding assessment + HR",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11509,7 +11509,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "EASY",
   "rounds": "Online Assessment (Aptitude + Coding) + Interview",
   "focus": "Algorithms, Aptitude, Programming Fundamentals",
-  "criteria": "60% in 10th/12th/B.Tech, no active backlogs; aptitude + technical test; ~1 year bond at some firms",
+  "criteria": "60% aggregate in 10th, 12th & degree; no active backlogs at drive; max 2-year gap; online test (aptitude + logical + verbal) + technical + HR round",
   "region": "India",
   "sector": "IT Services"
  },
@@ -11522,7 +11522,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11535,7 +11535,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11548,7 +11548,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11561,7 +11561,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11574,7 +11574,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11587,7 +11587,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11600,7 +11600,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11613,7 +11613,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11626,7 +11626,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11639,7 +11639,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11652,7 +11652,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11665,7 +11665,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11678,7 +11678,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11691,7 +11691,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11704,7 +11704,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11717,7 +11717,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11730,7 +11730,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11743,7 +11743,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11756,7 +11756,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11769,7 +11769,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11782,7 +11782,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11795,7 +11795,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11808,7 +11808,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11821,7 +11821,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11834,7 +11834,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11847,7 +11847,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11860,7 +11860,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11873,7 +11873,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11886,7 +11886,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11899,7 +11899,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11912,7 +11912,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11925,7 +11925,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11938,7 +11938,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11951,7 +11951,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11964,7 +11964,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11977,7 +11977,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -11990,7 +11990,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12003,7 +12003,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12016,7 +12016,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12029,7 +12029,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12042,7 +12042,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12055,7 +12055,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12068,7 +12068,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12081,7 +12081,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12094,7 +12094,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12107,7 +12107,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12120,7 +12120,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12133,7 +12133,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12146,7 +12146,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12159,7 +12159,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12172,7 +12172,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12185,7 +12185,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12198,7 +12198,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12211,7 +12211,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12224,7 +12224,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12237,7 +12237,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12250,7 +12250,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12263,7 +12263,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12276,7 +12276,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12289,7 +12289,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12302,7 +12302,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12315,7 +12315,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12328,7 +12328,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12341,7 +12341,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12354,7 +12354,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12367,7 +12367,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12380,7 +12380,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12393,7 +12393,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12406,7 +12406,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12419,7 +12419,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12432,7 +12432,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12445,7 +12445,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12458,7 +12458,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12471,7 +12471,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12484,7 +12484,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12497,7 +12497,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12510,7 +12510,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12523,7 +12523,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12536,7 +12536,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12549,7 +12549,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "DRDO CEPTAM/recruitment exam or GATE route for scientists; 60%+ in engineering; age limit per notification; technical interview + medical/document checks",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12562,7 +12562,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12575,7 +12575,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12588,7 +12588,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12601,7 +12601,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12614,7 +12614,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12627,7 +12627,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12640,7 +12640,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12653,7 +12653,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12666,7 +12666,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12679,7 +12679,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12692,7 +12692,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12705,7 +12705,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12718,7 +12718,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12731,7 +12731,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12744,7 +12744,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12757,7 +12757,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12770,7 +12770,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12783,7 +12783,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12796,7 +12796,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12809,7 +12809,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12822,7 +12822,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based + ISRO Centralized Recruitment Board (ICRB) exam for scientists/engineers; 60-65% in relevant branch; age 18-35 (relaxations); interview for shortlisted; no service bond",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12835,7 +12835,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12848,7 +12848,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12861,7 +12861,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12874,7 +12874,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12887,7 +12887,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12900,7 +12900,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Standard PSU route: GATE/National exam score + interview; 60%+ academics; age criterion & educational gap rules apply strictly; physical/medical requirements for certain sectors",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12913,7 +12913,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12926,7 +12926,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12939,7 +12939,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12952,7 +12952,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Written (Technical + Aptitude) + Interview (Basis GATE/Exam Score)",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12965,7 +12965,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Core Engineering, Numericals, Technical Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12978,7 +12978,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -12991,7 +12991,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "GATE-based Shortlist + Technical Interview + Medical",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "GATE-based shortlist or direct campus (core branches); 60%+ in relevant branch; online exam + interview; medical + background verification; service bonding possible",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  },
@@ -13004,7 +13004,7 @@ window.COMPANIES_DB = [
   "difficultyCat": "MEDIUM",
   "rounds": "Online Exam + Document Verification + Interview",
   "focus": "Thermodynamics/Power/Materials as per core branch, Aptitude",
-  "criteria": "60-65% aggregate; GATE/BEHCL score-based shortlist (many PSUs); document + medical verification",
+  "criteria": "Recruitment via GATE score shortlisting (most PSUs); 60-65% aggregate in qualifying exam; age limit generally 30 yrs (relaxations for SC/ST/OBC/PwBD); medical fitness + document verification; written + technical interview",
   "region": "India",
   "sector": "Core / PSU / Manufacturing"
  }

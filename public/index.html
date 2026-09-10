@@ -2053,13 +2053,15 @@ const isProductTrack = !!(track && track.indexOf('Product') !== -1);
  compareBtn.addEventListener('click', () => {
  if(selectedForCompare.size < 2) return;
  const companies = [...selectedForCompare].map(idx => allCompanies[parseInt(idx, 10)]);
- const rows = [
- ['Company', ...companies.map(c => c.name)],
- ['Category', ...companies.map(c => c.type)],
- ['Fresher CTC Band', ...companies.map(c => c.ctc)],
- ['Difficulty', ...companies.map(c => c.difficulty)],
- ['Rounds & Dynamics', ...companies.map(c => c.rounds)],
- ['Key Skills', ...companies.map(c => c.focus)]
+const rows = [
+  ['Company', ...companies.map(c => c.name)],
+  ['Category', ...companies.map(c => c.type)],
+  ['Region', ...companies.map(c => c.region || 'India')],
+  ['Fresher CTC Band', ...companies.map(c => c.ctc)],
+  ['Difficulty', ...companies.map(c => c.difficulty)],
+  ['Rounds & Dynamics', ...companies.map(c => c.rounds)],
+  ['Key Skills', ...companies.map(c => c.focus)],
+  ['Joining Criteria', ...companies.map(c => c.criteria || '—')]
  ];
  const tableHtml = rows.map(r => `<tr><th>${r[0]}</th>${r.slice(1).map(v => `<td>${v}</td>`).join('')}</tr>`).join('');
  document.getElementById('compareContent').innerHTML = '<table class="compare-table"><tbody>' + tableHtml + '</tbody></table>';

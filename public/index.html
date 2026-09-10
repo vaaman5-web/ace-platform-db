@@ -1305,8 +1305,7 @@ th {
  </div>
 <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
   <button type="button" class="btn" id="analyzeBtn">Run Placement Readiness Analysis</button>
-  <button type="button" class="btn" id="quizBtn" style="white-space:nowrap;">Mock Placement Quiz</button>
-  <button type="button" class="btn" id="aiQuizBtn" style="white-space:nowrap; background:var(--sb-teal); border-color:var(--sb-teal);">AI Mock Quiz</button>
+  <button type="button" class="btn" id="aiQuizBtn" style="white-space:nowrap; background:var(--sb-teal); border-color:var(--sb-teal);">Mock Quiz</button>
   </div>
   </form>
  </div>
@@ -1388,7 +1387,7 @@ th {
 </div>
   </section>
 
-  <!-- AI Mock Quiz Progress Panel -->
+  <!-- Mock Quiz Progress Panel -->
   <section class="panel" style="margin-top: 0.8rem;">
   <div class="panel-header">
   <span class="panel-title">AI Adaptive Learning Progress</span>
@@ -1605,9 +1604,8 @@ const allCompanies = generateComplete500Dataset();
  const companyIndex = new Map(allCompanies.map((c, i) => [c, i]));
  let currentPage = 1;
  const recordsPerPage = 10;
- let filteredData = [...allCompanies];
- let quizPts = null;
- let lastAnalysed = { score: 0 };
+let filteredData = [...allCompanies];
+  let lastAnalysed = { score: 0 };
  let suppressAutoRecord = true;
 
  function renderTable() {
@@ -1780,11 +1778,8 @@ let score = 50;
  tier = score >= 72 ? "Consulting Track Ideal" : score >= 55 ? "Good Fit" : score >= 42 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
  verifiedSkills.push("SQL", "Analytics Basics", "Problem Solving");
 missingGaps.push("Case Study Strategy", "SAP/Cloud Basics");
- }
+  }
 
-  /* Quiz readiness factor — applied to base score when the quiz is taken */
-  if (quizPts !== null) {
-  score = Math.max(4, Math.min(100, Math.round(score * (0.7 + (quizPts / 15) * 0.4))));
   if(track === 'Tier 1A Product') {
   tier = score >= 78 ? "FAANG Level Competitive" : score >= 60 ? "Strong Contender" : score >= 45 ? "Borderline - Upskilling Needed" : "Hard Upskilling Needed";
   } else if(track === 'Tier 1B Product') {
@@ -2054,50 +2049,6 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   document.getElementById('featureModal').classList.remove('open');
   }
   });
-
-  /* ============ MOCK PLACEMENT QUiz ============ */
-  document.getElementById('quizBtn').addEventListener('click', openQuiz);
-
-  function openQuiz() {
-  const quizData = [
-  { q: 'How many coding problems have you solved on LeetCode / GfG?', opts: ['Fewer than 25', '25 - 75', '75 - 150', '150+'], pts: [0, 1, 2, 3] },
-  { q: 'How many real-world projects have you completed?', opts: ['None yet', '1', '2 - 3', '4+'], pts: [0, 1, 2, 3] },
-  { q: 'Mock interviews or coding contest experience?', opts: ['None', '1 - 2 mocks', '3 - 5 mocks / contests', '6+ / placement-proven'], pts: [0, 1, 2, 3] },
-  { q: 'Internships or certifications related to your target track?', opts: ['None', '1 internship or cert', '2+ interns or certs', 'Strong portfolio'], pts: [0, 1, 2, 3] },
-  { q: 'How many hours per week can you commit to preparation?', opts: ['Under 5', '5 - 10', '10 - 20', '20+'], pts: [0, 1, 2, 3] }
-  ];
-  const html = quizData.map((item, i) => `
-  <div class="quiz-q">
-  <div class="quiz-question">Q${i + 1}. ${item.q}</div>
-  ${item.opts.map((opt, j) => `<label class="quiz-opt"><input type="radio" name="quizq${i}" value="${item.pts[j]}"> ${opt}</label>`).join('')}
-  </div>`).join('');
-  const status = quizPts === null ? 'Quiz not taken yet — your answers will adjust the Match Score.' : 'Last quiz result: ' + quizPts + '/15 (already applied).';
-  showFeatureModal('Mock Placement Readiness Quiz',
-  html + '<div class="quiz-note">' + status + '</div>' +
-  '<button type="button" class="btn btn-sm" id="quizEvalBtn" style="width:auto;">Evaluate & Apply to Match Score</button>');
-  document.getElementById('quizEvalBtn').addEventListener('click', evaluateQuiz);
-  }
-
-  function evaluateQuiz() {
-  let pts = 0;
-  for (let i = 0; i < 5; i++) {
-  const sel = document.querySelector('input[name="quizq' + i + '"]:checked');
-  if (!sel) { alert('Please answer all 5 questions to evaluate.'); return; }
-  pts += parseInt(sel.value, 10);
-  }
-  quizPts = pts;
-  const factor = 0.7 + (pts / 15) * 0.4;
-  document.getElementById('featureModal').classList.remove('open');
-  document.getElementById('analyzeBtn').click();
-  const updated = lastAnalysed.score;
-  showFeatureModal('Mock Placement Readiness Quiz — Result',
-  '<div class="quiz-result">' +
-  '<div class="quiz-question">Quiz Score: <b>' + pts + '/15</b></div>' +
-  '<div class="quiz-question">Readiness factor applied: <b>' + factor.toFixed(2) + 'x</b> (' + (pts >= 9 ? 'boosts your score' : pts >= 5 ? 'small adjustment' : 'pulls your score down') + ')</div>' +
-  '<div class="quiz-question">Updated Match Score: <b>' + updated + '%</b></div>' +
-  '<div class="quiz-note">Run the analysis again anytime to refresh the report and history.</div>' +
-  '</div>');
-  }
 
   /* ============ 30-DAY STUDY PLAN ============ */
   document.getElementById('planBtn').addEventListener('click', openStudyPlan);

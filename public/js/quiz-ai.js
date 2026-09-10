@@ -73,7 +73,7 @@
     const body = document.getElementById('featureModalBody');
     const modal = document.getElementById('featureModal');
     if (title && body && modal) {
-      title.textContent = 'AI Mock Quiz — Adaptive Skills Test';
+      title.textContent = 'Mock Quiz — Adaptive Skills Test';
       body.innerHTML = html;
       modal.classList.add('open');
     } else {
@@ -161,7 +161,7 @@
     const submit = document.getElementById('aiQuizSubmit');
     const restart = document.getElementById('aiQuizRestart');
     if (submit) submit.addEventListener('click', submitQuiz);
-    if (restart) restart.addEventListener('click', () => { openModal('<div class="quiz-note">Quiz cancelled. Click "AI Mock Quiz" to start over.</div>'); });
+    if (restart) restart.addEventListener('click', () => { openModal('<div class="quiz-note">Quiz cancelled. Click "Mock Quiz" to start over.</div>'); });
   }
 
   function submitQuiz() {
@@ -401,7 +401,7 @@
       const progress = readProgress();
       const last = readLastResult();
       if (!progress || !progress.completedDays || (progress.scores || []).length === 0) {
-        container.innerHTML = '<div class="quiz-note" style="text-align:center; padding:0.6rem;">No quiz attempt yet. Click <strong>&quot;AI Mock Quiz&quot;</strong> above to take your adaptive skills test.</div>';
+        container.innerHTML = '<div class="quiz-note" style="text-align:center; padding:0.6rem;">No quiz attempt yet. Click <strong>&quot;Mock Quiz&quot;</strong> above to take your adaptive skills test.</div>';
         return;
       }
       const totalDays = Object.keys(progress.completedDays).length;

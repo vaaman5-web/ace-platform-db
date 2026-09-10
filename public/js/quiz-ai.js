@@ -8,9 +8,12 @@
 (function () {
   const QUIZ_PROGRESS_KEY = 'ace_ai_quiz_progress';
   const QUIZ_RESULT_KEY = 'ace_ai_quiz_last';
+  const PAGE_SIZE = 10;
   let currentQuestions = [];
   let currentProfile = null;
   let currentQuizId = null;
+  let currentPage = 0;
+  let quizAnswers = {};
 
   /* ---------------- helpers ---------------- */
   function readProgress() {
@@ -94,9 +97,9 @@
     currentProfile = grabProfile();
     openModal(
       '<div class="quiz-note" style="text-align:center; padding: 1rem;">' +
-      '<div style="font-size: 1.4rem; margin-bottom: 0.5rem;">Generating your adaptive quiz...</div>' +
+      '<div style="font-size: 1.4rem; margin-bottom: 0.5rem;">Generating your adaptive 30-question quiz...</div>' +
       '<div>Personalising questions for <strong>' + escapeHtml(currentProfile.primary_lang) +
-      '</strong> and your target track. This checks the profile details you entered above.</div>' +
+      '</strong> and your target track. This takes about a minute and checks the profile details you entered above.</div>' +
       '<div style="margin-top: 1rem;" class="ai-spinner"></div>' +
       '</div>'
     );
@@ -125,6 +128,18 @@
       });
   }
 
+  function difficultyBadge(d) {
+    return d === 'hard'
+      ? '<span style="background:#D64545; color:#fff; border-radius:4px; padding:1px 6px; font-size:0.7rem;">HARD</span>'
+      : d === 'medium'
+        ? '<span style="background:var(--sb-teal); color:#fff; border-radius:4px; padding:1px 6px; font-size:0.7rem;">MEDIUM</span>'
+        : '<span style="background:var(--sb-success); color:#fff; border-radius:4px; padding:1px 6px; font-size:0.7rem;">EASY</span>';
+  }
+
+  function totalQuizPages() {
+    return Math.max(1, Math.ceil(currentQuestions.length / PAGE_SIZE));
+  }
+
   function renderQuiz() {
     if (!currentQuestions.length) {
       openModal('<div class="quiz-note">No questions returned. Please try again.</div>');
@@ -136,52 +151,93 @@
       '<b>Candidate:</b> ' + escapeHtml(currentProfile.candidate_name) +
       ' &middot; <b>Language under test:</b> ' + escapeHtml(lang) +
       ' &middot; <b>Track:</b> ' + escapeHtml(currentProfile.target_track || '—') +
+      ' &middot; <b>' + currentQuestions.length + ' questions</b>' +
       '</div>' +
-      currentQuestions.map((item, i) => {
-        const d = item.difficulty || 'easy';
-        const badge = d === 'hard'
-          ? '<span style="background:var(--sb-warning); color:#fff; border-radius:4px; padding:1px 6px; font-size:0.7rem;">HARD</span>'
-          : d === 'medium'
-            ? '<span style="background:var(--sb-teal); color:#fff; border-radius:4px; padding:1px 6px; font-size:0.7rem;">MEDIUM</span>'
-            : '<span style="background:var(--sb-success); color:#fff; border-radius:4px; padding:1px 6px; font-size:0.7rem;">EASY</span>';
-        return '<div class="quiz-q">' +
-          '<div class="quiz-question">Q' + (i + 1) + '. ' + escapeHtml(item.question) + ' ' + badge + '</div>' +
-          (item.topic ? '<div class="quiz-note" style="margin:0 0 0.3rem 0; font-size:0.72rem; color:var(--sb-teal);">Topic: ' + escapeHtml(item.topic) + '</div>' : '') +
-          (item.options || []).map((opt, j) =>
-            '<label class="quiz-opt"><input type="radio" name="aiq' + i + '" value="' + j + '"> ' + escapeHtml(opt) + '</label>'
-          ).join('') +
-          '</div>';
-      }).join('') +
+      '<div id="aiQuizPager" style="padding:0.3rem 0;"></div>' +
+      '<div id="aiQuizList" style="max-height:50vh; overflow-y:auto; padding:0.2rem 0;"></div>' +
       '<div style="display:flex; justify-content:space-between; gap:0.4rem; margin-top:0.6rem;">' +
       '<button type="button" class="btn btn-sm btn-ghost" id="aiQuizRestart">Cancel</button>' +
       '<button type="button" class="btn btn-sm" id="aiQuizSubmit">Evaluate &amp; Build My Study Plan</button>' +
       '</div>';
 
     openModal(html);
+    const list = document.getElementById('aiQuizList');
     const submit = document.getElementById('aiQuizSubmit');
     const restart = document.getElementById('aiQuizRestart');
     if (submit) submit.addEventListener('click', submitQuiz);
     if (restart) restart.addEventListener('click', () => { openModal('<div class="quiz-note">Quiz cancelled. Click "Mock Quiz" to start over.</div>'); });
+    if (list) list.addEventListener('change', (e) => {
+      if (e.target && e.target.type === 'radio') {
+        const m = /^aiq(\d+)$/.exec(e.target.name || '');
+        if (m) {
+          quizAnswers[parseInt(m[1], 10)] = parseInt(e.target.value, 10);
+          renderQuizPage();
+        }
+      }
+    });
+    renderQuizPage();
+  }
+
+  function renderQuizPage() {
+    const pager = document.getElementById('aiQuizPager');
+    const list = document.getElementById('aiQuizList');
+    if (!list) return;
+    const pages = totalQuizPages();
+    const start = currentPage * PAGE_SIZE;
+    const slice = currentQuestions.slice(start, start + PAGE_SIZE);
+
+    list.innerHTML = slice.map((item, k) => {
+      const i = start + k;
+      const selected = quizAnswers[i];
+      const badge = difficultyBadge(item.difficulty || 'easy');
+      return '<div class="quiz-q">' +
+        '<div class="quiz-question">Q' + (i + 1) + '. ' + escapeHtml(item.question) + ' ' + badge + '</div>' +
+        (item.topic ? '<div class="quiz-note" style="margin:0 0 0.3rem 0; font-size:0.72rem; color:var(--sb-teal);">Topic: ' + escapeHtml(item.topic) + '</div>' : '') +
+        (item.options || []).map((opt, j) =>
+          '<label class="quiz-opt"><input type="radio" name="aiq' + i + '" value="' + j + '"' + (selected === j ? ' checked' : '') + '> ' + escapeHtml(opt) + '</label>'
+        ).join('') +
+        '</div>';
+    }).join('');
+
+    if (pager) {
+      const first = start + 1;
+      const last = Math.min(start + PAGE_SIZE, currentQuestions.length);
+      const answered = slice.filter((_, k) => quizAnswers[start + k] !== undefined).length;
+      const answeredColour = answered === slice.length ? 'var(--sb-success)' : 'var(--sb-warning)';
+      pager.innerHTML = '<div style="display:flex; align-items:center; justify-content:space-between; gap:0.4rem; padding:0.3rem 0;">' +
+        '<button type="button" class="btn btn-sm btn-ghost" id="aiQuizPrev"' + (currentPage === 0 ? ' disabled' : '') + '>&#8249; Prev</button>' +
+        '<span style="font-size:0.76rem; text-align:center;">Questions <b>' + first + '&ndash;' + last + '</b> of ' + currentQuestions.length +
+        ' &middot; Page ' + (currentPage + 1) + '/' + pages +
+        ' &middot; <span style="color:' + answeredColour + '; font-weight:600;">' + answered + '/' + slice.length + ' answered</span></span>' +
+        '<button type="button" class="btn btn-sm" id="aiQuizNext"' + (currentPage === pages - 1 ? ' disabled' : '') + '>Next &#8250;</button>' +
+        '</div>';
+      const prev = document.getElementById('aiQuizPrev');
+      const next = document.getElementById('aiQuizNext');
+      if (prev) prev.addEventListener('click', () => { if (currentPage > 0) { currentPage--; renderQuizPage(); } });
+      if (next) next.addEventListener('click', () => { if (currentPage < pages - 1) { currentPage++; renderQuizPage(); } });
+    }
   }
 
   function submitQuiz() {
-    let unanswered = false;
-    const results = currentQuestions.map((item, i) => {
-      const sel = document.querySelector('input[name="aiq' + i + '"]:checked');
-      if (!sel) { unanswered = true; return null; }
-      return {
+    let missing = -1;
+    currentQuestions.forEach((_, i) => {
+      if (missing < 0 && quizAnswers[i] === undefined) missing = i;
+    });
+    if (missing >= 0) {
+      showFbToast && showFbToast('Please answer every question before evaluating.');
+      currentPage = Math.floor(missing / PAGE_SIZE);
+      renderQuizPage();
+      return;
+    }
+
+    const results = currentQuestions.map((item, i) => ({
         question: item.question,
         topic: item.topic || 'general',
         difficulty: item.difficulty || 'easy',
-        selected: parseInt(sel.value, 10),
-        correct: parseInt(sel.value, 10) === item.answer,
+        selected: quizAnswers[i],
+        correct: quizAnswers[i] === item.answer,
         explanation: item.explanation
-      };
-    });
-    if (unanswered) {
-      showFbToast && showFbToast('Please answer every question before evaluating.');
-      return;
-    }
+      }));
 
     const total = results.length;
     const correct = results.filter(r => r.correct).length;

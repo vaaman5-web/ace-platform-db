@@ -510,6 +510,16 @@
     const panel = document.getElementById('aiProgressPanel');
     if (panel) renderProgressPanel(panel);
     window.renderAiProgressPanel = renderProgressPanel;
+
+    document.addEventListener('click', (e) => {
+      const modal = document.getElementById('featureModal');
+      if (!modal) return;
+      if (e.target && e.target.closest && e.target.closest('#featureModalClose')) {
+        modal.classList.remove('open');
+      } else if (e.target === modal) {
+        modal.classList.remove('open');
+      }
+    });
   }
 
   if (document.readyState === 'loading') {

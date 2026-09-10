@@ -411,9 +411,9 @@
       '<div class="quiz-note" style="margin:0.3rem 0;">' + escapeHtml(plan.plan_summary || '') + '</div>' +
       '<div style="display:flex; gap:0.6rem; align-items:center; margin-top:0.5rem;">' +
       '<div style="flex:1; background:var(--sb-border); border-radius:6px; height:12px;">' +
-      '<div style="width:' + (totalDays ? Math.round(doneDays / totalDays * 100) : 0) + '%; background:var(--sb-success); height:12px; border-radius:6px; animation:progressFill 0.6s ease;"></div>' +
+      '<div id="planTotalBar" style="width:' + (totalDays ? Math.round(doneDays / totalDays * 100) : 0) + '%; background:var(--sb-success); height:12px; border-radius:6px; animation:progressFill 0.6s ease;"></div>' +
       '</div>' +
-      '<span style="font-size:0.8rem; font-weight:600;">' + doneDays + '/' + totalDays + ' days done</span>' +
+      '<span style="font-size:0.8rem; font-weight:600;" data-plan-total>' + doneDays + '/' + totalDays + ' days done</span>' +
       '</div>' +
       '</div>' +
       weeksHtml +
@@ -425,11 +425,10 @@
 
   function initDayCheckboxes() {
     document.querySelectorAll('.plan-day').forEach(label => {
-      label.addEventListener('click', (e) => {
-        const cb = label.querySelector('input[type="checkbox"]');
-        if (!cb) return;
-        cb.checked = !cb.checked;
-        const id = label.getAttribute('data-dayid');
+      const cb = label.querySelector('input[type="checkbox"]');
+      const id = label.getAttribute('data-dayid');
+      if (!cb || !id) return;
+      cb.addEventListener('change', () => {
         const progress = readProgress() || { completedDays: {}, scores: [], streak: 0, lastActive: null };
         progress.completedDays = progress.completedDays || {};
         if (cb.checked) {
@@ -448,10 +447,23 @@
 
   function updateWeekProgress() {
     const progress = readProgress();
-    const existingDays = (progress && progress.completedDays) || {};
+    const completed = (progress && progress.completedDays) || {};
+    let doneTotal = 0, allTotal = 0;
     document.querySelectorAll('.plan-phase').forEach(phase => {
-      const id = new Date().getTime(); // no-op placeholder
+      const labels = phase.querySelectorAll('.plan-day');
+      const ids = Array.from(labels).map(l => l.getAttribute('data-dayid'));
+      const done = ids.filter(id => completed[id]).length;
+      const weekDoneEl = phase.querySelector('.week-progress');
+      const bar = phase.querySelector('.week-progress-bar');
+      if (weekDoneEl) weekDoneEl.textContent = '(' + done + '/' + ids.length + ' done)';
+      if (bar) bar.style.width = (ids.length ? Math.round(done / ids.length * 100) : 0) + '%';
+      doneTotal += done;
+      allTotal += ids.length;
     });
+    const totalEl = document.querySelector('[data-plan-total]');
+    if (totalEl) totalEl.textContent = doneTotal + '/' + allTotal + ' days done';
+    const totalBar = document.getElementById('planTotalBar');
+    if (totalBar) totalBar.style.width = (allTotal ? Math.round(doneTotal / allTotal * 100) : 0) + '%';
   }
 
   /* ---------------- progress panel ---------------- */

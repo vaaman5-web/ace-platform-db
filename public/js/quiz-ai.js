@@ -106,11 +106,15 @@
 
     postJson('quiz', currentProfile)
       .then(payload => {
+        const modal = document.getElementById('featureModal');
+        if (modal && !modal.classList.contains('open')) return;
         currentQuestions = payload.questions || [];
         currentQuizId = (currentQuestions[0] && currentQuestions[0].id) ? null : null;
         renderQuiz();
       })
       .catch(err => {
+        const modal = document.getElementById('featureModal');
+        if (modal && !modal.classList.contains('open')) return;
         openModal(
           '<div class="quiz-result">' +
           '<div class="quiz-question" style="color: var(--sb-danger);">Could not generate quiz</div>' +
@@ -165,7 +169,7 @@
     const submit = document.getElementById('aiQuizSubmit');
     const restart = document.getElementById('aiQuizRestart');
     if (submit) submit.addEventListener('click', submitQuiz);
-    if (restart) restart.addEventListener('click', () => { openModal('<div class="quiz-note">Quiz cancelled. Click "Mock Quiz" to start over.</div>'); });
+    if (restart) restart.addEventListener('click', closeModal);
     if (list) list.addEventListener('change', (e) => {
       if (e.target && e.target.type === 'radio') {
         const m = /^aiq(\d+)$/.exec(e.target.name || '');

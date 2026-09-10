@@ -636,6 +636,36 @@ th {
  color: var(--sb-growth-text);
  border: 1px solid var(--sb-growth-text);
  }
+
+ .badge-gcc { 
+ background: #E8F0FD;
+ color: #1D4ED8;
+ border: 1px solid #1D4ED8;
+ }
+
+ .badge-finance { 
+ background: #F5EDFC;
+ color: #6D28D9;
+ border: 1px solid #6D28D9;
+ }
+
+ .badge-quant { 
+ background: #FDE8EA;
+ color: #BE123C;
+ border: 1px solid #BE123C;
+ }
+
+ .badge-core { 
+ background: #EFF5EA;
+ color: #3F6212;
+ border: 1px solid #3F6212;
+ }
+
+ .badge-startup { 
+ background: #FEF3C7;
+ color: #92400E;
+ border: 1px solid #92400E;
+ }
  
 /* Pagination */
 .pagination-controls {
@@ -768,6 +798,11 @@ th {
  html[data-theme="dark"] .match-item { background: #131B2C; }
  html[data-theme="dark"] .badge-product { background: #33200E; }
  html[data-theme="dark"] .badge-service { background: #14301F; }
+ html[data-theme="dark"] .badge-gcc { background: #14243F; }
+ html[data-theme="dark"] .badge-finance { background: #241538; }
+ html[data-theme="dark"] .badge-quant { background: #351420; }
+ html[data-theme="dark"] .badge-core { background: #1B2A12; }
+ html[data-theme="dark"] .badge-startup { background: #332A0E; }
  html[data-theme="dark"] .history-chip { background: #131B2C; color: var(--sb-text-dark); }
  html[data-theme="dark"] .compare-bar { background: #151D2E; }
 
@@ -1235,13 +1270,13 @@ th {
  <!-- System Meta Banner -->
  <section class="system-status">
  <h2>ACE — Comprehensive Company Recruitment Guide (2026 Updated)</h2>
- <p>Integrated data mapping platform matching 500+ Indian tech service majors, product giants, consulting firms, and emerging startups with live difficulty benchmarks, fresher CTC bands, and selection dynamics.</p>
+ <p>Integrated data mapping platform matching 1000+ national & international companies (tech service majors, product giants, GCCs, finance, consulting, PSUs and startups) with live difficulty benchmarks, fresher CTC bands, joining criteria, and selection dynamics.</p>
  </section>
  
  <!-- Dynamic Key Metrics Dashboard -->
  <div class="metrics-grid">
  <div class="metric-card">
- <div class="val">500+ Listed</div>
+ <div class="val">1000+ Listed</div>
  <div class="lbl">Total Verified Companies</div>
  </div>
  <div class="metric-card">
@@ -1367,7 +1402,7 @@ th {
  </div>
  </div>
  <div class="data-item" style="margin-bottom: 0.35rem;">
- <span class="lbl">Best Matched Companies (From 500+ Database)</span>
+ <span class="lbl">Best Matched Companies (From 1000+ Database)</span>
  <div class="match-list" id="matchedCompanies">
  <span class="skill-tag">Run the analysis to see matches</span>
  </div>
@@ -1449,6 +1484,11 @@ th {
  <option value="ALL">All Company Categories</option>
  <option value="Product">Product-Based Companies</option>
  <option value="Service">Service-Based Companies</option>
+ <option value="GCC / R&D">GCC / Engineering R&D</option>
+ <option value="Finance & Consulting">Finance & Consulting</option>
+ <option value="Quant / HFT">Quant / HFT</option>
+ <option value="Core / PSU">Core / PSU / Manufacturing</option>
+ <option value="Startup">Startups & New-age</option>
  </select>
  <select id="difficultyFilter" class="form-control">
  <option value="ALL">All Difficulty Levels</option>
@@ -1471,7 +1511,8 @@ th {
 <th>Difficulty %</th>
 <th>Rounds & Selection Dynamics</th>
 <th>Key Skills Required</th>
-</tr>
+ <th>Joining Criteria / Region</th>
+ </tr>
 </thead>
  <tbody id="companyTableBody">
  <!-- Dynamically Populated -->
@@ -1542,6 +1583,7 @@ th {
 
  <div class="fb-toast" id="fbToast"></div>
 
+ <script src="js/companies-data.js"></script>
  <script>
  const pdfCompaniesData = [
  { rank: 1, name: "TCS", type: "Service", ctc: "₹7-9 LPA", difficulty: "15%", difficultyCat: "EASY", rounds: "2-3 Rounds (Written + Tech + HR)", focus: "Core Java, SQL, C++, Basic DSA, Aptitude" },
@@ -1600,7 +1642,7 @@ th {
  return list;
  }
  
-const allCompanies = generateComplete500Dataset();
+const allCompanies = (window.COMPANIES_DB && window.COMPANIES_DB.length) ? window.COMPANIES_DB : generateComplete500Dataset();
  const companyIndex = new Map(allCompanies.map((c, i) => [c, i]));
  let currentPage = 1;
  const recordsPerPage = 10;
@@ -1615,10 +1657,11 @@ let filteredData = [...allCompanies];
  const pageRecords = filteredData.slice(start, end);
 
  if(pageRecords.length === 0) {
- tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding: 2rem;">No matching companies found in database.</td></tr>`;
+ tbody.innerHTML = `<tr><td colspan="9" style="text-align:center; padding: 2rem;">No matching companies found in database.</td></tr>`;
  } else {
  tbody.innerHTML = pageRecords.map((c) => {
- const badgeClass = c.type === 'Product' ? 'badge-product' : 'badge-service';
+ const badgeMap = { 'Product': 'badge-product', 'Service': 'badge-service', 'GCC / R&D': 'badge-gcc', 'Finance & Consulting': 'badge-finance', 'Quant / HFT': 'badge-quant', 'Core / PSU': 'badge-core', 'Startup': 'badge-startup' };
+  const badgeClass = badgeMap[c.type] || 'badge-service';
  return `
  <tr>
  <td class="sel-col"><input type="checkbox" class="cmp-chk" data-idx="${companyIndex.get(c)}"></td>
@@ -1629,6 +1672,7 @@ let filteredData = [...allCompanies];
  <td><strong>${c.difficulty}</strong></td>
  <td><span style="font-size:0.8rem; font-weight:600;">${c.rounds}</span></td>
  <td><span style="font-size:0.8rem; color: #5B6B76;">${c.focus}</span></td>
+ <td><span style="font-size:0.78rem; color: #44525E;">${c.criteria || ''}${c.criteria && c.region ? ' · ' : ''}${c.region ? '<strong>(' + c.region + ')</strong>' : ''}</span></td>
  </tr>`;
  }).join('');
  }
@@ -1908,8 +1952,8 @@ document.getElementById('searchInput').addEventListener('input', filterData);
  }
 
  function renderBestMatches(score, track) {
- const targetType = track && track.indexOf('Product') !== -1 ? 'Product' : 'Service';
- const candidates = allCompanies.filter(c => c.type === targetType);
+const isProductTrack = !!(track && track.indexOf('Product') !== -1);
+  const candidates = allCompanies.filter(c => isProductTrack ? c.type === 'Product' : c.type !== 'Product');
  const sorted = [...candidates].sort((a, b) => {
  const da = Math.abs(parseDiff(a.difficulty) - score);
  const db = Math.abs(parseDiff(b.difficulty) - score);

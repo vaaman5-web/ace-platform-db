@@ -167,13 +167,22 @@ function fallbackQuestionBank(lang) {
   return pool.map((item, i) => ({ id: i + 1, difficulty: item.d, topic: item.t, question: item.q, options: item.o, answer: item.a, explanation: item.e }));
 }
 
-function buildQuizPrompt(profile, difficulty) {
+const QUIZ_CACHE_TTL_MS = 10 * 60 * 1000;
+const QUIZ_CALL_TIMEOUT_MS = 55000;
+const quizCache = new Map();
+
+function quizCacheKey(profile) {
+  const cgpaBand = Math.max(1, Math.min(10, Math.floor((parseFloat(profile.cgpa) || 7) / 0.5) + 1));
+  return [profile.primary_lang || 'Java', profile.target_track || 'x', cgpaBand].join('|');
+}
+
+function buildQuizPrompt(profile) {
   const lang = profile.primary_lang || 'Java';
   const topics = (LANGUAGE_TOPICS[lang] || LANGUAGE_TOPICS['Java']).join(', ');
   const cgpa = parseFloat(profile.cgpa) || 7.0;
   const track = profile.target_track || 'general engineering';
 
-  return `Generate exactly 10 ${difficulty.toUpperCase()} placement questions for an engineering student.
+  return `Generate 30 multiple-choice placement questions for an engineering student: 10 EASY, 10 MEDIUM and 10 HARD.
 
 Student profile:
 - Name: ${profile.candidate_name || 'candidate'}
@@ -184,82 +193,86 @@ Student profile:
 
 Topic scope for ${lang}: ${topics}.
 
-Return ONLY a JSON object with exactly this shape (no markdown):
+Return ONLY a JSON object with this exact shape (no markdown):
 {
   "questions": [
     {
       "id": 1,
-      "difficulty": "${difficulty}",
+      "difficulty": "easy",
       "topic": "topic name",
       "question": "full question text",
       "options": ["a", "b", "c", "d"],
-      "answer": 0,
-      "explanation": "short explanation"
+      "answer": 0
     }
   ]
 }
 
 Rules:
-- Generate EXACTLY 10 questions, ALL of difficulty ${difficulty}.
-- ${difficulty === 'easy' ? 'EASY = basic syntax and core concept checks.' : difficulty === 'medium' ? 'MEDIUM = applied logic and moderate problem solving.' : 'HARD = tricky edge cases and strong problem solving.'}
-- answer must be the 0-based index of the correct option.
-- Questions must be answerable without running code, and must reflect real interview difficulty for ${track}.
-- Include a clear explanation for every question.
+- EXACTLY 30 questions: 10 with difficulty "easy", 10 with "medium", 10 with "hard".
+- EASY = basic syntax and core concepts. MEDIUM = applied logic and moderate problem solving. HARD = tricky edge cases and strong problem solving.
+- "answer" must be the 0-based index of the correct option (0-3).
+- Keep each question text concise. No explanation field is required.
+- Questions must be answerable without running code and reflect real interview difficulty for ${track}.
 `;
 }
 
 async function generateQuizQuestions(profile) {
   const lang = profile.primary_lang || 'Java';
+  const key = quizCacheKey(profile);
+  const hit = quizCache.get(key);
+  if (hit && Date.now() - hit.ts < QUIZ_CACHE_TTL_MS) {
+    logger.info('Serving cached quiz for profile key ' + key);
+    return hit.questions.map(q => ({ ...q }));
+  }
+
   const difficulties = ['easy', 'medium', 'hard'];
-  const chunks = await Promise.allSettled(
-    difficulties.map(d =>
-      callLLM(buildQuizPrompt(profile, d), { temperature: 0.7, maxTokens: 6000 })
-        .then(raw => {
-          const parsed = parseJsonResponse(raw);
-          const list = Array.isArray(parsed.questions) ? parsed.questions : [];
-          return list
-            .filter(q => q && q.question && Array.isArray(q.options) && q.options.length >= 2)
-            .map(q => ({
-              difficulty: d,
-              topic: q.topic || 'general',
-              question: q.question,
-              options: q.options.slice(0, 4),
-              answer: typeof q.answer === 'number' ? Math.max(0, Math.min(3, Math.round(q.answer))) : 0,
-              explanation: q.explanation || ''
-            }));
-        })
-    )
-  );
-
-  const failures = [];
-  const questions = [];
-  chunks.forEach((c, i) => {
-    if (c.status === 'fulfilled') {
-      questions.push(...c.value.slice(0, 10));
-    } else {
-      failures.push(difficulties[i] + ': ' + (c.reason && c.reason.message || 'unknown'));
-    }
-  });
-  if (failures.length) {
-    logger.warn('LLM quiz chunk failures; filling from fallback pool', { failures });
-  }
-
-  /* Fill any difficulty shortfall from the curated pool so the quiz always has 30 */
   const bank = fallbackQuestionBank(lang);
-  difficulties.forEach(d => {
-    const have = questions.filter(q => q.difficulty === d).length;
-    if (have < 10) {
-      const fill = shuffle(bank.filter(b => b.difficulty === d)).slice(0, 10 - have);
-      fill.forEach(b => questions.push({ difficulty: d, topic: b.topic, question: b.question, options: b.options, answer: b.answer, explanation: b.explanation }));
-    }
-  });
-  if (questions.length > 0) {
-    /* secondary fill if still short */
-    const extra = shuffle(bank).slice(0, Math.max(0, 30 - questions.length));
-    extra.forEach((b, k) => questions.push({ difficulty: b.difficulty, topic: b.topic, question: b.question, options: b.options, answer: b.answer, explanation: b.explanation, _extra: true }));
+  let llmQuestions = [];
+
+  try {
+    const raw = await Promise.race([
+      callLLM(buildQuizPrompt(profile), { temperature: 0.7, maxTokens: 9000 }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('LLM timeout after ' + QUIZ_CALL_TIMEOUT_MS + 'ms')), QUIZ_CALL_TIMEOUT_MS))
+    ]);
+    const parsed = parseJsonResponse(raw);
+    const list = Array.isArray(parsed.questions) ? parsed.questions : [];
+    llmQuestions = list
+      .filter(q => q && q.question && Array.isArray(q.options) && q.options.length >= 2)
+      .map(q => ({
+        difficulty: difficulties.indexOf(q.difficulty) >= 0 ? q.difficulty : 'easy',
+        topic: q.topic || 'general',
+        question: q.question,
+        options: q.options.slice(0, 4),
+        answer: typeof q.answer === 'number' ? Math.max(0, Math.min(3, Math.round(q.answer))) : 0,
+        explanation: q.explanation || ''
+      }));
+    if (llmQuestions.length < 10) throw new Error('LLM returned too few questions: ' + llmQuestions.length);
+  } catch (err) {
+    llmQuestions = [];
+    logger.warn('LLM quiz generation failed or timed out; using curated pool', { error: err.message });
   }
 
-  return questions.slice(0, 30).map((item, i) => ({ id: i + 1, difficulty: item.difficulty, topic: item.topic, question: item.question, options: item.options, answer: item.answer, explanation: item.explanation }));
+  /* Guarantee exactly 30 questions, 10 per difficulty, topping up from the curated pool */
+  const questions = [];
+  difficulties.forEach(d => {
+    const have = llmQuestions.filter(q => q.difficulty === d).slice(0, 10);
+    questions.push(...have);
+    if (have.length < 10) {
+      questions.push(...shuffle(bank.filter(b => b.difficulty === d)).slice(0, 10 - have.length));
+    }
+  });
+
+  const finalQuestions = questions.slice(0, 30).map((item, i) => ({
+    id: i + 1,
+    difficulty: item.difficulty,
+    topic: item.topic,
+    question: item.question,
+    options: item.options,
+    answer: item.answer,
+    explanation: item.explanation || ''
+  }));
+  quizCache.set(key, { ts: Date.now(), questions: finalQuestions });
+  return finalQuestions;
 }
 
 function shuffle(arr) {

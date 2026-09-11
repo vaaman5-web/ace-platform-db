@@ -1630,8 +1630,41 @@ th {
  .cert-grade.moderate { color: var(--sw-card-text); }
  .cert-grade.emerging { color: var(--sw-text-muted); }
  .cert-grade.minimal { color: var(--sw-text-muted); opacity: 0.6; }
- .cert-empty { font-size: 0.72rem; color: var(--sw-text-muted); margin-top: 0.4rem; }
- </style>
+.cert-empty { font-size: 0.72rem; color: var(--sw-text-muted); margin-top: 0.4rem; }
+  /* ====== CAREER ROADMAP (eligibility × job-requirement gap plan) ====== */
+  .rm-head { border-bottom: 2px solid var(--sw-border); padding-bottom: 0.5rem; margin-bottom: 0.6rem; }
+  .rm-name { font-size: 1.05rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sw-card-text); }
+  .rm-meta { font-size: 0.72rem; color: var(--sw-text-muted); margin-top: 0.15rem; letter-spacing: 0.02em; }
+  .rm-fit { display: flex; align-items: center; gap: 1rem; margin: 0.6rem 0 0.2rem; }
+  .rm-fit-num { font-size: 2rem; font-weight: 900; line-height: 1; letter-spacing: -0.02em; color: var(--sw-card-text); }
+  .rm-fit-label { font-size: 0.62rem; color: var(--sw-text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+  .rm-fit-right { flex: 1; }
+  .rm-bar { height: 8px; background: var(--sw-surface); border: 1px solid var(--sw-border); width: 100%; margin: 0.3rem 0 0.4rem; }
+  .rm-bar > div { height: 100%; background: #FF3000; }
+  .rm-chip { font-size: 0.66rem; font-weight: 700; padding: 0.2rem 0.5rem; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--sw-border); }
+  .rm-chip.have { border-color: #FF3000; color: #FF3000; }
+  .rm-chip.miss { border-color: #000; color: #000; }
+  .rm-chip.ev { border-color: var(--sw-border-soft); color: var(--sw-text-muted); }
+  .rm-phase { margin-top: 0.65rem; }
+  .rm-phase-t { display: flex; gap: 0.5rem; align-items: baseline; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid var(--sw-border-soft); padding-bottom: 0.25rem; margin-bottom: 0.3rem; color: var(--sw-card-text); }
+  .rm-phase-t b { color: #FF3000; }
+  .rm-step { display: grid; grid-template-columns: auto 1fr auto; gap: 0.5rem; align-items: start; padding: 0.4rem 0; border-bottom: 1px dashed var(--sw-border-soft); }
+  .rm-dot { width: 11px; height: 11px; margin-top: 0.15rem; border-radius: 50% !important; }
+  .rm-step.ok .rm-dot { background: #FF3000; }
+  .rm-step.no .rm-dot { background: #000; }
+  .rm-step label { font-size: 0.73rem; font-weight: 800; color: var(--sw-card-text); }
+  .rm-step.small label { font-size: 0.7rem; }
+  .rm-step p { margin: 0.05rem 0 0; font-size: 0.68rem; color: var(--sw-text-muted); }
+  .rm-est { font-size: 0.66rem; font-weight: 800; white-space: nowrap; letter-spacing: 0.05em; color: #FF3000; }
+  .rm-est.done { color: var(--sw-text-muted); }
+  .rm-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+  .rm-col label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sw-text-muted); display: block; margin-bottom: 0.15rem; }
+  .rm-note { font-size: 0.66rem; color: var(--sw-text-muted); margin-top: 0.45rem; letter-spacing: 0.02em; line-height: 1.45; }
+  .rm-ok-line { font-size: 0.7rem; color: var(--sw-text-muted); margin-top: 0.25rem; }
+  .rm-link { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3000; cursor: pointer; border: 1px solid #FF3000; padding: 0.12rem 0.35rem; margin-left: 0.4rem; }
+  .rm-link:hover { background: #FF3000; color: #fff; }
+  @media (max-width: 520px) { .rm-cols { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
  <header>
@@ -1909,6 +1942,7 @@ th {
   </div>
   </div>
   <div style="display:flex; gap:0.4rem; margin-top:0.5rem; flex-wrap:wrap;">
+  <button type="button" class="btn btn-sm" id="roadmapBtn">Career Roadmap</button>
   <button type="button" class="btn btn-sm" id="planBtn">30-Day Study Plan</button>
   <button type="button" class="btn btn-sm" id="questionsBtn">Sample Interview Questions</button>
   </div>
@@ -2092,6 +2126,14 @@ th {
   </div>
   </div>
 
+ <div class="compare-modal" id="roadmapModal">
+  <div class="compare-modal-box">
+  <span class="compare-close" id="roadmapModalClose">CLOSE ✕</span>
+  <h3>Career Roadmap — Eligibility × Job Requirements</h3>
+  <div id="roadmapBody"></div>
+  </div>
+  </div>
+
  <div class="fb-toast" id="fbToast"></div>
 
  <script src="js/companies-data.js"></script>
@@ -2220,7 +2262,219 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
  });
 
  currentPage = 1;
- renderTable();
+/* ===== Career Roadmap — eligibility × job-requirement gap plan ===== */
+  const RM_SKILLS = [
+  ['Core Java', { aliases: ['java'], plan: 'Core Java — collections, exceptions, multithreading, I/O; ship 1 console CRUD app.' }],
+  ['Python', { aliases: ['python', 'data sci', 'machine learn', 'machine learning', 'artificial', ' ml', ' ai'], plan: 'Python core + numpy/pandas; finish 1 ML mini-project with notebook.' }],
+  ['C++', { aliases: ['c++', 'cpp', 'stl'], plan: 'C++ STL, pointers, memory safety; solve 20 medium DSA problems.' }],
+  ['C', { aliases: ['c'], plan: 'C fundamentals, pointers/structs; 15 practice programs.' }],
+  ['SQL', { aliases: ['sql', 'database', 'databases', 'dbms'], plan: 'SQL — joins, group by, subqueries, indexing; 30 queries on a practice DB.' }],
+  ['DSA / Algorithms', { aliases: ['dsa', 'algorithm', 'algorithms', 'dp', 'dynamic programming', 'graph', 'greedy', 'recursion', 'data structures'], plan: 'DSA patterns — arrays, strings, hashing, DP, graphs; 3 problems/day on a judge.' }],
+  ['System Design', { aliases: ['system design', 'architecture', 'architect', 'scalability', 'scalable', 'low level design', 'lld', 'hld', 'ood', 'design patterns'], plan: 'HLD + LLD — caching, load balancing, DB choice; design 2 systems on paper + 1 object model.' }],
+  ['Cloud / DevOps', { aliases: ['cloud', 'aws', 'azure', 'gcp', 'devops', 'docker', 'kubernetes', 'ci/cd'], plan: 'Cloud fundamentals (AWS/Azure) — 3 mini labs + deploy a service; practice exam.' }],
+  ['Web / Frontend', { aliases: ['react', 'angular', 'javascript', 'js', 'html', 'css', 'web', 'frontend'], plan: 'Modern web — HTML/CSS/JS + one framework; build 2 responsive projects.' }],
+  ['AI / ML', { aliases: ['ai', 'ml', 'machine learning', 'deep learning', 'nlp', 'llm'], plan: 'ML lifecycle — regression → classification → 1 end-to-end model with clean eval.' }],
+  ['Aptitude', { aliases: ['aptitude', 'quant', 'logical', 'verbal'], plan: 'Aptitude drills — quant, logical, verbal; 25 questions/day, weekly timed mock.' }],
+  ['Communication', { aliases: ['communicat', 'verbal ability', 'english'], plan: 'Structured communication — 5 mock interviews + STAR-framed stories.' }],
+  ['Consulting / Case', { aliases: ['consult', 'case', 'case-solving', 'solving', 'market sizing', 'profitab'], plan: 'Case frameworks — market sizing, profitability, valuation; solve 1 case/day aloud.' }],
+  ['OOP', { aliases: ['oop', 'object oriented'], plan: 'OOP + SOLID with UML; refactor 1 project to clean layers.' }],
+  ['Git / Version Control', { aliases: ['git', 'github', 'version control'], plan: 'Git — branching, PRs, CI basics; contribute to an open repo.' }],
+  ['Data Analytics', { aliases: ['analytic', 'analytics', 'data analysis', 'excel', 'dashboard'], plan: 'Analytics stack — SQL + Excel/Power BI; publish 1 dashboard.' }],
+  ['Networking', { aliases: ['network', 'networking', 'tcp/ip', 'OSI'], plan: 'Networking basics — TCP/IP, HTTP, DNS; trace 1 web request end-to-end.' }],
+  ['OS', { aliases: ['os', 'operating system', 'process', 'threads', 'memory management'], plan: 'OS — processes, threads, scheduling, deadlocks; implement a mini scheduler.' }],
+  ['Testing / QA', { aliases: ['testing', 'qa', 'selenium', 'junit'], plan: 'Testing — unit + integration basics; add tests to 1 project.' }],
+  ['SAP', { aliases: ['sap'], plan: 'SAP modules overview + guided demo of 1 module (FICO/MM/ABAP basics).' }]
+  ];
+  const RM_OPS_EST = 2;
+  const roadmapState = { picked: '', backlogs: 0, gradYear: 2026, age: 21 };
+
+  function rmHas(text, aliases) {
+  const t = ' ' + String(text || '').toLowerCase().replace(/[^\w\s/+]/g, ' ') + ' ';
+  return aliases.some(function(a) {
+  if (a === 'c') return /[^a-z]c[^a-z]/i.test(t);
+  return t.indexOf(a) >= 0;
+  });
+  }
+  function rmCanonical(word) {
+  const w = String(word || '');
+  for (var i = 0; i < RM_SKILLS.length; i++) {
+  if (rmHas(w, RM_SKILLS[i][1].aliases)) return RM_SKILLS[i][0];
+  }
+  const direct = { 'javascript': 'Web / Frontend', 'sql': 'SQL', 'java': 'Core Java', 'c++': 'C++', 'python': 'Python', 'c': 'C' };
+  return direct[w.toLowerCase()] || '';
+  }
+  function rmSkills() {
+  const have = {};
+  const add = function(w) { const k = rmCanonical(w); if (k) have[k] = true; };
+  add(document.getElementById('primaryLang').value);
+  add(document.getElementById('targetTrack').value);
+  if (lastAnalysed && lastAnalysed.verifiedSkills) lastAnalysed.verifiedSkills.forEach(add);
+  const ev = skillEvidence();
+  Object.keys(ev).forEach(function(sk) { add(sk.replace(/ \/.*$/, '')); });
+  return have;
+  }
+  function rmRequired(c) {
+  const text = (c.focus || '') + ' ' + (c.criteria || '');
+  const out = [];
+  RM_SKILLS.forEach(function(item) { if (rmHas(text, item[1].aliases)) out.push(item[0]); });
+  return out;
+  }
+  function rmOverallScore() {
+  if (lastAnalysed && typeof lastAnalysed.score === 'number' && lastAnalysed.score > 0) return lastAnalysed.score;
+  const cgpa = parseFloat(document.getElementById('cgpa').value) || 0;
+  const lang = document.getElementById('primaryLang').value;
+  function pc(v, tbl) { for (var i = 0; i < tbl.length; i++) { if (v >= tbl[i][0]) return tbl[i][1]; } return tbl[tbl.length - 1][1] || 4; }
+  const acad = pc(cgpa, [[8.5, 90], [8.0, 80], [7.5, 70], [7.0, 60], [6.5, 48], [6.0, 35], [5.5, 22], [0, 10]]) / 100 * 45;
+  const lw = (['Java', 'C++', 'Python'].indexOf(lang) !== -1 ? 85 : (['C', 'JavaScript / SQL'].indexOf(lang) !== -1 ? 65 : 35)) / 100 * 30;
+  const tw = pc(cgpa, [[7.5, 90], [7.0, 75], [6.5, 55], [6.0, 35], [0, 15]]) / 100 * 25;
+  return Math.max(4, Math.min(100, Math.round(acad + lw + tw)));
+  }
+  function rmProfile() {
+  return {
+  cgpa: parseFloat(document.getElementById('cgpa').value) || 0,
+  pctX: null, pctXII: null,
+  pctGrad: (parseFloat(document.getElementById('cgpa').value) || 0) ? Math.round((parseFloat(document.getElementById('cgpa').value) || 0) * 10) : null,
+  backlogs: roadmapState.backlogs,
+  gapMonths: 0,
+  gradYear: roadmapState.gradYear,
+  age: roadmapState.age,
+  gate: false
+  };
+  }
+  function rmEligPlan(c, p) {
+  const e = (c.elig && typeof c.elig === 'object' && Object.keys(c.elig).length) ? c.elig : deriveEligFallback(c);
+  const steps = [];
+  const add = function(ok, label, detail, est) { steps.push({ ok: !!ok, label: label, detail: detail, est: est }); };
+  if (e.minCgpa != null) { const v = p.cgpa != null ? p.cgpa : (p.pctGrad != null ? p.pctGrad / 10 : null); add(v != null && v >= e.minCgpa, 'CGPA ≥ ' + e.minCgpa, v == null ? 'Enter CGPA in the profile above.' : 'Current: ' + v + (v >= e.minCgpa ? ' — met ✓' : ' — next-semester GPA push on high-credit subjects'), v != null && v >= e.minCgpa ? '' : '+4–9 points'); }
+  if (e.noBacklogs) add(p.backlogs === 0, 'Zero active backlogs', 'Current: ' + p.backlogs + ' backlog(s) — clear before shortlisting (hard screen).', p.backlogs === 0 ? '' : '+2 per backlog');
+  else if (e.maxBacklogs != null) add(p.backlogs <= e.maxBacklogs, '≤ ' + e.maxBacklogs + ' backlogs allowed', 'Current: ' + p.backlogs + '.', p.backlogs <= e.maxBacklogs ? '' : '+2 per backlog');
+  if (e.minPctX != null) add(p.pctX != null && p.pctX >= e.minPctX, 'X (10th) ≥ ' + e.minPctX + '%', 'Class X marksheet must clear ' + e.minPctX + '%.', p.pctX != null && p.pctX >= e.minPctX ? '' : '+2');
+  if (e.minPctXII != null) add(p.pctXII != null && p.pctXII >= e.minPctXII, 'XII (12th) ≥ ' + e.minPctXII + '%', 'Class XII screens this firm — keep marksheet verified.', p.pctXII != null && p.pctXII >= e.minPctXII ? '' : '+2');
+  if (e.minPctGrad != null) add(p.pctGrad != null && p.pctGrad >= e.minPctGrad, 'Grad % ≥ ' + e.minPctGrad + '%', 'Current grad %: ' + (p.pctGrad == null ? 'n/a' : p.pctGrad) + '.', p.pctGrad != null && p.pctGrad >= e.minPctGrad ? '' : '+3–6 points');
+  if (e.batchFrom != null || e.batchTo != null) {
+  const lo = e.batchFrom != null ? e.batchFrom : p.gradYear, hi = e.batchTo != null ? e.batchTo : p.gradYear;
+  add(p.gradYear != null && p.gradYear >= lo && p.gradYear <= hi, 'Batch window ' + lo + '–' + hi, 'Your grad year: ' + p.gradYear + '.', (p.gradYear != null && p.gradYear >= lo && p.gradYear <= hi) ? '' : 'Gate');
+  }
+  if (e.maxGapMonths != null) add(p.gapMonths <= e.maxGapMonths, 'Study gap ≤ ' + e.maxGapMonths + ' months', 'Current gap: ' + p.gapMonths + ' — document the reason.', p.gapMonths <= e.maxGapMonths ? '' : '+2');
+  if (e.ageMax != null) add(p.age != null && p.age <= e.ageMax, 'Age ≤ ' + e.ageMax, 'Age: ' + p.age + '.', (p.age != null && p.age <= e.ageMax) ? '' : '+1');
+  if (e.gate) add(p.gate, 'GATE score', 'Prepare GATE with 10 mocks.', p.gate ? '' : '+5–8 points');
+  return steps;
+  }
+  function rmFit(c) {
+  const overall = rmOverallScore();
+  const diff = parseDiff(c.difficulty) || 55;
+  const diffScore = Math.max(0, Math.round(100 - Math.abs(diff - overall)));
+  const req = rmRequired(c);
+  const have = rmSkills();
+  const hits = req.filter(function(k) { return have[k]; });
+  const skill = Math.min(10, hits.length * RM_OPS_EST);
+  const fit = Math.min(100, Math.round(diffScore + skill));
+  return { overall: overall, diff: diff, diffScore: diffScore, skill: skill, fit: fit, req: req, hits: hits };
+  }
+  function rmEstNum(est) { const m = /(\d+)/.exec(est || ''); return m ? parseInt(m[1], 10) : 0; }
+  function rmRender(name) {
+  const c = allCompanies.filter(function(x) { return x.name === name; })[0];
+  if (!c) { document.getElementById('rmDetail').innerHTML = '<div class="rm-note">Company not found.</div>'; return; }
+  const fits = rmFit(c);
+  const profile = rmProfile();
+  const ev = evaluateOne(c, profile);
+  const allowed = ev.eligible;
+  const plan = rmEligPlan(c, profile);
+  const openGaps = plan.filter(function(s) { return !s.ok; });
+  const req = fits.req;
+  const have = rmSkills();
+  const evKeys = skillEvidence();
+  function evCovers(k) { const w = k.replace(/\s*\/.*$/, '').toLowerCase(); return Object.keys(evKeys).some(function(sk) { return rmHas(sk, [w]); }); }
+  const missing = req.filter(function(k) { return !have[k]; });
+  const missingWithEv = missing.filter(evCovers);
+  const gapPts = openGaps.reduce(function(s, r) { return s + rmEstNum(r.est); }, 0);
+  const skillPts = missingWithEv.length ? (missing.length - missingWithEv.length) * RM_OPS_EST : missing.length * RM_OPS_EST;
+  const totalGain = gapPts + skillPts;
+  const projected = Math.min(100, fits.overall + totalGain);
+  const stepRow = function(s) {
+  return '<div class="rm-step ' + (s.ok ? 'ok' : 'no') + '">' +
+  '<span class="rm-dot"></span>' +
+  '<div><label>' + escText(s.label) + '</label><p>' + escText(s.detail) + '</p></div>' +
+  '<span class="rm-est ' + (s.ok ? 'done' : '') + '">' + escText(s.ok ? 'Met ✓' : s.est) + '</span></div>';
+  };
+  const html =
+  '<div class="rm-head">' +
+  '<div class="rm-name">' + escText(c.name) + '</div>' +
+  '<div class="rm-meta">' + escText(c.type) + ' · ' + escText(c.ctc) + ' · ' + escText(c.region || 'India') + ' · Difficulty ' + parseDiff(c.difficulty) + '%</div>' +
+  '<div class="rm-meta">' + (allowed ? '<span class="rm-chip have">Meets eligibility ✓</span>' : '<span class="rm-chip miss">Currently blocked on eligibility</span>') + ' <span class="rm-chip">' + (ev.hasRules ? ev.reasons.length : 0) + ' criteria tracked</span></div>' +
+  '</div>' +
+  '<div class="rm-fit">' +
+  '<div><div class="rm-fit-num">' + fits.fit + '%</div><div class="rm-fit-label">Fit Score</div></div>' +
+  '<div class="rm-fit-right"><div class="rm-bar"><div style="width:' + fits.fit + '%"></div></div>' +
+  '<div class="rm-meta">Your Match Score ' + fits.overall + '% · difficulty distance +' + fits.diffScore + ' · skill-hits +' + fits.skill + '</div></div>' +
+  '</div>' +
+  '<div class="rm-phase"><div class="rm-phase-t"><b>01</b> Eligibility Gaps</div>' +
+  (plan.length ? plan.map(stepRow).join('') : '<div class="rm-ok-line">Open criteria — no hard filters in the tracked data.</div>') +
+  '</div>' +
+  '<div class="rm-phase"><div class="rm-phase-t"><b>02</b> Job-Requirement Gaps</div>' +
+  (req.length ? req.map(function(k) {
+  const got = have[k];
+  const ev = evCovers(k);
+  const cls = got ? 'have' : (ev ? 'ev' : 'miss');
+  const note = got ? 'covered in your skills' : (ev ? 'evidence added via certifications ✓' : 'build this next');
+  return '<div class="rm-step small ' + (got ? 'ok' : 'no') + '">' +
+  '<span class="rm-dot"></span>' +
+  '<div><label>' + escText(k) + ' <span class="rm-chip ' + cls + '">' + escText(note) + '</span></label>' +
+  (got ? '' : '<p>' + escText((RM_SKILLS.filter(function(s){ return s[0] === k; })[0] || [0, { plan: '' }])[1].plan) + '</p>') +
+  '</div>' + (got ? '<span class="rm-est done">Met ✓</span>' : '<span class="rm-est">+' + RM_OPS_EST + ' pt</span>') + '</div>';
+  }).join('') : '<div class="rm-ok-line">No tracked skill keywords in this role sheet — focus on DSA + projects.</div>') +
+  '</div>' +
+  '<div class="rm-phase"><div class="rm-phase-t"><b>03</b> Score Plan</div>' +
+  '<div class="rm-step ' + (totalGain === 0 ? 'ok' : 'no') + '"><span class="rm-dot"></span>' +
+  '<div><label>Projected Match Score after closing gaps</label><p>From ' + fits.overall + '% to ~' + projected + '% (' + (totalGain ? '+' + totalGain + ' via actions above' : 'no actionable gaps found') + ').</p></div>' +
+  '<span class="rm-est ' + (totalGain === 0 ? 'done' : '') + '">' + (projected >= fits.diff ? 'Target reached' : 'Keep going') + '</span>' +
+  '</div>' +
+  '<div class="rm-note">Estimates are indicative; recompute after you analyze your profile or add certification evidence (certs already add +' + certBonus() + ' to your Match Score).</div>' +
+  '</div>';
+  document.getElementById('rmDetail').innerHTML = html;
+  }
+  function rmOpen() {
+  const body = document.getElementById('roadmapBody');
+  const cands = allCompanies.slice().sort(function(a, b) {
+  const da = Math.abs((parseDiff(a.difficulty) || 55) - rmOverallScore());
+  const db = Math.abs((parseDiff(b.difficulty) || 55) - rmOverallScore());
+  return da - db;
+  });
+  const opts = cands.slice(0, 18).map(function(c) {
+  return '<option value="' + escText(c.name) + '"' + (c.name === roadmapState.picked ? ' selected' : '') + '>' + escText(c.name) + ' — ' + escText(c.type) + ' ' + escText(c.ctc) + '</option>';
+  }).join('');
+  body.innerHTML =
+  '<div class="rm-col"><label>Target Company</label><select class="form-control rm-select" id="rmCo">' + opts + '</select></div>' +
+  '<div class="rm-cols" style="margin-top:0.4rem;">' +
+  '<div class="rm-col"><label>Active Backlogs</label><input type="number" min="0" max="20" class="form-control" id="rmBacklogs" value="' + roadmapState.backlogs + '"></div>' +
+  '<div class="rm-col"><label>Graduation Year</label><input type="number" min="2015" max="2035" class="form-control" id="rmGradYear" value="' + roadmapState.gradYear + '"></div>' +
+  '<div class="rm-col"><label>Age</label><input type="number" min="16" max="50" class="form-control" id="rmAge" value="' + roadmapState.age + '"></div>' +
+  '</div><div id="rmDetail" class="rm-detail" style="margin-top:0.45rem;"></div>';
+  const pick = roadmapState.picked || (cands[0] && cands[0].name);
+  roadmapState.picked = pick;
+  rmRender(pick);
+  const sel = document.getElementById('rmCo'); if (sel) sel.value = pick;
+  document.getElementById('rmCo').addEventListener('change', function() { roadmapState.picked = this.value; rmRender(this.value); });
+  ['rmBacklogs', 'rmGradYear', 'rmAge'].forEach(function(id) {
+  const el = document.getElementById(id);
+  if (el && id === 'rmBacklogs') el.addEventListener('change', function() { roadmapState.backlogs = parseInt(this.value || '0', 10) || 0; rmRender(roadmapState.picked); });
+  if (el && id === 'rmGradYear') el.addEventListener('change', function() { roadmapState.gradYear = parseInt(this.value || '2026', 10) || 2026; rmRender(roadmapState.picked); });
+  if (el && id === 'rmAge') el.addEventListener('change', function() { roadmapState.age = parseInt(this.value || '21', 10) || 21; rmRender(roadmapState.picked); });
+  });
+  document.getElementById('roadmapModal').classList.add('open');
+  }
+  function rmOpenFor(name) { roadmapState.picked = name; rmOpen(); }
+
+  if (document.getElementById('roadmapBtn')) document.getElementById('roadmapBtn').addEventListener('click', rmOpen);
+  if (document.getElementById('roadmapModalClose')) document.getElementById('roadmapModalClose').addEventListener('click', function() { document.getElementById('roadmapModal').classList.remove('open'); });
+  if (document.getElementById('roadmapModal')) document.getElementById('roadmapModal').addEventListener('click', function(e) { if (e.target === document.getElementById('roadmapModal')) document.getElementById('roadmapModal').classList.remove('open'); });
+  const rmList = document.getElementById('matchedCompanies');
+  if (rmList) rmList.addEventListener('click', function(e) {
+  const b = e.target.closest ? e.target.closest('.rm-link') : null;
+  if (b && b.getAttribute('data-rm')) rmOpenFor(b.getAttribute('data-rm'));
+  });
+
+  renderTable();
  }
  
  function animateScore(targetElement, startVal, endVal, duration) {
@@ -2353,6 +2607,12 @@ missingGaps.push("Case Study Strategy", "SAP/Cloud Basics");
   lastAnalysed.score = score;
   lastAnalysed.tier = tier;
   lastAnalysed.track = track;
+  lastAnalysed.name = name;
+  lastAnalysed.lang = lang;
+  lastAnalysed.cgpa = cgpa;
+  lastAnalysed.verifiedSkills = verifiedSkills;
+  lastAnalysed.missingGaps = missingGaps;
+  lastAnalysed.salaryBand = salaryBand;
   renderProgressStars();
   updateCertBonusLine(certB);
   renderCertEvidence();
@@ -2478,12 +2738,12 @@ const isProductTrack = !!(track && track.indexOf('Product') !== -1);
  });
  const top = sorted.slice(0, 3);
  const box = document.getElementById('matchedCompanies');
- box.innerHTML = top.map(c => `
- <div class="match-item">
- <div class="nm">${c.name}</div>
- <div class="sub">${c.ctc} &middot; ${c.difficulty} &middot; ${c.type}</div>
- </div>`).join('');
- }
+box.innerHTML = top.map(c => `
+  <div class="match-item">
+  <div class="nm">${c.name}<span class="rm-link" data-rm="${c.name}" title="Plan to reach ${c.name}">Roadmap →</span></div>
+  <div class="sub">${c.ctc} &middot; ${c.difficulty} &middot; ${c.type}</div>
+  </div>`).join('');
+  }
 
  /* ============ DOWNLOAD REPORT ============ */
  document.getElementById('downloadReportBtn').addEventListener('click', function() {

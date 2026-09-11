@@ -1284,47 +1284,48 @@ th {
  html[data-theme="dark"] .fb-cat { background: #131B2C; }
 
  /* Print: hide chrome when printing report */
- @media print {
- @page { size: A4; margin: 11mm; }
- header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #certPanel, #catalog, #team, #feedback, #analytics { display: none !important; }
- .container { padding: 0; }
- #analyzer { display: block; }
- #resultsArea { margin: 0; }
- body { background: #fff !important; padding: 0; color: #22303F; font-size: 12px; }
+@media print {
+  @page { size: A4; margin: 10mm; }
+  header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #certPanel, #catalog, #team, #feedback, #analytics { display: none !important; }
+  .container { padding: 0; }
+  #analyzer { display: block; }
+  #resultsArea { margin: 0; }
+  body { background: #fff !important; padding: 0; color: #000; font-size: 12px; letter-spacing: 0.1px; }
 
- .report-card { box-shadow: none; border: 2px solid #1E3A5F; border-radius: 6px; padding: 1.1rem !important; margin: 0; page-break-inside: avoid; }
- .report-card * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .report-card { box-shadow: none; border: 3px solid #000; border-radius: 0 !important; padding: 1.1rem !important; margin: 0; page-break-inside: avoid; }
+  .report-card * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 
- .report-card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #D8D2C6; padding-bottom: 0.6rem !important; margin-bottom: 0.7rem !important; }
- .candidate-meta h3 { font-size: 1.35rem; margin: 0; color: #1E3A5F; }
- .candidate-meta span { font-size: 0.7rem; color: #5B6B76; }
+  .report-card-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #000; padding-bottom: 0.6rem !important; margin-bottom: 0.7rem !important; }
+  .candidate-meta h3 { font-size: 1.35rem; margin: 0; color: #000; text-transform: uppercase; letter-spacing: 0.5px; }
+  .candidate-meta span { font-size: 0.7rem; color: #555; }
 
- .match-badge { background: #1E3A5F !important; color: #fff !important; min-width: 120px; max-width: 40mm; margin: 0 !important; padding: 0.5rem 0.8rem !important; text-align: center; }
- .match-badge .val { font-size: 1.3rem !important; margin: 0 !important; }
- .match-badge .lbl { font-size: 0.6rem !important; }
- .match-badge .score-progress { display: none !important; }
+  .match-badge { background: #000 !important; color: #fff !important; min-width: 120px; max-width: 40mm; margin: 0 !important; padding: 0.5rem 0.8rem !important; text-align: center; border-radius: 0 !important; }
+  .match-badge .val { font-size: 1.3rem !important; margin: 0 !important; }
+  .match-badge .lbl { font-size: 0.6rem !important; }
+  .match-badge .score-progress { display: none !important; }
+  .match-badge .cert-bonus { color: #FF3000 !important; font-size: 0.6rem !important; margin-top: 0.25rem !important; text-transform: uppercase; letter-spacing: 0.5px; }
 
- .report-data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.5rem; }
- .report-card .data-item { margin-bottom: 0 !important; padding: 0.5rem 0.7rem !important; background: #F7F4EE !important; border: 1px solid #D8D2C6 !important; page-break-inside: avoid; }
- .report-card .data-item .lbl { font-size: 0.62rem !important; margin-bottom: 0.2rem !important; color: #5B6B76; letter-spacing: 0.4px; }
- .report-card .data-item .val { font-size: 0.85rem !important; color: #22303F; }
+  .report-data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.5rem; }
+  .report-card .data-item { margin-bottom: 0 !important; padding: 0.5rem 0.7rem !important; background: #F2F2F2 !important; border: 1px solid #000 !important; border-radius: 0 !important; page-break-inside: avoid; }
+  .report-card .data-item .lbl { font-size: 0.62rem !important; margin-bottom: 0.2rem !important; color: #333; letter-spacing: 0.8px; text-transform: uppercase; }
+  .report-card .data-item .val { font-size: 0.85rem !important; color: #000; }
 
- .skill-tag { font-size: 0.68rem !important; padding: 0.22rem 0.5rem !important; background: #EAF7F0 !important; color: #1F6B4E !important; border: 1px solid #1F6B4E !important; }
- .skill-tag.missing { background: #FCE8E4 !important; color: #C5453B !important; border: 1px solid #C5453B !important; }
- .skills-tag-container { gap: 0.35rem !important; margin-top: 0.3rem !important; }
+  .skill-tag { font-size: 0.68rem !important; padding: 0.22rem 0.5rem !important; background: #fff !important; color: #000 !important; border: 1px solid #000 !important; border-radius: 0 !important; }
+  .skill-tag.missing { background: #FF3000 !important; color: #fff !important; border: 1px solid #FF3000 !important; }
+  .skills-tag-container { gap: 0.35rem !important; margin-top: 0.3rem !important; }
 
- .match-list { gap: 0.4rem !important; margin-top: 0.3rem !important; grid-template-columns: repeat(3, 1fr); }
- .match-item { background: #F7F4EE !important; border: 1px solid #D8D2C6 !important; border-left: 4px solid #1E3A5F !important; padding: 0.45rem 0.6rem !important; page-break-inside: avoid; }
- .match-item .nm { font-size: 0.78rem !important; color: #1E3A5F; }
- .match-item .sub { font-size: 0.64rem !important; color: #5B6B76; margin-top: 0.1rem !important; }
+  .match-list { gap: 0.4rem !important; margin-top: 0.3rem !important; grid-template-columns: repeat(3, 1fr); }
+  .match-item { background: #F2F2F2 !important; border: 1px solid #000 !important; border-left: 4px solid #FF3000 !important; padding: 0.45rem 0.6rem !important; page-break-inside: avoid; border-radius: 0 !important; }
+  .match-item .nm { font-size: 0.78rem !important; color: #000; font-weight: 700; }
+  .match-item .sub { font-size: 0.64rem !important; color: #444; margin-top: 0.1rem !important; }
 
- .trend-bars { height: 30px !important; margin-top: 0.3rem !important; }
- .trend-bar { background: #54A6C8 !important; }
- .trend-bar:last-child { background: #1E3A5F !important; }
- .history-chips { gap: 0.3rem !important; margin-top: 0.3rem !important; }
- .history-chip { background: #F7F4EE !important; border: 1px solid #D8D2C6 !important; color: #22303F !important; font-size: 0.66rem !important; padding: 0.2rem 0.45rem !important; }
- .trend-empty { color: #5B6B76; font-size: 0.75rem; }
- }
+  .trend-bars { height: 30px !important; margin-top: 0.3rem !important; }
+  .trend-bar { background: #C7C7C7 !important; }
+  .trend-bar:last-child { background: #000 !important; }
+  .history-chips { gap: 0.3rem !important; margin-top: 0.3rem !important; }
+  .history-chip { background: #F2F2F2 !important; border: 1px solid #000 !important; color: #000 !important; font-size: 0.66rem !important; padding: 0.2rem 0.45rem !important; border-radius: 0 !important; }
+  .trend-empty { color: #444; font-size: 0.75rem; }
+  }
  /* ============================================================
     SWISS INTERNATIONAL — OVERRIDE LAYER
     Strict grid, 0 radius, no shadows, black/white/red, uppercase.

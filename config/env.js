@@ -35,7 +35,9 @@ module.exports = {
     openaiApiKey: process.env.OPENAI_API_KEY,
     openaiModel: process.env.OPENAI_MODEL || 'gpt-4o-mini',
     geminiApiKey: process.env.GEMINI_API_KEY,
-    geminiModel: process.env.GEMINI_MODEL || 'gemini-flash-lite-latest'
+    geminiModel: process.env.GEMINI_MODEL || 'gemini-flash-lite-latest',
+    groqApiKey: process.env.GROQ_API_KEY,
+    groqModel: process.env.GROQ_MODEL || 'llama-3.3-70b-versatile'
   },
   log: { level: 'info', file: 'logs/ace-platform.log' },
   pdf: { tempDir: './tmp/pdfs', cleanupInterval: 3600000 },

@@ -31,6 +31,30 @@ async function callLLM(prompt, { temperature = 0.6, maxTokens = 6000 } = {}) {
     return data.choices[0].message.content;
   }
 
+  if (provider === 'groq') {
+    if (!config.ai.groqApiKey) throw new Error('GROQ_API_KEY not configured');
+    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + config.ai.groqApiKey
+      },
+      body: JSON.stringify({
+        model: config.ai.groqModel,
+        temperature,
+        max_tokens: maxTokens,
+        response_format: { type: 'json_object' },
+        messages: [
+          { role: 'system', content: 'You are a placement-assessment engine for engineering students. Respond with valid JSON only, no markdown fences, no commentary.' },
+          { role: 'user', content: prompt }
+        ]
+      })
+    });
+    if (!res.ok) throw new Error('Groq API error: ' + res.status + ' ' + await res.text());
+    const data = await res.json();
+    return data.choices[0].message.content;
+  }
+
   if (!config.ai.geminiApiKey) throw new Error('GEMINI_API_KEY not configured');
   const res = await fetch(
     'https://generativelanguage.googleapis.com/v1beta/models/' + config.ai.geminiModel + ':generateContent?key=' + config.ai.geminiApiKey,

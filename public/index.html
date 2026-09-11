@@ -3116,10 +3116,13 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   const CERT_BONUS_FACTOR = 4.5;
   const certsKey = 'ace_certs_v1';
 
+  let certCache = null;
   function loadCerts() {
-  try { const arr = JSON.parse(safeGet(certsKey) || '[]'); return Array.isArray(arr) ? arr : []; } catch(e) { return []; }
+  if (certCache) return certCache;
+  try { const arr = JSON.parse(safeGet(certsKey) || '[]'); certCache = Array.isArray(arr) ? arr : []; } catch(e) { certCache = []; }
+  return certCache;
   }
-  function saveCerts(list) { safeSet(certsKey, JSON.stringify(list)); }
+  function saveCerts(list) { certCache = list; safeSet(certsKey, JSON.stringify(list)); }
 
   function certWeight(type) { const w = CERT_TYPE_WEIGHTS[type]; return typeof w === 'number' ? w : 0.5; }
 
@@ -3214,19 +3217,21 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   }
 
   function applyCertImpact() {
-  if (lastAnalysed && typeof lastAnalysed.baseScore === 'number') {
   const b = certBonus();
+  const box = document.getElementById('cardScore');
+  if (lastAnalysed && typeof lastAnalysed.baseScore === 'number') {
   const sc = Math.min(100, lastAnalysed.baseScore + b);
+  const changed = sc !== lastAnalysed.score || (lastAnalysed.certBonus || 0) !== b;
   lastAnalysed.score = sc;
   lastAnalysed.certBonus = b;
-  const el = document.getElementById('cardScore'); if (el) el.textContent = sc + '%';
+  if (box) box.textContent = sc + '%';
   const sb = document.getElementById('scoreBar'); if (sb) sb.style.width = sc + '%';
   updateCertBonusLine(b);
   renderCertEvidence();
-  if (lastAnalysed.track) renderBestMatches(sc, lastAnalysed.track);
+  if (changed && lastAnalysed.track) renderBestMatches(sc, lastAnalysed.track);
   } else {
-  updateCertBonusLine(certBonus());
-  renderCertEvidence();
+  updateCertBonusLine(b);
+  showFbToast('Analyze your profile first to see the score impact.');
   }
   }
 

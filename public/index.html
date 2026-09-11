@@ -1786,8 +1786,18 @@ th {
   <label><input type="radio" name="certType" value="Assessment"> Assessment</label>
   </div>
   </div>
+  <div id="meritWrap">
+  <label>Merit Level (Rank)</label>
+  <select class="form-control" id="certMeritLevel">
+  <option>Winner (1st Place)</option>
+  <option>Runner-up (2nd)</option>
+  <option>2nd Runner-up (3rd)</option>
+  <option>Distinction</option>
+  <option>Merit</option>
+  </select>
+  </div>
   <div class="cert-grid2">
-  <div>
+  <div id="certResultCell">
   <label>Result</label>
   <select class="form-control" id="certResult">
   <option>Participant</option>
@@ -3112,6 +3122,7 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   };
   const CERT_LEVEL_MULT = { 'College': 0.6, 'District': 0.75, 'State': 0.85, 'National': 1, 'International': 1.1 };
   const CERT_RESULT_MULT = { 'Participant': 0.5, 'Completed': 0.7, 'Qualified': 0.8, 'Finalist': 0.9, 'Winner': 1 };
+  const CERT_MERIT_LEVEL = { 'Winner (1st Place)': 1, 'Runner-up (2nd)': 0.9, '2nd Runner-up (3rd)': 0.8, 'Distinction': 0.75, 'Merit': 0.7 };
   const CERT_BONUS_CAP = 15;
   const CERT_BONUS_FACTOR = 4.5;
   const certsKey = 'ace_certs_v1';
@@ -3129,7 +3140,8 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   function certPoints(c) {
   const w = certWeight(c.type || '');
   const l = CERT_LEVEL_MULT[c.level] || 0.6;
-  const r = CERT_RESULT_MULT[c.result] || 0.7;
+  const isMerit = c.type === 'Merit / Winner' || c.type === 'Achievement';
+  const r = isMerit ? (CERT_MERIT_LEVEL[c.meritLevel] || CERT_RESULT_MULT[c.result] || 0.7) : (CERT_RESULT_MULT[c.result] || 0.7);
   return w * l * r + (c.verified ? 0.05 : 0);
   }
 
@@ -3165,7 +3177,7 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   }
   box.innerHTML = certs.map(function(c, i) {
   const name = escapeHtml(c.name || 'Certificate');
-  const meta = [escapeHtml(c.type || ''), escapeHtml(c.level || ''), escapeHtml(c.result || ''), escapeHtml(c.org || ''), escapeHtml(c.date || '')].filter(Boolean).join(' · ');
+  const meta = [escapeHtml(c.type || ''), escapeHtml(c.meritLevel || ''), escapeHtml(c.level || ''), escapeHtml(c.result || ''), escapeHtml(c.org || ''), escapeHtml(c.date || '')].filter(Boolean).join(' · ');
   const file = c.file ? ' · 📎 ' + escapeHtml(c.file) : '';
   const v = c.verified ? ' ✓' : '';
   return '<div class="cert-item">' +
@@ -3242,15 +3254,26 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   if (btn) btn.textContent = show ? 'Cancel' : '+ Add Certificate';
   }
 
+  function syncMeritUi() {
+  const type = (document.querySelector('input[name="certType"]:checked') || {}).value || '';
+  const isMerit = type === 'Merit / Winner' || type === 'Achievement';
+  const wrap = document.getElementById('meritWrap');
+  const resultCell = document.getElementById('certResultCell');
+  if (wrap) wrap.hidden = !isMerit;
+  if (resultCell) resultCell.hidden = isMerit;
+  }
+
   function resetCertForm() {
   ['certName', 'certOrg', 'certDate', 'certScore', 'certSkillOther'].forEach(function(id) {
   const el = document.getElementById(id); if (el) el.value = '';
   });
   const rf = document.querySelector('input[name="certType"]'); if (rf) rf.checked = true;
+  const ml = document.getElementById('certMeritLevel'); if (ml) ml.selectedIndex = 0;
   const up = document.getElementById('certUpload'); if (up) up.value = '';
   const skill = document.getElementById('certSkill');
   const other = document.getElementById('certSkillOther');
   if (skill && other) other.hidden = skill.value !== '__other__';
+  syncMeritUi();
   toggleCertForm(false);
   }
 
@@ -3262,12 +3285,14 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   const type = (document.querySelector('input[name="certType"]:checked') || {}).value || 'Participation';
   const level = document.getElementById('certLevel').value;
   const result = document.getElementById('certResult').value;
+  const isMerit = type === 'Merit / Winner' || type === 'Achievement';
+  const meritLevel = isMerit ? document.getElementById('certMeritLevel').value : '';
   const score = document.getElementById('certScore').value.trim();
   const org = document.getElementById('certOrg').value.trim();
   const date = document.getElementById('certDate').value.trim();
   const file = (document.getElementById('certUpload').files && document.getElementById('certUpload').files[0]) ? document.getElementById('certUpload').files[0].name : '';
   const certs = loadCerts();
-  certs.push({ name: name, skill: skill || 'General', type: type, level: level, result: result, score: score, org: org, date: date, file: file, verified: !!verified, created: Date.now() });
+  certs.push({ name: name, skill: skill || 'General', type: type, level: level, result: result, meritLevel: meritLevel, score: score, org: org, date: date, file: file, verified: !!verified, created: Date.now() });
   saveCerts(certs);
   renderCertList();
   resetCertForm();
@@ -3275,8 +3300,12 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   showFbToast(verified ? 'Certificate saved & verified.' : 'Certificate saved.');
   }
 
-  (function initCerts() {
+  function initCerts() {
   renderCertList();
+  syncMeritUi();
+  document.querySelectorAll('input[name="certType"]').forEach(function(r) {
+  r.addEventListener('change', syncMeritUi);
+  });
   const addBtn = document.getElementById('addCertBtn');
   if (addBtn) addBtn.addEventListener('click', function() {
   const f = document.getElementById('certForm');
@@ -3313,7 +3342,8 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
   e.preventDefault();
   });
   renderCertEvidence();
-  })();
+  }
+  initCerts();
 
   /* auto-populate matched companies + history on first load so these sections are never empty */
   document.getElementById('analyzeBtn').click();

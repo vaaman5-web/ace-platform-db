@@ -2276,7 +2276,11 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
  });
 
  currentPage = 1;
-/* ===== Career Roadmap — eligibility × job-requirement gap plan ===== */
+
+  renderTable();
+ }
+ 
+ /* ===== Career Roadmap — eligibility × job-requirement gap plan ===== */
   const RM_SKILLS = [
   ['Core Java', { aliases: ['java'], plan: 'Core Java — collections, exceptions, multithreading, I/O; ship 1 console CRUD app.' }],
   ['Python', { aliases: ['python', 'data sci', 'machine learn', 'machine learning', 'artificial', ' ml', ' ai'], plan: 'Python core + numpy/pandas; finish 1 ML mini-project with notebook.' }],
@@ -2606,10 +2610,8 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
   }
   });
 
-  renderTable();
- }
- 
- function animateScore(targetElement, startVal, endVal, duration) {
+  
+  function animateScore(targetElement, startVal, endVal, duration) {
  let startTime = null;
  const progressBar = document.getElementById('scoreBar');
  const matchBadge = document.getElementById('matchBadge');

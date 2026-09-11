@@ -1663,6 +1663,20 @@ th {
   .rm-ok-line { font-size: 0.7rem; color: var(--sw-text-muted); margin-top: 0.25rem; }
   .rm-link { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3000; cursor: pointer; border: 1px solid #FF3000; padding: 0.12rem 0.35rem; margin-left: 0.4rem; }
   .rm-link:hover { background: #FF3000; color: #fff; }
+  .rm-map { margin: 0.4rem 0 0.1rem; border: 1px solid var(--sw-border); }
+  .rm-map summary { cursor: pointer; list-style: none; padding: 0.4rem 0.5rem; font-weight: 800; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.09em; display: flex; align-items: center; gap: 0.5rem; user-select: none; }
+  .rm-map summary::-webkit-details-marker { display: none; }
+  .rm-map summary:before { content: '+'; color: #FF3000; font-weight: 900; }
+  .rm-map[open] summary:before { content: '−'; }
+  .rm-map-prog { color: var(--sw-text-muted); font-size: 0.66rem; }
+  .rm-map-bar { flex: 1; height: 6px; background: var(--sw-surface); border: 1px solid var(--sw-border); }
+  .rm-map-bar-fill { display: block; height: 100%; background: #FF3000; }
+  .rm-map-phase { padding: 0.35rem 0.5rem 0.25rem; border-top: 1px dashed var(--sw-border-soft); }
+  .rm-map-pn { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 0.2rem; color: var(--sw-card-text); }
+  .rm-topic { display: flex; align-items: center; gap: 0.4rem; font-size: 0.7rem; padding: 0.12rem 0; color: var(--sw-card-text); cursor: pointer; }
+  .rm-topic input { accent-color: #FF3000; width: 13px; height: 13px; }
+  .rm-ext { display: inline-block; margin: 0.5rem; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid #FF3000; color: #FF3000; padding: 0.25rem 0.5rem; text-decoration: none; }
+  .rm-ext:hover { background: #FF3000; color: #fff; }
   @media (max-width: 520px) { .rm-cols { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -2287,6 +2301,91 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
   ];
   const RM_OPS_EST = 2;
   const roadmapState = { picked: '', backlogs: 0, gradYear: 2026, age: 21 };
+  const rmProgKey = 'ace_rm_progress_v1';
+  const RM_ROADMAPS = {
+  'Core Java': { url: 'https://roadmap.sh/java', phases: [
+  { name: 'Phase 1 — Language Core', topics: ['JVM, JDK & project setup', 'Primitives, variables & operators', 'Control flow & loops', 'Methods & scope'] },
+  { name: 'Phase 2 — OOP & Collections', topics: ['Classes, inheritance & polymorphism', 'Interfaces & abstract classes', 'Exceptions & error handling', 'Collections framework, generics & streams'] },
+  { name: 'Phase 3 — Professional', topics: ['Multithreading & concurrency', 'I/O, serialization & JDBC', 'Design patterns & SOLID', 'Build tool, unit tests & CI'] } ] },
+  'Python': { url: 'https://roadmap.sh/python', phases: [
+  { name: 'Phase 1 — Language Core', topics: ['Syntax, types & control flow', 'Functions & scope', 'Lists, dicts, sets & tuples', 'File I/O', 'Modules & packages'] },
+  { name: 'Phase 2 — Intermediate', topics: ['OOP & dunder methods', 'Iterators, generators & decorators', 'Error handling & logging', 'Virtual envs & pip'] },
+  { name: 'Phase 3 — Data / Application', topics: ['NumPy & pandas for data', 'APIs with requests / 1 mini service', 'Testing with pytest', 'Ship 1 end-to-end project'] } ] },
+  'C++': { url: 'https://roadmap.sh/cpp', phases: [
+  { name: 'Phase 1 — Language Core', topics: ['Compiler & project setup', 'Types, operators & control flow', 'Functions & overloads', 'STL basics — vectors, strings'] },
+  { name: 'Phase 2 — OOP & Memory', topics: ['Classes & OOP', 'Pointers, references & memory', 'Smart pointers & RAII', 'STL containers & algorithms'] },
+  { name: 'Phase 3 — Advanced', topics: ['Move semantics & rvalues', 'Concurrency & threads', 'CMake build system', '20 solved DSA problems'] } ] },
+  'C': { url: 'https://roadmap.sh/c-programming', phases: [
+  { name: 'Phase 1 — Language Core', topics: ['Toolchain & compilation', 'Types, variables & operators', 'Control flow & functions', 'Arrays & strings'] },
+  { name: 'Phase 2 — Pointers & Structs', topics: ['Pointers & pointer arithmetic', 'Structs & unions', 'Dynamic memory allocation'] },
+  { name: 'Phase 3 — Systems', topics: ['File I/O & preprocessor', 'Bitwise operations', 'Build 3 small system utilities'] } ] },
+  'SQL': { url: 'https://roadmap.sh/sql', phases: [
+  { name: 'Phase 1 — Query Basics', topics: ['SELECT / WHERE / ORDER BY', 'GROUP BY & aggregates', 'JOINs (inner, left, self)', 'Filtering & HAVING'] },
+  { name: 'Phase 2 — Intermediate', topics: ['Subqueries & CTEs', 'Window functions', 'Indexes & query plans', 'Normalization ideas'] },
+  { name: 'Phase 3 — Practice', topics: ['Transactions & locking basics', 'Query tuning', '30 drills on a practice database'] } ] },
+  'DSA / Algorithms': { url: 'https://roadmap.sh/leetcode', phases: [
+  { name: 'Phase 1 — Foundations', topics: ['Arrays, strings & hashing', 'Time & space complexity', 'Sorting & searching'] },
+  { name: 'Phase 2 — Core Patterns', topics: ['Two pointers & sliding window', 'Recursion & backtracking', 'Stacks, queues & linked lists'] },
+  { name: 'Phase 3 — Advanced + Mocks', topics: ['Trees & graphs', 'Dynamic programming & greedy', 'Pattern revision + timed mocks'] } ] },
+  'System Design': { url: 'https://roadmap.sh/system-design', phases: [
+  { name: 'Phase 1 — Foundations', topics: ['Requirements & capacity estimation', 'Scalability & performance basics'] },
+  { name: 'Phase 2 — High-Level Design', topics: ['Load balancers & caching', 'Databases, queues & CDN', '2 full system walk-throughs'] },
+  { name: 'Phase 3 — Low-Level Design', topics: ['SOLID, UML & class design', 'OOD of 2 systems', 'Whiteboard a design under time'] } ] },
+  'Cloud / DevOps': { url: 'https://roadmap.sh/devops', phases: [
+  { name: 'Phase 1 — Foundations', topics: ['Linux basics & shell scripting', 'Git & version control', 'Virtualization & networking'] },
+  { name: 'Phase 2 — Containers & CI', topics: ['Docker & images', 'Kubernetes orchestration', 'CI/CD pipelines'] },
+  { name: 'Phase 3 — Cloud', topics: ['AWS/Azure core services', 'Monitoring & logging', 'Infrastructure-as-code basics'] } ] },
+  'Web / Frontend': { url: 'https://roadmap.sh/frontend', phases: [
+  { name: 'Phase 1 — Core Web', topics: ['HTML structure & semantics', 'CSS layout — flex & grid', 'Responsive design'] },
+  { name: 'Phase 2 — JavaScript', topics: ['DOM & events', 'Fetch & async APIs', 'Build tools'] },
+  { name: 'Phase 3 — Framework', topics: ['React essentials, state & routing', 'Accessibility & performance', 'Deploy 2 projects'] } ] },
+  'AI / ML': { url: 'https://roadmap.sh/machine-learning', phases: [
+  { name: 'Phase 1 — Data Foundations', topics: ['Python + NumPy & pandas', 'Data cleaning & visualization'] },
+  { name: 'Phase 2 — Modeling', topics: ['Regression & classification', 'Model evaluation & validation', 'Feature engineering'] },
+  { name: 'Phase 3 — End-to-End', topics: ['Ship 1 complete ML project', 'Deployment & monitoring basics', 'Responsible AI considerations'] } ] },
+  'Aptitude': { url: 'https://roadmap.sh/roadmaps', phases: [
+  { name: 'Phase 1 — Quant', topics: ['Percentages, ratios & averages', 'Time, speed & work', 'Number systems'] },
+  { name: 'Phase 2 — Reasoning', topics: ['Series & puzzles', 'Data interpretation', 'Non-verbal reasoning'] },
+  { name: 'Phase 3 — Verbal & Mocks', topics: ['Verbal ability', '25 questions/day, weekly timed mock'] } ] },
+  'Communication': { url: 'https://roadmap.sh/roadmaps', phases: [
+  { name: 'Phase 1 — Foundations', topics: ['Active listening', 'Clear speech structure', 'Clarity & conciseness'] },
+  { name: 'Phase 2 — Interviews', topics: ['STAR-format answers', 'Elevator pitch & intro', 'Handling H.R. questions'] },
+  { name: 'Phase 3 — Practice', topics: ['5 mock interviews with feedback', 'Peer review sessions'] } ] },
+  'Consulting / Case': { url: 'https://roadmap.sh/roadmaps', phases: [
+  { name: 'Phase 1 — Structuring', topics: ['Market-sizing frameworks', 'Structuring open questions', 'Quant speed drills'] },
+  { name: 'Phase 2 — Frameworks', topics: ['Profitability & cost cases', 'Valuation basics', 'Data-heavy cases'] },
+  { name: 'Phase 3 — Practice', topics: ['1 case solved aloud daily', 'Mock case rounds with peers'] } ] },
+  'OOP': { url: 'https://roadmap.sh/computer-science', phases: [
+  { name: 'Phase 1 — Core', topics: ['Classes & objects', 'Encapsulation & abstraction'] },
+  { name: 'Phase 2 — Design', topics: ['Inheritance & polymorphism', 'SOLID principles'] },
+  { name: 'Phase 3 — Apply', topics: ['UML modeling', 'Refactor 1 project into clean layers'] } ] },
+  'Git / Version Control': { url: 'https://roadmap.sh/git-and-github', phases: [
+  { name: 'Phase 1 — Basics', topics: ['init, commit & log', 'add, diff & status', 'Branches & merge'] },
+  { name: 'Phase 2 — Collaboration', topics: ['Remotes, push & pull', 'Resolving conflicts', 'Pull requests & code review'] },
+  { name: 'Phase 3 — Workflow', topics: ['Stash & recovery', 'CI triggers', 'Contribute to an OSS repo'] } ] },
+  'Data Analytics': { url: 'https://roadmap.sh/data-analyst', phases: [
+  { name: 'Phase 1 — Tools', topics: ['Excel / Power BI basics', 'SQL for analysts'] },
+  { name: 'Phase 2 — Analysis', topics: ['Dashboards & visuals', 'Metrics, KPIs & data cleaning', 'Storytelling with data'] },
+  { name: 'Phase 3 — Deliverables', topics: ['Publish 1 end-to-end dashboard', 'Present insights to non-tech audience'] } ] },
+  'Networking': { url: 'https://roadmap.sh/computer-science', phases: [
+  { name: 'Phase 1 — Core', topics: ['IP addressing', 'TCP/IP vs UDP', 'HTTP & DNS'] },
+  { name: 'Phase 2 — Deep', topics: ['Subnetting practice', 'TLS & security basics', 'Troubleshooting tools'] },
+  { name: 'Phase 3 — Apply', topics: ['Trace a web request end-to-end', 'Set up a small lab'] } ] },
+  'OS': { url: 'https://roadmap.sh/computer-science', phases: [
+  { name: 'Phase 1 — Processes', topics: ['Processes & threads', 'CPU scheduling'] },
+  { name: 'Phase 2 — Memory & Sync', topics: ['Memory management & paging', 'Deadlocks & synchronization'] },
+  { name: 'Phase 3 — Apply', topics: ['File systems', 'Implement a mini scheduler'] } ] },
+  'Testing / QA': { url: 'https://roadmap.sh/qa', phases: [
+  { name: 'Phase 1 — Fundamentals', topics: ['Test pyramid', 'Writing manual test cases', 'Bug lifecycle'] },
+  { name: 'Phase 2 — Automation', topics: ['Unit & integration tests (JUnit/pytest)', 'API testing basics'] },
+  { name: 'Phase 3 — E2E', topics: ['UI automation (Selenium/Playwright)', 'CI test step'] } ] },
+  'SAP': { url: 'https://roadmap.sh/roadmaps', phases: [
+  { name: 'Phase 1 — Overview', topics: ['Module landscape — FICO, MM, SD', 'System navigation'] },
+  { name: 'Phase 2 — Deep-Dive', topics: ['FICO basics — master & transaction data', 'One guided demo flow'] },
+  { name: 'Phase 3 — Deliver', topics: ['Simple report build', 'Certification-level practice'] } ] }
+  };
+  function rmProgress() { try { return JSON.parse(localStorage.getItem(rmProgKey) || '{}'); } catch (e) { return {}; } }
+  function rmSaveProgress(p) { safeSet(rmProgKey, JSON.stringify(p)); }
 
   function rmHas(text, aliases) {
   const t = ' ' + String(text || '').toLowerCase().replace(/[^\w\s/+]/g, ' ') + ' ';
@@ -2372,6 +2471,21 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
   return { overall: overall, diff: diff, diffScore: diffScore, skill: skill, fit: fit, req: req, hits: hits };
   }
   function rmEstNum(est) { const m = /(\d+)/.exec(est || ''); return m ? parseInt(m[1], 10) : 0; }
+  function rmSkillMap(skill) {
+  const rm = RM_ROADMAPS[skill];
+  if (!rm) return '';
+  const prog = rmProgress();
+  const done = prog[skill] || {};
+  const total = rm.phases.reduce(function(s, p) { return s + p.topics.length; }, 0);
+  const ticks = rm.phases.reduce(function(s, p) { return s + p.topics.filter(function(t) { return !!done[t]; }).length; }, 0);
+  const pct = total ? Math.round(ticks / total * 100) : 0;
+  const phasesH = rm.phases.map(function(p) {
+  return '<div class="rm-map-phase"><span class="rm-map-pn">' + escText(p.name) + '</span>' + p.topics.map(function(t) {
+  return '<label class="rm-topic"><input type="checkbox" data-rmt="1" data-skill="' + escText(skill) + '" data-topic="' + escText(t) + '"' + (done[t] ? ' checked' : '') + '>' + escText(t) + '</label>';
+  }).join('') + '</div>';
+  }).join('');
+  return '<details class="rm-map" data-skill="' + escText(skill) + '"><summary>Skill Roadmap <span class="rm-map-prog">' + ticks + '/' + total + '</span><span class="rm-map-bar"><span class="rm-map-bar-fill" style="width:' + pct + '%"></span></span></summary>' + phasesH + '<a class="rm-ext" href="' + rm.url + '" target="_blank" rel="noopener">Open full roadmap on roadmap.sh ↗</a></details>';
+  }
   function rmRender(name) {
   const c = allCompanies.filter(function(x) { return x.name === name; })[0];
   if (!c) { document.getElementById('rmDetail').innerHTML = '<div class="rm-note">Company not found.</div>'; return; }
@@ -2420,7 +2534,7 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
   return '<div class="rm-step small ' + (got ? 'ok' : 'no') + '">' +
   '<span class="rm-dot"></span>' +
   '<div><label>' + escText(k) + ' <span class="rm-chip ' + cls + '">' + escText(note) + '</span></label>' +
-  (got ? '' : '<p>' + escText((RM_SKILLS.filter(function(s){ return s[0] === k; })[0] || [0, { plan: '' }])[1].plan) + '</p>') +
+  (got ? '' : RM_ROADMAPS[k] ? rmSkillMap(k) : '<p>' + escText((RM_SKILLS.filter(function(s){ return s[0] === k; })[0] || [0, { plan: '' }])[1].plan) + '</p>') +
   '</div>' + (got ? '<span class="rm-est done">Met ✓</span>' : '<span class="rm-est">+' + RM_OPS_EST + ' pt</span>') + '</div>';
   }).join('') : '<div class="rm-ok-line">No tracked skill keywords in this role sheet — focus on DSA + projects.</div>') +
   '</div>' +
@@ -2472,6 +2586,24 @@ const matchesSearch = !query || c.name.toLowerCase().includes(query) ||
   if (rmList) rmList.addEventListener('click', function(e) {
   const b = e.target.closest ? e.target.closest('.rm-link') : null;
   if (b && b.getAttribute('data-rm')) rmOpenFor(b.getAttribute('data-rm'));
+  });
+  const rmDetailEl = document.getElementById('roadmapBody');
+  if (rmDetailEl) rmDetailEl.addEventListener('change', function(e) {
+  const t = e.target;
+  if (!t || t.getAttribute('data-rmt') !== '1') return;
+  const skill = t.getAttribute('data-skill'), topic = t.getAttribute('data-topic');
+  const p = rmProgress();
+  if (!p[skill]) p[skill] = {};
+  if (t.checked) p[skill][topic] = true; else delete p[skill][topic];
+  rmSaveProgress(p);
+  const details = t.closest ? t.closest('details.rm-map') : null;
+  if (details) {
+  const all = details.querySelectorAll('label.rm-topic input');
+  const d = details.querySelectorAll('label.rm-topic input:checked');
+  const pct = all.length ? Math.round(d.length / all.length * 100) : 0;
+  const fill = details.querySelector('.rm-map-bar-fill'); if (fill) fill.style.width = pct + '%';
+  const lab = details.querySelector('.rm-map-prog'); if (lab) lab.textContent = d.length + '/' + all.length;
+  }
   });
 
   renderTable();

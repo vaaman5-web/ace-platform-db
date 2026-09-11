@@ -1286,7 +1286,7 @@ th {
  /* Print: hide chrome when printing report */
  @media print {
  @page { size: A4; margin: 11mm; }
- header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #catalog, #team, #feedback, #analytics { display: none !important; }
+ header, nav, .theme-toggle, .filter-bar, .pagination-controls, .compare-bar, .compare-modal, footer, .btn, .system-status, .metric-grid, #profilePanel, #certPanel, #catalog, #team, #feedback, #analytics { display: none !important; }
  .container { padding: 0; }
  #analyzer { display: block; }
  #resultsArea { margin: 0; }
@@ -1587,6 +1587,49 @@ th {
  html[data-theme="dark"] ::-webkit-scrollbar-track { background: #0A0A0A; }
  html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #3A3A3A; border-radius: 0; }
  html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #FF3000; }
+ /* ---- Certifications module ---- */
+ .cert-note { font-size: 0.72rem; color: var(--sw-text-muted); margin: 0.4rem 0 0.5rem; }
+ .cert-list { display: grid; gap: 0.35rem; margin-top: 0.5rem; }
+ .cert-item {
+  display: grid; gap: 0.15rem; padding: 0.5rem 0.6rem;
+  background: var(--sw-surface); border: 1px solid var(--sw-border);
+ }
+ .cert-item .nm { font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--sw-card-text); }
+ .cert-item .meta { font-size: 0.68rem; color: var(--sw-text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+ .cert-item .acts { display: flex; gap: 0.4rem; align-items: center; margin-top: 0.2rem; }
+ .cert-verify {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  background: var(--sw-card-bg); color: var(--sw-card-text);
+  border: 1px solid var(--sw-border); padding: 0.15rem 0.45rem; cursor: pointer;
+ }
+ .cert-verify.verified { background: #000000; color: #FFFFFF; border-color: #000000; }
+ html[data-theme="dark"] .cert-verify.verified { background: #FFFFFF; color: #000000; border-color: #FFFFFF; }
+ .cert-verify:hover { background: #FF3000; color: #FFFFFF; border-color: #FF3000; }
+ .cert-del { cursor: pointer; margin-left: auto; background: none; border: none; color: #FF3000; font-size: 0.78rem; font-weight: 800; }
+ .cert-form {
+  margin-top: 0.5rem; padding: 0.6rem 0.7rem;
+  background: var(--sw-card-bg); border: 2px solid var(--sw-border);
+  display: grid; gap: 0.4rem;
+ }
+ .cert-form h4 { text-transform: uppercase; font-size: 0.8rem; font-weight: 900; letter-spacing: 0.08em; color: var(--sw-card-text); }
+ .cert-form label { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; color: var(--sw-text-muted); display: block; margin-bottom: 0.15rem; }
+ .cert-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; }
+ @media (max-width: 480px) { .cert-grid2 { grid-template-columns: 1fr; } }
+ .cert-types { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.25rem; }
+ .cert-types label { display: flex; align-items: center; gap: 0.3rem; margin: 0; font-size: 0.7rem; }
+ .cert-bonus { font-size: 0.62rem; font-weight: 800; color: #FF3000; text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.35rem; }
+ .cert-ev-row {
+  display: grid; gap: 0.15rem; padding: 0.4rem 0.1rem;
+  border-bottom: 1px dashed var(--sw-border-soft);
+ }
+ .cert-ev-skill { font-weight: 800; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sw-card-text); }
+ .cert-ev-chips { font-size: 0.72rem; color: var(--sw-text-muted); }
+ .cert-grade { font-weight: 900; letter-spacing: 0.06em; }
+ .cert-grade.strong { color: #FF3000; }
+ .cert-grade.moderate { color: var(--sw-card-text); }
+ .cert-grade.emerging { color: var(--sw-text-muted); }
+ .cert-grade.minimal { color: var(--sw-text-muted); opacity: 0.6; }
+ .cert-empty { font-size: 0.72rem; color: var(--sw-text-muted); margin-top: 0.4rem; }
  </style>
 </head>
 <body>
@@ -1681,9 +1724,105 @@ th {
   <button type="button" class="btn" id="aiQuizBtn" style="white-space:nowrap; background:var(--sb-teal); border-color:var(--sb-teal);">Mock Quiz</button>
   <button type="button" class="btn" id="eligBtn" style="white-space:nowrap; background:var(--sb-success); border-color:var(--sb-success);">Eligibility Checker</button>
   </div>
-  </form>
- </div>
- </div>
+</form>
+  </div>
+  <div class="panel" id="certPanel">
+  <div class="panel-header">
+  <span class="panel-title">Certifications — Evidence</span>
+  </div>
+  <div class="cert-note">Certificates, projects, internships and assessments strengthen your evidence and raise the Match Score.</div>
+  <div class="cert-list" id="certList"></div>
+  <div class="cert-add-row" style="display:flex; gap:0.4rem; margin-top:0.4rem;">
+  <button type="button" class="btn btn-sm" id="addCertBtn">+ Add Certificate</button>
+  </div>
+  <div class="cert-form" id="certForm" hidden>
+  <h4>New Certificate</h4>
+  <div>
+  <label>Certificate Name *</label>
+  <input type="text" class="form-control" id="certName" maxlength="90" placeholder="e.g. AWS Cloud Practitioner">
+  </div>
+  <div class="cert-grid2">
+  <div>
+  <label>Skill</label>
+  <select class="form-control" id="certSkill">
+  <option>Python</option>
+  <option>Java</option>
+  <option>C++</option>
+  <option>C</option>
+  <option>JavaScript / SQL</option>
+  <option>SQL / Databases</option>
+  <option>DSA / Algorithms</option>
+  <option>Cloud / DevOps</option>
+  <option>AI / ML</option>
+  <option>Web / Frontend</option>
+  <option>Aptitude</option>
+  <option>Communication</option>
+  <option value="__other__">Other (type below)</option>
+  </select>
+  <input type="text" class="form-control" id="certSkillOther" hidden placeholder="Type skill name">
+  </div>
+  <div>
+  <label>Level</label>
+  <select class="form-control" id="certLevel">
+  <option>College</option>
+  <option>District</option>
+  <option>State</option>
+  <option>National</option>
+  <option>International</option>
+  </select>
+  </div>
+  </div>
+  <div>
+  <label>Certificate Type (weight decides score impact)</label>
+  <div class="cert-types">
+  <label><input type="radio" name="certType" value="Merit / Winner" checked> Merit / Winner</label>
+  <label><input type="radio" name="certType" value="Achievement"> Achievement</label>
+  <label><input type="radio" name="certType" value="Course Completion"> Course Completion</label>
+  <label><input type="radio" name="certType" value="Certification"> Certification</label>
+  <label><input type="radio" name="certType" value="Participation"> Participation</label>
+  <label><input type="radio" name="certType" value="Internship"> Internship</label>
+  <label><input type="radio" name="certType" value="Project"> Project</label>
+  <label><input type="radio" name="certType" value="Assessment"> Assessment</label>
+  </div>
+  </div>
+  <div class="cert-grid2">
+  <div>
+  <label>Result</label>
+  <select class="form-control" id="certResult">
+  <option>Participant</option>
+  <option>Completed</option>
+  <option>Qualified</option>
+  <option>Finalist</option>
+  <option>Winner</option>
+  </select>
+  </div>
+  <div>
+  <label>Score % (optional, for assessments)</label>
+  <input type="number" min="0" max="100" class="form-control" id="certScore">
+  </div>
+  </div>
+  <div class="cert-grid2">
+  <div>
+  <label>Issuing Organization</label>
+  <input type="text" class="form-control" id="certOrg" maxlength="80" placeholder="e.g. NPTEL">
+  </div>
+  <div>
+  <label>Date</label>
+  <input type="text" class="form-control" id="certDate" placeholder="e.g. Jun 2026">
+  </div>
+  </div>
+  <div>
+  <label>Certificate Upload (preview only, stored as filename)</label>
+  <input type="file" class="form-control" id="certUpload" accept="image/*,.pdf">
+  </div>
+  <div style="display:flex; gap:0.4rem; flex-wrap:wrap;">
+  <button type="button" class="btn btn-sm" id="saveCertBtn">Save Certificate</button>
+  <button type="button" class="btn btn-sm btn-ghost" id="verifyCertBtn">Verify Certificate</button>
+  <button type="button" class="btn btn-sm btn-ghost" id="cancelCertBtn">Cancel</button>
+  </div>
+  </div>
+  </div>
+  </div>
  
  <div>
  <div class="panel">
@@ -1704,11 +1843,12 @@ th {
  <div class="match-badge" id="matchBadge">
  <div class="val" id="cardScore">78%</div>
  <div class="lbl">Match Score</div>
- <div class="score-progress">
- <div class="score-progress-bar" id="scoreBar" style="width: 78%"></div>
- </div>
- </div>
- </div>
+<div class="score-progress">
+  <div class="score-progress-bar" id="scoreBar" style="width: 78%"></div>
+  </div>
+  <div class="cert-bonus" id="certBonusLine"></div>
+  </div>
+  </div>
  <div class="report-data-grid">
  <div class="data-item">
  <span class="lbl">Target Track</span>
@@ -1750,6 +1890,11 @@ th {
  <span class="lbl">Progress History</span>
  <div class="trend-bars" id="trendBars"></div>
 <div class="history-chips" id="scoreHistory"><span class="history-chip">No attempts yet</span></div>
+  </div>
+  <div class="data-item" id="certEvidenceBox" style="display:none;">
+  <span class="lbl">Certification Evidence — by Skill</span>
+  <div id="certEvidenceList"></div>
+  </div>
   </div>
   </div>
   <div style="display:flex; gap:0.4rem; margin-top:0.5rem; flex-wrap:wrap;">
@@ -2190,9 +2335,16 @@ missingGaps.push("Case Study Strategy", "SAP/Cloud Basics");
   } else {
   tier = score >= 72 ? "Consulting Track Ideal" : score >= 55 ? "Good Fit" : score >= 42 ? "Borderline - Upskilling Needed" : "Upskilling Needed";
   }
+  const certB = certBonus();
+  lastAnalysed.baseScore = score;
+  score = Math.min(100, score + certB);
+  lastAnalysed.certBonus = certB;
   lastAnalysed.score = score;
   lastAnalysed.tier = tier;
+  lastAnalysed.track = track;
   renderProgressStars();
+  updateCertBonusLine(certB);
+  renderCertEvidence();
 
   const scoreElement = document.getElementById('cardScore');
  const currentScore = parseInt(scoreElement.textContent) || 0;
@@ -2298,12 +2450,9 @@ document.getElementById('searchInput').addEventListener('input', filterData);
  });
  chips.innerHTML = list.slice().reverse().map(h => `<span class="history-chip">${h.score}%<span>${h.date}</span></span>`).join('');
  }
- renderHistory(document.getElementById('studentName').value);
+renderHistory(document.getElementById('studentName').value);
 
- /* auto-populate matched companies + history on first load so these sections are never empty */
- document.getElementById('analyzeBtn').click();
-
- /* ============ BEST MATCHED COMPANIES ============ */
+/* ============ BEST MATCHED COMPANIES ============ */
  function parseDiff(diffStr) {
  return parseInt(String(diffStr).replace('%', ''), 10) || 0;
  }
@@ -2948,6 +3097,220 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
 
   renderStars();
   renderFeedbackList();
+
+/* ===== Certifications Module (evidence-weighted Match Score) ===== */
+ const CERT_TYPE_WEIGHTS = { /* CONFIG: tune per program policy */
+  'Merit / Winner': 1.00,
+  'Achievement': 0.90,
+  'Certification': 0.85,
+  'Assessment': 0.85,
+  'Internship': 0.90,
+  'Project': 0.80,
+  'Course Completion': 0.70,
+  'Participation': 0.40
+  };
+  const CERT_LEVEL_MULT = { 'College': 0.6, 'District': 0.75, 'State': 0.85, 'National': 1, 'International': 1.1 };
+  const CERT_RESULT_MULT = { 'Participant': 0.5, 'Completed': 0.7, 'Qualified': 0.8, 'Finalist': 0.9, 'Winner': 1 };
+  const CERT_BONUS_CAP = 15;
+  const CERT_BONUS_FACTOR = 4.5;
+  const certsKey = 'ace_certs_v1';
+
+  function loadCerts() {
+  try { const arr = JSON.parse(safeGet(certsKey) || '[]'); return Array.isArray(arr) ? arr : []; } catch(e) { return []; }
+  }
+  function saveCerts(list) { safeSet(certsKey, JSON.stringify(list)); }
+
+  function certWeight(type) { const w = CERT_TYPE_WEIGHTS[type]; return typeof w === 'number' ? w : 0.5; }
+
+  function certPoints(c) {
+  const w = certWeight(c.type || '');
+  const l = CERT_LEVEL_MULT[c.level] || 0.6;
+  const r = CERT_RESULT_MULT[c.result] || 0.7;
+  return w * l * r + (c.verified ? 0.05 : 0);
+  }
+
+  function certBonus() {
+  const total = loadCerts().reduce(function(s, c) { return s + certPoints(c); }, 0);
+  return Math.min(CERT_BONUS_CAP, Math.round(total * CERT_BONUS_FACTOR));
+  }
+
+  function skillEvidence() {
+  const map = {};
+  loadCerts().forEach(function(c) {
+  const skill = c.skill || 'Other';
+  if (!map[skill]) map[skill] = [];
+  map[skill].push(c);
+  });
+  return map;
+  }
+
+  function certGradeLabel(pts) {
+  if (pts >= 1.6) return ['STRONG EVIDENCE', 'strong'];
+  if (pts >= 0.8) return ['MODERATE EVIDENCE', 'moderate'];
+  if (pts >= 0.35) return ['EMERGING EVIDENCE', 'emerging'];
+  return ['MINIMAL EVIDENCE', 'minimal'];
+  }
+
+  function renderCertList() {
+  const box = document.getElementById('certList');
+  if (!box) return;
+  const certs = loadCerts();
+  if (!certs.length) {
+  box.innerHTML = '<div class="cert-empty">No certifications added yet — add one to grow evidence and raise the Match Score.</div>';
+  return;
+  }
+  box.innerHTML = certs.map(function(c, i) {
+  const name = escapeHtml(c.name || 'Certificate');
+  const meta = [escapeHtml(c.type || ''), escapeHtml(c.level || ''), escapeHtml(c.result || ''), escapeHtml(c.org || ''), escapeHtml(c.date || '')].filter(Boolean).join(' · ');
+  const file = c.file ? ' · 📎 ' + escapeHtml(c.file) : '';
+  const v = c.verified ? ' ✓' : '';
+  return '<div class="cert-item">' +
+  '<div class="nm">' + name + v + '</div>' +
+  '<div class="meta">' + meta + file + '</div>' +
+  '<div class="acts">' +
+  '<button type="button" class="cert-verify' + (c.verified ? ' verified' : '') + '" data-ci="' + i + '">' + (c.verified ? '✓ Verified' : 'Verify') + '</button>' +
+  '<button type="button" class="cert-del" data-ci="' + i + '" title="Delete certificate">✕</button>' +
+  '</div></div>';
+  }).join('');
+  }
+
+  function renderCertEvidence() {
+  const box = document.getElementById('certEvidenceBox');
+  if (!box) return;
+  const map = skillEvidence();
+  const list = document.getElementById('certEvidenceList');
+  const keys = Object.keys(map);
+  if (!keys.length) { box.style.display = 'none'; return; }
+  box.style.display = '';
+  const rankOrder = ['Winner', 'Finalist', 'Qualified', 'Completed', 'Participant'];
+  list.innerHTML = keys.map(function(skill) {
+  const items = map[skill];
+  const pts = items.reduce(function(s, c) { return s + certPoints(c); }, 0);
+  const label = certGradeLabel(pts);
+  const nCert = items.filter(function(c) { return ['Certification', 'Course Completion', 'Assessment', 'Participation'].indexOf(c.type) !== -1; }).length;
+  const nProj = items.filter(function(c) { return c.type === 'Project' || c.type === 'Internship'; }).length;
+  const bestScore = items.reduce(function(m, c) { const v = parseInt(c.score, 10) || 0; return v > m ? v : m; }, 0);
+  let best = '';
+  items.forEach(function(c) {
+  const ri = rankOrder.indexOf(c.result);
+  if (ri !== -1 && (best === '' || ri < rankOrder.indexOf(best))) best = c.result;
+  });
+  const parts = [];
+  if (nCert) parts.push('Certificates: ' + nCert);
+  if (nProj) parts.push('Projects: ' + nProj);
+  if (bestScore) parts.push('Assessment: ' + bestScore + '%');
+  if (best) parts.push('Achievement: ' + best);
+  return '<div class="cert-ev-row">' +
+  '<div class="cert-ev-skill">' + escapeHtml(skill) + ' — <span class="cert-grade ' + label[1] + '">' + label[0] + '</span></div>' +
+  '<div class="cert-ev-chips">' + parts.join(' · ') + '</div></div>';
+  }).join('');
+  }
+
+  function updateCertBonusLine(b) {
+  const el = document.getElementById('certBonusLine');
+  if (el) el.textContent = b > 0 ? '+ ' + b + ' Match Score — Certification Evidence' : '';
+  return b;
+  }
+
+  function applyCertImpact() {
+  if (lastAnalysed && typeof lastAnalysed.baseScore === 'number') {
+  const b = certBonus();
+  const sc = Math.min(100, lastAnalysed.baseScore + b);
+  lastAnalysed.score = sc;
+  lastAnalysed.certBonus = b;
+  const el = document.getElementById('cardScore'); if (el) el.textContent = sc + '%';
+  const sb = document.getElementById('scoreBar'); if (sb) sb.style.width = sc + '%';
+  updateCertBonusLine(b);
+  renderCertEvidence();
+  if (lastAnalysed.track) renderBestMatches(sc, lastAnalysed.track);
+  } else {
+  updateCertBonusLine(certBonus());
+  renderCertEvidence();
+  }
+  }
+
+  function toggleCertForm(show) {
+  const f = document.getElementById('certForm');
+  if (f) f.hidden = !show;
+  const btn = document.getElementById('addCertBtn');
+  if (btn) btn.textContent = show ? 'Cancel' : '+ Add Certificate';
+  }
+
+  function resetCertForm() {
+  ['certName', 'certOrg', 'certDate', 'certScore', 'certSkillOther'].forEach(function(id) {
+  const el = document.getElementById(id); if (el) el.value = '';
+  });
+  const rf = document.querySelector('input[name="certType"]'); if (rf) rf.checked = true;
+  const up = document.getElementById('certUpload'); if (up) up.value = '';
+  const skill = document.getElementById('certSkill');
+  const other = document.getElementById('certSkillOther');
+  if (skill && other) other.hidden = skill.value !== '__other__';
+  toggleCertForm(false);
+  }
+
+  function saveCertFromForm(verified) {
+  const name = document.getElementById('certName').value.trim();
+  if (!name) { document.getElementById('certName').classList.add('form-error'); showFbToast('Certificate name is required.'); return; }
+  let skill = document.getElementById('certSkill').value;
+  if (skill === '__other__') skill = document.getElementById('certSkillOther').value.trim();
+  const type = (document.querySelector('input[name="certType"]:checked') || {}).value || 'Participation';
+  const level = document.getElementById('certLevel').value;
+  const result = document.getElementById('certResult').value;
+  const score = document.getElementById('certScore').value.trim();
+  const org = document.getElementById('certOrg').value.trim();
+  const date = document.getElementById('certDate').value.trim();
+  const file = (document.getElementById('certUpload').files && document.getElementById('certUpload').files[0]) ? document.getElementById('certUpload').files[0].name : '';
+  const certs = loadCerts();
+  certs.push({ name: name, skill: skill || 'General', type: type, level: level, result: result, score: score, org: org, date: date, file: file, verified: !!verified, created: Date.now() });
+  saveCerts(certs);
+  renderCertList();
+  resetCertForm();
+  applyCertImpact();
+  showFbToast(verified ? 'Certificate saved & verified.' : 'Certificate saved.');
+  }
+
+  (function initCerts() {
+  renderCertList();
+  const addBtn = document.getElementById('addCertBtn');
+  if (addBtn) addBtn.addEventListener('click', function() {
+  const f = document.getElementById('certForm');
+  toggleCertForm(f ? f.hidden : false);
+  });
+  const skillSel = document.getElementById('certSkill');
+  if (skillSel) skillSel.addEventListener('change', function() {
+  const other = document.getElementById('certSkillOther');
+  if (other) other.hidden = this.value !== '__other__';
+  other.value = '';
+  });
+  const saveBtn = document.getElementById('saveCertBtn');
+  if (saveBtn) saveBtn.addEventListener('click', function() { saveCertFromForm(false); });
+  const verifyBtn = document.getElementById('verifyCertBtn');
+  if (verifyBtn) verifyBtn.addEventListener('click', function() { saveCertFromForm(true); });
+  const cancelBtn = document.getElementById('cancelCertBtn');
+  if (cancelBtn) cancelBtn.addEventListener('click', function() { resetCertForm(); });
+  const listEl = document.getElementById('certList');
+  if (listEl) listEl.addEventListener('click', function(e) {
+  const t = e.target;
+  const ci = t.getAttribute && t.getAttribute('data-ci');
+  if (ci === null || ci === undefined) return;
+  const idx = parseInt(ci, 10);
+  if (t.classList.contains('cert-del')) {
+  const certs = loadCerts(); certs.splice(idx, 1); saveCerts(certs);
+  renderCertList(); applyCertImpact(); showFbToast('Certificate removed.');
+  } else if (t.classList.contains('cert-verify')) {
+  const certs = loadCerts();
+  if (certs[idx]) certs[idx].verified = !certs[idx].verified;
+  saveCerts(certs);
+  renderCertList(); applyCertImpact();
+  showFbToast(certs[idx] && certs[idx].verified ? 'Certificate verified.' : 'Verification removed.');
+  }
+  e.preventDefault();
+  });
+  renderCertEvidence();
+  })();
+
+  /* auto-populate matched companies + history on first load so these sections are never empty */
+  document.getElementById('analyzeBtn').click();
 
   renderTable();
  </script>

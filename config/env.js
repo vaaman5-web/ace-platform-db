@@ -1,6 +1,13 @@
 const dotenv = require('dotenv');
 const path = require('path');
-dotenv.config({ path: path.resolve(__dirname, '..', '.env'), override: true });
+// Standard behavior: real environment variables take precedence over .env values.
+dotenv.config({ path: path.resolve(__dirname, '..', '.env') });
+
+// Managed Postgres (Render/Railway/Heroku) requires SSL — enable it automatically in
+// production for non-local hosts unless DB_SSL is set explicitly.
+const connStr = process.env.DATABASE_URL || '';
+const isLocalDb = /localhost|127\.0\.0\.1/.test(connStr);
+const autoSsl = process.env.NODE_ENV === 'production' && connStr && !isLocalDb;
 
 module.exports = {
   node_env: process.env.NODE_ENV || 'development',
@@ -13,7 +20,9 @@ module.exports = {
     name: process.env.DB_NAME || 'ace_platform',
     user: process.env.DB_USER || 'ace_user',
     password: process.env.DB_PASSWORD || 'ace_password',
-    ssl: process.env.DB_SSL === 'true',
+    ssl: process.env.DB_SSL !== undefined ? process.env.DB_SSL === 'true' : autoSsl,
+    // Run schema.sql (and seed.sql if empty) automatically on boot. Set DB_AUTO_MIGRATE=false to disable.
+    autoMigrate: process.env.DB_AUTO_MIGRATE !== 'false',
     poolMin: 2,
     poolMax: 20
   },

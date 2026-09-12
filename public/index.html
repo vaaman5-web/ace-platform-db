@@ -1458,6 +1458,53 @@ th {
  }
  .theme-toggle:hover { background: #FF3000; border-color: #FF3000; color: #FFFFFF; transform: none; }
 
+ /* Outcome Tracker nav button — links main platform to outcomes.html */
+ .nav-cta {
+ background: #FF3000; color: #FFFFFF;
+ border: 1px solid #FF3000;
+ text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800;
+ font-size: 0.72rem; padding: 0.4rem 0.9rem; cursor: pointer;
+ text-decoration: none; display: inline-block;
+ transition: all 0.2s var(--ease-smooth);
+ }
+ .nav-cta:hover { background: #FFFFFF; border-color: #FFFFFF; color: #000000; opacity: 1; }
+ .nav-cta::after { display: none; }
+ html[data-theme="dark"] .nav-cta:hover { background: #FFFFFF; color: #000000; }
+
+ /* Employment Outcome CTA strip — big redirect button to outcomes.html */
+ .outcome-cta {
+ background: var(--sw-card-bg);
+ border: 2px solid var(--sw-border);
+ border-left: 6px solid #FF3000;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+ flex-wrap: wrap;
+ padding: 0.85rem 1rem;
+ margin-bottom: 0.75rem;
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+ .outcome-cta-text h3 {
+ font-size: 1rem; font-weight: 900; text-transform: uppercase;
+ letter-spacing: 0.04em; color: var(--sw-card-text);
+ }
+ .outcome-cta-text p {
+ font-size: 0.78rem; color: var(--sw-text-muted);
+ margin-top: 0.15rem; max-width: 640px;
+ }
+ .outcome-cta-btn {
+ background: #FF3000; color: #FFFFFF;
+ border: 2px solid #FF3000;
+ text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800;
+ font-size: 0.85rem; padding: 0.7rem 1.3rem;
+ text-decoration: none; display: inline-block; white-space: nowrap;
+ transition: all 0.2s var(--ease-smooth);
+ }
+ .outcome-cta-btn:hover { background: #000000; border-color: #000000; color: #FFFFFF; }
+ html[data-theme="dark"] .outcome-cta { background: #151D2E; }
+ html[data-theme="dark"] .outcome-cta-btn:hover { background: #FFFFFF; border-color: #FFFFFF; color: #000000; }
+
  /* ---- Header / Nav / Footer ---- */
  header {
  background: #000000; color: #FFFFFF;
@@ -1691,6 +1738,7 @@ th {
 <a href="#analytics">Market Analytics</a>
   <a href="#feedback">Feedback</a>
   <a href="#team">Engineering Team</a>
+ <a href="outcomes.html" class="nav-cta" id="outcomesNavBtn" title="Employment Outcome Tracker — see who got placed, where, and at what salary">Employment Outcome →</a>
  <button class="theme-toggle" id="themeToggle">Dark Mode</button>
  </nav>
  </header>
@@ -1722,6 +1770,15 @@ th {
  </div>
  </div>
  
+ <!-- Employment Outcome Tracker CTA — redirects to outcomes.html -->
+ <div class="outcome-cta" id="outcomeCta">
+ <div class="outcome-cta-text">
+ <h3>Employment Outcome Tracker</h3>
+ <p>See who got placed via ACE — company, salary package (CTC), role, joining location, batch and offer verification — plus the cohort dashboard with employment funnel, skill-gap analytics and success stories.</p>
+ </div>
+ <a href="outcomes.html" class="outcome-cta-btn" id="outcomeCtaBtn">Employment Outcome →</a>
+ </div>
+
  <!-- Interactive Skill Gap Analyzer -->
  <section id="analyzer" class="grid-2col">
  <div>

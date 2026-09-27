@@ -26,21 +26,35 @@
 
 ## 🔐 Sign-in Methods (one method per account)
 
-Accounts register with exactly **one** of: Google, Facebook, X (Twitter), LinkedIn, Mobile number (OTP), or Email + password. The backend enforces one-identity-per-method: an email/phone already registered with another method returns `409` with `registered_with` so the UI can redirect the user to the right flow.
+Accounts register with exactly **one** of the following, each with its own verification flow:
 
-After adding credentials (see `.env.example`), run:
+| Method | Verification |
+|---|---|
+| **Google** | Email + 6-digit code sent via email (2-step wizard) |
+| **LinkedIn** | Email + 6-digit code sent via email (2-step wizard) |
+| **Facebook** | Username + password (bcrypt-hashed; first use creates the account) |
+| **X (Twitter)** | Username + password (bcrypt-hashed; first use creates the account) |
+| **Mobile number** | OTP via SMS (hashed, 5-min expiry, max 5 attempts) |
+| **Email + password** | Classic login/registration |
+
+The backend enforces one-identity-per-method: an email/phone already registered with another method returns `409` with `registered_with` so the UI can redirect the user to the right flow.
+
+Verification emails are sent via SMTP when `SMTP_*` env vars are set (see `.env.example`); without them (dev), codes are logged to the server console and returned as `dev_code` in the API response.
+
+After adding credentials, run:
 
 ```bash
 npm run db:auth-migrate
 ```
-
-In development without OAuth apps configured, social buttons use a demo identity prompt; with `GOOGLE_CLIENT_ID` etc. set, buttons redirect to the real provider flow.
 
 ## 📚 API Endpoints Summary
 
 - `POST /api/auth/register` — Register user (email + password)
 - `POST /api/auth/login` — Login user (email + password)
 - `POST /api/auth/oauth/:provider` — Sign in / sign up with Google, Facebook, X or LinkedIn
+- `POST /api/auth/email-code/request` — Send email verification code (Google / LinkedIn flow)
+- `POST /api/auth/email-code/verify` — Verify email code → login or create account (Google / LinkedIn flow)
+- `POST /api/auth/provider/credentials` — Username + password sign-in for Facebook / X
 - `POST /api/auth/phone/request-otp` — Send mobile OTP
 - `POST /api/auth/phone/verify-otp` — Verify mobile OTP (login or one-tap signup)
 - `GET  /api/auth/methods?identifier=` — Which sign-in method an email/phone is registered with

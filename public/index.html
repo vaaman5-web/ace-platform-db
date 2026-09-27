@@ -1797,6 +1797,55 @@ th {
     color: #555; text-decoration: underline; padding: 0; font-family: inherit;
   }
   .theme-toggle { margin-left: 0.5rem; }
+
+  /* ===== Provider verification panes (Google/LinkedIn/Facebook/X) ===== */
+  .pv-header {
+    display: flex; align-items: center; gap: 0.7rem;
+    border-bottom: 2px solid #000; padding-bottom: 0.8rem; margin-bottom: 1rem;
+  }
+  .pv-brand-badge {
+    width: 42px; height: 42px; border-radius: 8px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    border: 1.5px solid #000; background: #FFF;
+  }
+  .pv-brand-badge svg { width: 24px; height: 24px; }
+  .pv-brand-badge.google { background: #4285F4; }
+  .pv-brand-badge.facebook { background: #1877F2; }
+  .pv-brand-badge.x { background: #000; }
+  .pv-brand-badge.linkedin { background: #0A66C2; }
+  .pv-brand-badge svg path { fill: #FFF !important; }
+  .pv-headline h3 { margin: 0; font-size: 1rem; font-weight: 900; }
+  .pv-headline p { margin: 2px 0 0; font-size: 0.75rem; color: #555; }
+  .pv-steps { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1.1rem; }
+  .pv-step {
+    flex: 1; height: 4px; background: #E5E5E5; border-radius: 2px;
+    transition: background 0.3s var(--ease-smooth);
+  }
+  .pv-step.active { background: #FF3000; }
+  .pv-step.done { background: #000; }
+  .pv-step-label { font-size: 0.68rem; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.45rem; }
+  .pv-email-chip {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: #F7F7F7; border: 1px solid #E5E5E5; border-radius: 999px;
+    padding: 0.3rem 0.8rem; font-size: 0.8rem; font-weight: 700; margin-bottom: 1rem;
+  }
+  .pv-code-input { letter-spacing: 0.5em !important; text-align: center; font-weight: 900; font-size: 1.2rem !important; }
+  .pv-resend { font-size: 0.75rem; color: #555; margin-top: 0.6rem; }
+  .pv-resend a { color: #000; font-weight: 700; cursor: pointer; text-decoration: underline; }
+  .pv-resend a.disabled { color: #bbb; cursor: not-allowed; text-decoration: none; }
+  .pv-info-note {
+    display: flex; gap: 0.5rem; align-items: flex-start;
+    background: #F7F7F7; border: 1px solid #E5E5E5; border-radius: 6px;
+    padding: 0.55rem 0.7rem; font-size: 0.72rem; color: #555; margin-bottom: 0.9rem;
+  }
+  .pv-info-note svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 1px; }
+  .pv-pane[hidden] { display: none; }
+  .btn-google { background: #4285F4; }
+  .btn-facebook { background: #1877F2; }
+  .btn-x { background: #000; }
+  .btn-linkedin { background: #0A66C2; }
+  .pv-security { display: flex; align-items: center; gap: 0.4rem; justify-content: center; font-size: 0.7rem; color: #888; margin-top: 0.9rem; }
+  .pv-security svg { width: 12px; height: 12px; }
   </style>
 </head>
 <body>
@@ -2359,6 +2408,101 @@ th {
        <button class="btn" id="emailSubmitBtn">Continue</button>
        <div class="auth-alt" id="emailModeSwitch">New here? <a id="emailToggleSignup">Create an account</a></div>
        <div class="auth-alt"><a id="backToMethodsEmail">‹ Back to all methods</a></div>
+     </div>
+
+     <!-- Pane 4: Google / LinkedIn — email verification code -->
+     <div id="providerCodePane" class="pv-pane" hidden>
+       <div class="pv-header">
+         <div class="pv-brand-badge" id="pvCodeBadge">
+           <svg viewBox="0 0 24 24" id="pvCodeIcon"></svg>
+         </div>
+         <div class="pv-headline">
+           <h3 id="pvCodeTitle">Sign in with Google</h3>
+           <p id="pvCodeSubtitle">Verify it's you with your email</p>
+         </div>
+       </div>
+       <div class="pv-steps">
+         <div class="pv-step active" id="pvCodeStep1"></div>
+         <div class="pv-step" id="pvCodeStep2"></div>
+       </div>
+       <div class="pv-step-label" id="pvCodeStepLabel">Step 1 of 2 — Confirm your email</div>
+
+       <!-- Step A: email entry -->
+       <div id="pvCodeEmailStep">
+         <div class="pv-info-note">
+           <svg viewBox="0 0 24 24"><path fill="#555" d="M12 2 1 21h22L12 2zm0 5 7.53 13H4.47L12 7zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+           <span>We'll send a 6-digit verification code to your email to confirm your <strong id="pvCodeNoteProvider">Google</strong> account. It expires in 10 minutes.</span>
+         </div>
+         <div class="form-group">
+           <label>Email address</label>
+           <input type="email" class="form-control" id="pvCodeEmail" placeholder="you@gmail.com" autocomplete="email">
+         </div>
+         <button class="btn" id="pvCodeSendBtn">Send verification code</button>
+       </div>
+
+       <!-- Step B: code entry -->
+       <div id="pvCodeVerifyStep" hidden>
+         <div class="pv-email-chip">
+           <svg viewBox="0 0 24 24" style="width:14px;height:14px"><path fill="#000" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+           <span id="pvCodeEmailChipText"></span>
+         </div>
+         <div class="form-group">
+           <label>Enter 6-digit verification code</label>
+           <input type="text" class="form-control pv-code-input" id="pvCodeInput" placeholder="••••••" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
+         </div>
+         <div class="form-group" id="pvCodeNameGroup">
+           <label>Your name (first time only)</label>
+           <input type="text" class="form-control" id="pvCodeName" placeholder="Shown on your reports" autocomplete="name">
+         </div>
+         <button class="btn" id="pvCodeVerifyBtn">Verify &amp; continue</button>
+         <div class="pv-resend">Didn't get it? <a id="pvCodeResend">Resend code</a></div>
+       </div>
+
+       <div class="auth-alt"><a id="pvCodeBack">‹ Back to all methods</a></div>
+       <div class="pv-security">
+         <svg viewBox="0 0 24 24"><path fill="#888" d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+         Verified securely · Your data stays private
+       </div>
+     </div>
+
+     <!-- Pane 5: Facebook / X — username + password -->
+     <div id="providerCredsPane" class="pv-pane" hidden>
+       <div class="pv-header">
+         <div class="pv-brand-badge" id="pvCredsBadge">
+           <svg viewBox="0 0 24 24" id="pvCredsIcon"></svg>
+         </div>
+         <div class="pv-headline">
+           <h3 id="pvCredsTitle">Sign in with Facebook</h3>
+           <p id="pvCredsSubtitle">Use your account username and password</p>
+         </div>
+       </div>
+       <div class="pv-steps">
+         <div class="pv-step active" id="pvCredsStep1"></div>
+       </div>
+       <div class="pv-step-label" id="pvCredsStepLabel">Step 1 of 1 — Confirm your account</div>
+
+       <div class="pv-info-note">
+         <svg viewBox="0 0 24 24"><path fill="#555" d="M12 2 1 21h22L12 2zm0 5 7.53 13H4.47L12 7zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+         <span>First time? Your username &amp; password create your <strong id="pvCredsNoteProvider">Facebook</strong>-linked ACE account. Next time, the same credentials sign you in.</span>
+       </div>
+       <div class="form-group">
+         <label id="pvCredsUserLabel">Username</label>
+         <input type="text" class="form-control" id="pvCredsUser" placeholder="e.g. alex.mercer" autocomplete="username">
+       </div>
+       <div class="form-group">
+         <label>Password</label>
+         <input type="password" class="form-control" id="pvCredsPass" placeholder="••••••••" autocomplete="current-password">
+       </div>
+       <div class="form-group" id="pvCredsNameGroup">
+         <label>Your name (first time only)</label>
+         <input type="text" class="form-control" id="pvCredsName" placeholder="Shown on your reports" autocomplete="name">
+       </div>
+       <button class="btn" id="pvCredsSubmitBtn">Sign in</button>
+       <div class="auth-alt"><a id="pvCredsBack">‹ Back to all methods</a></div>
+       <div class="pv-security">
+         <svg viewBox="0 0 24 24"><path fill="#888" d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6zm3 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+         Password encrypted with bcrypt · Never shared
+       </div>
      </div>
    </div>
  </div>

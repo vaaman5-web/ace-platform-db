@@ -57,6 +57,13 @@ module.exports = {
     linkedin: { clientId: process.env.LINKEDIN_CLIENT_ID, clientSecret: process.env.LINKEDIN_CLIENT_SECRET, redirectUri: process.env.LINKEDIN_REDIRECT_URI },
     smsProviderApiKey: process.env.SMS_API_KEY
   },
+  email: {
+    smtpHost: process.env.SMTP_HOST,
+    smtpPort: parseInt(process.env.SMTP_PORT, 10) || 587,
+    smtpUser: process.env.SMTP_USER,
+    smtpPass: process.env.SMTP_PASS,
+    from: process.env.EMAIL_FROM
+  },
   isDev() { return this.node_env === 'development'; },
   isProd() { return this.node_env === 'production'; }
 };

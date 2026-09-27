@@ -37,6 +37,18 @@ async function run() {
     );
     CREATE INDEX IF NOT EXISTS idx_phone_verifications_phone ON phone_verifications(phone);
   `);
+  await db.query(`
+    CREATE TABLE IF NOT EXISTS email_verifications (
+      id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+      email VARCHAR(255) NOT NULL,
+      code_hash VARCHAR(255) NOT NULL,
+      attempts INTEGER NOT NULL DEFAULT 0,
+      expires_at TIMESTAMPTZ NOT NULL,
+      verified BOOLEAN NOT NULL DEFAULT FALSE,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    );
+    CREATE INDEX IF NOT EXISTS idx_email_verifications_email ON email_verifications(email);
+  `);
   console.log('Auth migration complete.');
   process.exit(0);
 }

@@ -7,13 +7,19 @@ const db = require('../config/database');
 const config = require('../config/env');
 const { authenticate } = require('../middleware/auth');
 const { authLimiter } = require('../middleware/rateLimiter');
+const { sendVerificationCode } = require('../services/emailService');
 
 const PROVIDERS = ['google', 'facebook', 'x', 'linkedin'];
+const EMAIL_CODE_PROVIDERS = ['google', 'linkedin']; // verify via emailed code
+const PASSWORD_PROVIDERS = ['facebook', 'x'];       // verify via username + password
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 router.use('/login', authLimiter);
 router.use('/register', authLimiter);
 router.use('/oauth', authLimiter);
 router.use('/phone', authLimiter);
+router.use('/email-code', authLimiter);
+router.use('/provider', authLimiter);
 
 function signToken(user) {
   return jwt.sign({ sub: user.id, email: user.email, role: user.role }, config.jwt.secret, { expiresIn: config.jwt.expiresIn });
@@ -195,6 +201,128 @@ router.get('/methods', async (req, res, next) => {
       rows = (await db.query('SELECT auth_provider FROM users WHERE email = $1 LIMIT 1', [id.toLowerCase()])).rows;
     }
     res.json({ registered_with: rows.length ? rows[0].auth_provider : null });
+  } catch (e) { next(e); }
+});
+
+// ==================== Provider verification: Google / LinkedIn (email code) ====================
+// Step 1: user enters email -> server emails a 6-digit code
+router.post('/email-code/request', async (req, res, next) => {
+  try {
+    const provider = String((req.body || {}).provider || '').toLowerCase();
+    if (!EMAIL_CODE_PROVIDERS.includes(provider)) return res.status(400).json({ error: 'This flow is only for Google and LinkedIn sign-in.' });
+    const email = String((req.body || {}).email || '').toLowerCase().trim();
+    if (!EMAIL_RE.test(email)) return res.status(400).json({ error: 'Enter a valid email address.' });
+
+    // One-identity rule: email already registered with a different method?
+    const existing = await db.query('SELECT auth_provider FROM users WHERE email = $1 LIMIT 1', [email]);
+    if (existing.rows.length && existing.rows[0].auth_provider !== provider) {
+      return res.status(409).json({
+        error: 'This email is already registered with "' + existing.rows[0].auth_provider + '" sign-in. Please use that method.',
+        registered_with: existing.rows[0].auth_provider
+      });
+    }
+
+    const code = String(crypto.randomInt(100000, 999999));
+    const codeHash = await bcrypt.hash(code, 8);
+    const expiresAt = new Date(Date.now() + 10 * 60 * 1000);
+    await db.query('INSERT INTO email_verifications (email, code_hash, expires_at) VALUES ($1, $2, $3)', [email, codeHash, expiresAt]);
+
+    const label = provider === 'google' ? 'Google' : 'LinkedIn';
+    const { devCode } = await sendVerificationCode(email, code, label);
+    const payload = { message: 'Verification code sent to ' + email, expires_in: 600 };
+    if (devCode) payload.dev_code = devCode; // dev only (no SMTP configured)
+    res.json(payload);
+  } catch (e) { next(e); }
+});
+
+// Step 2: verify code -> login or create account
+router.post('/email-code/verify', async (req, res, next) => {
+  try {
+    const provider = String((req.body || {}).provider || '').toLowerCase();
+    if (!EMAIL_CODE_PROVIDERS.includes(provider)) return res.status(400).json({ error: 'This flow is only for Google and LinkedIn sign-in.' });
+    const email = String((req.body || {}).email || '').toLowerCase().trim();
+    const code = String((req.body || {}).code || '').trim();
+    const fullName = String((req.body || {}).full_name || '').trim();
+    if (!EMAIL_RE.test(email)) return res.status(400).json({ error: 'Invalid email.' });
+    if (!/^\d{6}$/.test(code)) return res.status(400).json({ error: 'Enter the 6-digit verification code.' });
+
+    const r = await db.query(
+      `SELECT * FROM email_verifications
+       WHERE email = $1 AND verified = FALSE AND expires_at > NOW()
+       ORDER BY created_at DESC LIMIT 1`,
+      [email]
+    );
+    if (!r.rows.length) return res.status(400).json({ error: 'Code expired. Please request a new one.' });
+    const row = r.rows[0];
+    if (row.attempts >= 5) return res.status(429).json({ error: 'Too many attempts. Request a new code.' });
+    const ok = await bcrypt.compare(code, row.code_hash);
+    if (!ok) {
+      await db.query('UPDATE email_verifications SET attempts = attempts + 1 WHERE id = $1', [row.id]);
+      return res.status(400).json({ error: 'Incorrect code.' });
+    }
+    await db.query('UPDATE email_verifications SET verified = TRUE WHERE id = $1', [row.id]);
+
+    // Existing user with same provider -> login
+    const byEmail = await db.query('SELECT * FROM users WHERE email = $1 LIMIT 1', [email]);
+    if (byEmail.rows.length) {
+      const user = byEmail.rows[0];
+      return res.json({ user: publicUser(user), token: signToken(user), method: provider });
+    }
+
+    // New user -> create account under this provider
+    let name = fullName || email.split('@')[0];
+    const nameTaken = await db.query('SELECT 1 FROM users WHERE full_name = $1 AND auth_provider <> $2 LIMIT 1', [name, 'email']);
+    if (nameTaken.rows.length) name = name + '-' + provider;
+    const inserted = await db.query(
+      `INSERT INTO users (email, password_hash, full_name, auth_provider, provider_id)
+       VALUES ($1, NULL, $2, $3, $4) RETURNING *`,
+      [email, name, provider, 'emailcode:' + crypto.randomUUID()]
+    );
+    const user = inserted.rows[0];
+    res.status(201).json({ user: publicUser(user), token: signToken(user), method: provider, created: true });
+  } catch (e) { next(e); }
+});
+
+// ==================== Provider verification: Facebook / X (username + password) ====================
+// Simulates the platform credential check: first use registers the credential, later uses verify it.
+router.post('/provider/credentials', async (req, res, next) => {
+  try {
+    const provider = String((req.body || {}).provider || '').toLowerCase();
+    if (!PASSWORD_PROVIDERS.includes(provider)) return res.status(400).json({ error: 'This flow is only for Facebook and X sign-in.' });
+    const username = String((req.body || {}).username || '').trim();
+    const password = String((req.body || {}).password || '');
+    const fullName = String((req.body || {}).full_name || '').trim();
+    if (!username || username.length < 3) return res.status(400).json({ error: 'Enter your ' + (provider === 'x' ? 'X' : 'Facebook') + ' username (min 3 characters).' });
+    if (!password || password.length < 6) return res.status(400).json({ error: 'Password must be at least 6 characters.' });
+
+    const providerId = provider + ':' + username.toLowerCase();
+    const existing = await db.query('SELECT * FROM users WHERE auth_provider = $1 AND provider_id = $2 LIMIT 1', [provider, providerId]);
+
+    if (existing.rows.length) {
+      const user = existing.rows[0];
+      const ok = await bcrypt.compare(password, user.password_hash || '');
+      if (!ok) return res.status(401).json({ error: 'Incorrect password for this ' + (provider === 'x' ? 'X' : 'Facebook') + ' account.' });
+      return res.json({ user: publicUser(user), token: signToken(user), method: provider });
+    }
+
+    // New account: check username not already claimed on this provider by another email identity
+    const duplicateUsername = await db.query(
+      "SELECT 1 FROM users WHERE provider_id = $1 LIMIT 1",
+      [providerId]
+    );
+    if (duplicateUsername.rows.length) return res.status(409).json({ error: 'That username is taken on ' + provider + '. Try signing in instead.' });
+
+    const hash = await bcrypt.hash(password, config.bcryptRounds);
+    let name = fullName || username;
+    const nameTaken = await db.query('SELECT 1 FROM users WHERE full_name = $1 AND auth_provider <> $2 LIMIT 1', [name, 'email']);
+    if (nameTaken.rows.length) name = name + '-' + provider;
+    const inserted = await db.query(
+      `INSERT INTO users (email, password_hash, full_name, auth_provider, provider_id)
+       VALUES (NULL, $1, $2, $3, $4) RETURNING *`,
+      [hash, name, provider, providerId]
+    );
+    const user = inserted.rows[0];
+    res.status(201).json({ user: publicUser(user), token: signToken(user), method: provider, created: true });
   } catch (e) { next(e); }
 });
 

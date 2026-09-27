@@ -41,6 +41,13 @@ module.exports = {
   },
   log: { level: 'info', file: 'logs/ace-platform.log' },
   pdf: { tempDir: './tmp/pdfs', cleanupInterval: 3600000 },
+  oauth: {
+    google: { clientId: process.env.GOOGLE_CLIENT_ID, clientSecret: process.env.GOOGLE_CLIENT_SECRET, redirectUri: process.env.GOOGLE_REDIRECT_URI },
+    facebook: { clientId: process.env.FACEBOOK_APP_ID, clientSecret: process.env.FACEBOOK_APP_SECRET, redirectUri: process.env.FACEBOOK_REDIRECT_URI },
+    x: { clientId: process.env.X_CLIENT_ID, clientSecret: process.env.X_CLIENT_SECRET, redirectUri: process.env.X_REDIRECT_URI },
+    linkedin: { clientId: process.env.LINKEDIN_CLIENT_ID, clientSecret: process.env.LINKEDIN_CLIENT_SECRET, redirectUri: process.env.LINKEDIN_REDIRECT_URI },
+    smsProviderApiKey: process.env.SMS_API_KEY
+  },
   isDev() { return this.node_env === 'development'; },
   isProd() { return this.node_env === 'production'; }
 };

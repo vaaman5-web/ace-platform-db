@@ -8,7 +8,8 @@
     "dev": "nodemon server.js",
     "db:create": "node database/run-migrations.js",
     "db:seed": "node database/run-seed.js",
-    "db:reset": "node database/run-migrations.js && node database/run-seed.js",
+    "db:reset": "node database/run-migrations.js && node database/run-seed.js && node database/run-auth-migration.js",
+    "db:auth-migrate": "node database/run-auth-migration.js",
     "test": "jest --forceExit"
   },
   "dependencies": {

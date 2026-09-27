@@ -1678,6 +1678,78 @@ th {
   .rm-ext { display: inline-block; margin: 0.5rem; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid #FF3000; color: #FF3000; padding: 0.25rem 0.5rem; text-decoration: none; }
   .rm-ext:hover { background: #FF3000; color: #fff; }
   @media (max-width: 520px) { .rm-cols { grid-template-columns: 1fr; } }
+
+  /* ===== Auth / Login Modal ===== */
+  .auth-overlay {
+    position: fixed; inset: 0; z-index: 1000;
+    background: rgba(0,0,0,0.55);
+    display: flex; align-items: center; justify-content: center;
+    padding: 1rem;
+    animation: fadeIn 0.2s var(--ease-smooth);
+  }
+  .auth-overlay[hidden] { display: none; }
+  .auth-modal {
+    background: #FFFFFF; color: #000000;
+    border: 2px solid #000000; border-radius: 10px;
+    width: 100%; max-width: 420px; max-height: 92vh; overflow-y: auto;
+    padding: 1.6rem 1.5rem;
+    animation: scaleIn 0.25s var(--ease-smooth);
+  }
+  .auth-modal h2 { font-size: 1.25rem; font-weight: 900; margin-bottom: 0.25rem; }
+  .auth-sub { font-size: 0.8rem; color: #555555; margin-bottom: 1.1rem; }
+  .auth-close {
+    position: absolute; top: 0.7rem; right: 0.8rem;
+    background: none; border: none; font-size: 1.3rem; cursor: pointer; color: #000; font-weight: 700;
+  }
+  .auth-modal-wrap { position: relative; }
+  .provider-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem; margin-bottom: 0.9rem; }
+  .provider-btn {
+    display: flex; align-items: center; justify-content: center; gap: 0.45rem;
+    border: 1.5px solid #000; border-radius: 6px; background: #FFF;
+    padding: 0.6rem 0.5rem; font-weight: 700; font-size: 0.82rem;
+    cursor: pointer; transition: all 0.15s var(--ease-smooth); font-family: inherit;
+  }
+  .provider-btn:hover { background: #000; color: #FFF; transform: translateY(-1px); }
+  .provider-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .provider-btn:hover svg path { fill: #FFFFFF; }
+  .auth-divider {
+    display: flex; align-items: center; gap: 0.6rem;
+    color: #888; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+    margin: 0.9rem 0;
+  }
+  .auth-divider::before, .auth-divider::after { content: ""; flex: 1; height: 1px; background: #E5E5E5; }
+  .auth-method-note {
+    font-size: 0.72rem; color: #555; background: #F7F7F7; border: 1px solid #E5E5E5;
+    border-radius: 6px; padding: 0.5rem 0.6rem; margin-bottom: 0.9rem;
+  }
+  .auth-error {
+    display: none; background: #FFF2EE; color: #C62200; border: 1px solid #FF3000;
+    border-radius: 6px; padding: 0.5rem 0.6rem; font-size: 0.78rem; margin-bottom: 0.8rem;
+  }
+  .auth-error.show { display: block; }
+  .otp-pane[hidden] { display: none; }
+  .otp-row { display: flex; gap: 0.5rem; }
+  .otp-row .form-control { letter-spacing: 0.35em; text-align: center; font-weight: 800; }
+  .auth-alt {
+    margin-top: 0.9rem; font-size: 0.78rem; color: #555; text-align: center;
+  }
+  .auth-alt a { color: #000; font-weight: 700; cursor: pointer; text-decoration: underline; }
+  .user-chip {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    background: #FFFFFF; color: #000; border: 1.5px solid #000; border-radius: 999px;
+    padding: 0.25rem 0.75rem 0.25rem 0.3rem; font-size: 0.78rem; font-weight: 700;
+  }
+  .user-chip .avatar {
+    width: 22px; height: 22px; border-radius: 50%; background: #FF3000; color: #FFF;
+    display: flex; align-items: center; justify-content: center; font-size: 0.65rem; font-weight: 900;
+    overflow: hidden;
+  }
+  .user-chip .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .user-chip button {
+    background: none; border: none; cursor: pointer; font-size: 0.68rem; font-weight: 700;
+    color: #555; text-decoration: underline; padding: 0; font-family: inherit;
+  }
+  .theme-toggle { margin-left: 0.5rem; }
   </style>
 </head>
 <body>
@@ -1691,6 +1763,14 @@ th {
 <a href="#analytics">Market Analytics</a>
   <a href="#feedback">Feedback</a>
   <a href="#team">Engineering Team</a>
+ <button class="theme-toggle" id="loginBtn">Login / Sign Up</button>
+ <span id="userChipWrap" hidden>
+   <span class="user-chip">
+     <span class="avatar" id="userAvatar"></span>
+     <span id="userChipName"></span>
+     <button id="logoutBtn">Logout</button>
+   </span>
+ </span>
  <button class="theme-toggle" id="themeToggle">Dark Mode</button>
  </nav>
  </header>
@@ -2149,6 +2229,82 @@ th {
   </div>
 
  <div class="fb-toast" id="fbToast"></div>
+
+ <!-- Auth Modal -->
+ <div class="auth-overlay" id="authOverlay" hidden>
+   <div class="auth-modal auth-modal-wrap">
+     <button class="auth-close" id="authCloseBtn" aria-label="Close login">&times;</button>
+     <h2 id="authTitle">Sign in to ACE</h2>
+     <p class="auth-sub">Choose <strong>one</strong> method — that's all you need. Your progress saves automatically.</p>
+     <div class="auth-error" id="authError"></div>
+
+     <!-- Pane 1: pick a method -->
+     <div id="methodPane">
+       <div class="provider-grid">
+         <button class="provider-btn" data-provider="google">
+           <svg viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
+           Google
+         </button>
+         <button class="provider-btn" data-provider="facebook">
+           <svg viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07z"/></svg>
+           Facebook
+         </button>
+         <button class="provider-btn" data-provider="x">
+           <svg viewBox="0 0 24 24"><path fill="#000000" d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23 5.45-6.23zm-1.16 17.52h1.83L7.08 4.13H5.12l11.96 15.64z"/></svg>
+           X (Twitter)
+         </button>
+         <button class="provider-btn" data-provider="linkedin">
+           <svg viewBox="0 0 24 24"><path fill="#0A66C2" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+           LinkedIn
+         </button>
+       </div>
+       <div class="auth-divider">or continue with</div>
+       <button class="provider-btn" data-provider="phone" style="width:100%">
+         <svg viewBox="0 0 24 24"><path fill="#16A34A" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+         Mobile Number (OTP)
+       </button>
+       <div class="auth-alt">Prefer email? <a id="emailPaneLink">Use email &amp; password</a></div>
+     </div>
+
+     <!-- Pane 2: mobile OTP -->
+     <div id="otpPane" hidden>
+       <div class="form-group">
+         <label>Mobile Number (with country code)</label>
+         <input type="tel" class="form-control" id="otpPhone" placeholder="+919876543210" autocomplete="tel">
+       </div>
+       <button class="btn" id="sendOtpBtn">Send OTP</button>
+       <div class="form-group" style="margin-top:0.9rem">
+         <label>Enter 6-digit OTP</label>
+         <input type="text" class="form-control" id="otpCode" placeholder="••••••" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
+       </div>
+       <div class="form-group">
+         <label>Your Name (new users only)</label>
+         <input type="text" class="form-control" id="otpName" placeholder="Shown on your reports" autocomplete="name">
+       </div>
+       <button class="btn" id="verifyOtpBtn">Verify &amp; Continue</button>
+       <div class="auth-alt"><a id="backToMethods">‹ Back to all methods</a></div>
+     </div>
+
+     <!-- Pane 3: email + password -->
+     <div id="emailPane" hidden>
+       <div class="form-group">
+         <label>Email</label>
+         <input type="email" class="form-control" id="emailInput" placeholder="you@college.edu" autocomplete="email">
+       </div>
+       <div class="form-group">
+         <label>Password</label>
+         <input type="password" class="form-control" id="passwordInput" placeholder="••••••••" autocomplete="current-password">
+       </div>
+       <div class="form-group" id="emailNameGroup" hidden>
+         <label>Full Name</label>
+         <input type="text" class="form-control" id="emailNameInput" placeholder="Shown on your reports" autocomplete="name">
+       </div>
+       <button class="btn" id="emailSubmitBtn">Continue</button>
+       <div class="auth-alt" id="emailModeSwitch">New here? <a id="emailToggleSignup">Create an account</a></div>
+       <div class="auth-alt"><a id="backToMethodsEmail">‹ Back to all methods</a></div>
+     </div>
+   </div>
+ </div>
 
  <script src="js/companies-data.js"></script>
  <script>
@@ -3744,6 +3900,7 @@ document.getElementById('compareModal').addEventListener('click', (e) => {
 
   renderTable();
  </script>
+ <script src="js/auth.js"></script>
  <script src="js/quiz-ai.js"></script>
 </body>
 </html>

@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ACE — Employment Outcome Tracker</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+ <style>
+/* SWISS INTERNATIONAL — Official Color System (shared with index.html) */
+ :root {
+ --sb-primary: #000000;
+ --sb-primary-hover: #FF3000;
+ --sb-teal: #FF3000;
+ --sb-amber: #FF3000;
+ --sb-text-dark: #000000;
+ --sb-bg-canvas: #FFFFFF;
+ --sb-border: #000000;
+
+ /* Status Colors */
+ --sb-success: #FF3000;
+ --sb-danger: #FF3000;
+ --sb-warning: #FF3000;
+
+ /* CTC Badge Colors */
+ --sb-entry-bg: #F2F2F2;
+ --sb-entry-text: #000000;
+ --sb-growth-bg: #000000;
+ --sb-growth-text: #FFFFFF;
+ --sb-premium-bg: #FFFFFF;
+ --sb-premium-text: #FF3000;
+
+ /* Swiss Component Tokens */
+ --sw-accent: #FF3000;
+ --sw-border: #000000;
+ --sw-border-soft: #E5E5E5;
+ --sw-card-bg: #FFFFFF;
+ --sw-surface: #F7F7F7;
+ --sw-card-text: #000000;
+ --sw-text-muted: #555555;
+ --sw-grid-c: rgba(0, 0, 0, 0.03);
+ --sw-dot-c: rgba(0, 0, 0, 0.04);
+ --sw-diag-c: rgba(0, 0, 0, 0.025);
+
+ /* Typography */
+ --font-main: Inter, system-ui, -apple-system, sans-serif;
+
+ /* Animation Easing */
+ --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ html {
+ scroll-behavior: smooth;
+ }
+
+ body {
+ background: var(--sb-bg-canvas);
+ color: var(--sb-text-dark);
+ font-family: var(--font-main);
+ line-height: 1.45;
+ padding-bottom: 20px;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+ @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+ @keyframes slideInRight { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
+ @keyframes scaleIn { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
+ @keyframes progressFill { from { width: 0; } to { width: 100%; } }
+
+ /* Header */
+header {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ padding: 0.7rem 1.25rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+
+.logo-area h1 {
+ font-size: 1.3rem;
+ font-weight: 800;
+ letter-spacing: -0.5px;
+ color: #FFFFFF;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }
+
+.logo-area span.tagline {
+ font-size: 0.7rem;
+ font-weight: 500;
+ letter-spacing: 0.2px;
+ color: rgba(255, 255, 255, 0.85);
+ }
+
+nav {
+ display: flex;
+ gap: 1rem;
+ align-items: center;
+ }
+
+nav a {
+ color: #FFFFFF;
+ text-decoration: none;
+ font-size: 0.8rem;
+ font-weight: 600;
+ position: relative;
+ padding: 0.2rem 0;
+ transition: opacity 0.2s var(--ease-smooth);
+ }
+
+ nav a::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background: #FFFFFF;
+ transition: width 0.25s var(--ease-smooth);
+ }
+
+ nav a:hover::after { width: 100%; }
+ nav a:hover { opacity: 0.85; }
+
+.container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 1.25rem 1.5rem;
+ }
+
+/* Banner Section */
+.system-status {
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ padding: 0.6rem 1rem;
+ margin-bottom: 0.75rem;
+ animation: scaleIn 0.5s var(--ease-smooth) 0.1s backwards;
+ }
+
+.system-status h2 {
+ font-size: 1rem;
+ margin-bottom: 0.15rem;
+ font-weight: 800;
+ color: var(--sb-text-dark);
+ }
+
+.system-status p {
+ font-size: 0.78rem;
+ color: #5B6B76;
+ font-weight: 500;
+ line-height: 1.4;
+ }
+
+/* Metrics Grid */
+.metrics-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+ gap: 0.6rem;
+ margin-bottom: 0.75rem;
+ }
+
+.metric-card {
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ padding: 0.6rem 0.9rem;
+ transition: all 0.25s var(--ease-smooth);
+ animation: slideUp 0.5s var(--ease-smooth) backwards;
+ border-top: 3px solid var(--sb-teal);
+ }
+
+.metric-card:nth-child(1) { animation-delay: 0.1s; border-top-color: var(--sb-primary); }
+.metric-card:nth-child(2) { animation-delay: 0.15s; border-top-color: var(--sb-teal); }
+.metric-card:nth-child(3) { animation-delay: 0.2s; border-top-color: var(--sb-success); }
+.metric-card:nth-child(4) { animation-delay: 0.25s; border-top-color: var(--sb-amber); }
+
+.metric-card:hover {
+ transform: translateY(-4px);
+ border-color: var(--sb-primary);
+ }
+
+.metric-card .val {
+ font-size: 1.15rem;
+ font-weight: 800;
+ color: var(--sb-text-dark);
+ margin-bottom: 0.15rem;
+ display: block;
+ }
+
+.metric-card .lbl {
+ font-size: 0.68rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ color: #5B6B76;
+ letter-spacing: 0.5px;
+ }
+
+/* Panel Design */
+.panel {
+ background: #FFFFFF;
+ border: 1px solid var(--sb-border);
+ padding: 0.9rem 1rem;
+ margin-bottom: 0.75rem;
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+
+.panel:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+
+.panel-header {
+ border-bottom: 2px solid var(--sb-bg-canvas);
+ padding-bottom: 0.4rem;
+ margin-bottom: 0.6rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+.panel-title {
+ font-size: 0.85rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ color: var(--sb-primary);
+ }
+
+/* Form Styling */
+.form-group {
+ margin-bottom: 0.45rem;
+ animation: fadeIn 0.4s var(--ease-smooth);
+ }
+
+.form-group label {
+ display: block;
+ font-weight: 600;
+ font-size: 0.75rem;
+ margin-bottom: 0.2rem;
+ color: var(--sb-text-dark);
+ }
+
+.form-control {
+ width: 100%;
+ padding: 0.4rem 0.6rem;
+ border: 1.5px solid var(--sb-border);
+ background: var(--sb-bg-canvas);
+ font-family: var(--font-main);
+ font-size: 0.8rem;
+ font-weight: 500;
+ outline: none;
+ transition: all 0.2s var(--ease-smooth);
+ color: var(--sb-text-dark);
+ }
+
+.form-control:focus {
+ border-color: var(--sb-primary);
+ background: #FFFFFF;
+ }
+
+/* Buttons */
+.btn {
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ border: none;
+ padding: 0.55rem 1.1rem;
+ font-weight: 700;
+ font-size: 0.85rem;
+ cursor: pointer;
+ box-shadow: 0 2px 4px rgba(30, 58, 95, 0.2);
+ transition: all 0.2s var(--ease-smooth);
+ width: 100%;
+ }
+
+.btn:hover {
+ background: var(--sb-primary-hover);
+ transform: translateY(-1px);
+ }
+
+.btn:active { transform: translateY(0); }
+
+.btn-sm {
+ padding: 0.35rem 0.7rem;
+ font-size: 0.8rem;
+ width: auto;
+ }
+
+.btn-ghost {
+ background: transparent;
+ color: var(--sb-text-dark);
+ border: 1.5px solid var(--sb-border);
+ box-shadow: none;
+ width: auto;
+ }
+
+.btn-ghost:hover { background: var(--sb-bg-canvas); box-shadow: none; }
+
+/* Data Grid */
+.data-item {
+ background: var(--sb-bg-canvas);
+ border: 1px solid var(--sb-border);
+ padding: 0.5rem 0.7rem;
+ transition: all 0.2s var(--ease-smooth);
+ animation: fadeIn 0.4s var(--ease-smooth);
+ }
+
+.data-item:hover {
+ background: #FFFFFF;
+ border-color: var(--sb-primary);
+ transform: translateX(3px);
+ }
+
+.data-item .lbl {
+ font-size: 0.6rem;
+ color: #5B6B76;
+ text-transform: uppercase;
+ font-weight: 700;
+ letter-spacing: 0.5px;
+ display: block;
+ margin-bottom: 0.1rem;
+ }
+
+.data-item .val {
+ font-size: 0.85rem;
+ font-weight: 700;
+ color: var(--sb-text-dark);
+ }
+
+/* Table Section */
+.table-section {
+ background: #FFFFFF;
+ padding: 0.9rem 1rem;
+ border: 1px solid var(--sb-border);
+ margin-bottom: 0.75rem;
+ animation: slideUp 0.5s var(--ease-smooth);
+ }
+
+.filter-bar {
+ display: grid;
+ grid-template-columns: 2fr 1fr 1fr 1fr auto;
+ gap: 0.5rem;
+ margin-bottom: 0.6rem;
+ align-items: center;
+ }
+
+@media (max-width: 900px) { .filter-bar { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .filter-bar { grid-template-columns: 1fr; } }
+
+.table-container {
+ overflow-x: auto;
+ max-height: 480px;
+ border: 1px solid var(--sb-border);
+ transition: opacity 0.25s ease;
+ }
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ text-align: left;
+ font-size: 0.8rem;
+ }
+
+th, td {
+ padding: 0.45rem;
+ border-bottom: 1px solid var(--sb-border);
+ }
+
+th {
+ position: sticky;
+ top: 0;
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ font-weight: 700;
+ text-transform: uppercase;
+ font-size: 0.68rem;
+ letter-spacing: 0.5px;
+ z-index: 10;
+ }
+
+ tr { animation: fadeIn 0.25s ease forwards; }
+ tr:nth-child(even) { background: #F6F1E8; }
+ tr:hover td { background: #EEE8DC; }
+
+/* Badges */
+.badge-type {
+ font-size: 0.7rem;
+ font-weight: 700;
+ padding: 0.3rem 0.65rem;
+ text-transform: uppercase;
+ display: inline-block;
+ letter-spacing: 0.3px;
+ transition: all 0.2s var(--ease-smooth);
+ }
+
+.badge-type:hover { transform: scale(1.05); }
+
+.badge-product { background: var(--sb-premium-bg); color: var(--sb-premium-text); border: 1px solid var(--sb-premium-text); }
+.badge-service { background: var(--sb-growth-bg); color: var(--sb-growth-text); border: 1px solid var(--sb-growth-text); }
+.badge-gcc { background: #E8F0FD; color: #1D4ED8; border: 1px solid #1D4ED8; }
+.badge-finance { background: #F5EDFC; color: #6D28D9; border: 1px solid #6D28D9; }
+.badge-quant { background: #FDE8EA; color: #BE123C; border: 1px solid #BE123C; }
+.badge-core { background: #EFF5EA; color: #3F6212; border: 1px solid #3F6212; }
+.badge-startup { background: #FEF3C7; color: #92400E; border: 1px solid #92400E; }
+
+.badge-ver {
+ font-size: 0.6rem;
+ font-weight: 800;
+ padding: 0.15rem 0.4rem;
+ text-transform: uppercase;
+ letter-spacing: 0.4px;
+ display: inline-block;
+ }
+
+.badge-ver.verified { background: var(--sb-growth-bg); color: var(--sb-growth-text); border: 1px solid var(--sb-growth-text); }
+.badge-ver.pending { background: var(--sb-entry-bg); color: var(--sb-entry-text); border: 1px dashed var(--sb-border); }
+
+.verified-cell { color: var(--sb-primary); font-weight: 800; margin-right: 0.25rem; }
+
+/* Analytics bars (salary distribution etc.) */
+.analytics-body { display: grid; gap: 0.7rem; }
+.a-kpis { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.a-kpi { background: var(--sb-primary); color: #FFFFFF; padding: 0.45rem 0.7rem; font-size: 0.78rem; font-weight: 700; }
+.a-kpi small { font-weight: 500; opacity: 0.85; }
+.a-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0.7rem; }
+.a-card { background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); padding: 0.8rem 0.9rem; }
+.a-card h4 { margin: 0 0 0.55rem; font-size: 0.85rem; color: var(--sb-primary); }
+.a-row { display: grid; grid-template-columns: 165px 1fr 64px; gap: 0.45rem; align-items: center; margin: 0.3rem 0; font-size: 0.78rem; color: var(--sb-text-dark); }
+.a-bar { height: 10px; background: #E3E8EE; overflow: hidden; }
+.a-bar > div { height: 100%; background: var(--sb-primary); }
+.a-bar > div.red { background: var(--sb-danger); }
+.a-n { text-align: right; font-weight: 700; }
+.a-tip { font-size: 0.8rem; background: var(--sb-bg-canvas); border: 1px solid var(--sb-border); border-left: 3px solid var(--sb-teal); padding: 0.45rem 0.6rem; color: var(--sb-text-dark); }
+.a-tip b { color: var(--sb-primary); }
+
+/* Pagination */
+.pagination-controls {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 0.6rem;
+ padding-top: 0.6rem;
+ border-top: 1px solid var(--sb-border);
+ font-size: 0.8rem;
+ font-weight: 600;
+ color: #5B6B76;
+ }
+
+.pagination-btn-group { display: flex; gap: 0.625rem; }
+
+/* Outcome cards (success stories) */
+.oc-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ gap: 0.6rem;
+ }
+
+.oc-card {
+ background: var(--sw-card-bg, #FFFFFF);
+ border: 1px solid var(--sb-border);
+ border-left: 4px solid var(--sb-teal);
+ padding: 0.6rem 0.7rem;
+ transition: all 0.2s var(--ease-smooth);
+ animation: slideUp 0.45s var(--ease-smooth) backwards;
+ }
+
+.oc-card:hover {
+ transform: translateY(-3px);
+ border-color: var(--sb-primary);
+ border-left-color: var(--sb-primary);
+ }
+
+.oc-card:nth-child(1) { animation-delay: 0.05s; }
+.oc-card:nth-child(2) { animation-delay: 0.1s; }
+.oc-card:nth-child(3) { animation-delay: 0.15s; }
+.oc-card:nth-child(4) { animation-delay: 0.2s; }
+.oc-card:nth-child(5) { animation-delay: 0.25s; }
+.oc-card:nth-child(6) { animation-delay: 0.3s; }
+
+.oc-name {
+ font-weight: 800;
+ font-size: 0.85rem;
+ color: var(--sb-text-dark);
+ display: flex;
+ align-items: center;
+ gap: 0.4rem;
+ flex-wrap: wrap;
+ }
+
+.oc-sub { font-size: 0.68rem; color: #5B6B76; margin-top: 0.2rem; font-weight: 600; }
+.oc-cta { font-size: 0.95rem; font-weight: 800; color: var(--sb-primary); margin-top: 0.35rem; letter-spacing: -0.3px; }
+.oc-quote { font-size: 0.74rem; color: #44525E; margin-top: 0.35rem; font-style: italic; line-height: 1.5; }
+
+.oc-empty { font-size: 0.8rem; color: #5B6B76; padding: 1rem 0; text-align: center; }
+
+/* Dark Mode Theme */
+ html[data-theme="dark"] {
+ color-scheme: dark;
+ --sb-primary: #000000;
+ --sb-text-dark: #FFFFFF;
+ --sb-bg-canvas: #0A0A0A;
+ --sb-border: #FFFFFF;
+ --sb-entry-bg: #F2F2F2;
+ --sb-entry-text: #000000;
+ --sb-growth-bg: #FFFFFF;
+ --sb-growth-text: #000000;
+ --sb-premium-bg: #0A0A0A;
+ --sb-premium-text: #FF3000;
+
+ --sw-border: #FFFFFF;
+ --sw-border-soft: #2E2E2E;
+ --sw-card-bg: #141414;
+ --sw-surface: #1C1C1C;
+ --sw-card-text: #FFFFFF;
+ --sw-text-muted: #A0A0A0;
+ }
+
+ html[data-theme="dark"] body { background: var(--sb-bg-canvas); color: var(--sb-text-dark); }
+
+ html[data-theme="dark"] .system-status,
+ html[data-theme="dark"] .metric-card,
+ html[data-theme="dark"] .panel,
+ html[data-theme="dark"] .table-section,
+ html[data-theme="dark"] .data-item,
+ html[data-theme="dark"] .oc-card { background: #151D2E; }
+
+ html[data-theme="dark"] .data-item:hover,
+ html[data-theme="dark"] .metric-card:hover,
+ html[data-theme="dark"] .oc-card:hover { background: #1C2740; }
+
+ html[data-theme="dark"] tr:nth-child(even) { background: #1A2336; }
+ html[data-theme="dark"] tr:hover td { background: #222E46; }
+ html[data-theme="dark"] .form-control { background: #131B2C; color: var(--sb-text-dark); }
+ html[data-theme="dark"] .form-control:focus { background: #1A2438; }
+ html[data-theme="dark"] .form-control option { background: #131B2C; color: var(--sb-text-dark); }
+ html[data-theme="dark"] .badge-product { background: #33200E; }
+ html[data-theme="dark"] .badge-service { background: #14301F; }
+ html[data-theme="dark"] .badge-gcc { background: #14243F; }
+ html[data-theme="dark"] .badge-finance { background: #241538; }
+ html[data-theme="dark"] .badge-quant { background: #351420; }
+ html[data-theme="dark"] .badge-core { background: #1B2A12; }
+ html[data-theme="dark"] .badge-startup { background: #332A0E; }
+
+ html[data-theme="dark"] .system-status p,
+ html[data-theme="dark"] .metric-card .lbl,
+ html[data-theme="dark"] .data-item .lbl,
+ html[data-theme="dark"] .pagination-controls,
+ html[data-theme="dark"] .oc-sub,
+ html[data-theme="dark"] .oc-quote,
+ html[data-theme="dark"] .oc-empty,
+ html[data-theme="dark"] .a-tip,
+ html[data-theme="dark"] #recordCount,
+ html[data-theme="dark"] #ocFormCount { color: #93A1B5; }
+
+ html[data-theme="dark"] .panel-title { color: #9DC5EC; }
+ html[data-theme="dark"] .a-card h4 { color: #9DC5EC; }
+ html[data-theme="dark"] .a-bar { background: #2E3A4F; }
+ html[data-theme="dark"] .a-kpi { border: 1px solid #FFFFFF; }
+ html[data-theme="dark"] .a-tip { background: #151D2E; border-left: 3px solid #FF3000; }
+ html[data-theme="dark"] .a-tip b { color: #FF3000; }
+ html[data-theme="dark"] .oc-cta { color: #FF3000; }
+
+ html[data-theme="dark"] ::-webkit-scrollbar { width: 10px; height: 10px; }
+ html[data-theme="dark"] ::-webkit-scrollbar-track { background: #101623; }
+ html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #2E3A4F; }
+ html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #3B4B66; }
+
+ body, .system-status, .metric-card, .panel, .table-section, .data-item,
+ .form-control, .oc-card, td, th, .a-bar { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+
+/* Theme Toggle */
+.theme-toggle {
+ background: rgba(255, 255, 255, 0.15);
+ color: #FFFFFF;
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ padding: 0.4rem 0.9rem;
+ font-family: var(--font-main);
+ font-size: 0.8rem;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.2s var(--ease-smooth);
+ }
+
+.theme-toggle:hover {
+ background: rgba(255, 255, 255, 0.3);
+ transform: translateY(-1px);
+ }
+
+/* Toast */
+.oc-toast {
+ position: fixed;
+ bottom: 1.25rem;
+ left: 50%;
+ transform: translateX(-50%) translateY(20px);
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ padding: 0.6rem 1.2rem;
+ font-size: 0.8rem;
+ font-weight: 600;
+ box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+ opacity: 0;
+ pointer-events: none;
+ transition: all 0.3s var(--ease-smooth);
+ z-index: 300;
+ }
+.oc-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.form-error { border-color: var(--sb-danger) !important; box-shadow: 0 0 0 3px rgba(214, 69, 69, 0.15) !important; }
+.tb-counter { font-size: 0.65rem; color: #5B6B76; font-weight: 600; margin-top: 0.2rem; display: block; text-align: right; }
+textarea.form-control { resize: vertical; min-height: 60px; }
+
+/* Footer */
+.site-footer {
+ width: 100%;
+ background: var(--sb-primary);
+ color: #FFFFFF;
+ margin-top: 0.75rem;
+ padding: 0.85rem 1.25rem;
+ }
+.footer-inner {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ gap: 1rem;
+ flex-wrap: wrap;
+ }
+.footer-brand { font-weight: 800; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; }
+.footer-brand span { font-weight: 500; font-size: 0.68rem; opacity: 0.85; }
+.footer-meta { font-size: 0.68rem; opacity: 0.8; text-align: right; }
+
+/* ============================================================
+ SWISS INTERNATIONAL — OVERRIDE LAYER (matches index.html)
+ ============================================================ */
+ body { counter-reset: sbsec; }
+ * { border-radius: 0 !important; box-shadow: none !important; }
+ ::selection { background: #FF3000; color: #FFFFFF; }
+ :focus-visible { outline: 2px solid #FF3000; outline-offset: 2px; }
+
+ body::before {
+ content: "";
+ position: fixed; inset: 0; z-index: -1; pointer-events: none;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+ }
+
+ .metrics-grid,
+ .oc-grid {
+ background-image: radial-gradient(var(--sw-dot-c) 1px, transparent 1px);
+ background-size: 16px 16px;
+ }
+
+ .filter-bar {
+ background-image: repeating-linear-gradient(45deg, var(--sw-diag-c) 0 1px, transparent 1px 10px);
+ background-size: 10px 10px;
+ }
+
+ .system-status h2, .panel-title, .a-card h4, .fb-cat, .metric-card .lbl { text-transform: uppercase; }
+
+ .panel-title {
+ font-size: 0.95rem; font-weight: 900;
+ letter-spacing: 0.08em; color: var(--sw-card-text);
+ }
+ .panel-title::before {
+ counter-increment: sbsec;
+ content: counter(sbsec, decimal-leading-zero) " — ";
+ color: #FF3000; font-weight: 900;
+ }
+ .system-status h2 { font-size: 1.35rem; font-weight: 900; letter-spacing: -0.01em; color: var(--sw-card-text); }
+ .metric-card .val { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.02em; }
+ .metric-card .lbl { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; color: var(--sw-text-muted); }
+ .a-card h4 { font-size: 0.9rem; font-weight: 900; letter-spacing: 0.06em; color: var(--sw-card-text); }
+
+ .form-group label {
+ text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700;
+ color: var(--sw-text-muted);
+ }
+
+ .system-status, .metric-card, .panel, .table-section,
+ .a-card, .oc-card, .data-item { border-radius: 0; }
+
+ .system-status {
+ background: var(--sw-card-bg);
+ border: 2px solid var(--sw-border);
+ border-left: 6px solid #FF3000;
+ }
+ .system-status p { color: var(--sw-text-muted); }
+ .metric-card {
+ background: var(--sw-card-bg);
+ border: 2px solid var(--sw-border);
+ border-top: 3px solid #FF3000;
+ }
+ .metric-card:nth-child(1) { border-top-color: #FF3000; }
+ .metric-card:nth-child(2) { border-top-color: #000000; }
+ .metric-card:nth-child(3) { border-top-color: #777777; }
+ .metric-card:nth-child(4) { border-top-color: #BBBBBB; }
+ .metric-card:nth-child(5) { border-top-color: #FF3000; }
+ .metric-card:nth-child(6) { border-top-color: #000000; }
+ .metric-card:hover { transform: translateY(-2px); border-color: #FF3000; }
+ .panel, .table-section, .a-card { background: var(--sw-card-bg); border: 2px solid var(--sw-border); }
+ .panel-header { border-bottom: 1px solid var(--sw-border-soft); }
+ .data-item { background: var(--sw-surface); border: 1px solid var(--sw-border); }
+ .data-item:hover { background: var(--sw-card-bg); border-color: #FF3000; transform: translateX(3px); }
+
+ .btn {
+ background: #000000; color: #FFFFFF;
+ border: 2px solid #000000;
+ text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800;
+ }
+ .btn:hover { background: #FF3000; border-color: #FF3000; color: #FFFFFF; transform: none; }
+ .btn:active { transform: none; }
+ .btn-ghost { background: #FFFFFF; color: #000000; border: 2px solid #000000; }
+ .btn-ghost:hover { background: #FF3000; border-color: #FF3000; color: #FFFFFF; }
+ .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+ .nav-cta {
+ background: #FF3000; color: #FFFFFF;
+ border: 1px solid #FF3000;
+ text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800;
+ font-size: 0.72rem; padding: 0.4rem 0.9rem; cursor: pointer;
+ font-family: var(--font-main);
+ transition: all 0.2s var(--ease-smooth);
+ }
+ .nav-cta:hover { background: #FFFFFF; border-color: #FFFFFF; color: #000000; }
+
+ .theme-toggle {
+ background: #FFFFFF; color: #000000;
+ border: 1px solid #FFFFFF;
+ text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700;
+ }
+ .theme-toggle:hover { background: #FF3000; border-color: #FF3000; color: #FFFFFF; transform: none; }
+
+ header {
+ background: #000000; color: #FFFFFF;
+ border-bottom: 3px solid #FF3000;
+ }
+ .logo-area h1 { font-weight: 900; letter-spacing: -0.02em; text-transform: uppercase; }
+ .logo-area h1::before {
+ content: ""; display: inline-block; width: 14px; height: 14px;
+ background: #FF3000; margin-right: 2px;
+ }
+ .logo-area span.tagline {
+ text-transform: uppercase; letter-spacing: 0.14em;
+ font-size: 0.62rem; font-weight: 600; color: rgba(255, 255, 255, 0.75);
+ }
+ nav a { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.72rem; font-weight: 700; }
+ nav a::after { background: #FF3000; height: 2px; }
+ nav a:hover { color: #FF3000; opacity: 1; }
+ .site-footer { background: #000000; color: #FFFFFF; border-top: 3px solid #FF3000; }
+
+ .form-control {
+ background: #FFFFFF; color: var(--sw-card-text);
+ border: 2px solid var(--sw-border);
+ }
+ .form-control:focus { border-color: #FF3000; background: #FFFFFF; }
+
+ .table-container { border: 2px solid var(--sw-border); }
+ th { background: #000000; color: #FFFFFF; letter-spacing: 0.08em; }
+ th, td { border-bottom: 1px solid var(--sw-border-soft); }
+ tr:nth-child(even) { background: var(--sw-surface); }
+ tr:hover td { background: #000000; color: #FFFFFF; }
+
+ .badge-type { letter-spacing: 0.05em; }
+ .badge-product { background: #FF3000; color: #FFFFFF; border: 1px solid #FF3000; }
+ .badge-service { background: #000000; color: #FFFFFF; border: 1px solid #000000; }
+ .badge-gcc { background: #FFFFFF; color: #000000; border: 1px solid #000000; }
+ .badge-finance { background: #FFFFFF; color: #000000; border: 1px solid #000000; }
+ .badge-quant { background: #000000; color: #FFFFFF; border: 1px solid #000000; }
+ .badge-core { background: var(--sw-surface); color: var(--sw-card-text); border: 1px solid var(--sw-border); }
+ .badge-startup { background: var(--sw-surface); color: #FF3000; border: 1px solid #FF3000; }
+ .badge-ver.verified { background: #FF3000; color: #FFFFFF; border: 1px solid #FF3000; }
+ .badge-ver.pending { background: var(--sw-card-bg); color: var(--sw-text-muted); border: 1px dashed var(--sw-border); }
+
+ .a-kpi { background: #000000; color: #FFFFFF; }
+ .a-bar { background: var(--sw-border-soft); }
+ .a-bar > div { background: #000000; }
+ .a-bar > div.red { background: #FF3000; }
+ .a-tip { border-left: 3px solid #FF3000; background: var(--sw-surface); border: 1px solid var(--sw-border); color: var(--sw-card-text); }
+ .a-tip b { color: #FF3000; }
+ .oc-card { background: var(--sw-surface); border: 1px solid var(--sw-border); border-left: 4px solid #FF3000; }
+ .oc-card:hover { background: var(--sw-card-bg); border-color: #FF3000; border-left-color: #FF3000; }
+ .oc-name { text-transform: uppercase; letter-spacing: 0.03em; }
+ .oc-cta { color: #FF3000; }
+ .oc-quote { color: var(--sw-text-muted); }
+
+ .oc-toast { background: #000000; color: #FFFFFF; border: 1px solid #FFFFFF; }
+ .tb-counter { color: var(--sw-text-muted); }
+
+ html[data-theme="dark"] body { background: #0A0A0A; color: #FFFFFF; }
+ html[data-theme="dark"] .btn { background: #000000; border-color: #FFFFFF; }
+ html[data-theme="dark"] .btn:hover { background: #FF3000; border-color: #FF3000; }
+ html[data-theme="dark"] .btn-ghost { background: transparent; color: #FFFFFF; border-color: #FFFFFF; }
+ html[data-theme="dark"] tr:hover td { background: #FFFFFF; color: #000000; }
+ html[data-theme="dark"] .form-control { background: #141414; color: #FFFFFF; border-color: #FFFFFF; }
+ html[data-theme="dark"] .form-control:focus { background: #1C1C1C; border-color: #FF3000; }
+ html[data-theme="dark"] .form-control option { background: #141414; color: #FFFFFF; }
+ html[data-theme="dark"] .a-kpi { border: 1px solid #FFFFFF; }
+ html[data-theme="dark"] ::-webkit-scrollbar-track { background: #0A0A0A; }
+ html[data-theme="dark"] ::-webkit-scrollbar-thumb { background: #3A3A3A; }
+ html[data-theme="dark"] ::-webkit-scrollbar-thumb:hover { background: #FF3000; }
+
+ /* ============================================================
+ EMPLOYMENT OUTCOME DASHBOARD — SWISS WIDGETS
+ Same design language: flat, bordered, monochrome + red.
+ ============================================================ */
+ .dash-panel { background-image: linear-gradient(var(--sw-grid-c) 1px, transparent 1px), linear-gradient(90deg, var(--sw-grid-c) 1px, transparent 1px); background-size: 24px 24px; }
+ .dash-sub { font-size: 0.78rem; color: var(--sw-text-muted); margin: 0.4rem 0 0.7rem; letter-spacing: 0.02em; }
+ .dash-batch-label { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; color: var(--sw-text-muted); }
+ .dash-batch-select { width: auto; padding: 0.32rem 0.5rem; font-size: 0.78rem; font-weight: 700; }
+
+ /* KPI cards */
+ .dash-kpis { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.6rem; margin-bottom: 0.7rem; }
+ @media (max-width: 1000px) { .dash-kpis { grid-template-columns: repeat(2, 1fr); } }
+ @media (max-width: 520px) { .dash-kpis { grid-template-columns: 1fr; } }
+ .dash-kpi {
+ display: flex; gap: 0.6rem; align-items: center;
+ background: var(--sw-card-bg); border: 2px solid var(--sw-border);
+ padding: 0.6rem 0.7rem; transition: all 0.2s var(--ease-smooth);
+ animation: slideUp 0.45s var(--ease-smooth) backwards;
+ }
+ .dash-kpi:nth-child(2) { animation-delay: 0.05s; }
+ .dash-kpi:nth-child(3) { animation-delay: 0.1s; }
+ .dash-kpi:nth-child(4) { animation-delay: 0.15s; }
+ .dash-kpi:nth-child(5) { animation-delay: 0.2s; }
+ .dash-kpi:hover { transform: translateY(-2px); border-color: #FF3000; }
+ .dash-kpi-icon {
+ width: 40px; height: 40px; flex-shrink: 0;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 1.1rem; font-weight: 900; color: #FFFFFF;
+ border-radius: 50% !important;
+ }
+ .dash-i-blue { background: #000000; border: 2px solid #000000; }
+ .dash-i-green { background: #FF3000; border: 2px solid #FF3000; }
+ .dash-i-violet { background: #000000; border: 2px solid #FF3000; color: #FF3000; }
+ .dash-i-orange { background: #FFFFFF; border: 2px solid #000000; color: #000000; }
+ .dash-i-teal { background: #777777; border: 2px solid #777777; }
+ html[data-theme="dark"] .dash-i-blue, html[data-theme="dark"] .dash-i-violet { border-color: #FFFFFF; }
+ html[data-theme="dark"] .dash-i-orange { background: transparent; color: #FFFFFF; border-color: #FFFFFF; }
+ .dash-kpi-val { font-size: 1.3rem; font-weight: 900; letter-spacing: -0.02em; line-height: 1.1; color: var(--sw-card-text); }
+ .dash-kpi-lbl { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #FF3000; }
+ .dash-kpi-sub { font-size: 0.62rem; color: var(--sw-text-muted); font-weight: 600; }
+
+ /* Two-column dashboard rows */
+ .dash-2col { display: grid; grid-template-columns: 1.15fr 1fr; gap: 0.7rem; margin-bottom: 0.7rem; }
+ @media (max-width: 900px) { .dash-2col { grid-template-columns: 1fr; } }
+ .dash-card { background: var(--sw-card-bg); border: 2px solid var(--sw-border); padding: 0.7rem 0.8rem; }
+ .dash-card-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; border-bottom: 1px solid var(--sw-border-soft); padding-bottom: 0.4rem; margin-bottom: 0.55rem; flex-wrap: wrap; }
+ .dash-card-head h4 { font-size: 0.8rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; color: var(--sw-card-text); }
+ .dash-viewall { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #FF3000; text-decoration: none; border: 1px solid #FF3000; padding: 0.15rem 0.45rem; }
+ .dash-viewall:hover { background: #FF3000; color: #FFFFFF; }
+ .dash-note { font-size: 0.66rem; color: var(--sw-text-muted); margin-top: 0.45rem; line-height: 1.45; }
+
+ /* Funnel — chevron steps */
+ .dash-funnel { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.25rem; }
+ @media (max-width: 640px) { .dash-funnel { grid-template-columns: repeat(3, 1fr); } }
+ .dash-fstep {
+ position: relative; text-align: center; padding: 0.55rem 0.2rem 0.45rem;
+ background: var(--sw-surface); border: 1px solid var(--sw-border);
+ transition: all 0.2s var(--ease-smooth);
+ animation: slideUp 0.45s var(--ease-smooth) backwards;
+ }
+ .dash-fstep:nth-child(2) { animation-delay: 0.05s; }
+ .dash-fstep:nth-child(3) { animation-delay: 0.1s; }
+ .dash-fstep:nth-child(4) { animation-delay: 0.15s; }
+ .dash-fstep:nth-child(5) { animation-delay: 0.2s; }
+ .dash-fstep:nth-child(6) { animation-delay: 0.25s; }
+ .dash-fstep::after {
+ content: "›"; position: absolute; right: -0.55rem; top: 50%; transform: translateY(-50%);
+ font-size: 1rem; font-weight: 900; color: #FF3000; z-index: 2;
+ }
+ .dash-fstep:last-child::after { display: none; }
+ .dash-fstep:hover { background: #000000; color: #FFFFFF; transform: translateY(-2px); }
+ .dash-fstep:hover .dash-fnum, .dash-fstep:hover .dash-fic { color: #FFFFFF; }
+ .dash-fstep:hover .dash-fic { color: #FF3000; }
+ .dash-fnum { font-size: 1.05rem; font-weight: 900; letter-spacing: -0.02em; color: var(--sw-card-text); line-height: 1.1; }
+ .dash-fic { font-size: 0.85rem; display: block; margin-top: 0.15rem; color: #FF3000; }
+ .dash-flbl { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--sw-text-muted); margin-top: 0.1rem; }
+ .dash-fstep:hover .dash-flbl { color: #FFFFFF; }
+ .dash-funnel-note { font-size: 0.64rem; color: var(--sw-text-muted); margin-top: 0.45rem; }
+ .dash-funnel-note b { color: #FF3000; }
+
+ /* Role table */
+ .dash-role-head { display: grid; grid-template-columns: 1fr 52px 110px; gap: 0.5rem; font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sw-text-muted); padding-bottom: 0.25rem; border-bottom: 1px solid var(--sw-border); }
+ .dash-role-row { display: grid; grid-template-columns: 1fr 52px 110px; gap: 0.5rem; align-items: center; padding: 0.4rem 0; border-bottom: 1px dashed var(--sw-border-soft); font-size: 0.76rem; }
+ .dash-role-row:last-child { border-bottom: none; }
+ .dash-role-name { font-weight: 800; color: var(--sw-card-text); display: flex; align-items: center; gap: 0.4rem; }
+ .dash-role-dot { width: 8px; height: 8px; background: #FF3000; flex-shrink: 0; }
+ .dash-role-row:nth-child(odd) .dash-role-dot { background: #000000; }
+ html[data-theme="dark"] .dash-role-row:nth-child(odd) .dash-role-dot { background: #FFFFFF; }
+ .dash-role-n { font-weight: 800; text-align: right; }
+ .dash-role-right { display: grid; grid-template-columns: 34px 1fr; gap: 0.35rem; align-items: center; }
+ .dash-role-pct { font-weight: 800; font-size: 0.72rem; text-align: right; }
+ .dash-role-bar { height: 8px; background: var(--sw-border-soft); border: 1px solid var(--sw-border-soft); }
+ .dash-role-bar > div { height: 100%; background: #FF3000; }
+
+ /* Grouped bar chart — Skill Gap vs Demand */
+ .dash-legend { display: flex; gap: 0.7rem; font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sw-text-muted); }
+ .dash-legend span { display: flex; align-items: center; gap: 0.3rem; }
+ .dash-sw { width: 10px; height: 10px; display: inline-block; }
+ .dash-sw-blue { background: #000000; border: 1px solid var(--sw-border); }
+ .dash-sw-violet { background: #FF3000; border: 1px solid #FF3000; }
+ html[data-theme="dark"] .dash-sw-blue { background: #FFFFFF; border-color: #FFFFFF; }
+ .dash-bars { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; align-items: end; height: 130px; padding: 0 0.2rem; border-bottom: 2px solid var(--sw-border); }
+ .dash-bargroup { display: flex; gap: 0.3rem; align-items: end; justify-content: center; height: 100%; }
+ .dash-barcol { position: relative; width: 42%; max-width: 34px; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; }
+ .dash-barcol i { display: block; font-style: normal; }
+ .dash-barcol .b-demand { background: #000000; border: 1px solid #000000; animation: progressFill 0.7s var(--ease-smooth) backwards; }
+ .dash-barcol .b-avail { background: #FF3000; border: 1px solid #FF3000; animation: progressFill 0.7s var(--ease-smooth) 0.1s backwards; }
+ html[data-theme="dark"] .dash-barcol .b-demand { background: #FFFFFF; border-color: #FFFFFF; }
+ .dash-barval { font-size: 0.58rem; font-weight: 900; text-align: center; margin-bottom: 0.15rem; color: var(--sw-card-text); }
+ .dash-axis { display: flex; justify-content: space-between; font-size: 0.56rem; color: var(--sw-text-muted); font-weight: 700; margin-top: 0.2rem; }
+ .dash-bars-labels { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; margin-top: 0.2rem; }
+ .dash-bars-labels span { text-align: center; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sw-card-text); }
+
+ /* Donut — Non-placement reasons */
+ .dash-donut-row { display: grid; grid-template-columns: auto 1fr; gap: 0.8rem; align-items: center; }
+ @media (max-width: 520px) { .dash-donut-row { grid-template-columns: 1fr; justify-items: center; } }
+ .dash-donut-wrap { position: relative; width: 120px; height: 120px; flex-shrink: 0; }
+ .dash-donut {
+ width: 120px; height: 120px; border-radius: 50% !important;
+ background: conic-gradient(#FF3000 0% 38%, #000000 38% 60%, #777777 60% 76%, #BBBBBB 76% 89%, #E5E5E5 89% 100%);
+ position: relative; flex-shrink: 0;
+ }
+ html[data-theme="dark"] .dash-donut { background: conic-gradient(#FF3000 0% 38%, #FFFFFF 38% 60%, #BBBBBB 60% 76%, #777777 76% 89%, #3A3A3A 89% 100%); }
+ .dash-donut::before {
+ content: ""; position: absolute; inset: 26px;
+ background: var(--sw-card-bg); border-radius: 50% !important;
+ }
+ .dash-donut-center {
+ position: absolute; inset: 0;
+ display: flex; flex-direction: column; align-items: center; justify-content: center;
+ pointer-events: none;
+ }
+ .dash-donut-center b { font-size: 1.15rem; font-weight: 900; color: var(--sw-card-text); line-height: 1; }
+ .dash-donut-center span { font-size: 0.58rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sw-text-muted); }
+ .dash-legend-list { display: grid; gap: 0.3rem; }
+ .dash-lg-row { display: grid; grid-template-columns: 10px 1fr 38px; gap: 0.45rem; align-items: center; font-size: 0.74rem; color: var(--sw-card-text); }
+ .dash-lg-row i { width: 10px; height: 10px; display: inline-block; }
+ .dash-lg-row b { text-align: right; font-weight: 800; }
+
+ /* Impact of skilling */
+ .dash-impact { display: flex; gap: 0.7rem; align-items: center; flex-wrap: wrap; }
+ .dash-impact-box { flex: 1; min-width: 130px; background: var(--sw-surface); border: 1px solid var(--sw-border); padding: 0.55rem 0.65rem; display: grid; gap: 0.12rem; }
+ .dash-impact-lbl { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sw-text-muted); }
+ .dash-impact-val { font-size: 1.5rem; font-weight: 900; letter-spacing: -0.02em; color: var(--sw-card-text); line-height: 1.05; }
+ .dash-impact-sub { font-size: 0.62rem; color: var(--sw-text-muted); font-weight: 600; }
+ .dash-impact-bar { height: 7px; background: var(--sw-border-soft); border: 1px solid var(--sw-border-soft); margin-top: 0.25rem; }
+ .dash-impact-bar > div { height: 100%; background: #000000; }
+ .dash-impact-bar > div.dash-bg-green { background: #FF3000; }
+ .dash-impact-arrow { font-size: 1.3rem; font-weight: 900; color: #FF3000; }
+ .dash-impact-up { display: flex; gap: 0.6rem; align-items: center; min-width: 170px; }
+ .dash-impact-upicon {
+ width: 40px; height: 40px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+ border: 2px solid #FF3000; color: #FF3000; font-size: 1.1rem; font-weight: 900; border-radius: 50% !important;
+ }
+ .dash-impact-upnum { font-size: 1.5rem; font-weight: 900; color: #FF3000; letter-spacing: -0.02em; line-height: 1; }
+ .dash-impact-upsub { font-size: 0.64rem; color: var(--sw-text-muted); font-weight: 600; line-height: 1.4; }
+
+ /* Key insight */
+ .dash-insight { border-left: 6px solid #FF3000; }
+ .dash-insight p { font-size: 0.82rem; line-height: 1.55; color: var(--sw-card-text); font-weight: 500; }
+ .dash-insight h4 { color: #FF3000; }
+ </style>
+</head>
+<body>
+ <header>
+ <div class="logo-area">
+ <h1>ACE <span class="tagline">Employment Outcome Tracker</span></h1>
+ </div>
+ <nav>
+ <a href="#dashboard">Dashboard</a>
+ <a href="#outcomes">Outcome Records</a>
+ <a href="#stories">Success Stories</a>
+ <a href="index.html">← Back to Main Platform</a>
+ <button class="theme-toggle" id="themeToggle">Dark Mode</button>
+ </nav>
+ </header>
+
+ <div class="container">
+ <!-- Page Banner -->
+ <section class="system-status">
+ <h2>Employment Outcome Tracker — Where ACE Users Got Placed (2026)</h2>
+ <p>Verified placement outcomes from students who prepared with ACE: company, role, salary package (CTC), joining location, batch and the skills that got them hired. Add your own outcome to inspire the next batch — data stays on this device unless synced by your institution.</p>
+ </section>
+
+ <!-- Live Stats Dashboard -->
+ <div class="metrics-grid" id="metricsGrid">
+ <div class="metric-card">
+ <div class="val" id="mTotal">0</div>
+ <div class="lbl">Total Placed via ACE</div>
+ </div>
+ <div class="metric-card">
+ <div class="val" id="mAvg">₹0 LPA</div>
+ <div class="lbl">Average Package</div>
+ </div>
+ <div class="metric-card">
+ <div class="val" id="mHigh">₹0 LPA</div>
+ <div class="lbl">Highest Package</div>
+ </div>
+ <div class="metric-card">
+ <div class="val" id="mMed">₹0 LPA</div>
+ <div class="lbl">Median Package</div>
+ </div>
+ <div class="metric-card">
+ <div class="val" id="mVer">0</div>
+ <div class="lbl">Offer Letters Verified</div>
+ </div>
+ <div class="metric-card">
+ <div class="val" id="mComp">0</div>
+ <div class="lbl">Distinct Companies</div>
+ </div>
+ </div>
+
+ <!-- ============ EMPLOYMENT OUTCOME DASHBOARD (cohort-level) ============ -->
+ <section id="dashboard" class="panel dash-panel">
+ <div class="panel-header">
+ <span class="panel-title">Employment Outcome Dashboard — Cohort Analytics</span>
+ <div style="display:flex; gap:0.4rem; align-items:center; flex-wrap:wrap;">
+ <label for="batchSelect" class="dash-batch-label">Batch:</label>
+ <select id="batchSelect" class="form-control dash-batch-select">
+ <option value="2025-2026" selected>2025 - 2026</option>
+ <option value="2024-2025">2024 - 2025</option>
+ <option value="2023-2024">2023 - 2024</option>
+ </select>
+ </div>
+ </div>
+ <p class="dash-sub">Track the journey from skill development to successful employment — cohort-wide funnel, role-wise placement, skill gaps and skilling impact.</p>
+
+ <!-- KPI Cards -->
+ <div class="dash-kpis">
+ <div class="dash-kpi">
+ <div class="dash-kpi-icon dash-i-blue">👥</div>
+ <div>
+ <div class="dash-kpi-val" id="dKpiTrained">1,248</div>
+ <div class="dash-kpi-lbl">Trained</div>
+ <div class="dash-kpi-sub">Total candidates tracked</div>
+ </div>
+ </div>
+ <div class="dash-kpi">
+ <div class="dash-kpi-icon dash-i-green">🎓</div>
+ <div>
+ <div class="dash-kpi-val" id="dKpiCompleted">980</div>
+ <div class="dash-kpi-lbl">Completed Training</div>
+ <div class="dash-kpi-sub">78.6% of trained</div>
+ </div>
+ </div>
+ <div class="dash-kpi">
+ <div class="dash-kpi-icon dash-i-violet">💼</div>
+ <div>
+ <div class="dash-kpi-val" id="dKpiEmployed">892</div>
+ <div class="dash-kpi-lbl">Employed</div>
+ <div class="dash-kpi-sub">71.5% placement rate</div>
+ </div>
+ </div>
+ <div class="dash-kpi">
+ <div class="dash-kpi-icon dash-i-orange">₹</div>
+ <div>
+ <div class="dash-kpi-val" id="dKpiSalary">₹4.2 LPA</div>
+ <div class="dash-kpi-lbl">Average Salary</div>
+ <div class="dash-kpi-sub">Across placed candidates</div>
+ </div>
+ </div>
+ <div class="dash-kpi">
+ <div class="dash-kpi-icon dash-i-teal">🛡</div>
+ <div>
+ <div class="dash-kpi-val" id="dKpiRetention">78%</div>
+ <div class="dash-kpi-lbl">6-Month Retention</div>
+ <div class="dash-kpi-sub">Employed candidates</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Funnel + Role table -->
+ <div class="dash-2col">
+ <div class="dash-card">
+ <div class="dash-card-head">
+ <h4>▼ Employment Funnel</h4>
+ </div>
+ <div class="dash-funnel" id="dashFunnel"></div>
+ <div class="dash-funnel-note">Cohort batch <b id="dashFunnelBatch">2025 - 2026</b> · counts drop as candidates advance (Selected &lt; Interviewed &lt; ...)</div>
+ </div>
+ <div class="dash-card">
+ <div class="dash-card-head">
+ <h4>💼 Placement by Role</h4>
+ <a href="#outcomes" class="dash-viewall">View All →</a>
+ </div>
+ <div class="dash-role-head">
+ <span>Role</span><span>Placed</span><span>Placement Rate</span>
+ </div>
+ <div id="dashRoles"></div>
+ </div>
+ </div>
+
+ <!-- Skill chart + Non-placement reasons -->
+ <div class="dash-2col">
+ <div class="dash-card">
+ <div class="dash-card-head">
+ <h4>🎯 Skill Gap vs Employer Demand</h4>
+ <div class="dash-legend">
+ <span><i class="dash-sw dash-sw-blue"></i> Employer Demand</span>
+ <span><i class="dash-sw dash-sw-violet"></i> Trainee Availability</span>
+ </div>
+ </div>
+ <div class="dash-bars" id="dashBars"></div>
+ <div class="dash-axis"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+ <div class="dash-bars-labels" id="dashBarsLabels"></div>
+ <div class="dash-note">Bars show % of candidates with the skill (availability) vs % of job posts asking for it (demand) — the gap is your opportunity.</div>
+ </div>
+ <div class="dash-card">
+ <div class="dash-card-head">
+ <h4>🍩 Non-Placement Reasons</h4>
+ </div>
+ <div class="dash-donut-row">
+ <div class="dash-donut-wrap">
+ <div class="dash-donut" id="dashDonut" role="img" aria-label="Non-placement reasons breakdown"></div>
+ <div class="dash-donut-center"><b id="dashDonutTotal">340</b><span>Total</span></div>
+ </div>
+ <div class="dash-legend-list" id="dashDonutLegend"></div>
+ </div>
+ <div class="dash-note">Why 340 trained candidates from this cohort were not placed — ranked by share.</div>
+ </div>
+ </div>
+
+ <!-- Impact + Key insight -->
+ <div class="dash-2col">
+ <div class="dash-card">
+ <div class="dash-card-head">
+ <h4>📈 Impact of Skilling</h4>
+ </div>
+ <div class="dash-impact">
+ <div class="dash-impact-box">
+ <span class="dash-impact-lbl">Before</span>
+ <span class="dash-impact-val" id="dImpBefore">48%</span>
+ <span class="dash-impact-sub">Employment Outcome</span>
+ <div class="dash-impact-bar"><div id="dImpBeforeBar" style="width:48%"></div></div>
+ </div>
+ <div class="dash-impact-arrow">→</div>
+ <div class="dash-impact-box">
+ <span class="dash-impact-lbl">After</span>
+ <span class="dash-impact-val" id="dImpAfter">72%</span>
+ <span class="dash-impact-sub">Employment Outcome</span>
+ <div class="dash-impact-bar"><div class="dash-bg-green" id="dImpAfterBar" style="width:72%"></div></div>
+ </div>
+ <div class="dash-impact-up">
+ <div class="dash-impact-upnum" id="dImpDelta">+24%</div>
+ <div class="dash-impact-upsub">Improvement in placement outcomes after recommended upskilling</div>
+ </div>
+ </div>
+ </div>
+ <div class="dash-card dash-insight">
+ <div class="dash-card-head">
+ <h4>💡 Key Insight</h4>
+ </div>
+ <p id="dashInsightText">Addressing the top skill gaps (Python, SQL, Cloud) can potentially increase placement rates by up to 20–25% for this cohort.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- Success Analytics -->
+ <section id="analytics" class="panel">
+ <div class="panel-header">
+ <span class="panel-title">Success Analytics — Outcome Insights</span>
+ <span id="analyticsCount" style="font-size:0.72rem; font-weight:700; color:var(--sw-text-muted, #555);"></span>
+ </div>
+ <div id="analyticsBody" class="analytics-body">Computing outcome insights…</div>
+ </section>
+
+ <!-- Outcome Records -->
+ <section id="outcomes" class="table-section">
+ <div class="panel-header">
+ <span class="panel-title">Placement Outcome Records</span>
+ <span id="recordCount" style="font-size: 0.8rem; font-weight: 600;">Showing records</span>
+ </div>
+
+ <div class="filter-bar">
+ <input type="text" id="searchInput" class="form-control" placeholder="Search name, company, role, location or skills...">
+ <select id="companyFilter" class="form-control">
+ <option value="ALL">All Companies</option>
+ </select>
+ <select id="typeFilter" class="form-control">
+ <option value="ALL">All Company Types</option>
+ <option value="Product">Product</option>
+ <option value="Service">Service</option>
+ <option value="GCC / R&D">GCC / R&D</option>
+ <option value="Finance & Consulting">Finance &amp; Consulting</option>
+ <option value="Quant / HFT">Quant / HFT</option>
+ <option value="Core / PSU">Core / PSU</option>
+ <option value="Startup">Startup</option>
+ </select>
+ <select id="sortSelect" class="form-control">
+ <option value="recent">Sort: Most Recent</option>
+ <option value="salaryDesc">Sort: Package High → Low</option>
+ <option value="salaryAsc">Sort: Package Low → High</option>
+ <option value="name">Sort: Name A → Z</option>
+ <option value="company">Sort: Company A → Z</option>
+ </select>
+ <button type="button" class="btn btn-sm" id="clearFiltersBtn">Clear Filters</button>
+ </div>
+
+ <div class="table-container">
+ <table>
+ <thead>
+ <tr>
+ <th>#</th>
+ <th>Candidate</th>
+ <th>Company</th>
+ <th>Type</th>
+ <th>Role</th>
+ <th>Salary (CTC)</th>
+ <th>Location</th>
+ <th>Mode</th>
+ <th>Batch</th>
+ <th>Verified</th>
+ </tr>
+ </thead>
+ <tbody id="outcomeTableBody">
+ <!-- Dynamically Populated -->
+ </tbody>
+ </table>
+ </div>
+
+ <div class="pagination-controls">
+ <span id="pageInfo">Page 1</span>
+ <div class="pagination-btn-group">
+ <button class="btn btn-sm" id="prevBtn">Previous</button>
+ <button class="btn btn-sm" id="nextBtn">Next</button>
+ </div>
+ </div>
+ </section>
+
+ <!-- Success Stories -->
+ <section id="stories" class="panel">
+ <div class="panel-header">
+ <span class="panel-title">Success Stories — From Preparation To Offer</span>
+ <span id="storyCount" style="font-size:0.72rem; font-weight:700; color:var(--sw-text-muted, #555);"></span>
+ </div>
+ <div class="oc-grid" id="storyGrid"></div>
+ </section>
+
+ <!-- Add Your Outcome -->
+ <section id="addOutcome" class="panel">
+ <div class="panel-header">
+ <span class="panel-title">Add Your Outcome — Joined The Placed Club?</span>
+ <span id="ocFormCount" style="font-size: 0.8rem; font-weight: 600;"></span>
+ </div>
+ <div class="form-group">
+ <label>Your Name *</label>
+ <input type="text" class="form-control" id="ocName" maxlength="60" placeholder="e.g. Priya Sharma">
+ </div>
+ <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.45rem;" class="oc-form-2col">
+ <div class="form-group">
+ <label>Company *</label>
+ <input type="text" class="form-control" id="ocCompany" maxlength="80" placeholder="e.g. Infosys" list="companySuggestions">
+ <datalist id="companySuggestions"></datalist>
+ </div>
+ <div class="form-group">
+ <label>Company Type</label>
+ <select class="form-control" id="ocType">
+ <option value="Service">Service</option>
+ <option value="Product">Product</option>
+ <option value="GCC / R&D">GCC / R&amp;D</option>
+ <option value="Finance & Consulting">Finance &amp; Consulting</option>
+ <option value="Quant / HFT">Quant / HFT</option>
+ <option value="Core / PSU">Core / PSU</option>
+ <option value="Startup">Startup</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label>Role / Designation *</label>
+ <input type="text" class="form-control" id="ocRole" maxlength="80" placeholder="e.g. System Engineer">
+ </div>
+ <div class="form-group">
+ <label>Salary Package (CTC in LPA) *</label>
+ <input type="number" class="form-control" id="ocSalary" min="0" max="200" step="0.1" placeholder="e.g. 7.5">
+ </div>
+ <div class="form-group">
+ <label>Joining Location *</label>
+ <input type="text" class="form-control" id="ocLocation" maxlength="80" placeholder="e.g. Hyderabad, India">
+ </div>
+ <div class="form-group">
+ <label>Work Mode</label>
+ <select class="form-control" id="ocMode">
+ <option value="On-site">On-site</option>
+ <option value="Hybrid">Hybrid</option>
+ <option value="Remote">Remote</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label>Pass-out Batch (Year)</label>
+ <input type="number" class="form-control" id="ocBatch" min="2015" max="2035" step="1" placeholder="e.g. 2026">
+ </div>
+ <div class="form-group">
+ <label>Key Skill That Got You Hired</label>
+ <input type="text" class="form-control" id="ocSkill" maxlength="60" placeholder="e.g. DSA in Java">
+ </div>
+ <div class="form-group">
+ <label>Offer Status</label>
+ <select class="form-control" id="ocVerified">
+ <option value="verified">Verified — I have the offer letter</option>
+ <option value="pending">Pending — verbal / in process</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label>One-line Success Tip (optional)</label>
+ <input type="text" class="form-control" id="ocQuote" maxlength="160" placeholder="e.g. 150 DSA problems + 2 projects was enough.">
+ </div>
+ </div>
+ <div style="display:flex; gap:0.4rem; flex-wrap:wrap; margin-top:0.3rem;">
+ <button type="button" class="btn" id="ocSubmitBtn" style="width:auto; flex:1; min-width:220px;">Submit My Outcome</button>
+ <button type="button" class="btn btn-ghost btn-sm" id="ocClearBtn">Clear All Outcomes</button>
+ </div>
+ </section>
+ </div>
+
+ <footer class="site-footer">
+ <div class="footer-inner">
+ <div class="footer-brand">ACE <span>Adaptive &amp; Continuous Education Skills</span></div>
+ <div class="footer-meta">Employment Outcome Tracker<br>&copy; 2026 Team ACE</div>
+ </div>
+ </footer>
+
+ <div class="oc-toast" id="ocToast"></div>
+
+ <script>
+ /* ============ THEME TOGGLE (same behavior as main page) ============ */
+ const themeToggle = document.getElementById('themeToggle');
+ function safeGet(key) { try { return localStorage.getItem(key); } catch(e) { return null; } }
+ function safeSet(key, val) { try { localStorage.setItem(key, val); return true; } catch(e) { return false; } }
+ function applyTheme(theme) {
+ document.documentElement.setAttribute('data-theme', theme);
+ themeToggle.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+ }
+ applyTheme(safeGet('ace_theme') || 'light');
+ themeToggle.addEventListener('click', () => {
+ const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+ applyTheme(next);
+ safeSet('ace_theme', next);
+ });
+
+ /* ============ EMPLOYMENT OUTCOME TRACKER ============ */
+ const OC_KEY = 'ace_outcomes';
+ const recordsPerPage = 10;
+ let ocPage = 1;
+ let ocFiltered = [];
+
+ /* Seed outcomes — representative verified placements via ACE (2026) */
+ const OC_SEED = [
+ { id: 's1', name: 'Ananya Iyer', company: 'Google', type: 'Product', role: 'Software Engineer, Backend', salary: 52, location: 'Bengaluru, India', mode: 'Hybrid', batch: 2026, skill: 'Advanced DSA + System Design', verified: 'verified', quote: 'ACE mock quiz found my DP weakness 3 months before Google interviews.', date: '2026-08-28' },
+ { id: 's2', name: 'Rohan Verma', company: 'Amazon', type: 'Product', role: 'SDE-1', salary: 46, location: 'Hyderabad, India', mode: 'On-site', batch: 2026, skill: 'DSA + Leadership Principles prep', verified: 'verified', quote: 'The 30-day plan kept me honest. 2 problems a day, no excuses.', date: '2026-08-14' },
+ { id: 's3', name: 'Sneha Reddy', company: 'Microsoft', type: 'Product', role: 'Software Engineer', salary: 48, location: 'Hyderabad, India', mode: 'Hybrid', batch: 2026, skill: 'DSA + OOD', verified: 'verified', quote: 'Skill Gap Engine showed C# and design patterns gaps. Fixed both.', date: '2026-07-30' },
+ { id: 's4', name: 'Arjun Nair', company: 'TCS', type: 'Service', role: 'Assistant System Engineer', salary: 7.5, location: 'Chennai, India', mode: 'On-site', batch: 2026, skill: 'Core Java + SQL', verified: 'verified', quote: 'Eligibility checker told me exactly which service companies I clear.', date: '2026-09-01' },
+ { id: 's5', name: 'Priya Sharma', company: 'Infosys', type: 'Service', role: 'Systems Engineer', salary: 9, location: 'Pune, India', mode: 'Hybrid', batch: 2026, skill: 'Python + Data Science basics', verified: 'verified', quote: 'Tracked my readiness score from 54% to 81% over 6 weeks.', date: '2026-08-20' },
+ { id: 's6', name: 'Karthik Reddy', company: 'Deloitte', type: 'Finance & Consulting', role: 'Analyst — Technology Consulting', salary: 11, location: 'Bengaluru, India', mode: 'Hybrid', batch: 2026, skill: 'Case solving + SQL', verified: 'verified', quote: 'Practised one case aloud daily using the roadmap section.', date: '2026-08-05' },
+ { id: 's7', name: 'Meera Krishnan', company: 'Goldman Sachs', type: 'Finance & Consulting', role: 'Software Engineer Analyst', salary: 24, location: 'Bengaluru, India', mode: 'On-site', batch: 2026, skill: 'DSA in Java + Aptitude', verified: 'verified', quote: 'Aptitude drills on ACE were closer to the real paper than anything else.', date: '2026-07-22' },
+ { id: 's8', name: 'Vikram Singh', company: 'Adobe', type: 'Product', role: 'Member of Technical Staff', salary: 32, location: 'Noida, India', mode: 'Hybrid', batch: 2026, skill: 'DSA + OS + OOP', verified: 'verified', quote: 'Interview questions generator simulated the real panel rounds.', date: '2026-08-11' },
+ { id: 's9', name: 'Divya Menon', company: 'Accenture', type: 'Service', role: 'Application Development Associate', salary: 6.5, location: 'Chennai, India', mode: 'On-site', batch: 2026, skill: 'Communication + Cloud basics', verified: 'pending', quote: '', date: '2026-09-06' },
+ { id: 's10', name: 'Aditya Rao', company: 'Qualcomm', type: 'GCC / R&D', role: 'Software Engineer — Embedded', salary: 18, location: 'Hyderabad, India', mode: 'On-site', batch: 2026, skill: 'C++ + Embedded C', verified: 'verified', quote: 'Filtered 1000 companies down to the 8 that matched my profile.', date: '2026-07-18' },
+ { id: 's11', name: 'Ishita Bose', company: 'Zomato', type: 'Startup', role: 'Frontend Engineer', salary: 16, location: 'Gurugram, India', mode: 'Hybrid', batch: 2026, skill: 'React + JavaScript', verified: 'verified', quote: 'Built 2 responsive projects exactly as the roadmap suggested.', date: '2026-08-25' },
+ { id: 's12', name: 'Harshit Gupta', company: 'Tower Research', type: 'Quant / HFT', role: 'Quantitative Developer', salary: 45, location: 'Gurugram, India', mode: 'On-site', batch: 2026, skill: 'C++ + Low-latency DSA', verified: 'verified', quote: 'The C++ roadmap phase plan was brutal and perfect.', date: '2026-08-02' },
+ { id: 's13', name: 'Nandhini Selvam', company: 'Wipro', type: 'Service', role: 'Project Engineer', salary: 6.5, location: 'Bengaluru, India', mode: 'On-site', batch: 2026, skill: '.NET + Testing', verified: 'verified', quote: '', date: '2026-09-03' },
+ { id: 's14', name: 'Sahil Khan', company: 'JPMorgan Chase', type: 'Finance & Consulting', role: 'Software Engineer Program', salary: 22, location: 'Mumbai, India', mode: 'Hybrid', batch: 2026, skill: 'Java + System Design basics', verified: 'pending', quote: '', date: '2026-09-08' },
+ { id: 's15', name: 'Tanvi Deshmukh', company: 'Salesforce', type: 'Product', role: 'Associate Technical Consultant', salary: 20, location: 'Hyderabad, India', mode: 'Hybrid', batch: 2026, skill: 'Cloud fundamentals + SQL', verified: 'verified', quote: 'Cloud labs from the roadmap doubled my interview callbacks.', date: '2026-08-18' },
+ { id: 's16', name: 'Manish Kumar', company: 'HCL Technologies', type: 'Service', role: 'Graduate Engineer Trainee', salary: 6.5, location: 'Noida, India', mode: 'On-site', batch: 2026, skill: 'C++ + SQL', verified: 'verified', quote: '', date: '2026-08-30' },
+ { id: 's17', name: 'Riya Kapoor', company: 'Oracle', type: 'GCC / R&D', role: 'Software Engineer — Cloud', salary: 19, location: 'Bengaluru, India', mode: 'Remote', batch: 2026, skill: 'SQL + Databases + Java', verified: 'verified', quote: 'Remote offer — ACE eligibility filter saved me months of blind applying.', date: '2026-07-28' },
+ { id: 's18', name: 'Gaurav Mehta', company: 'Flipkart', type: 'Product', role: 'SDE-1', salary: 29, location: 'Bengaluru, India', mode: 'On-site', batch: 2026, skill: 'DSA + Scalability thinking', verified: 'verified', quote: 'System design starter kit in the roadmap got me through round 3.', date: '2026-08-08' },
+ { id: 's19', name: 'Lakshmi Prasanna', company: 'Cognizant', type: 'Service', role: 'Programmer Analyst Trainee', salary: 6.8, location: 'Chennai, India', mode: 'On-site', batch: 2026, skill: 'Java + Agile', verified: 'verified', quote: '', date: '2026-09-05' },
+ { id: 's20', name: 'Devansh Joshi', company: 'Cisco', type: 'GCC / R&D', role: 'Network Software Engineer', salary: 17, location: 'Bengaluru, India', mode: 'Hybrid', batch: 2026, skill: 'Networking + Python', verified: 'verified', quote: 'OS and networking notes from the 30-day plan came up verbatim.', date: '2026-08-22' }
+ ];
+
+ function ocEscapeHtml(str) {
+ return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+ }
+
+ function loadOutcomes() {
+ try {
+ const arr = JSON.parse(safeGet(OC_KEY) || 'null');
+ if (!Array.isArray(arr) || arr.length === 0) return [...OC_SEED];
+ return arr;
+ } catch(e) { return [...OC_SEED]; }
+ }
+
+ function saveOutcomes(list) { safeSet(OC_KEY, JSON.stringify(list)); }
+
+ function showOcToast(msg) {
+ const t = document.getElementById('ocToast');
+ t.textContent = msg;
+ t.classList.add('show');
+ clearTimeout(t._t);
+ t._t = setTimeout(function() { t.classList.remove('show'); }, 2600);
+ }
+
+ /* --- Stats --- */
+ function renderStats(list) {
+ const placed = list.filter(r => r.verified === 'verified');
+ const salaries = placed.map(r => Number(r.salary) || 0).sort((a,b) => a-b);
+ const total = placed.length;
+ document.getElementById('mTotal').textContent = total;
+ document.getElementById('mVer').textContent = total;
+ if (salaries.length) {
+ const avg = salaries.reduce((s,v) => s+v, 0) / salaries.length;
+ const high = salaries[salaries.length-1];
+ const mid = salaries.length % 2 ? salaries[(salaries.length-1)/2] : (salaries[salaries.length/2-1] + salaries[salaries.length/2]) / 2;
+ document.getElementById('mAvg').textContent = '₹' + (avg % 1 === 0 ? avg : avg.toFixed(1)) + ' LPA';
+ document.getElementById('mHigh').textContent = '₹' + (high % 1 === 0 ? high : high.toFixed(1)) + ' LPA';
+ document.getElementById('mMed').textContent = '₹' + (mid % 1 === 0 ? mid : mid.toFixed(1)) + ' LPA';
+ } else {
+ document.getElementById('mAvg').textContent = '₹0 LPA';
+ document.getElementById('mHigh').textContent = '₹0 LPA';
+ document.getElementById('mMed').textContent = '₹0 LPA';
+ }
+ document.getElementById('mComp').textContent = new Set(list.map(r => (r.company || '').toLowerCase())).size;
+ }
+
+ /* --- Analytics (salary bands + companies + skills) --- */
+ function renderAnalytics(list) {
+ const body = document.getElementById('analyticsBody');
+ if (!list.length) {
+ body.innerHTML = '<div class="oc-empty">No outcome records yet — add yours below to power the analytics.</div>';
+ document.getElementById('analyticsCount').textContent = '';
+ return;
+ }
+ document.getElementById('analyticsCount').textContent = list.length + ' outcome records';
+
+ const bands = [
+ { label: '₹0–5 LPA (Entry)', min: 0, max: 5 },
+ { label: '₹5–10 LPA (Service)', min: 5, max: 10 },
+ { label: '₹10–20 LPA (Mid Product/GCC)', min: 10, max: 20 },
+ { label: '₹20–40 LPA (Premium)', min: 20, max: 40 },
+ { label: '₹40+ LPA (Elite)', min: 40, max: Infinity }
+ ];
+ const bandCounts = bands.map(b => list.filter(r => (Number(r.salary)||0) >= b.min && (Number(r.salary)||0) < b.max).length);
+ const maxBand = Math.max(1, ...bandCounts);
+
+ const compCounts = {};
+ list.forEach(r => { const c = (r.company || 'Unknown').trim(); if (c) compCounts[c] = (compCounts[c]||0)+1; });
+ const topComp = Object.entries(compCounts).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0])).slice(0, 6);
+ const maxComp = Math.max(1, ...topComp.map(e => e[1]));
+
+ const skillCounts = {};
+ list.forEach(r => { const s = (r.skill || '').trim(); if (s) skillCounts[s] = (skillCounts[s]||0)+1; });
+ const topSkills = Object.entries(skillCounts).sort((a,b) => b[1]-a[1]).slice(0, 6);
+ const maxSkill = Math.max(1, ...topSkills.map(e => e[1]));
+
+ const verifiedPct = Math.round(list.filter(r => r.verified === 'verified').length / list.length * 100);
+ const remotePct = Math.round(list.filter(r => r.mode === 'Remote' || r.mode === 'Hybrid').length / list.length * 100);
+
+ let html = `
+ <div class="a-kpis">
+ <div class="a-kpi">${verifiedPct}% <small>VERIFIED OFFERS</small></div>
+ <div class="a-kpi">${remotePct}% <small>HYBRID / REMOTE</small></div>
+ <div class="a-kpi">${topComp.length ? ocEscapeHtml(topComp[0][0]) : '—'} <small>TOP HIRER</small></div>
+ <div class="a-kpi">2026 <small>PLACEMENT SEASON</small></div>
+ </div>
+ <div class="a-grid">
+ <div class="a-card">
+ <h4>Salary Distribution (CTC Bands)</h4>
+ ${bands.map((b, i) => `
+ <div class="a-row">
+ <span>${b.label}</span>
+ <div class="a-bar"><div style="width:${Math.round(bandCounts[i]/maxBand*100)}%"></div></div>
+ <span class="a-n">${bandCounts[i]}</span>
+ </div>`).join('')}
+ </div>
+ <div class="a-card">
+ <h4>Top Hiring Companies</h4>
+ ${topComp.map(e => `
+ <div class="a-row">
+ <span>${ocEscapeHtml(e[0])}</span>
+ <div class="a-bar"><div class="red" style="width:${Math.round(e[1]/maxComp*100)}%"></div></div>
+ <span class="a-n">${e[1]}</span>
+ </div>`).join('')}
+ </div>
+ <div class="a-card">
+ <h4>Skills That Got The Job</h4>
+ ${topSkills.map(e => `
+ <div class="a-row">
+ <span>${ocEscapeHtml(e[0])}</span>
+ <div class="a-bar"><div style="width:${Math.round(e[1]/maxSkill*100)}%"></div></div>
+ <span class="a-n">${e[1]}</span>
+ </div>`).join('')}
+ <div class="a-tip" style="margin-top:0.5rem;"><b>Insight:</b> DSA + one core language dominates offers above ₹15 LPA. SQL and cloud skills close service-tier offers fastest.</div>
+ </div>
+ </div>`;
+ body.innerHTML = html;
+ }
+
+ /* --- Company filter options + datalist --- */
+ function refreshCompanyOptions(list) {
+ const sel = document.getElementById('companyFilter');
+ const dl = document.getElementById('companySuggestions');
+ const current = sel.value;
+ const companies = [...new Set(list.map(r => (r.company || '').trim()).filter(Boolean))].sort((a,b) => a.localeCompare(b));
+ sel.innerHTML = '<option value="ALL">All Companies</option>' + companies.map(c => `<option value="${ocEscapeHtml(c)}">${ocEscapeHtml(c)}</option>`).join('');
+ sel.value = companies.includes(current) || current === 'ALL' ? current : 'ALL';
+ dl.innerHTML = companies.map(c => `<option value="${ocEscapeHtml(c)}">`).join('');
+ }
+
+ /* --- Table --- */
+ function typeBadgeClass(type) {
+ const map = { 'Product': 'badge-product', 'Service': 'badge-service', 'GCC / R&D': 'badge-gcc', 'Finance & Consulting': 'badge-finance', 'Quant / HFT': 'badge-quant', 'Core / PSU': 'badge-core', 'Startup': 'badge-startup' };
+ return map[type] || 'badge-service';
+ }
+
+ function renderTable() {
+ const tbody = document.getElementById('outcomeTableBody');
+ const start = (ocPage - 1) * recordsPerPage;
+ const pageRecords = ocFiltered.slice(start, start + recordsPerPage);
+
+ if (pageRecords.length === 0) {
+ tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:2rem;">No matching outcome records${ocFiltered.length === 0 && loadOutcomes().length ? ' — try clearing filters.' : '.'}</td></tr>`;
+ } else {
+ tbody.innerHTML = pageRecords.map((r, i) => {
+ const idx = start + i + 1;
+ const salary = (Number(r.salary) || 0);
+ const salaryStr = '₹' + (salary % 1 === 0 ? salary : salary.toFixed(1)) + ' LPA';
+ const verifiedBadge = r.verified === 'verified'
+ ? '<span class="verified-cell">✓</span><span class="badge-ver verified">Verified</span>'
+ : '<span class="badge-ver pending">Pending</span>';
+ return `
+ <tr>
+ <td><strong>#${idx}</strong></td>
+ <td><strong>${ocEscapeHtml(r.name || '—')}</strong></td>
+ <td><strong>${ocEscapeHtml(r.company || '—')}</strong></td>
+ <td><span class="badge-type ${typeBadgeClass(r.type)}">${ocEscapeHtml(r.type || 'Service')}</span></td>
+ <td>${ocEscapeHtml(r.role || '—')}</td>
+ <td><strong>${salaryStr}</strong></td>
+ <td>${ocEscapeHtml(r.location || '—')}</td>
+ <td>${ocEscapeHtml(r.mode || '—')}</td>
+ <td>${ocEscapeHtml(r.batch ? String(r.batch) : '—')}</td>
+ <td>${verifiedBadge}</td>
+ </tr>`;
+ }).join('');
+ }
+
+ const totalPages = Math.ceil(ocFiltered.length / recordsPerPage) || 1;
+ document.getElementById('pageInfo').textContent = `Page ${ocPage} of ${totalPages}`;
+ document.getElementById('recordCount').textContent = `Showing ${ocFiltered.length} outcome record${ocFiltered.length === 1 ? '' : 's'}` + (ocFiltered.length ? ` — ${start+1}-${Math.min(ocPage*recordsPerPage, ocFiltered.length)} on this page` : '');
+ document.getElementById('prevBtn').disabled = ocPage === 1;
+ document.getElementById('nextBtn').disabled = ocPage >= totalPages;
+ }
+
+ function applyFilters() {
+ const query = document.getElementById('searchInput').value.toLowerCase().trim();
+ const compVal = document.getElementById('companyFilter').value;
+ const typeVal = document.getElementById('typeFilter').value;
+ const sortVal = document.getElementById('sortSelect').value;
+
+ let arr = [...loadOutcomes()];
+ arr = arr.filter(r => {
+ const hay = [r.name, r.company, r.role, r.location, r.skill].map(x => String(x || '').toLowerCase()).join(' ');
+ const matchesSearch = !query || hay.includes(query);
+ const matchesComp = compVal === 'ALL' || r.company === compVal;
+ const matchesType = typeVal === 'ALL' || r.type === typeVal;
+ return matchesSearch && matchesComp && matchesType;
+ });
+
+ switch (sortVal) {
+ case 'salaryDesc': arr.sort((a,b) => (Number(b.salary)||0) - (Number(a.salary)||0)); break;
+ case 'salaryAsc': arr.sort((a,b) => (Number(a.salary)||0) - (Number(b.salary)||0)); break;
+ case 'name': arr.sort((a,b) => String(a.name||'').localeCompare(String(b.name||''))); break;
+ case 'company': arr.sort((a,b) => String(a.company||'').localeCompare(String(b.company||''))); break;
+ case 'recent':
+ default:
+ arr.sort((a,b) => String(b.date||'').localeCompare(String(a.date||'')));
+ }
+
+ ocFiltered = arr;
+ ocPage = 1;
+ renderStats(arr);
+ renderAnalytics(arr);
+ renderTable();
+ }
+
+ /* --- Success stories --- */
+ function renderStories() {
+ const grid = document.getElementById('storyGrid');
+ const arr = [...loadOutcomes()].sort((a,b) => String(b.date||'').localeCompare(String(a.date||'')));
+ const withStories = arr.filter(r => (r.quote || '').trim()).slice(0, 6);
+ document.getElementById('storyCount').textContent = withStories.length + ' featured stories';
+ if (!withStories.length) {
+ grid.innerHTML = '<div class="oc-empty">No success stories yet — submit your outcome with a one-line tip below.</div>';
+ return;
+ }
+ grid.innerHTML = withStories.map(r => {
+ const salary = Number(r.salary) || 0;
+ const salaryStr = '₹' + (salary % 1 === 0 ? salary : salary.toFixed(1)) + ' LPA';
+ return `
+ <div class="oc-card">
+ <div class="oc-name">${ocEscapeHtml(r.name || 'Anonymous')} ${r.verified === 'verified' ? '<span class="badge-ver verified">Verified</span>' : ''}</div>
+ <div class="oc-sub">${ocEscapeHtml(r.role || '')} @ ${ocEscapeHtml(r.company || '')} · ${ocEscapeHtml(r.batch ? String(r.batch) : '')}</div>
+ <div class="oc-cta">${salaryStr} · ${ocEscapeHtml(r.location || '')}</div>
+ <div class="oc-quote">“${ocEscapeHtml(r.quote)}”</div>
+ </div>`;
+ }).join('');
+ }
+
+ /* --- Submit outcome --- */
+ function submitOutcome() {
+ const name = document.getElementById('ocName');
+ const company = document.getElementById('ocCompany');
+ const role = document.getElementById('ocRole');
+ const salary = document.getElementById('ocSalary');
+ const location = document.getElementById('ocLocation');
+
+ [name, company, role, salary, location].forEach(el => el.classList.remove('form-error'));
+
+ let ok = true;
+ if (!name.value.trim()) { name.classList.add('form-error'); ok = false; }
+ if (!company.value.trim()) { company.classList.add('form-error'); ok = false; }
+ if (!role.value.trim()) { role.classList.add('form-error'); ok = false; }
+ const salNum = parseFloat(salary.value);
+ if (isNaN(salNum) || salNum < 0) { salary.classList.add('form-error'); ok = false; }
+ if (!location.value.trim()) { location.classList.add('form-error'); ok = false; }
+ if (!ok) { showOcToast('Please fill all required fields (marked *).'); return; }
+
+ const arr = loadOutcomes();
+ arr.push({
+ id: 'u' + Date.now(),
+ name: name.value.trim(),
+ company: company.value.trim(),
+ type: document.getElementById('ocType').value,
+ role: role.value.trim(),
+ salary: salNum,
+ location: location.value.trim(),
+ mode: document.getElementById('ocMode').value,
+ batch: parseInt(document.getElementById('ocBatch').value, 10) || new Date().getFullYear(),
+ skill: document.getElementById('ocSkill').value.trim(),
+ verified: document.getElementById('ocVerified').value,
+ quote: document.getElementById('ocQuote').value.trim(),
+ date: new Date().toISOString().slice(0, 10)
+ });
+ saveOutcomes(arr);
+
+ [name, company, role, salary, location].forEach(el => el.value = '');
+ document.getElementById('ocSkill').value = '';
+ document.getElementById('ocQuote').value = '';
+
+ refreshCompanyOptions(arr);
+ applyFilters();
+ renderStories();
+ showOcToast('Outcome added — welcome to the placed club! 🎉');
+ }
+
+ /* --- Wire up --- */
+ document.getElementById('ocSubmitBtn').addEventListener('click', submitOutcome);
+ document.getElementById('ocClearBtn').addEventListener('click', function() {
+ const arr = loadOutcomes();
+ const userCount = arr.filter(r => !String(r.id || '').startsWith('s')).length;
+ if (arr.length === 0) { showOcToast('Nothing to clear — no outcomes stored.'); return; }
+ if (userCount === 0) { showOcToast('Only built-in sample outcomes remain — nothing to clear.'); return; }
+ saveOutcomes(arr.filter(r => String(r.id || '').startsWith('s')));
+ refreshCompanyOptions(loadOutcomes());
+ applyFilters();
+ renderStories();
+ showOcToast('Your added outcomes cleared (samples kept).');
+ });
+ document.getElementById('searchInput').addEventListener('input', applyFilters);
+ document.getElementById('companyFilter').addEventListener('change', applyFilters);
+ document.getElementById('typeFilter').addEventListener('change', applyFilters);
+ document.getElementById('sortSelect').addEventListener('change', applyFilters);
+ document.getElementById('clearFiltersBtn').addEventListener('click', function() {
+ document.getElementById('searchInput').value = '';
+ document.getElementById('companyFilter').value = 'ALL';
+ document.getElementById('typeFilter').value = 'ALL';
+ document.getElementById('sortSelect').value = 'recent';
+ applyFilters();
+ });
+ document.getElementById('prevBtn').addEventListener('click', () => {
+ if (ocPage > 1) { ocPage--; renderTable(); }
+ });
+ document.getElementById('nextBtn').addEventListener('click', () => {
+ const totalPages = Math.ceil(ocFiltered.length / recordsPerPage) || 1;
+ if (ocPage < totalPages) { ocPage++; renderTable(); }
+ });
+
+ /* ============================================================
+ ============ EMPLOYMENT OUTCOME DASHBOARD (cohort) ============
+ ============================================================ */
+ const DASH_COHORTS = {
+ '2025-2026': {
+ kpis: { trained: 1248, completed: 980, employed: 892, salary: '₹4.2 LPA', retention: '78%', completedSub: '78.6% of trained', employedSub: '71.5% placement rate' },
+ funnel: [
+ { lbl: 'Trained', n: 1248, ic: '👥' },
+ { lbl: 'Job Ready', n: 980, ic: '📋' },
+ { lbl: 'Interviewed', n: 912, ic: '💬' },
+ { lbl: 'Selected', n: 892, ic: '✓' },
+ { lbl: 'Employed', n: 693, ic: '💼' },
+ { lbl: 'Retained', n: 541, ic: '🔄' }
+ ],
+ roles: [
+ { name: 'Software Developer', n: 248, rate: 76 },
+ { name: 'Data Analyst', n: 176, rate: 68 },
+ { name: 'Cloud Engineer', n: 142, rate: 64 },
+ { name: 'Java Developer', n: 108, rate: 58 },
+ { name: 'UI/UX Designer', n: 72, rate: 52 }
+ ],
+ skills: [
+ { name: 'Python', demand: 82, avail: 61 },
+ { name: 'SQL', demand: 76, avail: 54 },
+ { name: 'Cloud', demand: 64, avail: 38 },
+ { name: 'Communication', demand: 71, avail: 59 },
+ { name: 'Java', demand: 58, avail: 46 }
+ ],
+ donut: [
+ { label: 'Skill Gap', pct: 38, color: '#FF3000' },
+ { label: 'Interview Readiness', pct: 22, color: '#000000' },
+ { label: 'Location Mismatch', pct: 16, color: '#777777' },
+ { label: 'Salary Expectation', pct: 13, color: '#BBBBBB' },
+ { label: 'Other', pct: 11, color: '#E5E5E5' }
+ ],
+ donutTotal: 340,
+ impact: { before: 48, after: 72 },
+ insight: 'Addressing the top skill gaps (<b>Python, SQL, Cloud</b>) can potentially increase placement rates by up to <b>20–25%</b> for this cohort.'
+ },
+ '2024-2025': {
+ kpis: { trained: 1104, completed: 861, employed: 768, salary: '₹3.9 LPA', retention: '75%', completedSub: '78.0% of trained', employedSub: '69.6% placement rate' },
+ funnel: [
+ { lbl: 'Trained', n: 1104, ic: '👥' },
+ { lbl: 'Job Ready', n: 861, ic: '📋' },
+ { lbl: 'Interviewed', n: 795, ic: '🗣' },
+ { lbl: 'Selected', n: 768, ic: '✓' },
+ { lbl: 'Employed', n: 592, ic: '💼' },
+ { lbl: 'Retained', n: 444, ic: '🔄' }
+ ],
+ roles: [
+ { name: 'Software Developer', n: 212, rate: 72 },
+ { name: 'Data Analyst', n: 154, rate: 65 },
+ { name: 'Cloud Engineer', n: 118, rate: 60 },
+ { name: 'Java Developer', n: 96, rate: 55 },
+ { name: 'UI/UX Designer', n: 64, rate: 49 }
+ ],
+ skills: [
+ { name: 'Python', demand: 79, avail: 57 },
+ { name: 'SQL', demand: 73, avail: 52 },
+ { name: 'Cloud', demand: 60, avail: 35 },
+ { name: 'Communication', demand: 68, avail: 56 },
+ { name: 'Java', demand: 55, avail: 44 }
+ ],
+ donut: [
+ { label: 'Skill Gap', pct: 41, color: '#FF3000' },
+ { label: 'Interview Readiness', pct: 21, color: '#000000' },
+ { label: 'Location Mismatch', pct: 14, color: '#777777' },
+ { label: 'Salary Expectation', pct: 13, color: '#BBBBBB' },
+ { label: 'Other', pct: 11, color: '#E5E5E5' }
+ ],
+ donutTotal: 336,
+ impact: { before: 46, after: 69 },
+ insight: 'Candidates who finished the <b>30-day study plan</b> were <b>2.3× more likely</b> to be selected. Cloud skills showed the widest gap last season.'
+ },
+ '2023-2024': {
+ kpis: { trained: 962, completed: 721, employed: 634, salary: '₹3.6 LPA', retention: '72%', completedSub: '74.9% of trained', employedSub: '65.9% placement rate' },
+ funnel: [
+ { lbl: 'Trained', n: 962, ic: '👥' },
+ { lbl: 'Job Ready', n: 721, ic: '📋' },
+ { lbl: 'Interviewed', n: 664, ic: '🗣' },
+ { lbl: 'Selected', n: 634, ic: '✓' },
+ { lbl: 'Employed', n: 481, ic: '💼' },
+ { lbl: 'Retained', n: 346, ic: '🔄' }
+ ],
+ roles: [
+ { name: 'Software Developer', n: 178, rate: 68 },
+ { name: 'Data Analyst', n: 128, rate: 61 },
+ { name: 'Cloud Engineer', n: 94, rate: 56 },
+ { name: 'Java Developer', n: 82, rate: 52 },
+ { name: 'UI/UX Designer', n: 56, rate: 45 }
+ ],
+ skills: [
+ { name: 'Python', demand: 75, avail: 53 },
+ { name: 'SQL', demand: 70, avail: 49 },
+ { name: 'Cloud', demand: 55, avail: 31 },
+ { name: 'Communication', demand: 64, avail: 52 },
+ { name: 'Java', demand: 52, avail: 42 }
+ ],
+ donut: [
+ { label: 'Skill Gap', pct: 44, color: '#FF3000' },
+ { label: 'Interview Readiness', pct: 20, color: '#000000' },
+ { label: 'Location Mismatch', pct: 13, color: '#777777' },
+ { label: 'Salary Expectation', pct: 12, color: '#BBBBBB' },
+ { label: 'Other', pct: 11, color: '#E5E5E5' }
+ ],
+ donutTotal: 328,
+ impact: { before: 43, after: 66 },
+ insight: 'Communication training moved the needle most this year: <b>+9%</b> offer conversion after mock-interview rounds were added to the program.'
+ }
+ };
+
+ function fmtNum(n) { return n.toLocaleString('en-IN'); }
+
+ function renderDashboard(batchKey) {
+ const c = DASH_COHORTS[batchKey] || DASH_COHORTS['2025-2026'];
+
+ /* KPIs */
+ document.getElementById('dKpiTrained').textContent = fmtNum(c.kpis.trained);
+ document.getElementById('dKpiCompleted').textContent = fmtNum(c.kpis.completed);
+ document.getElementById('dKpiEmployed').textContent = fmtNum(c.kpis.employed);
+ document.getElementById('dKpiSalary').textContent = c.kpis.salary;
+ document.getElementById('dKpiRetention').textContent = c.kpis.retention;
+ document.querySelector('#dKpiCompleted').parentElement.querySelector('.dash-kpi-sub').textContent = c.kpis.completedSub;
+ document.querySelector('#dKpiEmployed').parentElement.querySelector('.dash-kpi-sub').textContent = c.kpis.employedSub;
+
+ /* Funnel */
+ const funnel = document.getElementById('dashFunnel');
+ funnel.innerHTML = c.funnel.map(s => `
+ <div class="dash-fstep">
+ <div class="dash-fnum">${fmtNum(s.n)}</div>
+ <span class="dash-fic">${s.ic}</span>
+ <div class="dash-flbl">${s.lbl}</div>
+ </div>`).join('');
+ document.getElementById('dashFunnelBatch').textContent = batchKey.replace('-', ' - ');
+
+ /* Roles */
+ const roles = document.getElementById('dashRoles');
+ roles.innerHTML = c.roles.map(r => `
+ <div class="dash-role-row">
+ <span class="dash-role-name"><i class="dash-role-dot"></i>${ocEscapeHtml(r.name)}</span>
+ <span class="dash-role-n">${fmtNum(r.n)}</span>
+ <span class="dash-role-right">
+ <span class="dash-role-pct">${r.rate}%</span>
+ <span class="dash-role-bar"><div style="width:${r.rate}%"></div></span>
+ </span>
+ </div>`).join('');
+
+ /* Skill bars */
+ const bars = document.getElementById('dashBars');
+ bars.innerHTML = c.skills.map(s => `
+ <div class="dash-bargroup">
+ <div class="dash-barcol">
+ <span class="dash-barval">${s.demand}%</span>
+ <i class="b-demand" style="height:${s.demand}%"></i>
+ </div>
+ <div class="dash-barcol">
+ <span class="dash-barval">${s.avail}%</span>
+ <i class="b-avail" style="height:${s.avail}%"></i>
+ </div>
+ </div>`).join('');
+ document.getElementById('dashBarsLabels').innerHTML = c.skills.map(s => `<span>${ocEscapeHtml(s.name)}</span>`).join('');
+
+ /* Donut */
+ const donut = document.getElementById('dashDonut');
+ let acc = 0;
+ const stops = c.donut.map(d => { const from = acc; acc += d.pct; return `${d.color} ${from}% ${acc}%`; }).join(', ');
+ donut.style.background = `conic-gradient(${stops})`;
+ document.getElementById('dashDonutTotal').textContent = fmtNum(c.donutTotal);
+ document.getElementById('dashDonutLegend').innerHTML = c.donut.map(d => `
+ <div class="dash-lg-row">
+ <i style="background:${d.color}"></i>
+ <span>${ocEscapeHtml(d.label)}</span>
+ <b>${d.pct}%</b>
+ </div>`).join('');
+
+ /* Impact */
+ document.getElementById('dImpBefore').textContent = c.impact.before + '%';
+ document.getElementById('dImpBeforeBar').style.width = c.impact.before + '%';
+ document.getElementById('dImpAfter').textContent = c.impact.after + '%';
+ document.getElementById('dImpAfterBar').style.width = c.impact.after + '%';
+ document.getElementById('dImpDelta').textContent = '+' + (c.impact.after - c.impact.before) + '%';
+
+ /* Insight */
+ document.getElementById('dashInsightText').innerHTML = c.insight;
+ }
+
+ document.getElementById('batchSelect').addEventListener('change', function() {
+ renderDashboard(this.value);
+ showOcToast('Dashboard updated for batch ' + this.value + '.');
+ });
+ renderDashboard('2025-2026');
+
+ refreshCompanyOptions(loadOutcomes());
+ applyFilters();
+ renderStories();
+ </script>
+</body>
+</html>

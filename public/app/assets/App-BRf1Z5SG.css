@@ -1,0 +1,1 @@
+@keyframes ok-f04-hero-reveal{0%{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@theme{--animate-hero-reveal: ok-f04-hero-reveal .3s cubic-bezier(.215, .61, .355, 1) both;}@media (prefers-reduced-motion:reduce){@keyframes ok-f04-hero-reveal{0%{opacity:0;transform:none}to{opacity:1;transform:none}}}

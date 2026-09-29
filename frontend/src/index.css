@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Mono:wght@400;500&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Hedvig+Letters+Serif:opsz@12..24&family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Manrope:wght@400;500;600;700&family=Monda:wght@400;500;600;700&family=Outfit:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&family=Red+Hat+Display:wght@400;500;600;700&family=Rethink+Sans:wght@400;500;600;700&family=Tillana:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@import "./originkit-section-themes.css";
+@import "./originkit-section-theme.css";
+
+/* ============================================================
+   ACE — SWISS INTERNATIONAL DESIGN (official color system)
+   #000000 · #FFFFFF · #FF3000 · neutral greys. 0 radius, no shadows.
+   ============================================================ */
+@theme {
+  --color-swiss-black: #000000;
+  --color-swiss-white: #ffffff;
+  --color-swiss-red: #ff3000;
+  --color-swiss-muted: #555555;
+  --color-swiss-soft: #e5e5e5;
+  --color-swiss-surface: #f7f7f7;
+  --color-swiss-mid: #777777;
+  --color-swiss-light: #bbbbbb;
+  --color-dark-bg: #0a0a0a;
+  --color-dark-card: #141414;
+  --color-dark-surface: #1c1c1c;
+  --color-dark-border: #2e2e2e;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-black font-sans leading-relaxed antialiased;
+  padding-bottom: 20px;
+}
+
+html.dark body {
+  @apply bg-dark-bg text-white;
+}
+
+::selection {
+  background: #ff3000;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #ff3000;
+  outline-offset: 2px;
+}
+
+/* ---- Swiss primitives ---- */
+.sw-panel {
+  @apply bg-white border-2 border-black;
+}
+html.dark .sw-panel {
+  @apply bg-dark-card border-white;
+}
+
+.sw-surface {
+  @apply bg-swiss-surface border border-black;
+}
+html.dark .sw-surface {
+  @apply bg-dark-surface border-white;
+}
+
+.sw-muted {
+  @apply text-swiss-muted;
+}
+html.dark .sw-muted {
+  @apply text-swiss-light;
+}
+
+.sw-label {
+  @apply uppercase tracking-wider font-bold text-swiss-muted;
+  font-size: 0.66rem;
+}
+html.dark .sw-label {
+  @apply text-swiss-light;
+}
+
+.sw-btn {
+  @apply bg-black text-white border-2 border-black uppercase font-extrabold cursor-pointer;
+  letter-spacing: 0.08em;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sw-btn:hover {
+  @apply bg-swiss-red border-swiss-red text-white;
+}
+.sw-btn:disabled {
+  @apply opacity-40 cursor-not-allowed;
+}
+
+.sw-btn-ghost {
+  @apply bg-white text-black border-2 border-black uppercase font-extrabold cursor-pointer;
+  letter-spacing: 0.08em;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sw-btn-ghost:hover {
+  @apply bg-swiss-red border-swiss-red text-white;
+}
+html.dark .sw-btn-ghost {
+  @apply bg-transparent text-white border-white;
+}
+html.dark .sw-btn-ghost:hover {
+  @apply bg-swiss-red border-swiss-red text-white;
+}
+
+.sw-btn-red {
+  @apply bg-swiss-red text-white border-2 border-swiss-red uppercase font-extrabold cursor-pointer;
+  letter-spacing: 0.08em;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sw-btn-red:hover {
+  @apply bg-black border-black text-white;
+}
+
+.sw-input {
+  @apply bg-white text-black border-2 border-black px-2.5 py-2 text-sm w-full;
+  transition: border-color 0.2s;
+}
+.sw-input:focus {
+  @apply border-swiss-red outline-none;
+}
+html.dark .sw-input {
+  @apply bg-dark-card text-white border-white;
+}
+html.dark .sw-input:focus {
+  @apply border-swiss-red;
+}
+
+.sw-title {
+  @apply uppercase font-black tracking-wide;
+}
+
+/* ---- animations ---- */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.anim-up {
+  animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes progressFill {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes aiSpin {
+  to { transform: rotate(360deg); }
+}
+.sw-spinner {
+  width: 34px;
+  height: 34px;
+  margin: 0.8rem auto;
+  border: 3px solid #000;
+  border-top-color: #ff3000;
+  border-radius: 50% !important;
+  animation: aiSpin 0.8s linear infinite;
+}
+html.dark .sw-spinner {
+  border-color: #fff;
+  border-top-color: #ff3000;
+}
+
+/* ---- portal motion (Skill-Farming style, Swiss-strict) ---- */
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.anim-fade {
+  animation: fade 0.25s ease-out;
+}
+@keyframes pop {
+  0% { opacity: 0; transform: translateY(14px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.anim-pop {
+  animation: pop 0.35s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+@keyframes toastIn {
+  0% { opacity: 0; transform: translate(-50%, 16px); }
+  100% { opacity: 1; transform: translate(-50%, 0); }
+}
+.anim-toast {
+  animation: toastIn 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+.sw-panel, .sw-surface {
+  transition: border-color 0.2s ease, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sw-btn, .sw-btn-ghost, .sw-btn-red {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+.sw-btn:active, .sw-btn-ghost:active, .sw-btn-red:active {
+  transform: translateY(1px) scale(0.99);
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim-up, .anim-fade, .anim-pop, .anim-toast {
+    animation: none;
+  }
+}

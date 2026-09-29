@@ -5,8 +5,10 @@ function pickProvider() {
   return config.ai.provider || 'gemini';
 }
 
-async function callLLM(prompt, { temperature = 0.6, maxTokens = 6000 } = {}) {
+async function callLLM(prompt, { temperature = 0.6, maxTokens = 6000, jsonMode = true } = {}) {
   const provider = pickProvider();
+  const jsonSystem = 'You are a placement-assessment engine for engineering students. You always respond with valid JSON only, no markdown fences, no commentary.';
+  const proseSystem = 'You are ACE, an expert mentor. Respond in clear plain prose only — no JSON, no markdown fences.';
 
   if (provider === 'openai') {
     if (!config.ai.openaiApiKey) throw new Error('OPENAI_API_KEY not configured');
@@ -21,7 +23,7 @@ async function callLLM(prompt, { temperature = 0.6, maxTokens = 6000 } = {}) {
         temperature,
         max_tokens: maxTokens,
         messages: [
-          { role: 'system', content: 'You are a placement-assessment engine for engineering students. You always respond with valid JSON only, no markdown fences, no commentary.' },
+          { role: 'system', content: jsonMode ? jsonSystem : proseSystem },
           { role: 'user', content: prompt }
         ]
       })
@@ -43,9 +45,9 @@ async function callLLM(prompt, { temperature = 0.6, maxTokens = 6000 } = {}) {
         model: config.ai.groqModel,
         temperature,
         max_tokens: maxTokens,
-        response_format: { type: 'json_object' },
+        ...(jsonMode ? { response_format: { type: 'json_object' } } : {}),
         messages: [
-          { role: 'system', content: 'You are a placement-assessment engine for engineering students. Respond with valid JSON only, no markdown fences, no commentary.' },
+          { role: 'system', content: jsonMode ? jsonSystem : proseSystem },
           { role: 'user', content: prompt }
         ]
       })
@@ -63,7 +65,9 @@ async function callLLM(prompt, { temperature = 0.6, maxTokens = 6000 } = {}) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { temperature, maxOutputTokens: maxTokens, responseMimeType: 'application/json' }
+        generationConfig: jsonMode
+          ? { temperature, maxOutputTokens: maxTokens, responseMimeType: 'application/json' }
+          : { temperature, maxOutputTokens: maxTokens }
       })
     }
   );

@@ -1,0 +1,62 @@
+# Render Blueprint — ACE Platform
+#
+# Deploys both backend services as Docker web services on Render's free tier:
+#   ace-node     Express API + LLM proxy      (root Dockerfile,        /api/health)
+#   ace-fastapi  FastAPI + TensorFlow/ML API  (backend/Dockerfile,     /api/health)
+#
+# Deploy: Render Dashboard → New → Blueprint → select this repo → Apply.
+# Render will prompt once for the `sync: false` variables — paste:
+#   DATABASE_URL  : your Supabase/Neon/Render Postgres URL (+ sslmode=require for hosted DBs)
+#   JWT_SECRET    : a long random string — MUST be the SAME value on both services
+#   GEMINI_API_KEY / GROQ_API_KEY / OPENAI_API_KEY : any one powers the AI features
+#
+# Service URLs are derived from the names below — do not rename services
+# without updating the FASTAPI_URL / NODE_API_URL values to match.
+
+services:
+  - type: web
+    name: ace-node
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://aceskills.vercel.app
+      - key: FASTAPI_URL
+        value: https://ace-fastapi.onrender.com
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+
+  - type: web
+    name: ace-fastapi
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: CORS_ORIGIN
+        value: https://aceskills.vercel.app
+      - key: NODE_API_URL
+        value: https://ace-node.onrender.com
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false

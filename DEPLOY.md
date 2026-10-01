@@ -30,11 +30,18 @@ Deploy the backend to **Render** (free tier works):
 
 ### Option A — Blueprint (recommended)
 
-1. Push this repo to GitHub.
-2. Render Dashboard → **New → Blueprint** → select the repo (a `render.yaml`
-   can be added later; the two Dockerfiles already exist: `./Dockerfile`
-   Node :3000 and `./backend/Dockerfile` Python :8001).
-3. Or create two **Web Services** manually:
+1. Push this repo to GitHub (the `render.yaml` blueprint is committed at the root).
+2. Render Dashboard → **New → Blueprint** → select the repo → **Apply**.
+   Render reads `render.yaml` and creates both Docker services:
+   - **ace-node** — root `./Dockerfile`, Express + LLM proxy, health `/api/health`.
+   - **ace-fastapi** — `./backend/Dockerfile`, FastAPI + TensorFlow, health `/api/health`
+     (its CMD honors Render's `PORT` env).
+3. Render prompts once for the `sync: false` variables — paste
+   `DATABASE_URL`, `JWT_SECRET`, and at least one LLM API key
+   (see table below). The service-to-service URLs (`FASTAPI_URL`,
+   `NODE_API_URL`) are pre-filled in the blueprint from the service names
+   `ace-node` / `ace-fastapi` — if Render renames the URLs, update those values.
+4. Or create two **Web Services** manually (blueprint not required):
    - **ACE Node**: Root dir `/`, Docker, port 3000.
    - **ACE FastAPI**: Root dir `backend/`, Docker, port 8001.
 

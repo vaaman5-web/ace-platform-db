@@ -1,23 +1,17 @@
 # Render Blueprint — ACE Platform
 #
-# Deploys both backend services as Docker web services on Render's free tier:
-#   ace-node     Express API + LLM proxy      (root Dockerfile,        /api/health)
-#   ace-fastapi  FastAPI + TensorFlow/ML API  (backend/Dockerfile,     /api/health)
+# Live services (deployed via dashboard, matching this blueprint):
+#   aceskills-api   Express API + LLM proxy      Node runtime,  https://https-ace-platform-backend.onrender.com
+#   aceskills       FastAPI + TensorFlow/ML API  Docker backend/Dockerfile, https://aceskills.onrender.com
 #
-# Deploy: Render Dashboard → New → Blueprint → select this repo → Apply.
-# Render will prompt once for the `sync: false` variables — paste:
-#   DATABASE_URL  : your Supabase/Neon/Render Postgres URL (+ sslmode=require for hosted DBs)
-#   JWT_SECRET    : a long random string — MUST be the SAME value on both services
-#   GEMINI_API_KEY / GROQ_API_KEY / OPENAI_API_KEY : any one powers the AI features
-#
-# Service URLs are derived from the names below — do not rename services
-# without updating the FASTAPI_URL / NODE_API_URL values to match.
+# NOTE: service names on the dashboard predate this blueprint; the envVar
+# values below use the live URLs. If you re-apply the blueprint, adjust
+# names/URLs or Render will attempt to create new services.
 
 services:
   - type: web
-    name: ace-node
-    runtime: docker
-    dockerfilePath: ./Dockerfile
+    name: aceskills-api
+    runtime: node
     plan: free
     healthCheckPath: /api/health
     autoDeploy: true
@@ -26,19 +20,19 @@ services:
         sync: false
       - key: JWT_SECRET
         sync: false
+      - key: JWT_REFRESH_SECRET
+        sync: false
       - key: CORS_ORIGIN
         value: https://aceskills.vercel.app
       - key: FASTAPI_URL
-        value: https://ace-fastapi.onrender.com
-      - key: GEMINI_API_KEY
-        sync: false
+        value: https://aceskills.onrender.com
       - key: GROQ_API_KEY
         sync: false
-      - key: OPENAI_API_KEY
+      - key: GEMINI_API_KEY
         sync: false
 
   - type: web
-    name: ace-fastapi
+    name: aceskills-fastapi
     runtime: docker
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
@@ -51,12 +45,10 @@ services:
       - key: JWT_SECRET
         sync: false
       - key: CORS_ORIGIN
-        value: https://aceskills.vercel.app
+        value: https://aceskills.vercel.app,https://aceskills.onrender.com
       - key: NODE_API_URL
-        value: https://ace-node.onrender.com
+        value: https://https-ace-platform-backend.onrender.com
       - key: GEMINI_API_KEY
         sync: false
       - key: GROQ_API_KEY
-        sync: false
-      - key: OPENAI_API_KEY
         sync: false
